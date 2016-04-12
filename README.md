@@ -17,11 +17,13 @@ Developed with unit based NSW State Emergency Service users in mind ESRMS aims t
 - Logging returns
 - Equipment requests
 - Sizing/equipment preference saving
+
 ####Ipads/Radios
 - Logging of loans of specific equipment
 - Email notifications if out over 24 hours
 - List of current loans with which member
 - Reporting and Export of data
+
 ####Vehicles
 - Driver signs out vehicle and indicated location/purpose
 - Current driver contact details displayed
