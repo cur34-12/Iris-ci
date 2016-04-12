@@ -3,20 +3,33 @@ Developed with unit based NSW State Emergency Service users in mind ESRMS aims t
 
 ##Features
 ###Signon/Time Management
-- Member Clock On/Clock Off
-- Visitor Clock On/Clock Off
-- Visit/Time Categorisation
-- Current Onsite List
-- Reporting/Scheduled Email Reporting
-- Barcode Scanning
-- Data Export
+- Member clock on/clock off
+- Visitor clock on/clock Off
+- Visit/time categorisation
+- Current onsite list
+- Reporting/scheduled email reporting
+- Barcode scanning/ID based sign-on
+- Data export
 
 ###Equipment Signin/Out
 ####Uniform
+- Logging of equiment issueing
+- Logging returns
+- Equipment requests
+- Sizing/equipment preference saving
 ####Ipads/Radios
+- Logging of loans of specific equipment
+- Email notifications if out over 24 hours
+- List of current loans with which member
+- Reporting and Export of data
 ####Vehicles
+- Driver signs out vehicle and indicated location/purpose
+- Current driver contact details displayed
+- Reporting and Export of data
 
 ###Transport Dashboard
+ - Clone current features on transport.hornsbyses.org. 
+ - Internal integration with vehicle signout
 
 ##Integrations
 ###Beacon
