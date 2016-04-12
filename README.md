@@ -37,3 +37,11 @@ Developed with unit based NSW State Emergency Service users in mind ESRMS aims t
 ###Beacon
 ###EOS
 ###Active Directory
+
+##Technology
+###Data Management
+Data will be managaed through a RDBMS such as:
+ - MSSQL
+ - MariaDB
+ - MySQL
+The current preference is MariaDB.
