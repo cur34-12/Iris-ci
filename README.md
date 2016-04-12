@@ -33,11 +33,6 @@ Developed with unit based NSW State Emergency Service users in mind ESRMS aims t
  - Clone current features on transport.hornsbyses.org. 
  - Internal integration with vehicle signout
 
-##Integrations
-###Beacon
-###EOS
-###Active Directory
-
 ##Technology
 ###Data Management
 Data will be managaed through a RDBMS such as:
@@ -45,3 +40,6 @@ Data will be managaed through a RDBMS such as:
  - MariaDB
  - MySQL
 The current preference is MariaDB.
+
+###Language and Platform
+The application will be written to be easily executed multiplatform and also accessed from web.
