@@ -1,4 +1,4 @@
-# esrm
+# Emergency Services Resource Management System (ESRMS)
 Emergency Service Resource Management
 
 ##Features
@@ -10,3 +10,8 @@ Emergency Service Resource Management
 ####Vehicles
 
 ###Transport Dashboard
+
+##Integrations
+###Beacon
+###EOS
+###Active Directory
