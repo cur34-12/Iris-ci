@@ -1,1 +1,1 @@
-Homepage for ESRMS
+<p>Welcome to Logi, an SES focused logistics resource planning system</p>
