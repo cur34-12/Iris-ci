@@ -30,5 +30,5 @@
 	</tbody>
 </table>
 <a class="btn btn-default" role="button" href="vehicles/create">Create Vehicle</a>
-<a class="btn btn-info" role="button" href="vehicles/create">Edit Vehicle</a>
-<a class="btn btn-danger" role="button" href="vehicles/delete">Delete Vehicle</a>
+<a class="btn btn-info" role="button" href="vehicles/create">Edit Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
+<a class="btn btn-danger" role="button" href="vehicles/delete">Delete Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->

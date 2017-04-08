@@ -24,6 +24,9 @@
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
                                         <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
         			</ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="<?php echo base_url(); ?>">Login</a></li> <!-- Not yet implemented -->
+                                </ul>
         		</div>
         	</div>
         </nav>
