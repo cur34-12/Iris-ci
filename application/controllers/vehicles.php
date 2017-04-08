@@ -37,7 +37,30 @@
                         $this->vehicle_model->create_vehicle();
                         redirect('vehicles');     
                 }
-
-
         }
+
+        public function delete($name){
+                $this->vehicle_model->delete_vehicle($name);
+                redirect('vehicles');
+        }
+
+        public function edit($name){
+                $data['vehicle'] = $this->vehicle_model->get_vehicles($name);
+
+                if(empty($data['vehicle'])){
+                        show_404();
+                }
+
+                $data['title'] = 'Edit Vehicle';
+
+                $this->load->view('templates/header', $data);
+                $this->load->view('vehicles/edit', $data);
+                $this->load->view('templates/footer');
+        }
+
+        public function update(){
+                $this->vehicle_model->update_vehicle();
+                redirect('vehicles');
+        }
+
 }

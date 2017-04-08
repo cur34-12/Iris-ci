@@ -9,6 +9,7 @@
 			<th>Capacity</th>
 			<th>LR License</th>
 			<th>Make</th>
+			<th>Year</th>
 			<th>Model</th>
 			<th>Edit</th>
 		</tr>
@@ -21,6 +22,7 @@
 					<td><?php echo $vehicle['capacity']; ?></td>
 					<td><?php echo $vehicle['lr']; ?></td>
 					<td><?php echo $vehicle['make']; ?></td>
+					<td><?php echo $vehicle['year']; ?></td>
 					<td><?php echo $vehicle['model']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['name']; ?>">Edit</a></td>
 			</tr>
