@@ -8,59 +8,61 @@
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('vehicles/index', $data);
         	       $this->load->view('templates/footer');
-        }
-
-        public function view($name = null){
-                $data['vehicle'] = $this->vehicle_model->get_vehicles($name);
-
-                if(empty($data['vehicle'])){
-                        show_404();
                 }
 
-                $data['title'] = $data['vehicle']['name'];
+                public function view($name = null){
+                        $data['vehicle'] = $this->vehicle_model->get_vehicles($name);
 
-                $this->load->view('templates/header', $data);
-                $this->load->view('vehicles/view', $data);
-                $this->load->view('templates/footer');
-        }
+                        if(empty($data['vehicle'])){
+                                show_404();
+                        }
 
-        public function create(){
-                $data['title'] = 'Create Vehicle';
+                        $data['title'] = $data['vehicle']['name'];
 
-                $this->form_validation->set_rules('name', 'Name', 'required');
-
-                if($this->form_validation->run() === FALSE){
                         $this->load->view('templates/header', $data);
-                        $this->load->view('vehicles/create', $data);
-                        $this->load->view('templates/footer');  
-                } else {
-                        $this->vehicle_model->create_vehicle();
-                        redirect('vehicles');     
-                }
-        }
-
-        public function delete($name){
-                $this->vehicle_model->delete_vehicle($name);
-                redirect('vehicles');
-        }
-
-        public function edit($name){
-                $data['vehicle'] = $this->vehicle_model->get_vehicles($name);
-
-                if(empty($data['vehicle'])){
-                        show_404();
+                        $this->load->view('vehicles/view', $data);
+                        $this->load->view('templates/footer');
                 }
 
-                $data['title'] = 'Edit Vehicle';
+                public function create(){
+                        $data['title'] = 'Create Vehicle';
 
-                $this->load->view('templates/header', $data);
-                $this->load->view('vehicles/edit', $data);
-                $this->load->view('templates/footer');
-        }
+                        $this->form_validation->set_rules('name', 'Name', 'required');
 
-        public function update(){
-                $this->vehicle_model->update_vehicle();
-                redirect('vehicles');
+                        if($this->form_validation->run() === FALSE){
+                                $this->load->view('templates/header', $data);
+                                $this->load->view('vehicles/create', $data);
+                                $this->load->view('templates/footer');  
+                        } else {
+                                $this->vehicle_model->create_vehicle();
+                                redirect('vehicles');     
+                        }
+                }
+
+                public function delete($name){
+                        $this->vehicle_model->delete_vehicle($name);
+                        redirect('vehicles');
+                }
+
+                public function edit($name){
+                        $data['vehicle'] = $this->vehicle_model->get_vehicles($name);
+
+                        if(empty($data['vehicle'])){
+                                show_404();
+                        }
+
+                        $data['title'] = 'Edit Vehicle';
+
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('vehicles/edit', $data);
+                        $this->load->view('templates/footer');
+                }
+
+                public function update(){
+                        $this->vehicle_model->update_vehicle();
+                        redirect('vehicles');
+                }
+                
         }
 
 }
