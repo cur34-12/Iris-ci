@@ -2,6 +2,7 @@
 	<title>Edit Vehicle - Logi</title>
 </head>
 
+<!--Fields must be added to this form if an extra field is added to the vehicles table in the database-->
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('vehicles/update', $attributes); ?>
