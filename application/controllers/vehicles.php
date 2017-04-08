@@ -27,8 +27,17 @@
         public function create(){
                 $data['title'] = 'Create Vehicle';
 
-                $this->load->view('templates/header', $data);
-                $this->load->view('vehicles/create', $data);
-                $this->load->view('templates/footer');  
+                $this->form_validation->set_rules('name', 'Name', 'required');
+
+                if($this->form_validation->run() === FALSE){
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('vehicles/create', $data);
+                        $this->load->view('templates/footer');  
+                } else {
+                        $this->vehicle_model->create_vehicle();
+                        redirect('vehicles');     
+                }
+
+
         }
 }
