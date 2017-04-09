@@ -3,7 +3,7 @@
                 public function index(){
                         $data['title'] = 'Equipment'; 
 
-                         $data['equipment'] = $this->vehicle_model->get_equipment();
+                         $data['equipment'] = $this->equipment_model->get_equipment();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('equipment/index', $data);
@@ -11,7 +11,7 @@
                 }
 
                 public function view($name = null){
-                        $data['equipment'] = $this->vehicle_model->get_equipment($name);
+                        $data['equipment'] = $this->equipment_model->get_equipment($name);
 
                         if(empty($data['equipment'])){
                                 show_404();

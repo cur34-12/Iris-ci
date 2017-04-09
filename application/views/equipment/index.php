@@ -17,20 +17,20 @@
 	</thead>
 	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
 	<tbody>
-		<?php foreach($vehicles as $vehicle) : ?>
+		<?php foreach($equipment as $equipment) : ?>
 			<tr>
-					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['name']); ?>"><?php echo $vehicle['name']; ?></a></td>
-					<td><?php echo $vehicle['rego']; ?></td>
-					<td><?php echo $vehicle['capacity']; ?></td>
-					<td><?php echo $vehicle['lr']; ?></td>
-					<td><?php echo $vehicle['make']; ?></td>
-					<td><?php echo $vehicle['year']; ?></td>
-					<td><?php echo $vehicle['model']; ?></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['name']; ?>">Edit</a></td>
+					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/equipment/'. $equipment['name']); ?>"><?php echo $equipment['name']; ?></a></td>
+					<td><?php echo $equipment['rego']; ?></td>
+					<td><?php echo $equipment['capacity']; ?></td>
+					<td><?php echo $equipment['lr']; ?></td>
+					<td><?php echo $equipment['make']; ?></td>
+					<td><?php echo $equipment['year']; ?></td>
+					<td><?php echo $equipment['model']; ?></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['name']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
-<a class="btn btn-default" role="button" href="vehicles/create">Create Vehicle</a>
-<a class="btn btn-info" role="button" href="vehicles/create">Edit Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
-<a class="btn btn-danger" role="button" href="vehicles/delete">Delete Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
+<a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
+<a class="btn btn-info" role="button" href="vequipment/create">Edit Equipment</a> <!-- Not yet implemented the dropdown list of vehicles page-->
+<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> <!-- Not yet implemented the dropdown list of vehicles page-->

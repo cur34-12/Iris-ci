@@ -7,34 +7,34 @@
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment/update', $attributes); ?>
 	<div class="form-group">
-		<input type="hidden" name="vehID" value="<?php echo $vehicle['vehID']; ?>">
+		<input type="hidden" name="vehID" value="<?php echo $equipment['vehID']; ?>">
 		<label class="control-label col-sm-2">Vehicle Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. HBY18" value="<?php echo strtoupper($vehicle['name']); ?>">
+			<input type="text" class="form-control" name="name" placeholder="Eg. HBY18" value="<?php echo strtoupper($equipment['name']); ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Vehicle Rego</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="rego" placeholder="Eg. BK95LD" value="<?php echo strtoupper($vehicle['rego']); ?>">
+			<input type="text" class="form-control" name="rego" placeholder="Eg. BK95LD" value="<?php echo strtoupper($equipment['rego']); ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Make</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi" value="<?php echo $vehicle['make']; ?>">
+			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi" value="<?php echo $equipment['make']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Year</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="year" placeholder="Eg. 2007" value="<?php echo $vehicle['year']; ?>">
+			<input type="text" class="form-control" name="year" placeholder="Eg. 2007" value="<?php echo $equipment['year']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Model</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero" value="<?php echo $vehicle['model']; ?>">
+			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero" value="<?php echo $equipmente['model']; ?>">
 			</div>
 	</div>
 	<div class="form-group">
@@ -59,13 +59,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">LR License Required</label>
 		<div class="col-sm-10">
-			<select id="lr" name="lr" class="form-control" value="<?php echo $vehicle['lr']; ?>">
+			<select id="lr" name="lr" class="form-control" value="<?php echo $equipment['lr']; ?>">
 				<option>No</option>
 				<option>Yes</option>
 			</select>
 			<script>
 				$(function() {
-					$( '#lr' ).val('<?php echo $vehicle['lr']; ?>'); 
+					$( '#lr' ).val('<?php echo $equipment['lr']; ?>'); 
 				});
 		    </script>			
 		</div>
