@@ -10,8 +10,8 @@
         	       $this->load->view('templates/footer');
                 }
 
-                public function view($name = null){
-                        $data['equipment'] = $this->equipment_model->get_equipment($name);
+                public function view($equipmentID = null){
+                        $data['equipment'] = $this->equipment_model->get_equipment($equipmentID);
 
                         if(empty($data['equipment'])){
                                 show_404();

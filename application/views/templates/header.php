@@ -23,9 +23,9 @@
         				<li><a href="<?php echo base_url(); ?>">Home</a></li>
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
                                         <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
-                                        <li><a href="<?php echo base_url(); ?>equipment>">Equipment</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment>">Ipads/Radios</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment>">Uniform</a></li><!--Not yet implemented-->
+                                        <li><a href="<?php echo base_url(); ?>equipment">Equipment</a></li><!--Not yet implemented-->
+                                        <li><a href="<?php echo base_url(); ?>equipment">Ipads/Radios</a></li><!--Not yet implemented-->
+                                        <li><a href="<?php echo base_url(); ?>equipment">Uniform</a></li><!--Not yet implemented-->
         			</ul>
                                 <ul class="nav navbar-nav navbar-right">
                                         <li><a href="<?php echo base_url(); ?>">Login</a></li> <!-- Not yet implemented -->

@@ -4,14 +4,14 @@
 			$this->load->database();
 		}
 
-		public function get_equipment($name = FALSE){
-			if($name === FALSE){
+		public function get_equipment($equipmentID = FALSE){
+			if($equipmentID === FALSE){
 				$this->db->order_by('category', 'ASC');
 				$query = $this->db->get('equipment');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('equipment', array('name' => $name));
+			$query = $this->db->get_where('equipment', array('equipmentID' => $equipmentID));
 			return $query->row_array();
 		}
 
