@@ -28,7 +28,7 @@
                                         <li><a href="<?php echo base_url(); ?>equipment">Uniform</a></li><!--Not yet implemented-->
         			</ul>
                                 <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="<?php echo base_url(); ?>">Login</a></li> <!-- Not yet implemented -->
+                                        <li><a href="<?php echo base_url(); ?>auth/login">Login</a></li> <!-- Not yet implemented -->
                                 </ul>
         		</div>
         	</div>
@@ -40,4 +40,3 @@
                 });
         </script>
         <div class="container">
-        <h1 class="page-title"><?php echo $title; ?></h1>
