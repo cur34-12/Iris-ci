@@ -15,7 +15,7 @@
 			<th>Edit</th>
 		</tr>
 	</thead>
-	<!--Fields must be added to this table if an extra field is added to the vehicles table in the database-->
+	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
 	<tbody>
 		<?php foreach($vehicles as $vehicle) : ?>
 			<tr>
