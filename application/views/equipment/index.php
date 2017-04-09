@@ -1,6 +1,7 @@
 <head>
-	<title>Vehicles - Logi</title>
+	<title>Equipment - Logi</title>
 </head>
+<!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>
