@@ -21,7 +21,7 @@
 				'name' => $this->input->post('name'),
 				'rego' => $this->input->post('rego'),
 				'make' => $this->input->post('make'),
-				'category' => $this->input->post('category');
+				'category' => $this->input->post('category'),
 				'model' => $this->input->post('model'),
 				'year' => $this->input->post('year'),
 				'capacity' => $this->input->post('capacity'),
@@ -42,7 +42,7 @@
 				'name' => $this->input->post('name'),
 				'rego' => $this->input->post('rego'),
 				'make' => $this->input->post('make'),
-				'category' => $this->input->post('category');				
+				'category' => $this->input->post('category'),				
 				'model' => $this->input->post('model'),
 				'year' => $this->input->post('year'),
 				'capacity' => $this->input->post('capacity'),
