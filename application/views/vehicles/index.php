@@ -1,6 +1,7 @@
 <head>
 	<title>Vehicles - Logi</title>
 </head>
+<h2 style="text-transform: upperacse;">Vehicles</h2>
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>
@@ -31,5 +32,5 @@
 	</tbody>
 </table>
 <a class="btn btn-default" role="button" href="vehicles/create">Create Vehicle</a>
-<a class="btn btn-info" role="button" href="vehicles/create">Edit Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
+<a class="btn btn-info" role="button" href="vehicles/edit">Edit Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
 <a class="btn btn-danger" role="button" href="vehicles/delete">Delete Vehicle</a> <!-- Not yet implemented the dropdown list of vehicles page-->
