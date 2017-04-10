@@ -1,9 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+        
         class Equipment extends CI_Controller {
                 public function index(){
                         $data['title'] = 'Equipment'; 
 
-                         $data['equipment'] = $this->Equipment_model->get_equipment();
+                         $data['equipment'] = $this->equipment_model->get_equipment();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('equipment/index', $data);
@@ -11,7 +12,7 @@
                 }
 
                 public function view($equipmentID = null){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($equipmentID);
+                        $data['equipment'] = $this->equipment_model->get_equipment($equipmentID);
 
                         if(empty($data['equipment'])){
                                 show_404();
@@ -34,18 +35,18 @@
                                 $this->load->view('equipment/create', $data);
                                 $this->load->view('templates/footer');  
                         } else {
-                                $this->Equipment_model->create_equipment();
+                                $this->equipment_model->create_equipment();
                                 redirect('equipment');     
                         }
                 }
 
                 public function delete($name){
-                        $this->Equipment_model->delete_equipment($name);
+                        $this->equipment_model->delete_equipment($name);
                         redirect('equipment');
                 }
 
                 public function edit($name){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($name);
+                        $data['equipment'] = $this->equipment_model->get_equipment($name);
 
                         if(empty($data['equipment'])){
                                 show_404();
@@ -59,9 +60,8 @@
                 }
 
                 public function update(){
-                        $this->Equipment_model->update_equipment();
+                        $this->equipment_model->update_equipment();
                         redirect('equipment');
                 }
                 
         }
-?>
