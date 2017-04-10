@@ -1,5 +1,5 @@
-<?php
-        class Equipment extends CI_Controller {
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+        class equipment extends CI_Controller {
                 public function index(){
                         $data['title'] = 'Equipment'; 
 
