@@ -1,7 +1,7 @@
 <head>
 	<title>Vehicles - Logi</title>
 </head>
-<h2 style="text-transform: upperacse;">Vehicles</h2>
+<h2 style="text-transform: uppercase;">Vehicles</h2>
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>
