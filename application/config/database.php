@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'Innes08431>',
-	'database' => 'esrms',
+	'hostname' => 'int.db1.strat.is',
+	'username' => 'logi_dbuser',
+	'password' => 'dblogi0911>',
+	'database' => 'logi',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
