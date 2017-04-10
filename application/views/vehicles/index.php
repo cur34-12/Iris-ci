@@ -18,7 +18,7 @@
 	</thead>
 	<!--Fields must be added to this table if an extra field is added to the vehicles table in the database-->
 	<tbody>
-		<?php foreach($vehicles as $vehicle) : ?>
+		<?php foreach($vehicle as $vehicle) : ?>
 			<tr>
 					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['name']); ?>"><?php echo $vehicle['name']; ?></a></td>
 					<td><?php echo $vehicle['rego']; ?></td>
