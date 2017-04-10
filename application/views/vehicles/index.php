@@ -7,8 +7,8 @@
 		<tr>
 			<th>Name</th>
 			<th>Rego</th>
-			<th>Category</th>
 			<th>Capacity</th>
+			<th>Category</th>
 			<th>LR License</th>
 			<th>Make</th>
 			<th>Year</th>
