@@ -1,7 +1,7 @@
 <head>
 	<title>Edit Vehicle - Logi</title>
 </head>
-<h2 style="text-transform: uppercase;">Vehicles</h2>
+<h2 style="text-transform: uppercase;">Edit Vehicle <?php echo strtoupper($vehicle['name']); ?></h2>
 <!--Fields must be added to this form if an extra field is added to the vehicles table in the-->
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
