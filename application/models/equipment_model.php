@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	class equipment_model extends CI_Model{
+	class Equipment_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
 		}
