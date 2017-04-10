@@ -1,5 +1,5 @@
 <?php
-        class Vehicles extends CI_Controller {
+        class vehicles extends CI_Controller {
                 public function index(){
                         $data['title'] = 'Vehicles'; 
 
