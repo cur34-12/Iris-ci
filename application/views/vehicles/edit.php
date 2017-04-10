@@ -57,6 +57,26 @@
 		</div>
 	</div>
 	<div class="form-group">
+		<label class="control-label col-sm-2">Category</label>
+		<div class="col-sm-10">
+			<select id="category" name="category" class="form-control" >
+				<option>Light Storm</option>
+				<option>Medium Storm</option>
+				<option>Heavy Storm</option>
+				<option>Light GLR</option>
+				<option>Medium GLR</option>
+				<option>Heavy GLR</option>
+				<option>Recon</option>
+				<option>Transport</option>
+			</select>
+			<script>
+				$(function() {
+					$( '#category' ).val('<?php echo $vehicle['categpry']; ?>'); 
+				});
+		    </script>
+		</div>
+	</div>
+	<div class="form-group">
 		<label class="control-label col-sm-2">LR License Required</label>
 		<div class="col-sm-10">
 			<select id="lr" name="lr" class="form-control" value="<?php echo $vehicle['lr']; ?>">

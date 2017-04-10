@@ -7,6 +7,7 @@
 		<tr>
 			<th>Name</th>
 			<th>Rego</th>
+			<th>Category</th>
 			<th>Capacity</th>
 			<th>LR License</th>
 			<th>Make</th>
@@ -22,6 +23,7 @@
 					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['name']); ?>"><?php echo $vehicle['name']; ?></a></td>
 					<td><?php echo $vehicle['rego']; ?></td>
 					<td><?php echo $vehicle['capacity']; ?></td>
+					<td><?php echo $vehicle['category']; ?></td>
 					<td><?php echo $vehicle['lr']; ?></td>
 					<td><?php echo $vehicle['make']; ?></td>
 					<td><?php echo $vehicle['year']; ?></td>
