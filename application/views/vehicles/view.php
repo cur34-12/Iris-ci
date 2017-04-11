@@ -12,12 +12,17 @@
 	<tr><td><?php echo $vehicle['model']; ?></td></tr>
 </table>
 <hr />
+<!--Action buttons-->
+
+<!--Create Button buttons-->
 <a class="btn btn-default" role="button" href="<?php echo site_url('/vehicles/create'); ?>">Create Vehicle</a>
+
+<!--Edit Button-->
 <a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['name']); ?>">Edit Vehicle</a>
+
+<!--Delete Button (as form to protect against abuse)-->
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'), 'onsubmit' => 'return confirm('Do you really want to delete <?php echo strtoupper($vehicle['name']); ?>'); ?>
 <?php echo form_open('/vehicles/delete/'.$vehicle['name'], $attributes); ?>
 	<form onsubmit="return confirm('Do you really want to delete <?php echo strtoupper($vehicle['name']); ?>?');">
 	<input type="submit" value="Delete Vehicle" class="btn btn-danger"/>
 </form>
-
-confirm("Press a button!");
