@@ -21,7 +21,7 @@
 <a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['name']); ?>">Edit Vehicle</a>
 
 <!--Delete Button (as form to protect against abuse)-->
-<?php $confirm_js = 'onsubmit="return confirm('Do you really want to delete <?php echo $vehicle['name']; ?>?');"'; ?>
+<?php $confirm_js = 'onsubmit="return confirm('Do you really want to delete the vehicle');"'; ?>
 
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;', $confirm_js); ?>
 <?php echo form_open('/vehicles/delete/'.$vehicle['name'], $attributes); ?>
