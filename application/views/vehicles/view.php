@@ -21,10 +21,20 @@
 <a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['name']); ?>">Edit Vehicle</a>
 
 <!--Delete Button (as form to protect against abuse)-->
-<?php $confirm_js = 'onsubmit="return confirm('Do you really want to delete the vehicle');"'; ?>
 
-<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;', $confirm_js); ?>
+
+<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;', 'id' => 'deleteVehicleForm'); ?>
 <?php echo form_open('/vehicles/delete/'.$vehicle['name'], $attributes); ?>
 	<form onsubmit="return confirm('Do you really want to delete <?php echo strtoupper($vehicle['name']); ?>?');">
 	<input type="submit" value="Delete Vehicle" class="btn btn-danger"/>
 </form>
+
+<script>
+$("#deleteVehicleForm").submit(function() {
+    if ($("input[type='submit']").val() == "Confirm Delete") {
+        alert("Are you sure you want to delte this vehicle?");
+        $("input[type='submit']").val("Confirm Delete");
+        return false;
+    }
+});
+</script>
