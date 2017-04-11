@@ -1,6 +1,7 @@
 <head>
 	<title><?php echo strtoupper($vehicle['name']); ?> - Logi</title>
 </head>
+<h2><?php echo strtoupper($vehicle['name']); ?></h2>
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Name</td><td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['name']); ?>"><?php echo $vehicle['name']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Rego</td><td><?php echo $vehicle['rego']; ?></td></tr>
