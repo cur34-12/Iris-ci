@@ -25,7 +25,6 @@
 
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;', 'id' => 'deleteVehicleForm'); ?>
 <?php echo form_open('/vehicles/delete/'.$vehicle['name'], $attributes); ?>
-	<form onsubmit="return confirm('Do you really want to delete <?php echo strtoupper($vehicle['name']); ?>?');">
 	<input type="submit" value="Delete Vehicle" class="btn btn-danger"/>
 </form>
 
