@@ -3,7 +3,8 @@
 
 
 				<!-- Latest compiled and minified bootswatch cosmo CSS -->
-				<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+				<!--night mode--><link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+                                <!--day mode--><!--<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">-->
 
                                 <!-- Custom CSS -->
                                 <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
@@ -24,8 +25,12 @@
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
                                         <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
                                         <li><a href="<?php echo base_url(); ?>equipment">Equipment</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment">Ipads/Radios</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment">Uniform</a></li><!--Not yet implemented-->
+                                        <form class="navbar-form navbar-left">
+                                                <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                </div>
+                                                <button type="submit" class="btn btn-default">Search</button>
+                                        </form>
         			</ul>
                                 <ul class="nav navbar-nav navbar-right">
                                         <li><a href="<?php echo base_url(); ?>auth/login">Login</a></li> <!-- Not yet implemented -->
