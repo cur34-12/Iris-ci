@@ -59,4 +59,5 @@
 				$query = $this->db->get('vehicles');
 				return $query->result_array();
 			}
+		}
 	}
