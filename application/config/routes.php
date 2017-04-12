@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['equipment/delete'] = 'equipment/delete'
+$route['equipment/delete'] = 'equipment/delete';
 $route['equipment/create'] = 'equipment/create';
 $route['equipment/update'] = 'equipment/update';
 $route['equipment/(:any)'] = 'equipment/view/$1';
