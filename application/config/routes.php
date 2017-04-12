@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /* Equipment Routes */
 $route['equipment/delete'] = 'equipment/select_delete';
-$route['equipment/edit'] = 'equipment/select_edit'
+$route['equipment/edit'] = 'equipment/select_edit';
 $route['equipment/create'] = 'equipment/create';
 $route['equipment/update'] = 'equipment/update';
 $route['equipment/(:any)'] = 'equipment/view/$1';
