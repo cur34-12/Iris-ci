@@ -93,4 +93,5 @@
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Update</button>
+	<a class="btn btn-info" role="button" href="vehicles">Cancel</a>
 </form>

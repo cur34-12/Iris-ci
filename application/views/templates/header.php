@@ -3,7 +3,7 @@
 
 
 				<!-- Latest compiled and minified bootswatch cosmo CSS -->
-				<link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+				<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
 
                                 <!-- Custom CSS -->
                                 <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
