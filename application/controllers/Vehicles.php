@@ -63,7 +63,16 @@
                         redirect('vehicles');
                 }
 
-                public function select(){ 
+                public function select_edit(){ 
+
+                    $data['vehicles'] = $this->Vehicle_model->select_vehicle();
+                        
+                    $this->load->view('templates/header', $data);
+                    $this->load->view('vehicles/select', $data);
+                    $this->load->view('templates/footer');
+                }
+
+                public function select_delete(){ 
 
                     $data['vehicles'] = $this->Vehicle_model->select_vehicle();
                         

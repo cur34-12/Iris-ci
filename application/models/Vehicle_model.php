@@ -60,4 +60,12 @@
 				return $query->result_array();
 			}
 		}
+
+		public function viewdelete_vehicle($name = FALSE){
+			if($name === FALSE){
+				$this->db->order_by('name', 'ASC');
+				$query = $this->db->get('vehicles');
+				return $query->result_array();
+			}
+		}
 	}

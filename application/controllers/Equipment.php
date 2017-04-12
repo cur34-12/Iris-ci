@@ -3,9 +3,9 @@
 
         class Equipment extends CI_Controller {
                 public function index(){
-                        $data['title'] = 'Equipment'; 
+                    $data['title'] = 'Equipment'; 
 
-                         $data['equipment'] = $this->Equipment_model->get_equipment();
+                    $data['equipment'] = $this->Equipment_model->get_equipment();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('equipment/index', $data);
@@ -42,12 +42,12 @@
                 }
 
                 public function delete($name){
-                        $this->Equipment_model->delete_equipment($name);
+                        $this->Equipment_model->delete_equipment($equipmentID);
                         redirect('equipment');
                 }
 
                 public function edit($name){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($name);
+                        $data['equipment'] = $this->Equipment_model->get_equipment($equipmentID);
 
                         if(empty($data['equipment'])){
                                 show_404();
@@ -65,13 +65,22 @@
                         redirect('equipment');
                 }
 
-                public function select(){ 
+                public function select_edit(){ 
 
-                    $data['equipment'] = $this->Equipment_model->select_equipment();
+                    $data['equipment'] = $this->Equipment_model->get_equipment();
                         
                     $this->load->view('templates/header', $data);
                     $this->load->view('equipment/select', $data);
                     $this->load->view('templates/footer');
                 }
                 
+                public function select_delete(){ 
+
+                    $data['equipment'] = $this->Equipment_model->get_equipment();
+                        
+                    $this->load->view('templates/header', $data);
+                    $this->load->view('equipment/delete', $data);
+                    $this->load->view('templates/footer');
+                }
+
         }
