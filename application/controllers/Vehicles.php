@@ -54,7 +54,7 @@
                         $data['title'] = 'Edit Vehicle';
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('vehicles/edit', $data);
+                        $this->load->view('vehicles/update', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -65,19 +65,19 @@
 
                 public function select_edit(){ 
 
-                    $data['vehicles'] = $this->Vehicle_model->select_vehicle();
+                    $data['vehicles'] = $this->Vehicle_model->get_vehicles();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('vehicles/select', $data);
+                    $this->load->view('vehicles/edit', $data);
                     $this->load->view('templates/footer');
                 }
 
                 public function select_delete(){ 
 
-                    $data['vehicles'] = $this->Vehicle_model->select_vehicle();
+                    $data['vehicles'] = $this->Vehicle_model->get_vehicles();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('vehicles/select', $data);
+                    $this->load->view('vehicles/delete', $data);
                     $this->load->view('templates/footer');
                 }
         }

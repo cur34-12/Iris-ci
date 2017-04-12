@@ -56,7 +56,7 @@
                         $data['title'] = 'Edit Equipment';
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/edit', $data);
+                        $this->load->view('equipment/update', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -70,7 +70,7 @@
                     $data['equipment'] = $this->Equipment_model->get_equipment();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('equipment/select', $data);
+                    $this->load->view('equipment/edit', $data);
                     $this->load->view('templates/footer');
                 }
                 
