@@ -41,12 +41,12 @@
                         }
                 }
 
-                public function delete($name){
+                public function delete($equipmentID){
                         $this->Equipment_model->delete_equipment($equipmentID);
                         redirect('equipment');
                 }
 
-                public function edit($name){
+                public function edit($equipmentID){
                         $data['equipment'] = $this->Equipment_model->get_equipment($equipmentID);
 
                         if(empty($data['equipment'])){
