@@ -71,7 +71,7 @@
 			</select>
 			<script>
 				$(function() {
-					$( '#category' ).val('<?php echo $vehicle['categpry']; ?>'); 
+					$( '#category' ).val('<?php echo $vehicle['category']; ?>'); 
 				});
 		    </script>
 		</div>
