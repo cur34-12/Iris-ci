@@ -2,7 +2,7 @@
         <head>
 
 				<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
-				<!--night mode--><link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+				<!--night mode--><link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">
                                 <!--day mode--><!--<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">-->
 
                                 <!-- Custom CSS -->
