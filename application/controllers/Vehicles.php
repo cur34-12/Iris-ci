@@ -63,7 +63,7 @@
                         redirect('vehicles');
                 }
 
-                public function editselect(){ 
+                public function select(){ 
 
                     $data['vehicles'] = $this->Vehicle_model->select_vehicle();
                         
