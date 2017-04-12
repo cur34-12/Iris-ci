@@ -65,10 +65,10 @@
 
                 public function editselect(){ 
 
-                    $data['vehicles'] = $this->Vehicle_model->get_vehicles();
+                    $data['vehicles'] = $this->Vehicle_model->select_vehicle();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('vehicles/edit-select', $data);
+                    $this->load->view('vehicles/select', $data);
                     $this->load->view('templates/footer');
                 }
         }

@@ -52,4 +52,11 @@
 			$this->db->where('vehID', $this->input->post('vehID'));
 			return $this->db->update('vehicles', $data);
 		}
+
+		public function select_vehicle($name = FALSE){
+			if($name === FALSE){
+				$this->db->order_by('name', 'ASC');
+				$query = $this->db->get('vehicles');
+				return $query->result_array();
+			}
 	}
