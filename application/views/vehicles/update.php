@@ -87,7 +87,7 @@
 			</select>
 			<script>
 				$(function() {
-					$( '#lr' ).val('<?php echo $vehicle['license_type']; ?>'); 
+					$( '#license_type' ).val('<?php echo $vehicle['license_type']; ?>'); 
 				});
 		    </script>			
 		</div>
