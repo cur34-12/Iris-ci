@@ -9,7 +9,7 @@
 			<th>Rego</th>
 			<th>Capacity</th>
 			<th>Category</th>
-			<th>LR License</th>
+			<th>License Type</th>
 			<th>Make</th>
 			<th>Year</th>
 			<th>Model</th>
@@ -24,7 +24,7 @@
 					<td><?php echo $vehicle['rego']; ?></td>
 					<td><?php echo $vehicle['capacity']; ?></td>
 					<td><?php echo $vehicle['category']; ?></td>
-					<td><?php echo $vehicle['lr']; ?></td>
+					<td><?php echo $vehicle['license_type']; ?></td>
 					<td><?php echo $vehicle['make']; ?></td>
 					<td><?php echo $vehicle['year']; ?></td>
 					<td><?php echo $vehicle['model']; ?></td>

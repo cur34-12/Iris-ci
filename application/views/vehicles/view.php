@@ -7,7 +7,7 @@
 	<tr><td style="font-weight: bold">Rego</td><td><?php echo $vehicle['rego']; ?></td></tr>
 	<tr><td style="font-weight: bold">Capacity</td><td><?php echo $vehicle['capacity']; ?></td></tr>
 	<tr><td style="font-weight: bold">Category</td><td><?php echo $vehicle['category']; ?></td></tr>
-	<tr><td style="font-weight: bold">Light Rigid License</td><td><?php echo $vehicle['license_type']; ?></td></tr>
+	<tr><td style="font-weight: bold">License Type</td><td><?php echo $vehicle['license_type']; ?></td></tr>
 	<tr><td style="font-weight: bold">Make</td><td><?php echo $vehicle['make']; ?></td></tr>
 	<tr><td style="font-weight: bold">Year</td><td><?php echo $vehicle['year']; ?></td></tr>
 	<tr><td style="font-weight: bold">Model</td><td><?php echo $vehicle['model']; ?></td></tr>
