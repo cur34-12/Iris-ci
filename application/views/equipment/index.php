@@ -32,7 +32,7 @@
 					<td><?php echo $equipment['in_service']; ?></td>
 					<td><?php echo $equipment['inspection_frequency']; ?></td>
 					<td><?php echo $equipment['equipmentID']; ?></td>
-					<td><img src="<?php echo site_url('/equipment/'. $equipment['barcode_number'].'.jpg'); ?>" /></td>
+					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['equipmentID'].'.jpg'); ?>" /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['equipmentID']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
