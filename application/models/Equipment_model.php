@@ -50,4 +50,12 @@
 			$this->db->where('equipmentID', $this->input->post('equipmentID'));
 			return $this->db->update('equipment', $data);
 		}
+
+		public function select_equipment($equipmentID = FALSE){
+			if($equipmentID === FALSE){
+				$this->db->order_by('category', 'ASC');
+				$query = $this->db->get('equipment');
+				return $query->result_array();
+			}
+		}
 	}

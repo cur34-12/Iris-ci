@@ -64,5 +64,14 @@
                         $this->Equipment_model->update_equipment();
                         redirect('equipment');
                 }
+
+                public function select(){ 
+
+                    $data['equipment'] = $this->Equipment_model->select_equipment();
+                        
+                    $this->load->view('templates/header', $data);
+                    $this->load->view('equipment/select', $data);
+                    $this->load->view('templates/footer');
+                }
                 
         }
