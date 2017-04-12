@@ -15,7 +15,7 @@
 	<tr><td style="font-weight: bold">Inspection Frequency</td><td><?php echo $equipment['inspection_frequency']; ?></td></tr>
 	<tr><td style="font-weight: bold">Equipment ID</td><td><?php echo $equipment['equipmentID']; ?></td></tr>
 	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['serial']; ?></td></tr>
-	<tr><td style="font-weight: bold">Material ID</td><td><?php echo $equipment['ematerial_id']; ?></td></tr>
+	<tr><td style="font-weight: bold">Material ID</td><td><?php echo $equipment['material_id']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode Number</td><td><?php echo $equipment['barcode_number']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/equipment/'. $equipment['barcode_url'].'.jpg'); ?>" /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/equipment/'. $equipment['qr_url'].'.jpg'); ?>" /></td></tr>

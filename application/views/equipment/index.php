@@ -7,7 +7,9 @@
 	<thead>
 		<tr>
 			<th>Name</th>
-			<th>Description</th>	
+			<th>Description</th>
+			<th>Assembly</th>
+			<th>Category</th>	
 			<th>Consumable</th>
 			<th>Size</th>
 			<th>Brand</th>
@@ -25,6 +27,8 @@
 			<tr>
 					<td><a href="<?php echo site_url('/equipment/'. $equipment['equipmentID']); ?>"><?php echo $equipment['name']; ?></a></td>
 					<td><?php echo $equipment['description']; ?></td>
+					<td><?php echo $equipment['assemblyID']; ?></td>
+					<td><?php echo $equipment['category']; ?></td>
 					<td><?php echo $equipment['consumable']; ?></td>
 					<td><?php echo $equipment['size']; ?></td>
 					<td><?php echo $equipment['brand']; ?></td>
@@ -33,6 +37,7 @@
 					<td><?php echo $equipment['inspection_frequency']; ?></td>
 					<td><?php echo $equipment['equipmentID']; ?></td>
 					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['equipmentID'].'.jpg'); ?>" /></td>
+					</tr><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['equipmentID'].'.jpg'); ?>" /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['equipmentID']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
