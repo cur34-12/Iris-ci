@@ -39,6 +39,7 @@
 		<label class="control-label col-sm-2">License Type</label>
 		<div class="col-sm-10">
 			<select id="license_type" name="license_type" class="form-control" >
+				<option>None</option>
 				<option>C</option>
 				<option>LR</option>
 				<option>MR</option>

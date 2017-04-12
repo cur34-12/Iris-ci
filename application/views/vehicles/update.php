@@ -77,15 +77,17 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">LR License Required</label>
+		<label class="control-label col-sm-2">License Type</label>
 		<div class="col-sm-10">
-			<select id="lr" name="lr" class="form-control" value="<?php echo $vehicle['lr']; ?>">
-				<option>No</option>
-				<option>Yes</option>
+			<select id="license_type" name="license_type" class="form-control" value="<?php echo $vehicle['license_type']; ?>">
+				<option>None</option>
+				<option>C</option>
+				<option>LR</option>
+				<option>MR</option>
 			</select>
 			<script>
 				$(function() {
-					$( '#lr' ).val('<?php echo $vehicle['lr']; ?>'); 
+					$( '#lr' ).val('<?php echo $vehicle['license_type']; ?>'); 
 				});
 		    </script>			
 		</div>
