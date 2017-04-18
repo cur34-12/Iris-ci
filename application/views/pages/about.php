@@ -92,4 +92,3 @@ Logi is written in PHP using the MVC framework Codeigniter. Logi will run on any
 
 </xmp>
 
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>

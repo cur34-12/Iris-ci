@@ -18,6 +18,9 @@
                                 <!--Setup the responsive viewport stuff-->
                                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+                                <!--Markdown parser-->
+                                <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+
         </head>
         <body>
         <nav class="navbar navbar-default">
