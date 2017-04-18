@@ -78,7 +78,7 @@ The current platform is MariaDB.
 
 ### Multiplatform
 Logi will also be developed for:
-- (Windows)[https://github.com/paralittic/Logi-Client]
+- [Windows](https://github.com/paralittic/Logi-Client)
 - OSX
 - iOS
 - Android
