@@ -66,9 +66,9 @@ Complete replacement of current paper vehicle management system.
 
 ## Software Features
 ### User Authentication
- - Authenticated against a locally managed user database
-	- Various access levels and permissions
-	- User activity history to view user actions
+- Authenticated against a locally managed user database
+- Various access levels and permissions
+- User activity history to view user actions
 
 ### Data Management
 Data will be managaed through a RDBMS such as:
