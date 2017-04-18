@@ -14,7 +14,9 @@ Track and manage the time onsite and time type of members. Facilitates the repor
 - Data export (xls/csv)
 - Dashboard for operations screens to view members onsite and rank/skill level
 #### In Progress
+- None yet :(
 #### Completed
+- None yet :(
 
 ### Inventory
 Track and manage the movement, allocation and level of inventory held in the unit through the use of barcoding. 
@@ -32,6 +34,7 @@ Track and manage the movement, allocation and level of inventory held in the uni
 - Location of assets
 - Functional area of assets
 #### Completed
+- None yet :(
 
 ### Q Store
 Management of loans and issuing of equipment to members.
@@ -43,9 +46,11 @@ Management of loans and issuing of equipment to members.
 - Sizing/equipment preference saving
 - Reporting on equipment issue activity
 #### In Progress
+- None yet :(
 #### Completed
+- None yet :(
 
-#### Vehicles
+### Vehicles
 Complete replacement of current paper vehicle management system.
 #### Planned
 - Vehicle sign out and indicated location/purpose
@@ -55,7 +60,9 @@ Complete replacement of current paper vehicle management system.
 - Odometer and Purpose tracking (replace paper method)
 - Reporting and Export of data
 #### In Progress
+- None yet :(
 #### Completed
+- None yet :(
 
 ## Software Features
 ### User Authentication
@@ -65,8 +72,8 @@ Complete replacement of current paper vehicle management system.
 
 ### Data Management
 Data will be managaed through a RDBMS such as:
- - MariaDB
-	- MySQL
+- MariaDB
+- MySQL
 The current platform is MariaDB.
 
 ### Multiplatform
