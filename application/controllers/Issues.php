@@ -10,7 +10,7 @@
         	       $this->load->view('templates/footer');
                 }
 
-                public function view($issudID = null){
+                public function view($issueID = null){
                         $data['issue'] = $this->Issues_model->get_issues($issueID);
 
                         if(empty($data['issue'])){
