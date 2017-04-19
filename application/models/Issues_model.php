@@ -20,7 +20,6 @@
 			$data = array(
 				'title' => $this->input->post('title'),
 				'equipmentID' => $this->input->post('equipmentID'),
-				'assemblyID' => $this->input->post('assemblyID'),
 				'description' => $this->input->post('description'),
 				'reporterID' => $this->input->post('reporterID'),
 				'reported_date' => $this->input->post('reported_date'),
@@ -31,7 +30,7 @@
 		}
 
 		public function delete_issue($issueID){
-			$this->db->where('issueID', $issudID);
+			$this->db->where('issueID', $issueID);
 			$this->db->delete('issues');
 			return true;
 		}
@@ -41,7 +40,6 @@
 				'title' => $this->input->post('title'),
 				'description' => $this->input->post('description'),
 				'equipmentID' => $this->input->post('equipmentID'),
-				'assemblyID' => $this->input->post('assemblyID'),
 				'assigned_user' => $this->input->post('assigned_user'),
 				'resolution_date' => $this->input->post('resolution_date'),
 				'status' => $this->input->post('status')

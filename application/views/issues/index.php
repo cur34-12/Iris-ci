@@ -8,7 +8,6 @@
 		<tr>
 			<th>Issue ID</th>
 			<th>Equipment</th>
-			<th>Assembly</th>
 			<th>Title</th>	
 			<th>Reporter</th>
 			<th>Assigned User</th>
@@ -24,7 +23,6 @@
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
-					<td><?php echo $issue['assemblyID']; ?></td>
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
