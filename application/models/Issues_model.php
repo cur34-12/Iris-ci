@@ -5,7 +5,7 @@
 			$this->load->database();
 		}
 
-		public function get_issues($issudID = FALSE){
+		public function get_issues($issueID = FALSE){
 			if($name === FALSE){
 				$this->db->order_by('issueID', 'ASC');
 				$query = $this->db->get('issues');
@@ -18,35 +18,33 @@
 
 		public function create_issue(){//change meeeeee
 			$data = array(
-				'name' => $this->input->post('name'),
-				'rego' => $this->input->post('rego'),
-				'make' => $this->input->post('make'),
-				'category' => $this->input->post('category'),
-				'model' => $this->input->post('model'),
-				'year' => $this->input->post('year'),
-				'capacity' => $this->input->post('capacity'),
-				'license_type' => $this->input->post('license_type')
+				'title' => $this->input->post('title'),
+				'equipmentID' => $this->input->post('equipmentID'),
+				'assemblyID' => $this->input->post('assemblyID'),
+				'description' => $this->input->post('description'),
+				'reporterID' => $this->input->post('reporterID'),
+				'reported_date' => $this->input->post('reported_date'),
+				'status' => $this->input->post('status') //This is a hidden field with the value of "new"
 			);
 
 			return $this->db->insert('issues', $data);
 		}
 
 		public function delete_issue($issueID){
-			$this->db->where('name', $issudID);
+			$this->db->where('issueID', $issudID);
 			$this->db->delete('issues');
 			return true;
 		}
 
 		public function update_issue(){
 			$data = array(
-				'name' => $this->input->post('name'),
-				'rego' => $this->input->post('rego'),
-				'make' => $this->input->post('make'),
-				'category' => $this->input->post('category'),				
-				'model' => $this->input->post('model'),
-				'year' => $this->input->post('year'),
-				'capacity' => $this->input->post('capacity'),
-				'license_type' => $this->input->post('license_type')
+				'title' => $this->input->post('title'),
+				'description' => $this->input->post('description'),
+				'equipmentID' => $this->input->post('equipmentID'),
+				'assemblyID' => $this->input->post('assemblyID'),
+				'assigned_user' => $this->input->post('assigned_user'),
+				'resolution_date' => $this->input->post('resolution_date'),
+				'status' => $this->input->post('status')
 			);
 
 			$this->db->where('issueID', $this->input->post('issueID'));

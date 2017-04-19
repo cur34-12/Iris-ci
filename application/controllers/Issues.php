@@ -27,7 +27,7 @@
                 public function create(){
                         $data['title'] = 'Create Issue';
 
-                        $this->form_validation->set_rules('name', 'Name', 'required');
+                        $this->form_validation->set_rules('title', 'Title', 'required');
 
                         if($this->form_validation->run() === FALSE){
                                 $this->load->view('templates/header', $data);
