@@ -7,56 +7,56 @@
 <?php echo form_open('issues/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
-		<label class="control-label col-sm-2">Vehicle Name</label>
+		<label class="control-label col-sm-2">EquipmentID</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. HBY18">
+			<input type="text" class="form-control" name="equipmentID" placeholder="">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Vehicle Rego</label>
+		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="rego" placeholder="Eg. BK95LD">
+			<input type="text" class="form-control" name="title" placeholder="Eg. Chainbreak non-functional">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Make</label>
+		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi">
+			<input type="text" class="form-control" name="make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated.">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Year</label>
+		<label class="control-label col-sm-2">Reporting User</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="year" placeholder="Eg. 2007">
+			<input type="text" class="form-control" name="reporterID" placeholder="">
 		</div>
 	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Model</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero">
-		</div>
+	<div class="container">
+	    <div class="row">
+	        <div class='col-sm-6'>
+	            <div class="form-group">
+	            	<label class="control-label col-sm-2">Reported Date</label>
+	                <div class='input-group date' id='reported_date'>
+	                    <input type='text' class="form-control" />
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+	        <script type="text/javascript">
+	            $(function () {
+	                $('#reported_date').datetimepicker({
+	                	dayViewHeaderFormat: 'MMMM YYYY',
+	                	showTodayButton: 'true',
+	                });
+	            });
+	        </script>
+	    </div>
 	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Capacity</label>
+	<div class="form-group" style="display: hidden;">
+		<label class="control-label col-sm-2">Status</label>
 		<div class="col-sm-10">
-			<select name="capacity" class="form-control">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">LR License Required</label>
-		<div class="col-sm-10">
-			<select name="lr" class="form-control">
-				<option>No</option>
-				<option>Yes</option>
-			</select>
+			<input type="text" class="form-control" name="status" value="new">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Create</button>
