@@ -24,7 +24,7 @@
 
         </head>
         <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-static-top">
         	<div class="container-fluid">
         		<div clas="navbar-header">
         			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
@@ -33,8 +33,29 @@
         			<ul class="nav navbar-nav">
         				<li><a href="<?php echo base_url(); ?>">Home</a></li>
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
-                                        <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
-                                        <li><a href="<?php echo base_url(); ?>equipment">Equipment</a></li><!--Not yet implemented-->
+                                        <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/issues">Issues</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/delete">Delete</a></li>
+                                                </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>lists">Lists</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>issuing">Q Store</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>loans">Loans</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
                                         <form class="navbar-form navbar-left">
                                                 <div class="form-group">
                                                         <input type="text" class="form-control" placeholder="Search">
