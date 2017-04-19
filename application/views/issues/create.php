@@ -31,21 +31,19 @@
 		</div>
 	</div>
     <div class="form-group">
-        <div class='col-sm-10'>
 		<label class="control-label col-sm-2">Reported Date</label>
-	        <div class='input-group date' id='datetimepicker1'>
+	        <div class='col-sm-10 input-group date' id='datetimepicker1'>
 	            <input type='text' class="form-control" />
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
 	        </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
     </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="status" value="new">
