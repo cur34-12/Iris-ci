@@ -6,17 +6,17 @@
 		}
 
 		public function get_issues($issueID = FALSE){
-			if($name === FALSE){
+			if($issueID === FALSE){
 				$this->db->order_by('issueID', 'ASC');
 				$query = $this->db->get('issues');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('issues', array('issueID' => $issudID));
+			$query = $this->db->get_where('issues', array('issueID' => $issueID));
 			return $query->row_array();
 		}
 
-		public function create_issue(){//change meeeeee
+		public function create_issue(){
 			$data = array(
 				'title' => $this->input->post('title'),
 				'equipmentID' => $this->input->post('equipmentID'),
