@@ -3,7 +3,7 @@
                 public function index(){
                         $data['title'] = 'Issues'; 
 
-                         $data['issue'] = $this->Issues_model->get_issues();
+                         $data['issues'] = $this->Issues_model->get_issues();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('issues/index', $data);
