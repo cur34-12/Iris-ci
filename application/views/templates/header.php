@@ -33,7 +33,8 @@
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                         <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>vehicles/issues">Issues</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>lists">AEL</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
                                                         <li role="separator" class="divider"></li>
                                                         <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
                                                         <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
@@ -45,6 +46,7 @@
                                                 <ul class="dropdown-menu">
                                                         <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
                                                         <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
                                                         <li role="separator" class="divider"></li>
                                                         <li><a href="<?php echo base_url(); ?>equipment/issuing">Q Store</a></li>
                                                         <li role="separator" class="divider"></li>
