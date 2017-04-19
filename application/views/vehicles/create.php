@@ -36,6 +36,17 @@
 		</div>
 	</div>
 	<div class="form-group">
+		<label class="control-label col-sm-2">License Type</label>
+		<div class="col-sm-10">
+			<select id="license_type" name="license_type" class="form-control" >
+				<option>None</option>
+				<option>C</option>
+				<option>LR</option>
+				<option>MR</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
 		<label class="control-label col-sm-2">Capacity</label>
 		<div class="col-sm-10">
 			<select name="capacity" class="form-control">
@@ -65,12 +76,21 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">LR License Required</label>
+		<label class="control-label col-sm-2">Vehicle Type</label>
 		<div class="col-sm-10">
-			<select name="lr" class="form-control">
-				<option>No</option>
-				<option>Yes</option>
+			<select name="type" class="form-control">
+				<option>Car</option>
+				<option>Truck</option>
+				<option>Raft</option>
+				<option>Boat</option>
+				<option>Trailer</option>
 			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Location</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="location" placeholder="NOT YET IMPLEMENTED">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Create</button>

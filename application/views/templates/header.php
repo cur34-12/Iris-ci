@@ -1,19 +1,31 @@
 <html>
         <head>
+                                <!-- Jquery -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
-
-				<!-- Latest compiled and minified bootswatch cosmo CSS -->
-				<link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+				<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
+				<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
+                                <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+                                <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
 
                                 <!-- Custom CSS -->
                                 <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
-                                <!-- Jquery -->
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+                                <!--bootstrap JS-->
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+                                <!--Setup the responsive viewport stuff-->
+                                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                                <!--js plugin for the datetime picker-->
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
+
+                                <!--full bootstrap js plugins-->
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.min.js"></script>
         </head>
         <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-static-top">
         	<div class="container-fluid">
         		<div clas="navbar-header">
         			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
@@ -22,12 +34,40 @@
         			<ul class="nav navbar-nav">
         				<li><a href="<?php echo base_url(); ?>">Home</a></li>
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
-                                        <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
-                                        <li><a href="<?php echo base_url(); ?>equipment">Equipment</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment">Ipads/Radios</a></li><!--Not yet implemented-->
-                                        <li><a href="<?php echo base_url(); ?>equipment">Uniform</a></li><!--Not yet implemented-->
+                                        <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>lists">AEL</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>vehicles/delete">Delete</a></li>
+                                                </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/issuing">Q Store</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/loans">Loans</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
+                                        
         			</ul>
                                 <ul class="nav navbar-nav navbar-right">
+                                        <form class="navbar-form navbar-left">
+                                                <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                </div>
+                                                <button type="submit" class="btn btn-default">Search</button>
+                                        </form>
                                         <li><a href="<?php echo base_url(); ?>auth/login">Login</a></li> <!-- Not yet implemented -->
                                 </ul>
         		</div>

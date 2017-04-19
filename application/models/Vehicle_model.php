@@ -25,7 +25,7 @@
 				'model' => $this->input->post('model'),
 				'year' => $this->input->post('year'),
 				'capacity' => $this->input->post('capacity'),
-				'lr' => $this->input->post('lr')
+				'license_type' => $this->input->post('license_type')
 			);
 
 			return $this->db->insert('vehicles', $data);
@@ -46,7 +46,7 @@
 				'model' => $this->input->post('model'),
 				'year' => $this->input->post('year'),
 				'capacity' => $this->input->post('capacity'),
-				'lr' => $this->input->post('lr')
+				'license_type' => $this->input->post('license_type')
 			);
 
 			$this->db->where('vehID', $this->input->post('vehID'));

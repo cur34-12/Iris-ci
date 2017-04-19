@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
 */
-$autoload['packages'] = array();
+$autoload['packages'] = array(APPPATH.'third_party/DevelBar');
 
 /*
 | -------------------------------------------------------------------
@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('form_validation','ion_auth');
+$autoload['libraries'] = array('form_validation','ion_auth','database','session','zend');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('Vehicle_model', 'Equipment_model');
+$autoload['model'] = array('Vehicle_model', 'Equipment_model','Issues_model');
