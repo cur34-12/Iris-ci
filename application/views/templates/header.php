@@ -5,13 +5,15 @@
 
                                 <!--full bootstrap js plugins-->
                                 <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-                                <!--js plugin for the datetime picker-->
+                                <!--bootstrap min JS, not sure if there is a difference between this and the above-->
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+                                 <!--js plugin for the datetime picker-->
                                 <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
-                                <!--bootstrap JS-->
-                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                                <!--js for boostrap datetimepicker-->
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
 				<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
 				<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
