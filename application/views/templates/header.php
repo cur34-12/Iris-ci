@@ -4,8 +4,8 @@
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
                                 <!--full bootstrap js plugins-->
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.min.js"></script>
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
                                 <!--js plugin for the datetime picker-->
                                 <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
