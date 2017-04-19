@@ -17,7 +17,12 @@
                                 <!--Setup the responsive viewport stuff-->
                                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+                                <!--js plugin for the datetime picker-->
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
+                                <!--full bootstrap js plugins-->
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
+                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.min.js"></script>
         </head>
         <body>
         <nav class="navbar navbar-default navbar-static-top">
