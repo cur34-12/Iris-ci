@@ -32,8 +32,8 @@
 	</div>
     <div class="form-group">
     	<label class="control-label col-sm-2">Reported Date</label>
-        <div class='col-sm-10 input-group date' id='reported_date'>
-            <input type='text' class="form-control" />
+        <div class='col-sm-10 date' id='reported_date'>
+            <input type='text' class="form-control" name="reported_date" />
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
@@ -42,13 +42,11 @@
         $(function () {
             $('#reported_date').datetimepicker({
             	dayViewHeaderFormat: 'MMMM YYYY',
-            	showTodayButton: 'true',
+            	showTodayButton: true,
             });
         });
     	</script>
     </div>
-    
-	    </div>
 	</div>
 	<div class="form-group" style="display: hidden;">
 		<label class="control-label col-sm-2">Status</label>
