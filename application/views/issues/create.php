@@ -41,7 +41,9 @@
     </div>
     <script type="text/javascript">
         $(function () {
-            $('#datetimepicker1').datetimepicker();
+            $('#datetimepicker1').datetimepicker({
+            	useCurrent: true
+            });
         });
     </script>
 	<div class="form-group" style="display: none;">
