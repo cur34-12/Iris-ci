@@ -24,7 +24,6 @@
 </ul>
 <h4>Completed</h4>
 <li>None yet :(</li>
-<hr />
 <h3>Inventory</h3>
 <p>Track and manage the movement, allocation and level of inventory held in the unit through the use of barcoding. </p>
 <h4>Planned</h4>
@@ -48,7 +47,6 @@
 <ul>
 <li>None yet :(</li>
 </ul>
-<hr />
 <h3>Q Store</h3>
 <p>Management of loans and issuing of equipment to members.</p>
 <h4>Planned</h4>
@@ -68,7 +66,6 @@
 <ul>
 <li>None yet :(</li>
 </ul>
-<hr />
 <h3>Vehicles</h3>
 <p>Complete replacement of current paper vehicle management system.</p>
 <h4>Planned</h4>
@@ -88,6 +85,7 @@
 <ul>
 <li>None yet :(</li>
 </ul>
+<hr />
 <h2>Software Features</h2>
 <h3>User Authentication</h3>
 <ul>
