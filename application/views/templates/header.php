@@ -54,14 +54,15 @@
                                                 </ul>
                                         </li>
                                         <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
+                                        
+        			</ul>
+                                <ul class="nav navbar-nav navbar-right">
                                         <form class="navbar-form navbar-left">
                                                 <div class="form-group">
                                                         <input type="text" class="form-control" placeholder="Search">
                                                 </div>
                                                 <button type="submit" class="btn btn-default">Search</button>
                                         </form>
-        			</ul>
-                                <ul class="nav navbar-nav navbar-right">
                                         <li><a href="<?php echo base_url(); ?>auth/login">Login</a></li> <!-- Not yet implemented -->
                                 </ul>
         		</div>
