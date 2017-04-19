@@ -1,5 +1,5 @@
 <head>
-	<title>Equipment - Logi</title>
+	<title>Issues - Logi</title>
 </head>
 <!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
 
@@ -45,6 +45,6 @@
 	</tbody>
 </table>
 
-<a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
-<a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>
-<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> 
+<a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
+<a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>
+<a class="btn btn-danger" role="button" href="issues/delete">Delete Issue</a>
