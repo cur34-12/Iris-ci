@@ -30,22 +30,22 @@
 			<input type="text" class="form-control" name="reporterID" placeholder="">
 		</div>
 	</div>
-    <div class="form-group">
-    	<label class="control-label col-sm-2">Reported Date</label>
-        <div class='col-sm-10 date' id='reported_date'>
-            <input type='text' class="form-control" name="reported_date" />
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+    <div class="row">
+        <div class='col-sm-10'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
         </div>
         <script type="text/javascript">
-        $(function () {
-            $('#reported_date').datetimepicker({
-            	dayViewHeaderFormat: 'MMMM YYYY',
-            	showTodayButton: true,
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
             });
-        });
-    	</script>
+        </script>
     </div>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
