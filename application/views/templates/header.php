@@ -1,31 +1,32 @@
 <html>
         <head>
-                                <!-- Jquery -->
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+            <!-- Jquery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
-                                <!--full bootstrap js plugins-->
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
+            <!--full bootstrap js plugins-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
 
-                                <!--bootstrap min JS, not sure if there is a difference between this and the above-->
-                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <!--bootstrap min JS, not sure if there is a difference between this and the above-->
+            <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
-                                 <!--js plugin for the datetime picker-->
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
+             <!--js plugin for the datetime picker-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
-                                <!--js for boostrap datetimepicker-->
-                                <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
+            <!--js for boostrap datetimepicker-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-				<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
-				<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
-                                <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
-                                <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
+			<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
+			<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
+            <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+            <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
 
-                                <!-- Custom CSS -->
-                                <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+            <!-- Custom CSS -->
+            <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
-                                <!--Setup the responsive viewport stuff-->
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--Setup the responsive viewport stuff-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
+        
         <body>
         <nav class="navbar navbar-default navbar-static-top">
         	<div class="container-fluid">
