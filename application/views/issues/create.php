@@ -30,16 +30,15 @@
 			<input type="text" class="form-control" name="reporterID" placeholder="">
 		</div>
 	</div>
-    <div class="row">
+    <div class="form-group">
         <div class='col-sm-10'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
+		<label class="control-label col-sm-2">Reported Date</label>
+	        <div class='input-group date' id='datetimepicker1'>
+	            <input type='text' class="form-control" />
+	            <span class="input-group-addon">
+	                <span class="glyphicon glyphicon-calendar"></span>
+	            </span>
+	        </div>
         </div>
         <script type="text/javascript">
             $(function () {
