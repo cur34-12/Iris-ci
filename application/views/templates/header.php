@@ -48,11 +48,11 @@
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                         <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>lists">Lists</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
                                                         <li role="separator" class="divider"></li>
-                                                        <li><a href="<?php echo base_url(); ?>issuing">Q Store</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/issuing">Q Store</a></li>
                                                         <li role="separator" class="divider"></li>
-                                                        <li><a href="<?php echo base_url(); ?>loans">Loans</a></li>
+                                                        <li><a href="<?php echo base_url(); ?>equipment/loans">Loans</a></li>
                                                 </ul>
                                         </li>
                                         <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
