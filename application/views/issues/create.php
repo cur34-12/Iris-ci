@@ -47,9 +47,7 @@
         });
     	</script>
     </div>
-	</div>
-	<div class="form-group" style="display: hidden;">
-		<label class="control-label col-sm-2">Status</label>
+	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="status" value="new">
 		</div>
