@@ -20,9 +20,9 @@
 	</thead>
 	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
 	<tbody>
-		<?php foreach($issue as $issues) : ?>
+		<?php foreach($issues as $issue) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issues['issueID']; ?></a></td>
+					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
 					<td><?php echo $issue['assemblyID']; ?></td>
 					<td><?php echo $issue['title']; ?></td>
