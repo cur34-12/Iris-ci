@@ -61,9 +61,12 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="reported_date" value="<?php echo $issue['reported_date']; ?>" readonly>
+			<input id="reported_date" type="text" class="form-control" name="reported_date" value="<?php echo $issue['reported_date']; ?>" readonly>
 		</div>
 	</div>
+	<script type="text/javascript">
+		moment('#reported_date').format('DD MM YYYY'); 
+	</script>
     <div class="form-group">
 		<label class="control-label col-sm-2">Date Resolved</label>
 	        <div class='input-group date' id='datetimepicker1'>
