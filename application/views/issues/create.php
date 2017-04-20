@@ -42,13 +42,15 @@
     <script type="text/javascript">
         $(function () {
             $('#datetimepicker1').datetimepicker({
-            	useCurrent: true
+            	useCurrent: true,
+            	showTodayButton: true,
+            	sideBySide: true
             });
         });
     </script>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="status" value="new">
+			<input type="text" class="form-control" name="status" value="New">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Create</button>
