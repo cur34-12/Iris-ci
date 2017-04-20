@@ -11,7 +11,9 @@
 
              <!--js plugin for the datetime picker-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
-
+            <script type="text/javascript">
+                moment().format();
+            </script>
             <!--js for boostrap datetimepicker-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
