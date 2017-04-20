@@ -32,7 +32,7 @@
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 					
 					<?php
-						if ($issue['reported_date']; = "0000-00-00") {
+						if ($issue['reported_date'] = "0000-00-00") {
 	    					echo "<script type=\"text/javascript\">";
 	    					echo "$('#reported_date_<?php echo $i; ?>').html(\"&nbsp;\");";
 	    					echo "</script>";
@@ -45,7 +45,7 @@
 					?>
 
 					<?php
-						if ($issue['resolution_date']; = "0000-00-00") {
+						if ($issue['resolution_date'] = "0000-00-00") {
 	    					echo "<script type=\"text/javascript\">";
 	    					echo "$('#resolution_date_<?php echo $i; ?>').html(\"&nbsp;\");";
 	    					echo "</script>";
