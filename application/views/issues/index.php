@@ -26,17 +26,14 @@
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
-					<?php echo "<td><script>moment('" , $issue['reported_date'] , "').format('DD-MM-YYYY');</script></td>"; ?>
-					<?php echo "<td><script>moment('" , $issue['resolution_date'] , "').format('DD-MM-YYYY');</script></td>"; ?>
+					<?php echo "<td><script>moment('".$issue['reported_date']."').format(\'DD-MM-YYYY\');</script></td>"; ?>
+					<?php echo "<td><script>moment('".$issue['resolution_date']."').format('DD-MM-YYYY');</script></td>"; ?>
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
-
-
-
 
 <a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
 <a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>
