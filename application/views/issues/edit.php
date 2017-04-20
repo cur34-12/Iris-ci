@@ -6,11 +6,11 @@
 
 <table class="table table-striped table-hover ">
 <thead>
-<td>Issues</td>
+<th>Issue ID</th><th>Title</th>
 </thead>
 <?php foreach($issues as $issue) : ?>
 <tr>
-<td style="text-transform: uppercase;"><a href="<?php echo site_url('/issues/edit/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
+<td><a href="<?php echo site_url('/issues/edit/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td><td><a href="<?php echo site_url('/issues/edit/'. $issue['issueID']); ?>"><?php echo $issue['title']; ?></td>
 </tr>
 <?php endforeach; ?>
 </table>
