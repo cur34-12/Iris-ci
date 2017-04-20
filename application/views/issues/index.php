@@ -26,8 +26,8 @@
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
-					<td><?php echo $issue['reported_date']; ?></td>
-					<td><?php echo $issue['resolution_date']; ?></td>
+					<td id="reported_date"></td>
+					<td id="reported_user"></td>
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 			</tr>
