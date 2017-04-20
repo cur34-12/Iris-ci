@@ -31,31 +31,25 @@
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 					
-					<?php
-						if ($issue['reported_date'] = "0000-00-00") {
-	    					echo "<script type=\"text/javascript\">";
-	    					echo "$('#reported_date_<?php echo $i; ?>').html(\"&nbsp;\");";
-	    					echo "</script>";
+					<script type="text/javascript">
+						var reported_if = <?php echo $issue['reported_date'] ?>
+						if ($reported_if == '0000-00-00') {
+							$('#reported_date_<?php echo $i; ?>').html("&nbsp;");
 						} else {
-	    					echo "<script type=\"text/javascript\">";
- 		    				echo "var parsed_reported_date_$i = moment($issue['reported_date']).format('DD-MM-YYYY');";
-							echo "$('#reported_date_$i').html(parsed_reported_date_$i);";
-							echo "</script>";
+							var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
+							$('#reported_date_<?php echo $i; ?>').html(parsed_reported_date_<?php echo $i; ?>);
 						}
-					?>
+			    	</script>
 
-					<?php
-						if ($issue['resolution_date'] = "0000-00-00") {
-	    					echo "<script type=\"text/javascript\">";
-	    					echo "$('#resolution_date_<?php echo $i; ?>').html(\"&nbsp;\");";
-	    					echo "</script>";
+					<script type="text/javascript">
+						var resolved_if = <?php echo $issue['resolution_date'] ?>
+						if ($resolved_if == '0000-00-00') {
+							$('#resolution_date_<?php echo $i; ?>').html("&nbsp;");
 						} else {
-	    					echo "<script type=\"text/javascript\">";
-		    				echo "var parsed_resolution_date_<?php echo $i; ?> = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY');";
-							echo "$('#resolution_date_<?php echo $i; ?>').html(parsed_resolution_date_<?php echo $i; ?>);";
-							echo "</script>";
+							var parsed_resolution_date_<?php echo $i; ?> = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
+							$('#resolution_date_<?php echo $i; ?>').html(parsed_resolution_date_<?php echo $i; ?>);
 						}
-					?>
+			    	</script>
 			</tr>
 			<?php $i++; ?>
 		<?php endforeach; ?>
