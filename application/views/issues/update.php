@@ -68,7 +68,7 @@
 	<script type="text/javascript">
 		var parsed_date = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
 		$(function() {
-			$( '#reported_date' ).val('parsed_date'); 
+			$( '#reported_date' ).val(parsed_date); 
 		});
     </script>
 
