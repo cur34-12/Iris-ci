@@ -35,10 +35,10 @@
 						var reported_if;
 						$reported_if = <?php echo $issue['reported_date'] ?>;
 						if ($reported_if == '0000-00-00') {
-							$('#reported_date_<?php echo $i; ?>').html("&nbsp;");
+							$('#reported_date_<?php echo $i ?>').html("&nbsp");
 						} else {
-							var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
-							$('#reported_date_<?php echo $i; ?>').html(parsed_reported_date_<?php echo $i; ?>);
+							var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date'] ?>').format('DD-MM-YYYY'); 
+							$('#reported_date_<?php echo $i ?>').html(parsed_reported_date_<?php echo $i; ?>);
 						}
 			    	</script>
 
@@ -46,10 +46,10 @@
 						var resolved_if; 
 						$resolved_if = <?php echo $issue['resolution_date'] ?>;
 						if ($resolved_if == '0000-00-00') {
-							$('#resolution_date_<?php echo $i; ?>').html("&nbsp;");
+							$('#resolution_date_<?php echo $i ?>').html("&nbsp");
 						} else {
-							var parsed_resolution_date_<?php echo $i; ?> = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
-							$('#resolution_date_<?php echo $i; ?>').html(parsed_resolution_date_<?php echo $i; ?>);
+							var parsed_resolution_date_<?php echo $i ?> = moment('<?php echo $issue['resolution_date'] ?>').format('DD-MM-YYYY'); 
+							$('#resolution_date_<?php echo $i ?>').html(parsed_resolution_date_<?php echo $i ?>);
 						}
 			    	</script>
 			</tr>
