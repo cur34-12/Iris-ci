@@ -19,17 +19,27 @@
 	</thead>
 	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
 	<tbody>
-		<?php foreach($issues as $issue) : ?>
+		<?php foreach($issues as $issue, $i++) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
+
+					<td id="reported_date_<?php $i; ?>"></td>
+					;
 					<td><script>moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY');</script></td>
 					<td><script>moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY');</script></td>
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
+					<script type="text/javascript">
+						//This script modifies the Mysql DATE field to be in the DD-MM-YYYY format instead of YYYY-MM-DD
+						var parsed_date = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
+						$(function() {
+							$( '#reported_date_<?php $i; ?>' ).val(parsed_date); 
+						});
+			    	</script>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
