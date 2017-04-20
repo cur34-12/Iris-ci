@@ -31,9 +31,23 @@
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 			</tr>
+			<script type="text/javascript">
+				//This script modifies the Mysql DATE field to be in the DD-MM-YYYY format instead of YYYY-MM-DD
+				var parsed_reported_date = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
+					$(function() {
+						$( '#reported_date' ).val(parsed_reported_date); 
+					});
+				var parsed_resolution_date = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
+					$(function() {
+						$( '#resolution_date' ).val(parsed_resolution_date); 
+					});
+	    	</script>
 		<?php endforeach; ?>
 	</tbody>
 </table>
+
+
+
 
 <a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
 <a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>

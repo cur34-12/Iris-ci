@@ -66,6 +66,7 @@
 	</div>
 
 	<script type="text/javascript">
+		//This script modifies the Mysql DATE field to be in the DD-MM-YYYY format instead of YYYY-MM-DD
 		var parsed_date = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
 		$(function() {
 			$( '#reported_date' ).val(parsed_date); 
