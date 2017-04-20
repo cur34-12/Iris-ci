@@ -33,7 +33,7 @@
 					
 					<script type="text/javascript">
 						var reported_if;
-						$reported_if = <?php echo $issue['reported_date'] ?>;
+						$reported_if = <?php $issue['reported_date'] ?>;
 						console.log($reported_if);
 						if ($reported_if == "0000-00-00") {
 							$('#reported_date_<?php echo $i ?>').html("&nbsp");
@@ -45,7 +45,7 @@
 
 					<script type="text/javascript">
 						var resolved_if; 
-						$resolved_if = <?php echo $issue['resolution_date'] ?>;
+						$resolved_if = <?php $issue['resolution_date'] ?>;
 						console.log($resolved_if);
 						if ($resolved_if == "0000-00-00") {
 							$('#resolution_date_<?php echo $i ?>').html("&nbsp");
@@ -54,6 +54,7 @@
 							$('#resolution_date_<?php echo $i ?>').html(parsed_resolution_date_<?php echo $i ?>);
 						}
 			    	</script>
+
 			</tr>
 			<?php $i++; ?>
 		<?php endforeach; ?>
