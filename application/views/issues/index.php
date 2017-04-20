@@ -32,7 +32,7 @@
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 					
 					<script type="text/javascript">
-						var reported_if = <?php echo $issue['reported_date'] ?>
+						var reported_if = <?php echo $issue['reported_date'] ?>;
 						if ($reported_if == '0000-00-00') {
 							$('#reported_date_<?php echo $i; ?>').html("&nbsp;");
 						} else {
@@ -42,7 +42,7 @@
 			    	</script>
 
 					<script type="text/javascript">
-						var resolved_if = <?php echo $issue['resolution_date'] ?>
+						var resolved_if = <?php echo $issue['resolution_date'] ?>;
 						if ($resolved_if == '0000-00-00') {
 							$('#resolution_date_<?php echo $i; ?>').html("&nbsp;");
 						} else {
