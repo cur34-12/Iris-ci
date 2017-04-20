@@ -45,7 +45,7 @@
                 }
 
                 public function edit($issueID){
-                        $data['issue'] = $this->Issues_model->get_issues($issudID);
+                        $data['issue'] = $this->Issues_model->get_issues($issueID);
 
                         if(empty($data['issue'])){
                                 show_404();
