@@ -193,7 +193,7 @@ class Examples extends MY_Controller
 		// Customize this array for your user
 		$user_data = [
 			'username'   => 'paralittic',
-			'passwd'     => 'welcome1234',
+			'passwd'     => '0svr!THornsby>',
 			'email'      => 'ross.wallace@imperiumlogic.com',
 			'auth_level' => '9', // 9 if you want to login @ examples/index.
 		];
