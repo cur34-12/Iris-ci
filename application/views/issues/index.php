@@ -26,7 +26,7 @@
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
-					<?php echo '<td><script type="text/javascript">moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\');</script></td>'; ?>
+					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
 					<?php echo '<td><script type="text/javascript">moment(\''.$issue['resolution_date'].'\').format(\'DD-MM-YYYY\');</script></td>'; ?>
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
