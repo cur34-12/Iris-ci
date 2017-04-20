@@ -44,7 +44,8 @@
             $('#datetimepicker1').datetimepicker({
             	useCurrent: true,
             	showTodayButton: true,
-            	sideBySide: true
+            	sideBySide: true,
+            	format: 'YYYY-MM-DD',
             });
         });
     </script>
