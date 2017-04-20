@@ -65,7 +65,7 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		moment('#reported_date').format('DD MM YYYY'); 
+		moment('#reported_date').format('DD-MM-YYYY'); 
 	</script>
     <div class="form-group">
 		<label class="control-label col-sm-2">Date Resolved</label>
