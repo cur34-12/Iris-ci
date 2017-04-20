@@ -34,7 +34,7 @@
 					<script type="text/javascript">
 						var reported_if;
 						$reported_if = <?php echo $issue['reported_date'] ?>;
-						if ($reported_if == '0000-00-00') {
+						if ($reported_if == "0000-00-00") {
 							$('#reported_date_<?php echo $i ?>').html("&nbsp");
 						} else {
 							var parsed_reported_date_<?php echo $i ?> = moment('<?php echo $issue['reported_date'] ?>').format('DD-MM-YYYY'); 
@@ -45,7 +45,7 @@
 					<script type="text/javascript">
 						var resolved_if; 
 						$resolved_if = <?php echo $issue['resolution_date'] ?>;
-						if ($resolved_if == '0000-00-00') {
+						if ($resolved_if == "0000-00-00") {
 							$('#resolution_date_<?php echo $i ?>').html("&nbsp");
 						} else {
 							var parsed_resolution_date_<?php echo $i ?> = moment('<?php echo $issue['resolution_date'] ?>').format('DD-MM-YYYY'); 
