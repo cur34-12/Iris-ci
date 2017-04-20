@@ -32,11 +32,11 @@
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 					<script type="text/javascript">
 						//This script modifies the Mysql DATE field to be in the DD-MM-YYYY format instead of YYYY-MM-DD
-						var parsed_reported_date_<?php $i; ?> = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
-						document.getElementById('#reported_date_<?php $i; ?>').innerHTML = parsed_reported_date_<?php $i; ?>;
+						var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
+						document.getElementById('#reported_date_<?php $i; ?>').innerHTML = parsed_reported_date_<?php echo $i; ?>;
 
-						var parsed_resolution_date_<?php $i; ?> = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
-						document.getElementById('#resolution_date_<?php $i; ?>').innerHTML = parsed_resolution_date_<?php $i; ?>;
+						var parsed_resolution_date_<?php echo $i; ?> = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
+						document.getElementById('#resolution_date_<?php $i; ?>').innerHTML = parsed_resolution_date_<?php echo $i; ?>;
 			    	</script>
 			</tr>
 			<?php $i++; ?>
