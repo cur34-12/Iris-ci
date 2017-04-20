@@ -33,7 +33,7 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
 	        <div class='input-group date' id='datetimepicker1'>
-	            <input type='text' class="form-control" name="reported_date/>
+	            <input type='text' class="form-control" name="reported_date"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
