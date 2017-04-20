@@ -44,6 +44,7 @@
 					$( '#status' ).val('<?php echo $issue['status']; ?>'); 
 				});
 		    </script>
+		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reporting User</label>
@@ -78,7 +79,7 @@
             	useCurrent: true,
             	showTodayButton: true,
             	sideBySide: true,
-            	format: 'YYYY-MM-DD',
+            	format: 'YYYY-MM-DD'
             });
         });
     </script>
