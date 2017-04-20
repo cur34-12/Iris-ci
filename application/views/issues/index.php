@@ -38,8 +38,8 @@
 	    					echo "</script>";
 						} else {
 	    					echo "<script type=\"text/javascript\">";
-		    				echo "var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY');";
-							echo "$('#reported_date_<?php echo $i; ?>').html(parsed_reported_date_<?php echo $i; ?>);";
+ 		    				echo "var parsed_reported_date_$i = moment('$issue['reported_date'];').format('DD-MM-YYYY');";
+							echo "$('#reported_date_$i;').html(parsed_reported_date_$i;);";
 							echo "</script>";
 						}
 					?>
