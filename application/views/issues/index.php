@@ -27,9 +27,8 @@
 					<td><?php echo $issue['title']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
-
-					<td id="reported_date_<?php $i; ?>"></td>
-					<td><?php echo $issue['resolution_date']; ?></script></td>
+					<?php echo "<td id="reported_date_$i"></td>"; ?>
+					<?php echo "<td id="resolution_date_$i"></td>"; ?>
 					<td><?php echo $issue['status']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
 					<script type="text/javascript">
@@ -37,6 +36,10 @@
 						var parsed_reported_date = moment('<?php echo $issue['reported_date']; ?>').format('DD-MM-YYYY'); 
 						$(function() {
 							$( '#reported_date_<?php $i; ?>' ).val(parsed_reported_date); 
+						});
+						var parsed_resolution_date = moment('<?php echo $issue['resolution_date']; ?>').format('DD-MM-YYYY'); 
+						$(function() {
+							$( '#resolution_date_<?php $i; ?>' ).val(parsed_resolution_date); 
 						});
 			    	</script>
 			</tr>
