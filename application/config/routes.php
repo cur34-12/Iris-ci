@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/* Issues Routes */
+/* Loans Routes */
 $route['loans/delete'] = 'loans/select_delete';
 $route['loans/edit'] = 'loans/select_edit';
 $route['loans/create'] = 'loans/create';

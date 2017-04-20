@@ -58,7 +58,7 @@ $autoload['packages'] = array(APPPATH.'third_party/DevelBar');
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('form_validation','ion_auth','database','session','zend');
+$autoload['libraries'] = array('form_validation','database','session','zend');
 
 /*
 | -------------------------------------------------------------------
