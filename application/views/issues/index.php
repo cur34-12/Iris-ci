@@ -20,6 +20,7 @@
 	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
 	<tbody>
 		<?php foreach($issues as $issue) : ?>
+			<?php $i = 0; ?>
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
@@ -39,7 +40,7 @@
 						});
 			    	</script>
 			</tr>
-			$i++;
+			<?php $i++; ?>
 		<?php endforeach; ?>
 	</tbody>
 </table>
