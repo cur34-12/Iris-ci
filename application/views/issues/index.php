@@ -36,7 +36,7 @@
 </table>
 
 <script>
-    document.body.innerHTML = document.body.innerHTML.replace(/Invalid Date/g, "&nbsp;");
+    document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, "&nbsp;");
 </script>
 
 <a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
