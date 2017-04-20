@@ -37,8 +37,8 @@
 						if ($reported_if == '0000-00-00') {
 							$('#reported_date_<?php echo $i ?>').html("&nbsp");
 						} else {
-							var parsed_reported_date_<?php echo $i; ?> = moment('<?php echo $issue['reported_date'] ?>').format('DD-MM-YYYY'); 
-							$('#reported_date_<?php echo $i ?>').html(parsed_reported_date_<?php echo $i; ?>);
+							var parsed_reported_date_<?php echo $i ?> = moment('<?php echo $issue['reported_date'] ?>').format('DD-MM-YYYY'); 
+							$('#reported_date_<?php echo $i ?>').html(parsed_reported_date_<?php echo $i ?>);
 						}
 			    	</script>
 
