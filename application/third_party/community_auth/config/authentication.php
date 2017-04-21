@@ -28,10 +28,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $config['levels_and_roles'] = [
-	'10' => 'member',
-	'30' => 'coordinator',
-	'60' => 'officer',
-	'100' => 'admin'
+	'1' => 'customer',
+	'6' => 'manager',
+	'9' => 'admin'
 ];
 
 /*
@@ -43,7 +42,7 @@ $config['levels_and_roles'] = [
 */
 
 $config['groups'] = [
-	'members' => 'officer,admin,coordinator,member'
+	'employees' => 'manager,admin'
 ];
 
 /*
@@ -73,7 +72,7 @@ $config['add_acl_query_to_auth_functions'] = FALSE;
 | 
 */
 
-$config['max_allowed_attempts'] = 500;
+$config['max_allowed_attempts'] = 5;
 
 /*
 | -----------------------------------------------------------------
