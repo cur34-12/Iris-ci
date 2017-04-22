@@ -9,7 +9,6 @@
 			if($issueID === FALSE){
 				$this->db->order_by('issueID', 'ASC');
 				$query = $this->db->get('issues');
-				$query = $this->db->where('status != archive')
 				return $query->result_array();
 			}
 
