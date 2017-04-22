@@ -103,7 +103,7 @@ $autoload['helper'] = array('url','form','cookie');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array();
+$autoload['config'] = array('authentication','db_tables');
 
 /*
 | -------------------------------------------------------------------
