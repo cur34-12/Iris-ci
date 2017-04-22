@@ -28,6 +28,7 @@
                     if( $this->require_role('admin') )
                     {
                         $data['title'] = 'Create Issue';
+                        $data['user_list'] = $this->Issues_model->get_user_dropdown_list();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
@@ -41,6 +42,7 @@
                         }
                     }
                 }
+
 
                 public function delete($issueID){
                         $this->Issues_model->delete_issue($issueID);

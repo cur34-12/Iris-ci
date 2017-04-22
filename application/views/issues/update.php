@@ -55,7 +55,18 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="assigned_user" value="<?php echo $issue['assigned_user']; ?>">
+			<select id="assigned_user" name="assigned_user" class="form-control" >
+				<?php
+        			foreach($usernames as $username) {
+        				echo "<option>".$user_list->username."</option>";
+        			}
+        		?>
+			</select>
+			<script>
+				$(function() {
+					$( '#assigned_user' ).val('<?php echo $issues['assigned_user']; ?>'); 
+				});
+		    </script>
 		</div>
 	</div>
 	<div class="form-group">

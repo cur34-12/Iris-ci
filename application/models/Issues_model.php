@@ -50,4 +50,12 @@
 			$this->db->where('issueID', $this->input->post('issueID'));
 			return $this->db->update('issues', $data);
 		}
+
+		public function get_user_dropdown_list(){
+        	$this->db->select('username');
+        	$this->db->from('users');
+        	$query = $this->db->get();
+        	$result = $query->result(); 
+        	return $result; 
+		}
 	}
