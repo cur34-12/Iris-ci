@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
         class Issues extends MY_Controller {
                 public function index(){
-                        $data['title'] = 'Issues'; 
+                    $data['title'] = 'Issues'; 
 
-                         $data['issues'] = $this->Issues_model->get_issues();
+                    $data['issues'] = $this->Issues_model->get_issues();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('issues/index', $data);
@@ -28,7 +28,7 @@
                     if( $this->require_role('admin') )
                     {
                         $data['title'] = 'Create Issue';
-                        $data['usernames'] = $this->Issues_model->get_user_dropdown_list();
+                        $data['usernames'] = $this->User_model->user_list();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
