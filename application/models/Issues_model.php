@@ -9,6 +9,7 @@
 			if($issueID === FALSE){
 				$this->db->order_by('issueID', 'ASC');
 				$query = $this->db->get('issues');
+				$query = $this->db->where('status != archive')
 				return $query->result_array();
 			}
 
@@ -23,6 +24,7 @@
 				'description' => $this->input->post('description'),
 				'reporterID' => $this->input->post('reporterID'),
 				'reported_date' => $this->input->post('reported_date'),
+				'createdByID' => $this->input->post('createdByID'),
 				'status' => $this->input->post('status') //This is a hidden field with the value of "new"
 			);
 

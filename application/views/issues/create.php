@@ -54,5 +54,20 @@
 			<input type="text" class="form-control" name="status" value="New">
 		</div>
 	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Created By</label>
+		<div class="col-sm-10">
+			<input id="createdByID" type="text" class="form-control" name="createdByID" placeholder="" readonly>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$( '#createdByID' ).val('<?php echo $auth_username; ?>'); 
+		});
+	</script>
+
+
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
+
+$auth_username
