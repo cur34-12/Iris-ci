@@ -39,49 +39,50 @@
         			<ul class="nav navbar-nav">
         				<li><a href="<?php echo base_url(); ?>">Home</a></li>
         				<li><a href="<?php echo base_url(); ?>about">About</a></li>
-                                        <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                        <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>lists">AEL</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
-                                                        <li role="separator" class="divider"></li>
-                                                        <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>vehicles/delete">Delete</a></li>
-                                                </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                        <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
-                                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
-                                                        <li role="separator" class="divider"></li>
-                                                        <li><a href="<?php echo base_url(); ?>equipment/issuing">Q Store</a></li>
-                                                        <li role="separator" class="divider"></li>
-                                                        <li><a href="<?php echo base_url(); ?>equipment/loans">Loans</a></li>
-                                                </ul>
-                                        </li>
-                                        <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
+                        <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
+                                    <li><a href="<?php echo base_url(); ?>lists">AEL</a></li>
+                                    <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
+                                    <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
+                                    <li><a href="<?php echo base_url(); ?>vehicles/delete">Delete</a></li>
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
+                                    <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/issuing">Q Store</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/loans">Loans</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
                                         
         			</ul>
-                                <ul class="nav navbar-nav navbar-right">
-                                        <form class="navbar-form navbar-left">
-                                                <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Search">
-                                                </div>
-                                                <button type="submit" class="btn btn-default">Search</button>
-                                        </form>
-                                        <li><a href="<?php echo base_url(); ?>auth/login">Login</a></li> <!-- Not yet implemented -->
-                                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+                        <li><?php
+                                if( isset( $auth_user_id ) ){
+                                    echo anchor( site_url('examples/logout', $link_protocol ),'Logout');
+                                }else{
+                                    echo anchor( site_url(LOGIN_PAGE . '?redirect=examples', $link_protocol ),'Login','id="login-link"');
+                                }
+                            ?>
+                        </li>
+                    </ul>
         		</div>
         	</div>
         </nav>
-        <script>
-                $('.nav.navbar-nav > li').on('click', function(e) {
-                        $('.nav.navbar-nav > li').removeClass('active');
-                        $(this).addClass('active');
-                });
-        </script>
         <div class="container">
