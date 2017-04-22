@@ -25,6 +25,8 @@
                 }
 
                 public function create(){
+                    if( $this->require_role('admin') )
+                    {
                         $data['title'] = 'Create Issue';
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
@@ -37,6 +39,7 @@
                                 $this->Issues_model->create_issue();
                                 redirect('issues');     
                         }
+                    }
                 }
 
                 public function delete($issueID){
