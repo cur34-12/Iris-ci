@@ -1,22 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/* Loans Routes */
-$route['loans/delete'] = 'loans/select_delete';
-$route['loans/edit'] = 'loans/select_edit';
-$route['loans/create'] = 'loans/create';
-$route['loans/update'] = 'loans/update';
-$route['loans/(:any)'] = 'loans/view/$1';
-$route['loans'] = 'loans/index';
-
-/* Lists Routes */
-$route['lists/delete'] = 'lists/select_delete';
-$route['lists/edit'] = 'lists/select_edit';
-$route['lists/create'] = 'lists/create';
-$route['lists/update'] = 'lists/update';
-$route['lists/(:any)'] = 'lists/view/$1';
-$route['lists'] = 'lists/index';
-
 /* Issues Routes */
 $route['issues/delete'] = 'issues/select_delete';
 $route['issues/edit'] = 'issues/select_edit';
