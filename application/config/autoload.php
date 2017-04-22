@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
 */
-$autoload['packages'] = array(APPPATH . 'third_party/community_auth/');
+$autoload['packages'] = array();
 
 /*
 | -------------------------------------------------------------------
@@ -103,7 +103,7 @@ $autoload['helper'] = array('url', 'form','cookie');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array('db_tables','authentication');
+$autoload['config'] = array('db_tables',);
 
 /*
 | -------------------------------------------------------------------
