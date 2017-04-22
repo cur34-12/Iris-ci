@@ -23,6 +23,7 @@
 				'description' => $this->input->post('description'),
 				'reporterID' => $this->input->post('reporterID'),
 				'reported_date' => $this->input->post('reported_date'),
+				'assigned_user' => $this->input->pos('assigned_user'),
 				'createdByID' => $this->input->post('createdByID'),
 				'status' => $this->input->post('status') //This is a hidden field with the value of "new"
 			);

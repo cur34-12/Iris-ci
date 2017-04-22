@@ -49,6 +49,12 @@
             });
         });
     </script>
+    <div class="form-group">
+		<label class="control-label col-sm-2">Assigned User</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="assigned_user" placeholder="">
+		</div>
+	</div>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="status" value="New">
@@ -69,5 +75,3 @@
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
-
-<?php echo $auth_username; ?>
