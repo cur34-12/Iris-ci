@@ -75,9 +75,9 @@
                         </form>
                         <li><?php
                                 if( isset( $auth_user_id ) ){
-                                    echo anchor( site_url('examples/logout', $link_protocol ),'Logout');
+                                    echo anchor( site_url('examples/logout'),'Logout');
                                 }else{
-                                    echo anchor( site_url(LOGIN_PAGE . '?redirect=examples', $link_protocol ),'Login','id="login-link"');
+                                    echo anchor( site_url(LOGIN_PAGE . '?redirect=examples'),'Login');
                                 }
                             ?>
                         </li>
