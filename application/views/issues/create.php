@@ -70,4 +70,4 @@
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
 
-$auth_username
+<?php echo $auth_username; ?>
