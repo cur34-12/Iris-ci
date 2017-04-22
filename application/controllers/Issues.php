@@ -51,6 +51,7 @@
 
                 public function edit($issueID){
                         $data['issue'] = $this->Issues_model->get_issues($issueID);
+                        $data['usernames'] = $this->User_model->user_list();
 
                         if(empty($data['issue'])){
                                 show_404();
