@@ -47,6 +47,14 @@ class Auth_Controller extends CI_Controller {
 	 */
 	public $auth_role;
 
+    /**
+     * The logged-in user's email
+     *
+     * @var string
+     * @access public
+     */
+    public $auth_email;
+
 	/**
 	 * The logged-in user's authentication data,
 	 * which is their user table record, but could
@@ -561,9 +569,6 @@ class Auth_Controller extends CI_Controller {
 			// Allow redirect to the HTTPS page
 			if( config_item('redirect_to_https') !== 0 )
 			{
-				// Load string helper for trim_slashes function
-				$this->load->helper('string');
-
 				// Load URL helper for the site_url function
 				$this->load->helper('url');
 
@@ -571,7 +576,7 @@ class Auth_Controller extends CI_Controller {
 				$link_protocol = USE_SSL ? 'https' : NULL;
 
 				// 301 Redirect to the secure page
-				header("Location: " . site_url( trim_slashes( $this->uri->uri_string() ), $link_protocol ), TRUE, 301);
+				header("Location: " . site_url( trim( $this->uri->uri_string(),'/' ), $link_protocol ), TRUE, 301);
 			}
 
 			// Show a 404 error
