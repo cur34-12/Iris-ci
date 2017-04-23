@@ -53,11 +53,9 @@
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
 			<select id="assigned_user" name="assigned_user" class="form-control" >
-				<?php
-        			foreach($username as $usernames) {
-        				echo "<option>".$username['username']."</option>";
-        			}
-        		?>
+				<?php foreach($usernames as $username): ?>
+        				<option value="user_id"><?php echo $username['username']: ?></option>
+        		<?php endforeach: ?>
 			</select>
 		</div>
 	</div>
