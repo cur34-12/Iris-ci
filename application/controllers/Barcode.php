@@ -2,7 +2,7 @@
     
     use Zend\Barcode\Barcode;
     
-    class Barcode extends CI_Controller {
+    class Generatebarcode extends CI_Controller {
 
         public function index()
         {
