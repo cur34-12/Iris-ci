@@ -1,20 +1,18 @@
 <?php
+class barcode extends MY_Controller {
 
-class Zend extends CI_Controller {
-
-    public function __construct() {
-        parent::__construct();
-        $this->load->library('zend');
-        $this->zend->load('zend/barcode');
-    }
-
-    public function index() {
-        $temp = rand(10000, 99999);
-        echo $this->set_barcode($temp);
-    }
-
-    private function set_barcode($code)
+    public function index()
     {
-        return Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
+        //I'm just using rand() function for data example
+        $this->load->library('zend');
+        $this->zend->load('Zend/Barcode');
+
+        $barcodeOptions = array('text' => 'ZEND-FRAMEWORK');
+        $rendererOptions = array('imageType'          =>'png', 
+                                 'horizontalPosition' => 'center', 
+                                 'verticalPosition'   => 'middle');
+        $imageResource= Zend_Barcode::factory('code39', 'image', $barcodeOptions, $rendererOptions)->render();
+        return $imageResource;   
     }
 }
+?>
