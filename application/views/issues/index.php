@@ -25,7 +25,7 @@
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
 					<td><?php echo $issue['title']; ?></td>
-					<td><?php echo $issue['description']; ?></td>
+					<td><?php echo word_limiter($issue['description'], 6); ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
 					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
