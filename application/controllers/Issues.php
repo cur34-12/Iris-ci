@@ -45,13 +45,16 @@
 
 
                 public function delete($issueID){
+                    if( $this->require_role('admin') )
+                    {
                         $this->Issues_model->delete_issue($issueID);
                         redirect('issues');
+                    }
                 }
 
                 public function edit($issueID){
                         $data['issue'] = $this->Issues_model->get_issues($issueID);
-                        $data['usernames'] = $this->User_model->user_list();
+                        $data['usernames'] = $this->User_model->get_users();
 
                         if(empty($data['issue'])){
                                 show_404();
