@@ -66,8 +66,8 @@
 				$( '#assigned_user' ).val('<?php echo $issues['assigned_user']; ?>'); 
 			});
 		</script>
-		</div>
 	</div>
+
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
 		<div class="col-sm-10">
