@@ -56,17 +56,16 @@
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
 			<select id="assigned_user" name="assigned_user" class="form-control" >
-				<?php
-        			foreach($username as $usernames) {
-        				echo "<option>".$username['username']."</option>";
-        			}
-        		?>
+				<?php foreach($usernames as $username): ?>
+        				<option value="username"><?php echo $username['username']; ?></option>
+        		<?php endforeach; ?>
 			</select>
-			<script>
-				$(function() {
-					$( '#assigned_user' ).val('<?php echo $issues['assigned_user']; ?>'); 
-				});
-		    </script>
+		</div>
+		<script>
+			$(function() {
+				$( '#assigned_user' ).val('<?php echo $issues['assigned_user']; ?>'); 
+			});
+		</script>
 		</div>
 	</div>
 	<div class="form-group">
