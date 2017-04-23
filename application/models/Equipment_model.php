@@ -33,7 +33,7 @@
 				'date_purchased' => $this->input->post('category'),
 				'end_of_life_date' => $this->input->post('end_of_life_date'),
 				'purchase_type' => $this->input->post('purchase_type'),
-				'asset_number' => $this->input->post('asset_number')
+				'asset_number' => $this->input->post('asset_number'),
 				'assemblyID' => $this->input->post('assemblyID')
 				/*CHANGE ME OR THIS WILL NEVER WORK, i wonder if the barcode system could potentially go here and automatically create a temp barcode and show it, but not save it in the /barcodes/equipment/EAN7-$barcodeID.jpg spot untill the user clicks submit. Jquery probably for this im guessing.*/
 			);
