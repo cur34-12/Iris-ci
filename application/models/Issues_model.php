@@ -7,11 +7,13 @@
 
 		public function get_issues($issueID = FALSE){
 			if($issueID === FALSE){
-				$this->db->order_by('issueID', 'ASC');
+				$this->db->order_by('reported_date', 'ASC');
+				$this->db->join('equipment', 'equipment.equipmentID = issues.equipmentID');
 				$query = $this->db->get('issues');
 				return $query->result_array();
 			}
 
+			$this->db->join('equipment', 'equipment.equipmentID = issues.equipmentID');
 			$query = $this->db->get_where('issues', array('issueID' => $issueID));
 			return $query->row_array();
 		}
@@ -23,6 +25,8 @@
 				'description' => $this->input->post('description'),
 				'reporterID' => $this->input->post('reporterID'),
 				'reported_date' => $this->input->post('reported_date'),
+				'assigned_user' => $this->input->pos('assigned_user'),
+				'createdByID' => $this->input->post('createdByID'),
 				'status' => $this->input->post('status') //This is a hidden field with the value of "new"
 			);
 

@@ -13,9 +13,9 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Equipment ID</label>
+		<label class="control-label col-sm-2">Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="equipmentID"  value="<?php echo $issue['equipmentID']; ?>">
+			<input type="text" class="form-control" name="equipmentID"  value="<?php echo $issue['name']; //From equipment table join ?>">
 		</div>
 	</div>
 	<div class="form-group">
@@ -27,7 +27,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" value="<?php echo $issue['description']; ?>">
+			<textarea rows="3" class="form-control" name="make" value=""><?php echo $issue['description']; ?></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -55,9 +55,19 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="assigned_user" value="<?php echo $issue['assigned_user']; ?>">
+			<select id="assigned_user" name="assigned_user" class="form-control" >
+				<?php foreach($usernames as $username): ?>
+        				<option value="username"><?php echo $username['username']; ?></option>
+        		<?php endforeach; ?>
+			</select>
 		</div>
+		<script>
+			$(function() {
+				$( '#assigned_user' ).val('<?php echo $issues['assigned_user']; ?>'); 
+			});
+		</script>
 	</div>
+
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
 		<div class="col-sm-10">

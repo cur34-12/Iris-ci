@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-        class Issues extends CI_Controller {
+        class Issues extends MY_Controller {
                 public function index(){
-                        $data['title'] = 'Issues'; 
+                    $data['title'] = 'Issues'; 
 
-                         $data['issues'] = $this->Issues_model->get_issues();
+                    $data['issues'] = $this->Issues_model->get_issues();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('issues/index', $data);
@@ -25,7 +25,10 @@
                 }
 
                 public function create(){
+                    if( $this->require_role('admin') )
+                    {
                         $data['title'] = 'Create Issue';
+                        $data['usernames'] = $this->User_model->get_users();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
@@ -37,15 +40,21 @@
                                 $this->Issues_model->create_issue();
                                 redirect('issues');     
                         }
+                    }
                 }
 
+
                 public function delete($issueID){
+                    if( $this->require_role('admin') )
+                    {
                         $this->Issues_model->delete_issue($issueID);
                         redirect('issues');
+                    }
                 }
 
                 public function edit($issueID){
                         $data['issue'] = $this->Issues_model->get_issues($issueID);
+                        $data['usernames'] = $this->User_model->get_users();
 
                         if(empty($data['issue'])){
                                 show_404();

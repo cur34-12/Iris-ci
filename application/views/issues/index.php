@@ -6,9 +6,10 @@
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>
-			<th>Issue ID</th>
-			<th>Equipment</th>
-			<th>Title</th>	
+			<th>ID</th>
+			<th>Item</th>
+			<th>Title</th>
+			<th>Description</th>
 			<th>Reporter</th>
 			<th>Assigned User</th>
 			<th>Reported Date</th>
@@ -22,8 +23,9 @@
 		<?php foreach($issues as $issue) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
-					<td><?php echo $issue['equipmentID']; ?></td>
+					<td><?php echo $issue['name']; //from equipment table join ?></td>
 					<td><?php echo $issue['title']; ?></td>
+					<td><?php echo word_limiter($issue['description'], 8); ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
 					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>

@@ -21,7 +21,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated.">
+			<textarea rows="3" class="form-control" name="make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -49,10 +49,33 @@
             });
         });
     </script>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Assigned User</label>
+		<div class="col-sm-10">
+			<select id="assigned_user" name="assigned_user" class="form-control" >
+				<?php foreach($usernames as $username): ?>
+        				<option value="username"><?php echo $username['username']; ?></option>
+        		<?php endforeach; ?>
+			</select>
+		</div>
+	</div>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="status" value="New">
 		</div>
 	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Created By</label>
+		<div class="col-sm-10">
+			<input id="createdByID" type="text" class="form-control" name="createdByID" placeholder="" readonly>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$( '#createdByID' ).val('<?php echo $auth_username; ?>'); 
+		});
+	</script>
+
+
 	<button type="submit" class="btn btn-default">Create</button>
 </form>

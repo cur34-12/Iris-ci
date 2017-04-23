@@ -1,0 +1,1 @@
+<img src="<?php echo base_url('/barcode');?>"  alt="not show" style="margin-top:20px; margin-left:90%;"/>

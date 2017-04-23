@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
         
 
-        class Equipment extends CI_Controller {
+        class Equipment extends MY_Controller {
                 public function index(){
                     $data['title'] = 'Equipment'; 
 

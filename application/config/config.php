@@ -136,7 +136,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = APPPATH . '../vendor/autoload.php';
+$config['composer_autoload'] = APPPATH . '/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 2;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -378,11 +378,11 @@ $config['encryption_key'] = 'wdqCZVUsXkx3xLhHnHzS9NPgIQn3O620';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
+$config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
-$config['sess_match_ip'] = FALSE;
+$config['sess_save_path'] = 'ci_sessions';
+$config['sess_match_ip'] = TRUE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
@@ -401,8 +401,8 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
+$config['cookie_prefix']	= 'logi';
+$config['cookie_domain']	= '.logi.dev1.strat.is';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
