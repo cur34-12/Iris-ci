@@ -15,7 +15,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="equipmentID"  value="<?php echo $issue['equipmentID']; ?>">
+			<input type="text" class="form-control" name="equipmentID"  value="<?php echo $post['name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
