@@ -8,7 +8,8 @@
 		<tr>
 			<th>Issue ID</th>
 			<th>Equipment</th>
-			<th>Title</th>	
+			<th>Title</th>
+			<th>Description</th>
 			<th>Reporter</th>
 			<th>Assigned User</th>
 			<th>Reported Date</th>
@@ -24,6 +25,7 @@
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
 					<td><?php echo $issue['equipmentID']; ?></td>
 					<td><?php echo $issue['title']; ?></td>
+					<td><?php echo $issue['description']; ?></td>
 					<td><?php echo $issue['reporterID']; ?></td>
 					<td><?php echo $issue['assigned_user']; ?></td>
 					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
