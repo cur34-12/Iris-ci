@@ -13,6 +13,7 @@
 				return $query->result_array();
 			}
 
+			$this->db->join('equipment', 'equipment.equipmentID = issues.equipmentID');
 			$query = $this->db->get_where('issues', array('issueID' => $issueID));
 			return $query->row_array();
 		}
