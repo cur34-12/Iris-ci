@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
     
-    class Barcode extends MY_Controller {
+    use Zend\Barcode\Barcode;
+    
+    class Barcode extends CI_Controller {
 
         public function index()
         {
