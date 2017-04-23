@@ -5,10 +5,9 @@
 			$this->load->database();
 		}
 
-		public function user_list(){
-        	$this->db->select('username');
-        	$this->db->from('users');
-        	$query = $this->db->get();
+		public function get_users(){
+			$this->db->order_by('username');
+        	$query = $this->db->get('users');
         	return $query->result_array();
 		}
 	}

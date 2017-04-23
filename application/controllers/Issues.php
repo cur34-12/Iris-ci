@@ -28,7 +28,7 @@
                     if( $this->require_role('admin') )
                     {
                         $data['title'] = 'Create Issue';
-                        $data['usernames'] = $this->User_model->user_list();
+                        $data['usernames'] = $this->User_model->get_users();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
