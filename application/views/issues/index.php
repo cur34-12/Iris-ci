@@ -6,8 +6,8 @@
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>
-			<th>Issue ID</th>
-			<th>Equipment</th>
+			<th>ID</th>
+			<th>Item</th>
 			<th>Title</th>
 			<th>Description</th>
 			<th>Reporter</th>
