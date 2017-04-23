@@ -25,6 +25,9 @@ $route['vehicles/update'] = 'vehicles/update';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
+/* Barcode Route */
+$route['barcode'] = 'barcode/index'
+
 /* Catch All Routes */
 $route[LOGIN_PAGE] = 'examples/login';
 $route['default_controller'] = 'pages/view';
