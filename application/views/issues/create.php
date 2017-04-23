@@ -55,7 +55,7 @@
 			<select id="assigned_user" name="assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
         				<option value="user_id"><?php echo $username['username']; ?></option>
-        		<?php endforeach: ?>
+        		<?php endforeach; ?>
 			</select>
 		</div>
 	</div>
