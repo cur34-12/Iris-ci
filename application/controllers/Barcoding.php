@@ -30,11 +30,15 @@
 		private function set_barcode_qr($code)
 		{
 			header("Content-Type: image/png");
-			$params['data'] = 'This is a text to encode become QR Code';$params['data'] = 'This is a text to encode become QR Code';
+			$params['data'] = 'This is a text to encode become QR Code';
 			$params['level'] = 'H';
 			$params['size'] = 10;
-			$this->ciqrcode->generate($params);
-		}
+			$params['savename'] = FCPATH.'tes.png';
 
-		
+			$this->ciqrcode->generate($params);
+
+			$this->load->view('templates/header');
+			$this->load->view('qrexample');
+			$this->load->view('templates/footer');
+		}	
 	}
