@@ -47,7 +47,7 @@
 		<div class="col-sm-10">
 			<select id="consumable" name="consumable" class="form-control">
 				<option disabled selected>Select</option>
-				<option>No</option>
+				<option value="Yes">No</option>
 				<option>Yes</option>
 			</select>
 		</div>
@@ -56,7 +56,7 @@
 		<label class="control-label col-sm-2">In Service</label>
 		<div class="col-sm-10">
 			<select id="in_service" name="in_service" class="form-control">
-				<option>Yes</option>
+				<option value="Yes">Yes</option>
 				<option>No</option>
 			</select>
 		</div>
@@ -65,7 +65,7 @@
 		<label class="control-label col-sm-2">Inspection Frequency</label>
 		<div class="col-sm-10">
 			<select id="inspection_frequency" name="inspection_frequency" class="form-control">
-				<option>Weekly</option>
+				<option value="Weekly">Weekly</option>
 				<option>Monthly</option>
 				<option>Biannually</option>
 				<option>Annually</option>
@@ -73,23 +73,49 @@
 			</select>
 		</div>
 	</div>
-	<div class="form-group">
+    <div class="form-group">
 		<label class="control-label col-sm-2">Date Purchased</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="date_purchased" >
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">End of life date</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="endOfLife" >
-		</div>
-	</div>	
+	        <div class='input-group date' id='date_purchased'>
+	            <input type='text' class="form-control" name="date_purchased"/>
+	            <span class="input-group-addon">
+	                <span class="glyphicon glyphicon-calendar"></span>
+	            </span>
+	        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#date_purchased').datetimepicker({
+            	useCurrent: true,
+            	showTodayButton: true,
+            	sideBySide: true,
+            	format: 'YYYY-MM-DD',
+            });
+        });
+    </script>
+    <div class="form-group">
+		<label class="control-label col-sm-2">End of Life date</label>
+	        <div class='input-group date' id='endOfLife'>
+	            <input type='text' class="form-control" name="endOfLife"/>
+	            <span class="input-group-addon">
+	                <span class="glyphicon glyphicon-calendar"></span>
+	            </span>
+	        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#endOfLife').datetimepicker({
+            	useCurrent: true,
+            	showTodayButton: true,
+            	sideBySide: true,
+            	format: 'YYYY-MM-DD',
+            });
+        });
+    </script>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Purchase Type</label>
 		<div class="col-sm-10">
 			<select id="inspection_frequency" name="purchase_type" class="form-control">
-				<option>Donation</option>
+				<option value="Donation">Donation</option>
 				<option>Unit Funds</option>
 				<option>Region Funds</option>
 				<option>SHQ Funds</option>
@@ -107,7 +133,7 @@
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
 			<select id="category" name="category" class="form-control">
-				<option>CHANGE ME</option>
+				<option value="change me">CHANGE ME</option>
 			</select>
 		</div>
 	</div>
@@ -115,7 +141,7 @@
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
 			<select id="assembly" name="assembly" class="form-control">
-				<option>CHANGE ME</option>
+				<option value="change me">CHANGE ME</option>
 			</select>
 		</div>
 	</div>
