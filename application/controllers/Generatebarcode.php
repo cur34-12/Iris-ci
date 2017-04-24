@@ -12,9 +12,9 @@
 		private function set_barcode($code)
 		{
 			//load library
-			$this->load->library('zend');
+			$this->load->library('zendframework');
 			//load in folder Zend
-			$this->zend->load('Zend/Barcode');
+			$this->zend->load('Zendframework/Zend-Barcode');
 			//generate barcode
 			Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
 		}
