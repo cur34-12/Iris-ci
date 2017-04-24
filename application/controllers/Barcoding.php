@@ -2,7 +2,7 @@
 
 	class Barcoding extends CI_Controller {
 
-		public function code39($barcode_var)
+		public function create_code39($barcode_var)
 		{
 			$this->set_barcode_code39($barcode_var);
 		}
@@ -18,7 +18,7 @@
 			file_put_contents($filename, $imageResource);
 		}
 
-		public function qr($qr_val)
+		public function create_qr($qr_val)
 		{
 			$this->set_barcode_qr($qr_val);
 		}

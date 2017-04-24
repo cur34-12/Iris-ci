@@ -26,8 +26,8 @@ $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
 /* Barcode Route */
-$route['barcode/ean13'] = 'barcoding/ean13';
-$route['barcode/qr'] = 'barcoding/qr';
+$route['barcode/create_code39'] = 'barcoding/ean13';
+$route['barcode/create_qr'] = 'barcoding/qr';
 
 /* Catch All Routes */
 $route[LOGIN_PAGE] = 'examples/login';
