@@ -40,6 +40,7 @@
 		<label class="control-label col-sm-2">Consumable</label>
 		<div class="col-sm-10">
 			<select id="consumable" name="consumable" class="form-control">
+				<option disabled>Select</option>
 				<option>No</option>
 				<option>Yes</option>
 			</select>
@@ -49,6 +50,7 @@
 		<label class="control-label col-sm-2">In Service</label>
 		<div class="col-sm-10">
 			<select id="in_service" name="in_service" class="form-control">
+				<option disabled>Select</option>
 				<option>Yes</option>
 				<option>No</option>
 			</select>
@@ -58,6 +60,7 @@
 		<label class="control-label col-sm-2">Inspection Frequency</label>
 		<div class="col-sm-10">
 			<select id="inspection_frequency" name="inspection_frequency" class="form-control">
+				<option disabled>Select</option>
 				<option>Weekly</option>
 				<option>Monthly</option>
 				<option>Biannually</option>
@@ -82,6 +85,7 @@
 		<label class="control-label col-sm-2">Purchase Type</label>
 		<div class="col-sm-10">
 			<select id="inspection_frequency" name="purchase_type" class="form-control">
+				<option disabled>Select</option>
 				<option>Donation</option>
 				<option>Unit Funds</option>
 				<option>Region Funds</option>
@@ -100,6 +104,7 @@
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
 			<select name="category" class="form-control">
+				<option disabled>Select</option>
 				<option>CHANGE ME</option>
 			</select>
 		</div>
@@ -108,6 +113,7 @@
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
 			<select id="assembly" name="assembly" class="form-control">
+				<option disabled>Select</option>
 				<option>CHANGE ME</option>
 			</select>
 		</div>
