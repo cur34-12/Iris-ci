@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-	class Barcoding extends MY_Controller {
+	class Barcoding extends CI_Controller {
 		
 		public function create_code39($code) 
 		{
