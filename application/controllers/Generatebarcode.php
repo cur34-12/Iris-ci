@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
     
     //use Zend\Barcode;
-	use Zend\Barcode\Barcode;
+	//use Zend\Barcode\Barcode;
 
 	class Generatebarcode extends CI_Controller {
 
@@ -15,9 +15,9 @@
 		private function set_barcode($code)
 		{
 			//load library
-			//$this->load->library('zend');
+			$this->load->library('zend');
 			//load in folder Zend
-			//$this->zend->load('Zend/Barcode');
+			$this->zend->load('Zend/Barcode');
 			//generate barcode
 			Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
 		}
