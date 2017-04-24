@@ -36,9 +36,9 @@
 				'assemblyID' => $this->input->post('assemblyID')
 			);
 
-			$barcode_var = $this->input->post('equipmentID');
-			$this->create_code39($barcode_var);
-			$this->create_qr($barcode_var);
+			//$barcode_var = $this->input->post('equipmentID');
+			//$this->create_code39($barcode_var);
+			//$this->create_qr($barcode_var);
 
 			return $this->db->insert('equipment', $data);
 		}
