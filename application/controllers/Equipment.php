@@ -30,16 +30,10 @@
                 public function create(){
                         $data['title'] = 'Create Equipment';
 
-                        $this->form_validation->set_rules('name', 'Name', 'required');
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('equipment/create', $data);
+                        $this->load->view('templates/footer');  
 
-                        if($this->form_validation->run() === FALSE){
-                                $this->load->view('templates/header', $data);
-                                $this->load->view('equipment/create', $data);
-                                $this->load->view('templates/footer');  
-                        } else {
-                                $this->Equipment_model->create_equipment();
-                                redirect('equipment');     
-                        }
                 }
 
                 public function delete($equipmentID){
