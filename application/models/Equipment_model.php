@@ -18,6 +18,7 @@
 
 		public function create_equipment(){
 			$data = array(
+				'equipmentID' => $this->input->post('equipmentID'),
 				'name' => $this->input->post('name'),
 				'description' => $this->input->post('description'),
 				'consumable' => $this->input->post('consumable'),
@@ -31,10 +32,13 @@
 				'endOfLife' => $this->input->post('endOfLife'),
 				'purchase_type' => $this->input->post('purchase_type'),
 				'asset_number' => $this->input->post('asset_number'),
+				'serial' => $this->input->post('serial'),
 				'assemblyID' => $this->input->post('assemblyID')
 			);
+
 			$barcode_var = $this->input->post('equipmentID');
 			$this->create_code39($barcode_var);
+			$this->create_qr($barcode_var);
 
 			return $this->db->insert('equipment', $data);
 		}
@@ -47,6 +51,7 @@
 
 		public function update_equipment(){
 			$data = array(
+				'equipmentID' => $this->input->post('equipmentID'),
 				'name' => $this->input->post('name'),
 				'description' => $this->input->post('description'),
 				'consumable' => $this->input->post('consumable'),
@@ -57,9 +62,10 @@
 				'inspection_frequency' => $this->input->post('inspection_frequency'),
 				'category' => $this->input->post('category'),
 				'date_purchased' => $this->input->post('date_purchased'),
-				'end_of_life_date' => $this->input->post('end_of_life_date'),
+				'endOfLife' => $this->input->post('endOfLife'),
 				'purchase_type' => $this->input->post('purchase_type'),
 				'asset_number' => $this->input->post('asset_number'),
+				'serial' => $this->input->post('serial'),
 				'assemblyID' => $this->input->post('assemblyID')
 			);
 
