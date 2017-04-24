@@ -2,7 +2,7 @@
         
     use Zend\Barcode\Barcode;
 
-   function generatebarcode(){
+   public function generatebarcode(){
        $this->set_barcode("12345");
    }
 
@@ -12,5 +12,4 @@
         $file = Barcode::draw('code128', 'image', array('text' => $code), array());
 
         $store_image = imagepng($file,FCPATH."assets/barcode/{$code}.png");
-
    }
