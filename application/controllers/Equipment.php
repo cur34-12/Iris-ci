@@ -18,7 +18,7 @@
 
                         if(empty($data['equipment'])){
                                 show_404();
-                        }
+                        } 
 
                         $data['title'] = $data['equipment']['name'];
 

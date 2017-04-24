@@ -37,6 +37,8 @@
 				'assemblyID' => $this->input->post('assemblyID')
 				/*CHANGE ME OR THIS WILL NEVER WORK, i wonder if the barcode system could potentially go here and automatically create a temp barcode and show it, but not save it in the /barcodes/equipment/EAN7-$barcodeID.jpg spot untill the user clicks submit. Jquery probably for this im guessing.*/
 			);
+			$barcode_var = $this->input->post('equipmentID');
+			ean7($barcode_var);
 
 			return $this->db->insert('equipment', $data);
 		}
