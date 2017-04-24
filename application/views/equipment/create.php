@@ -27,13 +27,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Brand</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. Husqvarna">
+			<input type="text" class="form-control" name="brand" placeholder="Eg. Husqvarna">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Supplier</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="rego" placeholder="Eg. GMC Thornleigh">
+			<input type="text" class="form-control" name="supplier" placeholder="Eg. GMC Thornleigh">
 		</div>
 	</div>
 	<div class="form-group">
@@ -103,7 +103,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
-			<select name="category" class="form-control">
+			<select id="category" name="category" class="form-control">
 				<option disabled selected>Select</option>
 				<option>CHANGE ME</option>
 			</select>
