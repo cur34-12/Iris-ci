@@ -5,7 +5,7 @@
 
 	class Barcoding extends CI_Controller {
 
-		public function ean7()
+		public function ean13()
 		{
 			//I'm just using rand() function for data example
 			$temp = rand(10000, 99999);
