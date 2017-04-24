@@ -9,17 +9,17 @@
 		{
 			//I'm just using rand() function for data example
 			$temp = rand(10000, 99999);
-			$this->set_barcode_ean7($temp);
+			$this->set_barcode_ean13($temp);
 		}
 		
-		private function set_barcode_ean7($code)
+		private function set_barcode_ean13($code)
 		{
 			//load library
 			$this->load->library('zend');
 			//load in folder Zend
 			$this->zend->load('Zend/Barcode');
 			//generate barcode
-			Zend_Barcode::render('ean7', 'image', array('text'=>$code), array());
+			Zend_Barcode::render('ean13', 'image', array('text'=>$code), array());
 		}
 
 		public function qr()
