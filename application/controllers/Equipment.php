@@ -32,8 +32,7 @@
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('equipment/create', $data);
-                        $this->load->view('templates/footer');  
-
+                        $this->load->view('templates/footer');
                 }
 
                 public function delete($equipmentID){
