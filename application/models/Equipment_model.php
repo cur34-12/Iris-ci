@@ -18,7 +18,7 @@
 
 		public function create_equipment(){
 			$data = array(
-				//'equipmentID' => $this->input->post('equipmentID'),
+				'equipmentID' => $this->input->post('equipmentID'),
 				'name' => $this->input->post('name'),
 				'description' => $this->input->post('description'),
 				'consumable' => $this->input->post('consumable'),
