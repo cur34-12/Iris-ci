@@ -1,30 +1,17 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-	class Barcoding extends CI_Controller {
-
-		public function create_code39($barcode_var)
-		{
-			$this->set_barcode_code39($barcode_var);
-		}
+	class Barcoding extends MY_Controller {
 		
-		private function set_barcode_code39($code) {
-			//load library
+		public function create_code39($code) 
+		{
 			$this->load->library('zend');
-			//load in folder Zend
 			$this->zend->load('Zend/Barcode');
-			//generate barcode
 			$filename = APPPATH.'barcodes/code39/code39-'.echo($code).'.png';
 			$imageResource = Zend_Barcode::render('code39', 'image', array('text'=>$code), array());
-			file_put_contents($filename, $imageResource);
-		}
-
-		public function create_qr($qr_val)
-		{
-			$this->set_barcode_qr($qr_val);
+			imagepng($filename, $imageResource);
 		}
 		
-		private function set_barcode_qr($code) {
-			header("Content-Type: image/png");
+		public function create_qr($code) {
 			$params['data'] = $code;
 			$params['level'] = 'H';
 			$params['size'] = 10;
