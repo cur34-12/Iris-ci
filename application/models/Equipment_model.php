@@ -33,7 +33,7 @@
 				'purchase_type' => $this->input->post('purchase_type'),
 				'asset_number' => $this->input->post('asset_number'),
 				'serial' => $this->input->post('serial'),
-				'assembly' => $this->input->post('assemblyID')
+				'assemblyID' => $this->input->post('assembly')
 			);
 
 			//$barcode_var = $this->input->post('equipmentID');
