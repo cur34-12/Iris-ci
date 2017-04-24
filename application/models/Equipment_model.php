@@ -18,7 +18,7 @@
 
 		public function create_equipment(){
 			$data = array(
-				'equipmentID' => $this->input->post('equipmentID'),
+				//'equipmentID' => $this->input->post('equipmentID'),
 				'name' => $this->input->post('name'),
 				'description' => $this->input->post('description'),
 				'consumable' => $this->input->post('consumable'),
@@ -33,7 +33,7 @@
 				'purchase_type' => $this->input->post('purchase_type'),
 				'asset_number' => $this->input->post('asset_number'),
 				'serial' => $this->input->post('serial'),
-				'assemblyID' => $this->input->post('assemblyID')
+				'assembly' => $this->input->post('assemblyID')
 			);
 
 			//$barcode_var = $this->input->post('equipmentID');
