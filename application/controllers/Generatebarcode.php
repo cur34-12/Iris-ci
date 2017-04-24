@@ -3,23 +3,36 @@
     //use Zend\Barcode;
 	//use Zend\Barcode\Barcode;
 
-	class Generatebarcode extends CI_Controller {
+	class Barcoding extends CI_Controller {
 
-		public function index()
+		public function ean7()
 		{
 			//I'm just using rand() function for data example
 			$temp = rand(10000, 99999);
-			$this->set_barcode($temp);
+			$this->set_barcode_ean7($temp);
 		}
 		
-		private function set_barcode($code)
+		private function set_barcode_ean7($code)
 		{
 			//load library
 			$this->load->library('zend');
 			//load in folder Zend
 			$this->zend->load('Zend/Barcode');
 			//generate barcode
-			Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
+			Zend_Barcode::render('ean7', 'image', array('text'=>$code), array());
 		}
+
+		public function qr()
+		{
+			$this->set_barcode_qr();
+		}
+		
+		private function set_barcode_qr($code)
+		{
+			header("Content-Type: image/png");
+			$params['data'] = 'This is a text to encode become QR Code';
+			$this->ciqrcode->generate($params);
+		}
+
 		
 	}
