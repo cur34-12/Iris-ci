@@ -7,55 +7,108 @@
 <?php echo form_open('equipment/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
-		<label class="control-label col-sm-2">Vehicle Name</label>
+		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. HBY18">
+			<input type="text" class="form-control" name="name" placeholder="Eg. Axe">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Vehicle Rego</label>
+		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="rego" placeholder="Eg. BK95LD">
+			<input type="text" class="form-control" name="description" placeholder="Eg. Large Red Felling Axe, wooden handle">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Make</label>
+		<label class="control-label col-sm-2">Size</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi">
+			<input type="text" class="form-control" name="size" placeholder="Eg.Large">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Year</label>
+		<label class="control-label col-sm-2">Brand</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="year" placeholder="Eg. 2007">
+			<input type="text" class="form-control" name="name" placeholder="Eg. Husqvarna">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Model</label>
+		<label class="control-label col-sm-2">Supplier</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero">
+			<input type="text" class="form-control" name="rego" placeholder="Eg. GMC Thornleigh">
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Capacity</label>
+		<label class="control-label col-sm-2">Consumable</label>
 		<div class="col-sm-10">
-			<select name="capacity" class="form-control">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
+			<select id="consumable" name="consumable" class="form-control">
+				<option>No</option>
+				<option>Yes</option>
 			</select>
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">LR License Required</label>
+		<label class="control-label col-sm-2">In Service</label>
 		<div class="col-sm-10">
-			<select name="lr" class="form-control">
-				<option>No</option>
+			<select id="in_service" name="in_service" class="form-control">
 				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Inspection Frequency</label>
+		<div class="col-sm-10">
+			<select id="inspection_frequency" name="inspection_frequency" class="form-control">
+				<option>Weekly</option>
+				<option>Monthly</option>
+				<option>Biannually</option>
+				<option>Annually</option>
+				<option>Biennial</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Date Purchased</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="date_purchased" >
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">End of life date</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="endOfLife" >
+		</div>
+	</div>	
+	<div class="form-group">
+		<label class="control-label col-sm-2">Purchase Type</label>
+		<div class="col-sm-10">
+			<select id="inspection_frequency" name="purchase_type" class="form-control">
+				<option>Donation</option>
+				<option>Unit Funds</option>
+				<option>Region Funds</option>
+				<option>SHQ Funds</option>
+				<option>Emergency Order</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Asset Number</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="asset_number" placeholder="Eg. 34783698">
+		</div>
+	</div>		
+	<div class="form-group">
+		<label class="control-label col-sm-2">Category</label>
+		<div class="col-sm-10">
+			<select name="category" class="form-control">
+				<option>CHANGE ME</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Assembly</label>
+		<div class="col-sm-10">
+			<select id="assembly" name="assembly" class="form-control">
+				<option>CHANGE ME</option>
 			</select>
 		</div>
 	</div>

@@ -2,24 +2,25 @@
 
 	class Barcoding extends CI_Controller {
 
-		public function ean13($barcode_var)
+		public function code39($barcode_var)
 		{
-			$this->set_barcode_ean13($barcode_var);
+			$this->set_barcode_code39($barcode_var);
 		}
 		
-		private function set_barcode_ean13($code) {
+		private function set_barcode_code39($code) {
 			//load library
 			$this->load->library('zend');
 			//load in folder Zend
 			$this->zend->load('Zend/Barcode');
 			//generate barcode
-			$filename = APPPATH.'barcodes/ean13/ean13-'.echo($code).'.png';
-			$imageResource = Zend_Barcode::render('ean13', 'image', array('text'=>$code), array());
+			$filename = APPPATH.'barcodes/code39/code39-'.echo($code).'.png';
+			$imageResource = Zend_Barcode::render('code39', 'image', array('text'=>$code), array());
 			file_put_contents($filename, $imageResource);
 		}
 
-		public function qr() {
-			$this->set_barcode_qr();
+		public function qr($qr_val)
+		{
+			$this->set_barcode_qr($qr_val);
 		}
 		
 		private function set_barcode_qr($code) {
@@ -27,7 +28,7 @@
 			$params['data'] = $code;
 			$params['level'] = 'H';
 			$params['size'] = 10;
-			$params['savename'] = FCPATH.'\applications\barcodes\qr\.png';
+			$params['savename'] = APPPATH.'barcodes/qr/qr-'.echo($code).'.png';
 
 			$this->ciqrcode->generate($params);
 		}	
