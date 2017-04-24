@@ -1,4 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+        
+	use Zend\Barcode\Barcode;
 
 	class Generatebarcode extends MY_Controller {
 
@@ -12,9 +14,9 @@
 		private function set_barcode($code)
 		{
 			//load library
-			$this->load->library('zendframework');
+			$this->load->library('zend');
 			//load in folder Zend
-			$this->zend->load('Zendframework/Zend-Barcode');
+			$this->zend->load('Zend/Barcode');
 			//generate barcode
 			Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
 		}
