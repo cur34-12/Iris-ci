@@ -1,7 +1,7 @@
 <head>
 	<title><?php echo $equipment['name']; ?> - Logi</title>
 </head>
-<h2><?php echo $equipment['name']; ?></h2>
+<h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['name']; ?></h2>
 
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['name']; ?></td></tr>
@@ -17,10 +17,9 @@
 	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['serial']; ?></td></tr>
 	<tr><td style="font-weight: bold">Material ID</td><td><?php echo $equipment['material_id']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode Number</td><td><?php echo $equipment['barcode_number']; ?></td></tr>
-	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/equipment/'. $equipment['barcode_url'].'.jpg'); ?>" /></td></tr>
-	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/equipment/'. $equipment['qr_url'].'.jpg'); ?>" /></td></tr>
+	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/barcode/code39/code39_'. $equipment['equipmentID'].'.jpg'); ?>" /></td></tr>
+	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/barcode/qr/qr_'. $equipment['equipmentID'].'.jpg'); ?>" /></td></tr>
 </table>
-
 
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>

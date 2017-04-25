@@ -1,7 +1,7 @@
 <head>
 	<title>Equipment - Edit</title>
 </head>
-<h2 style="text-transform: uppercase;">Edit - Select a Component</h2>
+<h2 style="text-transform: uppercase;">Edit - Select a Equipment Component</h2>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 
 <table class="table table-striped table-hover ">

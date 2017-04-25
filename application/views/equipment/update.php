@@ -6,7 +6,7 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment/update', $attributes); ?>
-	
+<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['name']; ?></h2>
 
 
 	<div class="form-group">
