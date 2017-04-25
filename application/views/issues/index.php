@@ -2,7 +2,7 @@
 	<title>Issues - Logi</title>
 </head>
 <!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
-
+<h2 style="text-transform: uppercase;">Issues</h2>
 <table class="table table-striped table-hover ">
 	<thead>
 		<tr>

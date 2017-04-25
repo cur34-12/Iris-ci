@@ -1,7 +1,7 @@
 <head>
 	<title>Create Issue - Logi</title>
 </head>
-
+<h2 style="text-transform: uppercase;">Create Issue</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('issues/create', $attributes); ?>
