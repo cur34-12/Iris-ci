@@ -27,6 +27,7 @@
                 public function create(){
                         $data['title'] = 'Create Issue';
                         $data['usernames'] = $this->User_model->get_users();
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
@@ -46,6 +47,7 @@
                 public function edit($iss_id){
                         $data['issue'] = $this->Issues_model->get_issues($iss_id);
                         $data['usernames'] = $this->User_model->get_users();
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
 
                         if(empty($data['issue'])){
                                 show_404();

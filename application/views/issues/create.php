@@ -7,9 +7,13 @@
 <?php echo form_open('issues/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
-		<label class="control-label col-sm-2">Equipment</label>
+		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_name" placeholder="">
+			<select id="iss_eq_id" name="iss_eq_id" class="form-control" >
+				<?php foreach($equipments as $equipment): ?>
+        				<option value="<?php echo $equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></option>
+        		<?php endforeach; ?>
+			</select>
 		</div>
 	</div>
 	<div class="form-group">
@@ -54,7 +58,7 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
-        				<option value="username"><?php echo $username['username']; ?></option>
+        				<option value="<?php echo $username['username']; ?>"><?php echo $username['username']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>

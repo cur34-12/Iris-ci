@@ -13,10 +13,19 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Equipment</label>
+		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="equipmentID"  value="<?php echo $issue['iss_name']; //From equipment table join ?>">
+			<select id="iss_eq_id" name="iss_eq_id" class="form-control" >
+				<?php foreach($equipments as $equipment): ?>
+        				<option value=""><a href="<?php echo "/equipment/view/".$equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></a></option>
+        		<?php endforeach; ?>
+			</select>
 		</div>
+		<script>
+			$(function() {
+				$( '#iss_eq_id' ).val('<?php echo $issues['iss_eq_id']; ?>'); 
+			});
+		</script>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
