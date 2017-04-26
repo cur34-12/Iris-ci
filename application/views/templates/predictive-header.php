@@ -1,33 +1,33 @@
 <html>
         <head>
-            <!-- Jquery -->
+            <!-- Jquery + UI-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.ui.js"></script>
 
             <!--full bootstrap js plugins-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
 
-            <!--bootstrap min JS, not sure if there is a difference between this and the above-->
-            <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-
-             <!--js plugin for the datetime picker-->
+             <!--js plugin for the moment.js-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
-            <script type="text/javascript">
-                moment().format();
-            </script>
+            <script type="text/javascript">moment().format();</script>
+
             <!--js for boostrap datetimepicker-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-			<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
+			<!-- Stylesheets -->
 			<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
             <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
             <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
 
             <!--Predictive Select Boxes-->
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+            <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />-->
+            <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>-->
 
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+
+            <!-- Jquery UI Css -->
+            <link rel="stylesheet" ref="<?php echo base_url(); ?>css/jquery.ui.css">
 
             <!--Setup the responsive viewport stuff-->
             <meta name="viewport" content="width=device-width, initial-scale=1">
