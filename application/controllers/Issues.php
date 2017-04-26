@@ -25,8 +25,6 @@
                 }
 
                 public function create(){
-                    if( $this->require_role('admin') )
-                    {
                         $data['title'] = 'Create Issue';
                         $data['usernames'] = $this->User_model->get_users();
 
@@ -36,20 +34,13 @@
                                 $this->load->view('templates/header', $data);
                                 $this->load->view('issues/create', $data);
                                 $this->load->view('templates/footer');  
-                        } else {
-                                $this->Issues_model->create_issue();
-                                redirect('issues');     
-                        }
                     }
                 }
 
 
                 public function delete($issueID){
-                    if( $this->require_role('admin') )
-                    {
                         $this->Issues_model->delete_issue($issueID);
                         redirect('issues');
-                    }
                 }
 
                 public function edit($issueID){
