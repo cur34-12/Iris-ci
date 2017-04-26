@@ -10,7 +10,7 @@
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
 			<select id="iss_eq_id" name="iss_eq_id" class="form-control" >
-				<?php foreach($equipments as $equipment): ?>
+				<?php foreach($equipment as $equipment): ?>
         				<option value="<?php echo $equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></option>
         		<?php endforeach; ?>
 			</select>
