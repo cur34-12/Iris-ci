@@ -20,15 +20,16 @@
 	<tbody>
 		<?php foreach($vehicles as $vehicle) : ?>
 			<tr>
-					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['name']); ?>"><?php echo $vehicle['name']; ?></a></td>
-					<td><?php echo $vehicle['rego']; ?></td>
-					<td><?php echo $vehicle['capacity']; ?></td>
-					<td><?php echo $vehicle['category']; ?></td>
-					<td><?php echo $vehicle['license_type']; ?></td>
-					<td><?php echo $vehicle['make']; ?></td>
-					<td><?php echo $vehicle['year']; ?></td>
-					<td><?php echo $vehicle['model']; ?></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['name']; ?>">Edit</a></td>
+					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['veh_name']); ?>"><?php echo $vehicle['veh_name']; ?></a></td>
+					<td><?php echo $vehicle['veh_rego']; ?></td>
+					<td><?php echo $vehicle['veh_capacity']; ?></td>
+					<td><?php echo $vehicle['veh_category']; ?></td>
+					<td><?php echo $vehicle['veh_license_type']; ?></td>
+					<td><?php echo $vehicle['veh_make']; ?></td>
+					<td><?php echo $vehicle['veh_year']; ?></td>
+					<td><?php echo $vehicle['veh_model']; ?></td>
+					<td><a href="<?php echo $vehicle['veh_list']; ?></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['veh_name']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>

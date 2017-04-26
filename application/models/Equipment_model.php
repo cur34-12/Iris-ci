@@ -5,35 +5,35 @@
 			$this->load->database();
 		}
 
-		public function get_equipment($equipmentID = FALSE){
-			if($equipmentID === FALSE){
-				$this->db->order_by('category', 'ASC');
+		public function get_equipment($eq_id = FALSE){
+			if($eq_id === FALSE){
+				$this->db->order_by('eq_category', 'ASC');
 				$query = $this->db->get('equipment');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('equipment', array('equipmentID' => $equipmentID));
+			$query = $this->db->get_where('equipment', array('eq_id' => $eq_id));
 			return $query->row_array();
 		}
 
 		public function create_equipment(){
 			$data = array(
-				'equipmentID' => $this->input->post('equipmentID'),
-				'name' => $this->input->post('name'),
-				'description' => $this->input->post('description'),
-				'consumable' => $this->input->post('consumable'),
-				'size' => $this->input->post('size'),
-				'brand' => $this->input->post('brand'),
-				'supplier' => $this->input->post('supplier'),
-				'in_service' => $this->input->post('in_service'),
-				'inspection_frequency' => $this->input->post('inspection_frequency'),
-				'category' => $this->input->post('category'),
-				'date_purchased' => $this->input->post('date_purchased'),
-				'endOfLife' => $this->input->post('endOfLife'),
-				'purchase_type' => $this->input->post('purchase_type'),
-				'asset_number' => $this->input->post('asset_number'),
-				'serial' => $this->input->post('serial'),
-				'assemblyID' => $this->input->post('assembly')
+				'eq_id' => $this->input->post('eq_id'),
+				'name' => $this->input->post('eq_name'),
+				'description' => $this->input->post('eq_description'),
+				'consumable' => $this->input->post('eq_consumable'),
+				'size' => $this->input->post('eq_size'),
+				'brand' => $this->input->post('eq_brand'),
+				'supplier' => $this->input->post('eq_supplier'),
+				'in_service' => $this->input->post('eq_in_service'),
+				'inspection_frequency' => $this->input->post('eq_inspection_frequency'),
+				'category' => $this->input->post('eq_category'),
+				'date_purchased' => $this->input->post('eq_date_purchased'),
+				'endOfLife' => $this->input->post('eq_end_life'),
+				'purchase_type' => $this->input->post('eq_purchase_type'),
+				'asset_number' => $this->input->post('eq_asset_number'),
+				'serial' => $this->input->post('eq_serial'),
+				'assemblyID' => $this->input->post('eq_assembly')
 			);
 
 			//$barcode_var = $this->input->post('equipmentID');
@@ -43,33 +43,32 @@
 			return $this->db->insert('equipment', $data);
 		}
 
-		public function delete_equipment($equipmentID){
-			$this->db->where('equipmentID', $equipmentID);
+		public function delete_equipment($eq_id){
+			$this->db->where('eq_id', $eq_id);
 			$this->db->delete('equipment');
 			return true;
 		}
 
 		public function update_equipment(){
 			$data = array(
-				'equipmentID' => $this->input->post('equipmentID'),
-				'name' => $this->input->post('name'),
-				'description' => $this->input->post('description'),
-				'consumable' => $this->input->post('consumable'),
-				'size' => $this->input->post('size'),
-				'brand' => $this->input->post('brand'),
-				'supplier' => $this->input->post('supplier'),
-				'in_service' => $this->input->post('in_service'),
-				'inspection_frequency' => $this->input->post('inspection_frequency'),
-				'category' => $this->input->post('category'),
-				'date_purchased' => $this->input->post('date_purchased'),
-				'endOfLife' => $this->input->post('endOfLife'),
-				'purchase_type' => $this->input->post('purchase_type'),
-				'asset_number' => $this->input->post('asset_number'),
-				'serial' => $this->input->post('serial'),
-				'assemblyID' => $this->input->post('assemblyID')
+				'name' => $this->input->post('eq_name'),
+				'description' => $this->input->post('eq_description'),
+				'consumable' => $this->input->post('eq_consumable'),
+				'size' => $this->input->post('eq_size'),
+				'brand' => $this->input->post('eq_brand'),
+				'supplier' => $this->input->post('eq_supplier'),
+				'in_service' => $this->input->post('eq_in_service'),
+				'inspection_frequency' => $this->input->post('eq_inspection_frequency'),
+				'category' => $this->input->post('eq_category'),
+				'date_purchased' => $this->input->post('eq_date_purchased'),
+				'endOfLife' => $this->input->post('eq_end_life'),
+				'purchase_type' => $this->input->post('eq_purchase_type'),
+				'asset_number' => $this->input->post('eq_asset_number'),
+				'serial' => $this->input->post('eq_serial'),
+				'assemblyID' => $this->input->post('eq_assembly')
 			);
 
-			$this->db->where('equipmentID', $this->input->post('equipmentID'));
+			$this->db->where('eq_id', $this->input->post('eq_id'));
 			return $this->db->update('equipment', $data);
 		}
 	}

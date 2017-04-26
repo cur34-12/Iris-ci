@@ -5,51 +5,51 @@
 			$this->load->database();
 		}
 
-		public function get_issues($issueID = FALSE){
+		public function get_issues($iss_id = FALSE){
 			if($issueID === FALSE){
-				$this->db->order_by('reported_date', 'ASC');
-				$this->db->join('equipment', 'equipment.equipmentID = issues.equipmentID');
+				$this->db->order_by('iss_reported_date', 'ASC');
+				$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
 				$query = $this->db->get('issues');
 				return $query->result_array();
 			}
 
-			$this->db->join('equipment', 'equipment.equipmentID = issues.equipmentID');
-			$query = $this->db->get_where('issues', array('issueID' => $issueID));
+			$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
+			$query = $this->db->get_where('issues', array('iss_id' => $issueID));
 			return $query->row_array();
 		}
 
 		public function create_issue(){
 			$data = array(
-				'title' => $this->input->post('title'),
-				'equipmentID' => $this->input->post('equipmentID'),
-				'description' => $this->input->post('description'),
-				'reporterID' => $this->input->post('reporterID'),
-				'reported_date' => $this->input->post('reported_date'),
-				'assigned_user' => $this->input->pos('assigned_user'),
-				'createdByID' => $this->input->post('createdByID'),
-				'status' => $this->input->post('status') //This is a hidden field with the value of "new"
+				'title' => $this->input->post('iss_title'),
+				'iss_eq_id' => $this->input->post('isseq_id'),
+				'description' => $this->input->post('iss_description'),
+				'reporterID' => $this->input->post('iss_reporter_id'),
+				'reported_date' => $this->input->post('iss_reported_date'),
+				'assigned_user' => $this->input->pos('iss_assigned_user'),
+				'createdByID' => $this->input->post('iss_creator_id'),
+				'status' => $this->input->post('iss_status') //This is a hidden field with the value of "new"
 			);
 
 			return $this->db->insert('issues', $data);
 		}
 
-		public function delete_issue($issueID){
-			$this->db->where('issueID', $issueID);
+		public function delete_issue($iss_id){
+			$this->db->where('iss_id', $iss_id);
 			$this->db->delete('issues');
 			return true;
 		}
 
 		public function update_issue(){
 			$data = array(
-				'title' => $this->input->post('title'),
-				'description' => $this->input->post('description'),
-				'equipmentID' => $this->input->post('equipmentID'),
-				'assigned_user' => $this->input->post('assigned_user'),
-				'resolution_date' => $this->input->post('resolution_date'),
-				'status' => $this->input->post('status')
+				'title' => $this->input->post('iss_title'),
+				'description' => $this->input->post('iss_description'),
+				'equipmentID' => $this->input->post('iss_eq_id'),
+				'assigned_user' => $this->input->post('iss_assigned_user'),
+				'resolution_date' => $this->input->post('iss_resolution_date'),
+				'status' => $this->input->post('iss_status')
 			);
 
-			$this->db->where('issueID', $this->input->post('issueID'));
+			$this->db->where('iss_id', $this->input->post('iss_id'));
 			return $this->db->update('issues', $data);
 		}
 	}
