@@ -9,43 +9,43 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="equipmentID" placeholder="Eg. Axe">
+			<input type="text" class="form-control" name="eq_id" placeholder="Eg. Axe">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. Axe">
+			<input type="text" class="form-control" name="eq_name" placeholder="Eg. Axe">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="description" placeholder="Eg. Large Red Felling Axe, wooden handle">
+			<input type="text" class="form-control" name="eq_description" placeholder="Eg. Large Red Felling Axe, wooden handle">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Size</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="size" placeholder="Eg.Large">
+			<input type="text" class="form-control" name="eq_size" placeholder="Eg.Large">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Brand</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="brand" placeholder="Eg. Husqvarna">
+			<input type="text" class="form-control" name="eq_brand" placeholder="Eg. Husqvarna">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Supplier</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="supplier" placeholder="Eg. GMC Thornleigh">
+			<input type="text" class="form-control" name="eq_supplier" placeholder="Eg. GMC Thornleigh">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Consumable</label>
 		<div class="col-sm-10">
-			<select id="consumable" name="consumable" class="form-control">
+			<select id="eq_consumable" name="eq_consumable" class="form-control">
 				<option disabled selected>Select</option>
 				<option value="Yes">No</option>
 				<option>Yes</option>
@@ -55,7 +55,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">In Service</label>
 		<div class="col-sm-10">
-			<select id="in_service" name="in_service" class="form-control">
+			<select id="eq_in_service" name="in_service" class="form-control">
 				<option value="Yes">Yes</option>
 				<option>No</option>
 			</select>
@@ -64,7 +64,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Inspection Frequency</label>
 		<div class="col-sm-10">
-			<select id="inspection_frequency" name="inspection_frequency" class="form-control">
+			<select id="eq_inspection_frequency" name="eq_inspection_frequency" class="form-control">
 				<option value="Weekly">Weekly</option>
 				<option>Monthly</option>
 				<option>Biannually</option>
@@ -75,8 +75,8 @@
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Date Purchased</label>
-	        <div class='input-group date' id='date_purchased'>
-	            <input type='text' class="form-control" name="date_purchased"/>
+	        <div class='input-group date' id='eq_date_purchased'>
+	            <input type='text' class="form-control" name="eq_date_purchased"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
@@ -84,7 +84,7 @@
     </div>
     <script type="text/javascript">
         $(function () {
-            $('#date_purchased').datetimepicker({
+            $('#eq_date_purchased').datetimepicker({
             	useCurrent: true,
             	showTodayButton: true,
             	sideBySide: true,
@@ -94,8 +94,8 @@
     </script>
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
-	        <div class='input-group date' id='endOfLife'>
-	            <input type='text' class="form-control" name="endOfLife"/>
+	        <div class='input-group date' id='eq_end_life'>
+	            <input type='text' class="form-control" name="eq_end_life"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
@@ -103,7 +103,7 @@
     </div>
     <script type="text/javascript">
         $(function () {
-            $('#endOfLife').datetimepicker({
+            $('#eq_end_life').datetimepicker({
             	useCurrent: true,
             	showTodayButton: true,
             	sideBySide: true,
@@ -114,7 +114,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Purchase Type</label>
 		<div class="col-sm-10">
-			<select id="inspection_frequency" name="purchase_type" class="form-control">
+			<select id="inspection_frequency" name="eq_purchase_type" class="form-control">
 				<option value="Donation">Donation</option>
 				<option>Unit Funds</option>
 				<option>Region Funds</option>
@@ -126,13 +126,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Asset Number</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="asset_number" placeholder="Eg. 34783698">
+			<input type="text" class="form-control" name="eq_asset_number" placeholder="Eg. 34783698">
 		</div>
 	</div>		
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
-			<select id="category" name="category" class="form-control">
+			<select id="eq_category" name="eq_category" class="form-control">
 				<option value="change me">CHANGE ME</option>
 			</select>
 		</div>
@@ -140,7 +140,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
-			<select id="assembly" name="assembly" class="form-control">
+			<select id="eq_assembly" name="eq_assembly" class="form-control">
 				<option value="change me">CHANGE ME</option>
 			</select>
 		</div>

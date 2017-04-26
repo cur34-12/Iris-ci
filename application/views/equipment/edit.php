@@ -10,7 +10,7 @@
 </thead>
 <?php foreach($equipment as $equipment) : ?>
 <tr>
-<td style="text-transform: uppercase;"><a href="<?php echo site_url('/equipment/edit/'. $equipment['equipmentID']); ?>"><?php echo $equipment['name']; ?></a></td>
+<td style="text-transform: uppercase;"><a href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
 </tr>
 <?php endforeach; ?>
 </table>

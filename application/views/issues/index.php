@@ -22,16 +22,16 @@
 	<tbody>
 		<?php foreach($issues as $issue) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['issueID']; ?></a></td>
-					<td><?php echo $issue['name']; //from equipment table join ?></td>
-					<td><?php echo $issue['title']; ?></td>
-					<td><?php echo word_limiter($issue['description'], 8); ?></td>
-					<td><?php echo $issue['reporterID']; ?></td>
-					<td><?php echo $issue['assigned_user']; ?></td>
-					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
-					<?php echo '<td><script type="text/javascript">var res_date; $res_date = moment(\''.$issue['resolution_date'].'\').format(\'DD-MM-YYYY\'); document.write($res_date);</script></td>'; ?>
-					<td><?php echo $issue['status']; ?></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['issueID']; ?>">Edit</a></td>
+					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['iss_id']; ?></a></td>
+					<td><?php echo $issue['iss_name']; //from equipment table join ?></td>
+					<td><?php echo $issue['iss_title']; ?></td>
+					<td><?php echo word_limiter($issue['iss_description'], 8); ?></td>
+					<td><?php echo $issue['iss_reporter_id']; ?></td>
+					<td><?php echo $issue['iss_assigned_user']; ?></td>
+					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['iss_reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
+					<?php echo '<td><script type="text/javascript">var res_date; $res_date = moment(\''.$issue['iss_resolution_date'].'\').format(\'DD-MM-YYYY\'); document.write($res_date);</script></td>'; ?>
+					<td><?php echo $issue['iss_status']; ?></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>

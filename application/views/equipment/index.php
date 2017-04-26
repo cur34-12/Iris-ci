@@ -26,20 +26,20 @@
 	<tbody>
 		<?php foreach($equipment as $equipment) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/equipment/'. $equipment['equipmentID']); ?>"><?php echo $equipment['name']; ?></a></td>
-					<td><?php echo $equipment['description']; ?></td>
-					<td><?php echo $equipment['assemblyID']; ?></td>
-					<td><?php echo $equipment['category']; ?></td>
-					<td><?php echo $equipment['consumable']; ?></td>
-					<td><?php echo $equipment['size']; ?></td>
-					<td><?php echo $equipment['brand']; ?></td>
-					<td><?php echo $equipment['supplier']; ?></td>
-					<td><?php echo $equipment['in_service']; ?></td>
-					<td><?php echo $equipment['inspection_frequency']; ?></td>
-					<td><?php echo $equipment['equipmentID']; ?></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['equipmentID'].'.jpg'); ?>" /></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['equipmentID'].'.jpg'); ?>" /></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['equipmentID']; ?>">Edit</a></td>
+					<td><a href="<?php echo site_url('/equipment/'. $equipment['equipmentID']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
+					<td><?php echo $equipment['eq_description']; ?></td>
+					<td><?php echo $equipment['ass_name']; ?></td>
+					<td><?php echo $equipment['eq_category']; ?></td>
+					<td><?php echo $equipment['eq_consumable']; ?></td>
+					<td><?php echo $equipment['eq_size']; ?></td>
+					<td><?php echo $equipment['eq_brand']; ?></td>
+					<td><?php echo $equipment['eq_supplier']; ?></td>
+					<td><?php echo $equipment['eq_in_service']; ?></td>
+					<td><?php echo $equipment['eq_inspection_frequency']; ?></td>
+					<td><?php echo $equipment['eq__id']; ?></td>
+					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
+					<td><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['ed_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>

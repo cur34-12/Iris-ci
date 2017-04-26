@@ -7,9 +7,9 @@
 <?php echo form_open('issues/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
-		<label class="control-label col-sm-2">EquipmentID</label>
+		<label class="control-label col-sm-2">Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="equipmentID" placeholder="">
+			<input type="text" class="form-control" name="eq_name" placeholder="">
 		</div>
 	</div>
 	<div class="form-group">
@@ -21,19 +21,19 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" name="make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
+			<textarea rows="3" class="form-control" name="iss_make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reporting User</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="reporterID" placeholder="">
+			<input type="text" class="form-control" name="iss_reporter_id" placeholder="">
 		</div>
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
-	        <div class='input-group date' id='datetimepicker1'>
-	            <input type='text' class="form-control" name="reported_date"/>
+	        <div class='input-group date' id='iss_reported_date'>
+	            <input type='text' class="form-control" name="iss_reported_date"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
@@ -41,7 +41,7 @@
     </div>
     <script type="text/javascript">
         $(function () {
-            $('#datetimepicker1').datetimepicker({
+            $('#iss_reported_date').datetimepicker({
             	useCurrent: true,
             	showTodayButton: true,
             	sideBySide: true,
@@ -52,7 +52,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
-			<select id="assigned_user" name="assigned_user" class="form-control" >
+			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
         				<option value="username"><?php echo $username['username']; ?></option>
         		<?php endforeach; ?>
@@ -61,18 +61,18 @@
 	</div>
 	<div class="form-group" style="display: none;">
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="status" value="New">
+			<input type="text" class="form-control" name="iss_status" value="New">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Created By</label>
 		<div class="col-sm-10">
-			<input id="createdByID" type="text" class="form-control" name="createdByID" placeholder="" readonly>
+			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" readonly>
 		</div>
 	</div>
 	<script>
 		$(function() {
-			$( '#createdByID' ).val('<?php echo $auth_username; ?>'); 
+			$( '#iss_creator_id' ).val('<?php echo $auth_username; ?>'); 
 		});
 	</script>
 

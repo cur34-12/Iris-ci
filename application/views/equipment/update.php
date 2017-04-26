@@ -6,67 +6,55 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment/update', $attributes); ?>
-<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['name']; ?></h2>
+<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['eq_name']; ?></h2>
 
 
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
 		<div class="col-sm-10">
-			<input type="text" id="disabledInput" class="form-control" name="equipmentID" value="<?php echo $equipment['equipmentID']; ?>" disabled>
+			<input type="text" id="disabledInput" class="form-control" name="equipmentID" value="<?php echo $equipment['eq_ID']; ?>" disabled>
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Material Number</label>
+		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
-			<input type="text" id="disabledInput" class="form-control" name="material_number" value="<?php echo $equipment['material_number']; ?>" disabled>
+			<input type="text" id="disabledInput" class="form-control" name="material_number" value="<?php echo $equipment['ass_name']; ?>" disabled>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Asset Number</label>
 		<div class="col-sm-10">
-			<input type="text" id="disabledInput" class="form-control" name="asset_number" value="<?php echo $equipment['asset_number']; ?>" disabled>
+			<input type="text" id="disabledInput" class="form-control" name="asset_number" value="<?php echo $equipment['eq_asset_number']; ?>" disabled>
 		</div>
 	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Barcode Number</label>
-		<div class="col-sm-10">
-			<input type="text" id="disabledInput" class="form-control" name="barcode_number" value="<?php echo $equipment['barcode_number']; ?>" disabled>
-		</div>
-	</div>
-
-
-
-
-
-
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="name" placeholder="Eg. Axe - Felling" value="<?php echo $equipment['name']; ?>">
+			<input type="text" class="form-control" name="name" placeholder="Eg. Axe - Felling" value="<?php echo $equipment['eq_name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="description" placeholder="Eg. BK95LD" value="<?php echo $equipment['description']; ?>">
+			<input type="text" class="form-control" name="description" placeholder="Eg. BK95LD" value="<?php echo $equipment['eq_description']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Brand</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi" value="<?php echo $equipment['brand']; ?>">
+			<input type="text" class="form-control" name="make" placeholder="Eg. Mitsubishi" value="<?php echo $equipment['eq_brand']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Supplier</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="supplier" placeholder="Eg. Blackwells" value="<?php echo $equipment['supplier']; ?>">
+			<input type="text" class="form-control" name="supplier" placeholder="Eg. Blackwells" value="<?php echo $equipment['eq_supplier']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero" value="<?php echo $equipment['category']; ?>">
+			<input type="text" class="form-control" name="model" placeholder="Eg. Pajero" value="<?php echo $equipment['eq_category']; ?>">
 			</div>
 	</div>
 	<div class="form-group">
@@ -78,23 +66,9 @@
 			</select>
 			<script>
 				$(function() {
-					$( '#capacity' ).val('<?php echo $equipment['in_service']; ?>'); 
+					$( '#capacity' ).val('<?php echo $equipment['eq_in_service']; ?>'); 
 				});
 		    </script>
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">LR License Required</label>
-		<div class="col-sm-10">
-			<select id="lr" name="lr" class="form-control" value="<?php echo $vehicle['lr']; ?>">
-				<option>No</option>
-				<option>Yes</option>
-			</select>
-			<script>
-				$(function() {
-					$( '#lr' ).val('<?php echo $vehicle['lr']; ?>'); 
-				});
-		    </script>			
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Update</button>
