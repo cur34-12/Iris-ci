@@ -2,7 +2,7 @@
         <head>
             <!-- Jquery + UI-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-            <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.ui.js"></script>
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui.js"></script>
 
             <!--full bootstrap js plugins-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
