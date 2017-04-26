@@ -30,7 +30,7 @@
                 public function create(){
                         $data['title'] = 'Create Equipment';
 
-                        $this->load->view('templates/header', $data);
+                        $this->load->view('templates/predictive-header', $data);
                         $this->load->view('equipment/create', $data);
                         $this->load->view('templates/footer');
                 }
@@ -47,9 +47,9 @@
                                 show_404();
                         }
 
-                        $data['title'] = 'Edit Equipment';
+                        $data['title'] = 'Edit $eq_name';
 
-                        $this->load->view('templates/header', $data);
+                        $this->load->view('templates/predictive-header', $data);
                         $this->load->view('equipment/update', $data);
                         $this->load->view('templates/footer');
                 }
