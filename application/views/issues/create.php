@@ -9,12 +9,28 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<select id="iss_eq_id" name="iss_eq_id" class="form-control" >
-				<?php foreach($equipment as $equipment): ?>
-        				<option value="<?php echo $equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></option>
-        		<?php endforeach; ?>
+			<select id="iss_eq_id" name="iss_eq_id" class="iss_eq_id form-control" >
+				<?php //foreach($equipment as $equipment): ?>
+        				<!-- replaced with select2<option value="<?php //echo $equipment['eq_id']; ?>"><?php //echo $equipment['eq_name']; ?></option>-->
+        		<?php //endforeach; ?>
 			</select>
 		</div>
+		<script type="text/javascript">
+			$('.iss_eq_id').select2({
+			placeholder: '--- Select Item ---',
+			ajax: {
+			  url: '/equipment/search',
+			  dataType: 'json',
+			  delay: 250,
+			  processResults: function (data) {
+			    return {
+			      results: data
+			    };
+			  },
+			  cache: true
+			}
+			});
+		</script>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
