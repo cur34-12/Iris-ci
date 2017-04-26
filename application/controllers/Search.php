@@ -2,18 +2,11 @@
 
 class Search extends CI_Controller {
 
-	public function equipment()
-	{
-		$json = [];
-
-		$this->load->database();
-
-		if(!empty($this->input->get("q"))){
-			$this->db->like('eq_name', $this->input->get("q"));
-			$query = $this->db->select('eq_id,eq_name as text') ->limit(10) ->get("equipment");
-			$json = $query->result();
-		}
-
-		echo json_encode($json);
+	function equipment(){
+		$this->load->model('equipment_model');
+	    if (isset($_GET['term'])){
+	    	$q = strtolower($_GET['term']);
+	    	$this->equipment_model->search_equipment($q);
+	    }
 	}
 }

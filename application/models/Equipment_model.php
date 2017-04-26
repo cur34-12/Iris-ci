@@ -72,4 +72,16 @@
 			$this->db->where('eq_id', $this->input->post('eq_id'));
 			return $this->db->update('equipment', $data);
 		}
+
+		public function search_equipment($q){
+	    	$this->db->select('eq_name');
+	    	$this->db->like('eq_name', $q);
+	    	$query = $this->db->get('equipment');
+	    		if($query->num_rows() > 0){
+	      			foreach ($query->result_array() as $row){
+	        			$row_set[] = htmlentities(stripslashes($row['eq_name'])); //build an array
+	      			}
+	      			echo json_encode($row_set); //format the array into json data
+	    		}
+  		}
 	}
