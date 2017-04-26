@@ -6,7 +6,7 @@
 		}
 
 		public function get_issues($iss_id = FALSE){
-			if($issueID === FALSE){
+			if($iss_id === FALSE){
 				$this->db->order_by('iss_reported_date', 'ASC');
 				$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
 				$query = $this->db->get('issues');
@@ -14,20 +14,20 @@
 			}
 
 			$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
-			$query = $this->db->get_where('issues', array('iss_id' => $issueID));
+			$query = $this->db->get_where('issues', array('iss_id' => $iss_id));
 			return $query->row_array();
 		}
 
 		public function create_issue(){
 			$data = array(
-				'title' => $this->input->post('iss_title'),
+				'iss_title' => $this->input->post('iss_title'),
 				'iss_eq_id' => $this->input->post('isseq_id'),
-				'description' => $this->input->post('iss_description'),
-				'reporterID' => $this->input->post('iss_reporter_id'),
-				'reported_date' => $this->input->post('iss_reported_date'),
-				'assigned_user' => $this->input->pos('iss_assigned_user'),
-				'createdByID' => $this->input->post('iss_creator_id'),
-				'status' => $this->input->post('iss_status') //This is a hidden field with the value of "new"
+				'iss_description' => $this->input->post('iss_description'),
+				'iss_reporter_id' => $this->input->post('iss_reporter_id'),
+				'iss_reported_date' => $this->input->post('iss_reported_date'),
+				'iss_assigned_user' => $this->input->pos('iss_assigned_user'),
+				'iss_creator_id' => $this->input->post('iss_creator_id'),
+				'iss_status' => $this->input->post('iss_status') //This is a hidden field with the value of "new"
 			);
 
 			return $this->db->insert('issues', $data);
@@ -41,12 +41,12 @@
 
 		public function update_issue(){
 			$data = array(
-				'title' => $this->input->post('iss_title'),
-				'description' => $this->input->post('iss_description'),
-				'equipmentID' => $this->input->post('iss_eq_id'),
-				'assigned_user' => $this->input->post('iss_assigned_user'),
-				'resolution_date' => $this->input->post('iss_resolution_date'),
-				'status' => $this->input->post('iss_status')
+				'iss_title' => $this->input->post('iss_title'),
+				'iss_description' => $this->input->post('iss_description'),
+				'iss_equipmentID' => $this->input->post('iss_eq_id'),
+				'iss_assigned_user' => $this->input->post('iss_assigned_user'),
+				'iss_resolution_date' => $this->input->post('iss_resolution_date'),
+				'iss_status' => $this->input->post('iss_status')
 			);
 
 			$this->db->where('iss_id', $this->input->post('iss_id'));
