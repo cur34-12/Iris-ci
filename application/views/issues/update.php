@@ -1,7 +1,7 @@
 <head>
 	<title>Edit Issue - Logi</title>
 </head>
-<h2 style="text-transform: uppercase;">Edit Issue <?php echo $issue['issueID']; ?></h2>
+<h2 style="text-transform: uppercase;">Edit Issue <?php echo $issue['iss_id']; ?></h2>
 <!--Fields must be added to this form if an extra field is added to the vehicles table in the-->
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
