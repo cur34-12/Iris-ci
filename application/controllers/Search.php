@@ -17,22 +17,18 @@ class Search extends CI_Controller {
 	 * map to /index.php/welcome/
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function equipment()
 	{
 		$json = [];
 
 		$this->load->database();
 
-		
 		if(!empty($this->input->get("q"))){
-			$this->db->like('name', $this->input->get("q"));
-			$query = $this->db->select('id,name as text')
-						->limit(10)
-						->get("tags");
+			$this->db->like('eq_name', $this->input->get("q"));
+			$query = $this->db->select('eq_id,eq_name as text') ->limit(10) ->get("equipment");
 			$json = $query->result();
 		}
 
-		
 		echo json_encode($json);
 	}
 }

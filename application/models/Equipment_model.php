@@ -19,21 +19,21 @@
 		public function create_equipment(){
 			$data = array(
 				'eq_id' => $this->input->post('eq_id'),
-				'name' => $this->input->post('eq_name'),
-				'description' => $this->input->post('eq_description'),
-				'consumable' => $this->input->post('eq_consumable'),
-				'size' => $this->input->post('eq_size'),
-				'brand' => $this->input->post('eq_brand'),
-				'supplier' => $this->input->post('eq_supplier'),
-				'in_service' => $this->input->post('eq_in_service'),
-				'inspection_frequency' => $this->input->post('eq_inspection_frequency'),
-				'category' => $this->input->post('eq_category'),
-				'date_purchased' => $this->input->post('eq_date_purchased'),
-				'endOfLife' => $this->input->post('eq_end_life'),
-				'purchase_type' => $this->input->post('eq_purchase_type'),
-				'asset_number' => $this->input->post('eq_asset_number'),
-				'serial' => $this->input->post('eq_serial'),
-				'assemblyID' => $this->input->post('eq_assembly')
+				'eq_name' => $this->input->post('eq_name'),
+				'eq_description' => $this->input->post('eq_description'),
+				'eq_consumable' => $this->input->post('eq_consumable'),
+				'eq_size' => $this->input->post('eq_size'),
+				'eq_brand' => $this->input->post('eq_brand'),
+				'eq_supplier' => $this->input->post('eq_supplier'),
+				'eq_in_service' => $this->input->post('eq_in_service'),
+				'eq_inspection_frequency' => $this->input->post('eq_inspection_frequency'),
+				'eq_category' => $this->input->post('eq_category'),
+				'eq_date_purchased' => $this->input->post('eq_date_purchased'),
+				'eq_end_life' => $this->input->post('eq_end_life'),
+				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
+				'eq_asset_number' => $this->input->post('eq_asset_number'),
+				'eq_serial' => $this->input->post('eq_serial'),
+				'eq_assembly' => $this->input->post('eq_assembly')
 			);
 
 			//$barcode_var = $this->input->post('equipmentID');
@@ -51,21 +51,21 @@
 
 		public function update_equipment(){
 			$data = array(
-				'name' => $this->input->post('eq_name'),
-				'description' => $this->input->post('eq_description'),
-				'consumable' => $this->input->post('eq_consumable'),
-				'size' => $this->input->post('eq_size'),
-				'brand' => $this->input->post('eq_brand'),
-				'supplier' => $this->input->post('eq_supplier'),
-				'in_service' => $this->input->post('eq_in_service'),
-				'inspection_frequency' => $this->input->post('eq_inspection_frequency'),
-				'category' => $this->input->post('eq_category'),
-				'date_purchased' => $this->input->post('eq_date_purchased'),
-				'endOfLife' => $this->input->post('eq_end_life'),
-				'purchase_type' => $this->input->post('eq_purchase_type'),
-				'asset_number' => $this->input->post('eq_asset_number'),
-				'serial' => $this->input->post('eq_serial'),
-				'assemblyID' => $this->input->post('eq_assembly')
+				'eq_name' => $this->input->post('eq_name'),
+				'eq_description' => $this->input->post('eq_description'),
+				'eq_consumable' => $this->input->post('eq_consumable'),
+				'eq_size' => $this->input->post('eq_size'),
+				'eq_brand' => $this->input->post('eq_brand'),
+				'eq_supplier' => $this->input->post('eq_supplier'),
+				'eq_in_service' => $this->input->post('eq_in_service'),
+				'eq_inspection_frequency' => $this->input->post('eq_inspection_frequency'),
+				'eq_category' => $this->input->post('eq_category'),
+				'eq_date_purchased' => $this->input->post('eq_date_purchased'),
+				'eq_end_ife' => $this->input->post('eq_end_life'),
+				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
+				'eq_asset_number' => $this->input->post('eq_asset_number'),
+				'eq_serial' => $this->input->post('eq_serial'),
+				'eq_assembly' => $this->input->post('eq_assembly')
 			);
 
 			$this->db->where('eq_id', $this->input->post('eq_id'));
