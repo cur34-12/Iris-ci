@@ -26,7 +26,7 @@
 	<tbody>
 		<?php foreach($equipment as $equipment) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/equipment/'. $equipment['equipmentID']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
+					<td><a href="<?php echo site_url('/equipment/'. $equipment['EQ_ID']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
 					<td><?php echo $equipment['eq_description']; ?></td>
 					<td><?php echo $equipment['ass_name']; ?></td>
 					<td><?php echo $equipment['eq_category']; ?></td>

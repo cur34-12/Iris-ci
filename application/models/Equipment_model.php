@@ -8,10 +8,11 @@
 		public function get_equipment($eq_id = FALSE){
 			if($eq_id === FALSE){
 				$this->db->order_by('eq_category', 'ASC');
+				$this->db->join('assemblies', 'assemblies.ass_id = equipment.eq_assembly_id');
 				$query = $this->db->get('equipment');
 				return $query->result_array();
 			}
-
+			$this->db->join('assemblies', 'assemblies.ass_id = equipment.eq_assembly_id');
 			$query = $this->db->get_where('equipment', array('eq_id' => $eq_id));
 			return $query->row_array();
 		}
