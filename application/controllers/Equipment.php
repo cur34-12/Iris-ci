@@ -13,14 +13,14 @@
         	       $this->load->view('templates/footer');
                 }
 
-                public function view($equipmentID = null){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($equipmentID);
+                public function view($eq_id = null){
+                        $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
 
                         if(empty($data['equipment'])){
                                 show_404();
                         } 
 
-                        $data['title'] = $data['equipment']['name'];
+                        $data['title'] = $data['equipment']['eq_name'];
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('equipment/view', $data);
@@ -35,13 +35,13 @@
                         $this->load->view('templates/footer');
                 }
 
-                public function delete($equipmentID){
-                        $this->Equipment_model->delete_equipment($equipmentID);
+                public function delete($eq_id){
+                        $this->Equipment_model->delete_equipment($eq_id);
                         redirect('equipment');
                 }
 
-                public function edit($equipmentID){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($equipmentID);
+                public function edit($eq_id){
+                        $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
 
                         if(empty($data['equipment'])){
                                 show_404();

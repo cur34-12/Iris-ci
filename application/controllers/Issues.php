@@ -10,14 +10,14 @@
         	       $this->load->view('templates/footer');
                 }
 
-                public function view($issueID = null){
-                        $data['issue'] = $this->Issues_model->get_issues($issueID);
+                public function view($iss_id = null){
+                        $data['issue'] = $this->Issues_model->get_issues($iss_id);
 
                         if(empty($data['issue'])){
                                 show_404();
                         }
 
-                        $data['title'] = $data['issue']['issueID'];
+                        $data['title'] = $data['issue']['iss_id'];
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('issues/view', $data);
@@ -38,13 +38,13 @@
                 }
 
 
-                public function delete($issueID){
-                        $this->Issues_model->delete_issue($issueID);
+                public function delete($iss_id){
+                        $this->Issues_model->delete_issue($iss_id);
                         redirect('issues');
                 }
 
-                public function edit($issueID){
-                        $data['issue'] = $this->Issues_model->get_issues($issueID);
+                public function edit($iss_id){
+                        $data['issue'] = $this->Issues_model->get_issues($iss_id);
                         $data['usernames'] = $this->User_model->get_users();
 
                         if(empty($data['issue'])){
