@@ -4,9 +4,11 @@ class Search extends CI_Controller {
 
 	function equipment(){
 		$this->load->model('equipment_model');
+
 	    if (isset($_GET['term'])){
-	    	$q = strtolower($_GET['term']);
+	    	$q = parse_str(strtolower(($_SERVER['term'], $_GET));
 	    	$this->equipment_model->search_equipment($q);
 	    }
 	}
 }
+
