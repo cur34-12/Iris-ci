@@ -58,7 +58,7 @@ $autoload['packages'] = array(APPPATH.'third_party/community_auth');
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('form_validation','database','session','zend','ciqrcode');
+$autoload['libraries'] = array('form_validation','database','session','zend','ciqrcode','calendar');
 
 /*
 | -------------------------------------------------------------------

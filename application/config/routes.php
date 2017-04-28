@@ -28,6 +28,9 @@ $route['vehicles/search'] = 'search/vehicles';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
+/* Calendar Route */
+$route['calendar'] = 'calendar/index';
+
 /* Barcode Route */
 $route['barcode/create_code39'] = 'barcoding/ean13';
 $route['barcode/create_qr'] = 'barcoding/qr';
