@@ -25,7 +25,7 @@ $lang['login_heading']         = 'Login';
 $lang['login_subheading']      = 'Please login with your email/username and password below.';
 $lang['login_identity_label']  = 'Email/Username:';
 $lang['login_password_label']  = 'Password:';
-$lang['login_remember_label']  = 'Remember:';
+$lang['login_remember_label']  = 'Remember Me:';
 $lang['login_submit_btn']      = 'Login';
 $lang['login_forgot_password'] = 'Forgot your password?';
 
@@ -54,11 +54,11 @@ $lang['deactivate_validation_user_id_label'] = 'user ID';
 
 // Create User
 $lang['create_user_heading']                           = 'Create User';
-$lang['create_user_subheading']                        = 'Please enter the user\'s information below.';
+$lang['create_user_subheading']                        = 'Please enter the users information below.';
 $lang['create_user_fname_label']                       = 'First Name:';
 $lang['create_user_lname_label']                       = 'Last Name:';
-$lang['create_user_company_label']                     = 'Company Name:';
 $lang['create_user_identity_label']                    = 'Identity:';
+$lang['create_user_company_label']                     = 'Company Name:';
 $lang['create_user_email_label']                       = 'Email:';
 $lang['create_user_phone_label']                       = 'Phone:';
 $lang['create_user_password_label']                    = 'Password:';
@@ -75,7 +75,7 @@ $lang['create_user_validation_password_confirm_label'] = 'Password Confirmation'
 
 // Edit User
 $lang['edit_user_heading']                           = 'Edit User';
-$lang['edit_user_subheading']                        = 'Please enter the user\'s information below.';
+$lang['edit_user_subheading']                        = 'Please enter the users information below.';
 $lang['edit_user_fname_label']                       = 'First Name:';
 $lang['edit_user_lname_label']                       = 'Last Name:';
 $lang['edit_user_company_label']                     = 'Company Name:';
@@ -131,7 +131,7 @@ $lang['forgot_password_subheading']              = 'Please enter your %s so we c
 $lang['forgot_password_email_label']             = '%s:';
 $lang['forgot_password_submit_btn']              = 'Submit';
 $lang['forgot_password_validation_email_label']  = 'Email Address';
-$lang['forgot_password_identity_label'] = 'Identity';
+$lang['forgot_password_username_identity_label'] = 'Username';
 $lang['forgot_password_email_identity_label']    = 'Email';
 $lang['forgot_password_email_not_found']         = 'No record of that email address.';
 
@@ -142,3 +142,18 @@ $lang['reset_password_new_password_confirm_label']            = 'Confirm New Pas
 $lang['reset_password_submit_btn']                            = 'Change';
 $lang['reset_password_validation_new_password_label']         = 'New Password';
 $lang['reset_password_validation_new_password_confirm_label'] = 'Confirm New Password';
+
+// Activation Email
+$lang['email_activate_heading']    = 'Activate account for %s';
+$lang['email_activate_subheading'] = 'Please click this link to %s.';
+$lang['email_activate_link']       = 'Activate Your Account';
+
+// Forgot Password Email
+$lang['email_forgot_password_heading']    = 'Reset Password for %s';
+$lang['email_forgot_password_subheading'] = 'Please click this link to %s.';
+$lang['email_forgot_password_link']       = 'Reset Your Password';
+
+// New Password Email
+$lang['email_new_password_heading']    = 'New Password for %s';
+$lang['email_new_password_subheading'] = 'Your password has been reset to: %s';
+
