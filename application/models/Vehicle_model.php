@@ -6,7 +6,7 @@
 		}
 
 		public function get_vehicles($veh_name = FALSE){
-			if($name === FALSE){
+			if($veh_name === FALSE){
 				$this->db->order_by('veh_name', 'ASC');
 				$query = $this->db->get('vehicles');
 				return $query->result_array();
