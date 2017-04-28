@@ -29,7 +29,12 @@ $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
 /* Calendar Route */
-$route['calendar'] = 'calendar/index';
+$route['register'] = 'register';
+$route['feeds'] = 'feeds'; 
+$route['home'] = 'profile/login';   
+$route['profile/home'] = 'profile/login'; 
+$route['profile'] = 'profile/home'; 
+$route['admin'] = 'admin/home';
 
 /* Barcode Route */
 $route['barcode/create_code39'] = 'barcoding/ean13';

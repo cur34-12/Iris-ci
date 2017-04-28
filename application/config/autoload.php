@@ -58,7 +58,7 @@ $autoload['packages'] = array(APPPATH.'third_party/community_auth');
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('form_validation','database','session','zend','ciqrcode','calendar');
+$autoload['libraries'] = array('form_validation','database','session','zend','ciqrcode','calendar','ion_auth','template','languages', 'recurrence', 'icalendar', 'notify');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','form','cookie','text');
+$autoload['helper'] = array('url', 'cookie', 'file', 'text', 'string', 'date', 'xml', 'form', 'html', 'language', 'log');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('Vehicle_model','Equipment_model','Issues_model','User_model');
+$autoload['model'] = array('Vehicle_model','Equipment_model','Issues_model','User_model','Setting_model');
