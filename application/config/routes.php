@@ -28,7 +28,7 @@ $route['vehicles/search'] = 'search/vehicles';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
-/* Calendar Route */
+/* Calendar Routes */
 $route['register'] = 'register';
 $route['feeds'] = 'feeds'; 
 $route['home'] = 'profile/login';   
