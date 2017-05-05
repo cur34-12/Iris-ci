@@ -80,9 +80,9 @@
                         </form>
                         <li><?php
                                 if( isset( $auth_user_id ) ){
-                                    echo anchor( site_url('examples/logout'),'Logout');
+                                    echo anchor( site_url('profile/logout'),'Logout');
                                 }else{
-                                    echo anchor( site_url(LOGIN_PAGE . '?redirect=examples'),'Login');
+                                    echo anchor( site_url(LOGIN_PAGE),'Login');
                                 }
                             ?>
                         </li>
