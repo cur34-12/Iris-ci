@@ -29,6 +29,7 @@ $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
 /* Calendar Routes */
+$route[LOGIN_PAGE] = 'profile/login';
 $route['register'] = 'register';
 $route['feeds'] = 'feeds'; 
 $route['home'] = 'profile/login';   
@@ -48,7 +49,7 @@ $route['admin/search'] = 'search/users';
 
 /* Catch All Routes */
 $route['search'] = "search/index";
-$route[LOGIN_PAGE] = 'examples/login';
+
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
