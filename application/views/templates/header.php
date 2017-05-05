@@ -4,7 +4,6 @@
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
             <!-- Jquery -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
@@ -32,29 +31,6 @@
 
             <!--Setup the responsive viewport stuff-->
             <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-            <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-            <!-- font-awesome CSS -->
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" /> 
-            <!-- bootstrap CSS -->
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/bootstrap-select/css/bootstrap-select.css" type="text/css" /> 
-            <!-- CIFullCalendar CSS -->
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/fullcalendar-3.0.1/fullcalendar.min.css" type="text/css" /> 
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/fullcalendar-3.0.1/fullcalendar.print.css" media="print" />
-            <!-- custom CSS --> 
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/bootlaces/css/calendar.profile.custom.css" type="text/css" /> 
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/bootlaces/css/clock.css" type="text/css" />
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/bootlaces/css/jquery.minicolors.css" type="text/css" /> 
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/bootlaces/css/profile.css" type="text/css" />    
-            <link rel="stylesheet" href="<?php echo base_url();?>assets/bootlaces/css/layout.css" type="text/css" />    
-
-            <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&language=<?php echo $lang ?>&key=<?php echo $key ?>" type="text/javascript"></script>   
-
-            <div id="alertShow" class="alert alert-info" data-alert="alert"></div>  
-
-
-
 
         </head>
         
