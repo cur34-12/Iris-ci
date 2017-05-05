@@ -35,6 +35,9 @@ $route['home'] = 'profile/login';
 $route['profile/home'] = 'profile/login'; 
 $route['profile'] = 'profile/home'; 
 $route['admin'] = 'admin/home';
+$route['([a-z0-9]+[-_]+[a-z0-9]+)|([a-z0-9]+\W+)'] = 'page/title/$1';
+$route['page'] = 'page';
+$route['sitemap\.xml'] = "seo";
 
 /* Barcode Route */
 $route['barcode/create_code39'] = 'barcoding/ean13';
