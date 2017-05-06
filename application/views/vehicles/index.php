@@ -13,6 +13,7 @@
 			<th>Make</th>
 			<th>Year</th>
 			<th>Model</th>
+			<th>AEL</th>
 			<th>Edit</th>
 		</tr>
 	</thead>
