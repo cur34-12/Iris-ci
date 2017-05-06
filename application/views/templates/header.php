@@ -81,7 +81,7 @@
                         <?php if ($this->ion_auth->logged_in()): ?>    
                             <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
                         <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>  
-                            <li><?php echo anchor(LOGIN_PAGE); ?></li>
+                            <li><?php echo anchor(LOGIN_PAGE, 'Login'); ?></li>
                         <?php endif ?>  
                     </ul>
         		</div>

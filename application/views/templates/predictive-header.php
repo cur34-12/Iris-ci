@@ -77,14 +77,11 @@
                             </div>
                             <button type="submit" class="btn btn-default">Search</button>
                         </form>
-                        <li><?php
-                                if( isset( $auth_user_id ) ){
-                                    echo anchor( site_url('examples/logout'),'Logout');
-                                }else{
-                                    echo anchor( site_url(LOGIN_PAGE . '?redirect=examples'),'Login');
-                                }
-                            ?>
-                        </li>
+                        <?php if ($this->ion_auth->logged_in()): ?>    
+                            <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
+                        <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>  
+                            <li><?php echo anchor(LOGIN_PAGE, 'Login'); ?></li>
+                        <?php endif ?>  
                     </ul>
         		</div>
         	</div>
