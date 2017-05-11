@@ -12,7 +12,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
 		<div class="col-sm-10">
-			<input type="text" id="disabledInput" class="form-control" name="equipmentID" value="<?php echo $equipment['eq_ID']; ?>" disabled>
+			<input type="text" id="disabledInput" class="form-control" name="equipmentID" value="<?php echo $equipment['eq_id']; ?>" disabled>
 		</div>
 	</div>
 	<div class="form-group">
