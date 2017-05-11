@@ -15,17 +15,16 @@
 	<tr><td style="font-weight: bold">Inspection Frequency</td><td><?php echo $equipment['eq_inspection_frequency']; ?></td></tr>
 	<tr><td style="font-weight: bold">Equipment ID</td><td><?php echo $equipment['eq_id']; ?></td></tr>
 	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['eq_serial']; ?></td></tr>
-	<tr><td style="font-weight: bold">Material ID</td><td><?php echo $equipment['material_id']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode Number</td><td><?php echo $equipment['ass_name']; ?></td></tr>
-	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/barcode/code39/code39_'. $equipment['equipmentID'].'.jpg'); ?>" /></td></tr>
-	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/barcode/qr/qr_'. $equipment['equipmentID'].'.jpg'); ?>" /></td></tr>
+	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/barcode/code39/code39_'. $equipment['eq_id'].'.jpg'); ?>" /></td></tr>
+	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/barcode/qr/qr_'. $equipment['eq_id'].'.jpg'); ?>" /></td></tr>
 </table>
 
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['equipmentID']); ?>">Edit Equipment</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/equipment/delete/'.$equipment['equipmentID'], $attributes); ?>
+<?php echo form_open('/equipment/delete/'.$equipment['eq_id'], $attributes); ?>
 	<input type="submit" value="Delete Equipment" class="btn btn-danger"/>
 </form>
 
