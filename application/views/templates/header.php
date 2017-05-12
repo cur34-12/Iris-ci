@@ -28,7 +28,7 @@
 
             <!--Twitter Typeahead and Bloodhound-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/typeahead.bundle.js"></script>
-            <!-- might be causing issues<script type="text/javascript" src="<?php // echo base_url(); ?>js/bootstrap3-typeahead.js"></script>-->
+            <script type="text/javascript" src="<?php  echo base_url(); ?>js/bootstrap3-typeahead.js"></script>
 
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
