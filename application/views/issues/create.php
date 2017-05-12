@@ -39,21 +39,6 @@
 	            </span>
 	        </div>
     </div>
-	<script>
-		$( function() {
-			$( "#iss_reported_date" ).datepicker();
-		});
-	</script>
-    <!--<script type="text/javascript">
-        $(function () {
-            $('#iss_reported_date').datetimepicker({
-            	useCurrent: true,
-            	showTodayButton: true,
-            	sideBySide: true,
-            	format: 'YYYY-MM-DD',
-            });
-        });
-    </script>-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
@@ -95,4 +80,13 @@ $(function() {
     });                
 
 });
+</script>
+<script type="text/javascript">
+	$('#iss_reported_date .input-group.date').datepicker({
+	    format: "dd/mm/yyyy",
+	    todayBtn: "linked",
+	    clearBtn: true,
+	    autoclose: true,
+	    todayHighlight: true
+	});
 </script>

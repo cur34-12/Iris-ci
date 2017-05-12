@@ -16,7 +16,7 @@
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
             <!-- JS for DateTimePicker -->
-            <!--<script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
             <!-- Jquery UI Style -->
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
