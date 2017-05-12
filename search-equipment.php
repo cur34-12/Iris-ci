@@ -1,17 +1,28 @@
 <?php
-	
-	define (DB_USER, "logi_dbuser");
-	define (DB_PASSWORD, "dblogi0911>");
-	define (DB_DATABASE, "logi");
-	define (DB_HOST, "int.db1.strat.is");
-	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 
-	$sql = "SELECT eq_name FROM equipment 
-			WHERE 
-				eq_name LIKE '%".$_GET['query']."%' 
-			LIMIT 10"; 
-	$result = $mysqli->query($sql);
-	
-	$json = $result->fetch_all(MYSQLI_ASSOC);
+//CREDENTIALS FOR DB
+define ('DBSERVER', 'int.db1.strat.is');
+define ('DBUSER', 'logi_dbuser');
+define ('DBPASS','dblogi0911>');
+define ('DBNAME','logi');
 
-	echo json_encode($json);
+//LET'S INITIATE CONNECT TO DB
+$connection = mysql_connect(DBSERVER, DBUSER, DBPASS) or die("Can't connect to server. Please check credentials and try again");
+$result = mysql_select_db(DBNAME) or die("Can't select database. Please check DB name and try again");
+
+//CREATE QUERY TO DB AND PUT RECEIVED DATA INTO ASSOCIATIVE ARRAY
+if (isset($_REQUEST['query'])) {
+    $query = $_REQUEST['query'];
+    $sql = mysql_query ("SELECT eq_id, eq_name FROM equipment WHERE eq_id LIKE '%{$query}%' OR eq_name LIKE '%{$query}%' OR eq_asset_number LIKE '%{$query}%' OR eq_serial LIKE '%{$query}%'");
+	$array = array();
+    while ($row = mysql_fetch_array($sql)) {
+        $array[] = array (
+            'label' => $row['eq_name'].', '.$row['eq_id'],
+            'value' => $row['eq_name'],
+        );
+    }
+    //RETURN JSON ARRAY
+    echo json_encode ($array);
+}
+
+?>
