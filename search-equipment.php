@@ -9,8 +9,6 @@
 	$sql = "SELECT eq_id, eq_name, eq_asset_number, eq_serial FROM equipment 
 			WHERE 
 				eq_name LIKE '%".$_GET['query']."%' 
-				OR eq_asset LIKE '%".$_GET['query']."%' 
-				OR eq_serial LIKE '%".$_GET['query']."%'
 			LIMIT 10"; 
 	$result = $mysqli->query($sql);
 	
