@@ -1,36 +1,36 @@
 <html>
         <head>
-
+            <!--Setup the responsive viewport stuff-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-            <!-- Jquery -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+            <!-- Jquery / UI -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-            <!--full bootstrap js plugins-->
+            <!-- Full bootstrap js plugins-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
 
-            <!--bootstrap min JS, not sure if there is a difference between this and the above-->
-            <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-
-             <!--js plugin for the datetime picker-->
+            <!-- JS Time Parser-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
-            <script type="text/javascript">
-                moment().format();
-            </script>
-            <!--js for boostrap datetimepicker-->
+
+            <!-- JS for DateTimePicker -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-			<!-- Latest compiled and minified bootswatch CSS, in the future it would be cool to have the user be able to select between day and night mode from their settings or something -->
-			<!--night mode--><!--<link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">-->
-            <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
-            <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
+			<!-- Bootstrap Theme -->
+            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+
+            <!-- Jquery UI Style -->
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
 
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
-            <!--Setup the responsive viewport stuff-->
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Init of the Date Parser-->
+            <script type="text/javascript">
+                moment().format();
+            </script>
 
         </head>
         
