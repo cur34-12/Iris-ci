@@ -9,7 +9,7 @@
 	<div class="col-md-12 text-center">
 		<br/>
 		<h1>Search Dynamic Autocomplete using Bootstrap Typeahead JS</h1>	
-			<input class="typeahead form-control" style="margin:0px auto;width:300px;" type="text">
+			<input class="typeahead form-control" style="margin:0px auto;width:300px;" type="text" data-provide="typeahead">
 	</div>
 </div>
 
