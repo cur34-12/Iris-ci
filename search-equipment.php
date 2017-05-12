@@ -14,13 +14,6 @@
 			LIMIT 10"; 
 	$result = $mysqli->query($sql);
 	
-	$json = array();
-
-	while($row = mysqli_fetch_array($result)){
-	     $json['id'] = $row['eq_id'];
-	     $json['name'] = $row['eq_name'];
-	     $json['asset'] = $row['eq_asset_number'];
-	     $json['serial'] = $row['eq_serial'];
-	 }
+	$json = $result->fetch_all(MYSQLI_ASSOC);
 
 	echo json_encode($json);
