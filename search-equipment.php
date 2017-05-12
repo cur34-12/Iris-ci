@@ -6,7 +6,7 @@
 	define (DB_HOST, "int.db1.strat.is");
 	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 
-	$sql = "SELECT eq_id, eq_name, eq_asset_number, eq_serial FROM equipment 
+	$sql = "SELECT eq_name FROM equipment 
 			WHERE 
 				eq_name LIKE '%".$_GET['query']."%' 
 			LIMIT 10"; 
