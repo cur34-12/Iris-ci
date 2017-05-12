@@ -23,7 +23,6 @@ if (isset($_GET['term'])){
         echo 'ERROR: ' . $e->getMessage();
     }
 
-
     /* Toss back results as json encoded array. */
     echo json_encode($return_arr);
 }
