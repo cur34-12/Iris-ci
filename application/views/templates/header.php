@@ -79,7 +79,7 @@
                             <button type="submit" class="btn btn-default">Search</button>
                         </form>
                         <?php if ($this->ion_auth->logged_in()): ?>   
-                            <li><?php echo $this->ion_auth->user()->row()->username; ?></li>
+                            <li><?php echo anchor($this->ion_auth->user()->row()->username;) ?></li>
                             <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
                         <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>  
                             <li><?php echo anchor(LOGIN_PAGE, 'Login'); ?></li>
