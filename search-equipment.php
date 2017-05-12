@@ -11,12 +11,12 @@
 			LIMIT 10"; 
 	$result = $mysqli->query($sql);
 	
-	$json = [];
-	while($row = $result->fetch_assoc()){
+	$json = array();
+
+	while($row = mysql_fetch_array($result)){
 	     $json['id'] = $row['eq_id'];
 	     $json['name'] = $row['eq_name'];
 	     $json['asset'] = $row['eq_asset_number'];
-	     $json['serial'] = $row['eq_serial'];	     
-	}
+	     $json['serial'] = $row['eq_serial'];
 
 	echo json_encode($json);
