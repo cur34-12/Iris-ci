@@ -39,7 +39,12 @@
 	            </span>
 	        </div>
     </div>
-    <script type="text/javascript">
+	<script>
+		$( function() {
+			$( "#iss_reported_date" ).datepicker();
+		});
+	</script>
+    <!--<script type="text/javascript">
         $(function () {
             $('#iss_reported_date').datetimepicker({
             	useCurrent: true,
@@ -48,7 +53,7 @@
             	format: 'YYYY-MM-DD',
             });
         });
-    </script>
+    </script>-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assigned User</label>
 		<div class="col-sm-10">
