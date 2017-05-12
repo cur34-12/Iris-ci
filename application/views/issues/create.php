@@ -32,8 +32,8 @@
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
-	        <div class='input-group date' id='iss_reported_date'>
-	            <input type='text' class="form-control" name="iss_reported_date"/>
+	        <div class='input-group date'>
+	            <input type='text' class="form-control" id='iss_reported_date' name="iss_reported_date"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
@@ -82,7 +82,7 @@ $(function() {
 });
 </script>
 <script type="text/javascript">
-	$('#iss_reported_date .input-group.date').datepicker({
+	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
 	    todayBtn: "linked",
 	    clearBtn: true,
