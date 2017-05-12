@@ -72,7 +72,7 @@
 	</div>
 	<script>
 		$(function() {
-			$( '#iss_creator_id' ).val('<?php echo $this->ion_auth->user()->row()->id; ?>'); 
+			$( '#iss_creator_id' ).val('<?php echo $this->ion_auth->user()->row()->username; ?>'); 
 		});
 	</script>
 
