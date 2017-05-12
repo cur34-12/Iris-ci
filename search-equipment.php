@@ -18,5 +18,6 @@
 	     $json['name'] = $row['eq_name'];
 	     $json['asset'] = $row['eq_asset_number'];
 	     $json['serial'] = $row['eq_serial'];
+	 }
 
 	echo json_encode($json);
