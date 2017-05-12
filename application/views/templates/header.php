@@ -18,11 +18,11 @@
             <!-- JS for DateTimePicker -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-			<!-- Bootstrap Theme -->
-            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
-
             <!-- Jquery UI Style -->
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
+
+			<!-- Bootstrap Theme -->
+            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
