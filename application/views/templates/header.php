@@ -26,10 +26,6 @@
             <!--day mode--><link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
             <!--orange mode--><!--<link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">-->
 
-            <!--Twitter Typeahead and Bloodhound-->
-            <script type="text/javascript" src="<?php echo base_url(); ?>js/typeahead.bundle.js"></script>
-            <script type="text/javascript" src="<?php  echo base_url(); ?>js/bootstrap3-typeahead.js"></script>
-
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
