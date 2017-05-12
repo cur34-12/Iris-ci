@@ -4,29 +4,25 @@
 <p>Welcome to Logi, an SES focused logistics resource planning system</p>
 
 
-<style>
-#custom-templates .empty-message {
-  padding: 5px 10px;
- text-align: center;
-}
-</style>
 
-<div id="custom-templates">
-  <input class="typeahead" type="text" placeholder="Oscar winners for Best Picture">
+<div class="row">
+	<div class="col-md-12 text-center">
+		<br/>
+		<h1>Search Dynamic Autocomplete using Bootstrap Typeahead JS</h1>	
+			<input class="typeahead form-control" style="margin:0px auto;width:300px;" type="text">
+	</div>
 </div>
 
-<script>
-$('#custom-templates .typeahead').typeahead(null, {
-  name: 'best-pictures',
-  display: 'value',
-  source: bestPictures,
-  templates: {
-    empty: [
-      '<div class="empty-message">',
-        'unable to find any Best Picture winners that match the current query',
-      '</div>'
-    ].join('\n'),
-    suggestion: Handlebars.compile('<div><strong>{{value}}</strong> – {{year}}</div>')
-  }
-});
+<script type="text/javascript">
+
+	$('input.typeahead').typeahead({
+	    source:  function (query, process) {
+        return $.get('/search-equipment.php', { query: query }, function (data) {
+        		console.log(data);
+        		data = $.parseJSON(data);
+	            return process(data);
+	        });
+	    }
+	});
+
 </script>
