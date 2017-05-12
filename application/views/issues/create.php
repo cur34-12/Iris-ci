@@ -11,13 +11,6 @@
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="iss_eq_id" id="iss_eq_id">
 		</div>
-		<script type="text/javascript">
-			$(function(){
-  				$("#iss_eq_id").autocomplete({
-    				source: "equipment/search"
-  				});
-			});
-		</script>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
@@ -86,3 +79,15 @@
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
+
+<script type="text/javascript">
+$(function() {
+    
+    //autocomplete
+    $("#iss_eq_id").autocomplete({
+        source: "search-equipment.php",
+        minLength: 3
+    });                
+
+});
+</script>
