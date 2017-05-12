@@ -5,24 +5,27 @@
 
 
 
+<div class="container">
+<h2>Autocomplete Search with Bootstrap Typeahead</h2>
 <div class="row">
-	<div class="col-md-12 text-center">
-		<br/>
-		<h1>Search Dynamic Autocomplete using Bootstrap Typeahead JS</h1>	
-			<input class="typeahead form-control" style="margin:0px auto;width:300px;" type="text" data-provide="typeahead">
-	</div>
+<div class="col-xs-2">
+<br/>
+<label>Search Name</label>
+<input class="typeahead form-control" type="text" placeholder="Search Name....">
+</div>
+</div>
 </div>
 
-<script type="text/javascript">
-
-	$('input.typeahead').typeahead({
-	    source:  function (query, process) {
-        return $.get('/search-equipment.php', { query: query }, function (data) {
-        		console.log(data);
-        		data = $.parseJSON(data);
-	            return process(data);
-	        });
-	    }
-	});
-
+<script>
+$( document ).ready(function() {
+$('input.typeahead').typeahead({
+source: function (query, process) {
+return $.get('search_equipment.php', { query: query }, function (data) {
+data = $.parseJSON(data);
+return process(data);
+});
+},
+showHintOnFocus:'all'
+});
+});
 </script>
