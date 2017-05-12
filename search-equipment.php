@@ -16,9 +16,7 @@ if (isset($_REQUEST['query'])) {
     $sql = mysql_query ("SELECT eq_id, eq_name FROM equipment WHERE eq_id LIKE '%{$query}%' OR eq_name LIKE '%{$query}%' OR eq_asset_number LIKE '%{$query}%' OR eq_serial LIKE '%{$query}%'");
 	$array = array();
     while ($row = mysql_fetch_array($sql)) {
-        $array[] = array (
-            'label' => $row['eq_name'].', '.$row['eq_id'],
-            'value' => $row['eq_name'],
+        $array[] = $row['eq_name'];
         );
     }
     //RETURN JSON ARRAY
