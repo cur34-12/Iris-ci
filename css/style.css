@@ -60,3 +60,9 @@ div.today {
 * html .ui-autocomplete {
 	height: 100px;
 }
+
+/* overriding bootstrap style. For some reason calendar prompts were too wide */
+.col-sm-10.input-group.date {
+    padding-left: 15px;
+    padding-right: 15px;
+}
