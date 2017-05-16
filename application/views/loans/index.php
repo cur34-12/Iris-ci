@@ -20,7 +20,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach($loan as $loan) : ?>
+		<?php foreach($loans as $loan) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/loans/'. $loan['loan_id']); ?>"><?php echo $loan['loan_id']; ?></a></td>
 					<td><?php echo $loan['loan_member']; ?></td>
