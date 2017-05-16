@@ -11,7 +11,7 @@
 				$this->db->join('loan_groups', 'loan_groups.loan_group_id = loans.loan_group');
 				$this->db->join('members', 'members.member_id = loans.loan_member');
 				$this->db->join('equipment', 'equipment.eq_id = loans.loan_equipment');
-				$this->db->join('users', 'users.user_id = loans.loan_user');
+				$this->db->join('users', 'users.id = loans.loan_user');
 				$query = $this->db->get('loans');
 				return $query->result_array();
 			}
