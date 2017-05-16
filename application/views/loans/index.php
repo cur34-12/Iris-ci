@@ -23,11 +23,11 @@
 		<?php foreach($loans as $loan) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/loans/'. $loan['loan_id']); ?>"><?php echo $loan['loan_id']; ?></a></td>
-					<td><?php echo $loan['loan_member']; ?></td>
-					<td><?php echo $loan['loan_equipment']; ?></td>
+					<td><?php echo $loan['member_name']; ?></td>
+					<td><?php echo $loan['eq_name']; ?></td>
 					<td><?php echo $loan['loan_out_date']; ?></td>
 					<td><?php echo $loan['loan_in_date']; ?></td>
-					<td><?php echo $loan['loan_user']; ?></td>
+					<td><?php echo $loan['username']; ?></td>
 					<td><?php echo $loan['loan_created_date']; ?></td>
 					<td><a href="<?php echo site_url('/loans/groups/'. $loan['loan_group_id']); ?>"><?php echo $loan['loan_group_name']; ?></td>
 					<td><?php echo $loan['loan_comment']; ?></td>
