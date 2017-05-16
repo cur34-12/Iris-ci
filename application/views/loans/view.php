@@ -1,11 +1,11 @@
 <head>
 	<title><?php echo $loan['loan_id']; ?> - Logi</title>
 </head>
-<h2 style="text-transform: uppercase;">Loan - <?php echo $loan['loan_id']; ?></h2>
+<h2 style="text-transform: uppercase;">Loan - <?php echo $loans['loan_id']; ?></h2>
 
 <table class="table table-striped table-hover ">
-	<tr><td style="font-weight: bold">Loan ID</td><td><?php echo $loan['loan_id']; ?></td></tr>
-	<tr><td style="font-weight: bold">Member</td><td><?php echo $loan['member_name']; ?></td></tr><!--join from other table-->
+	<tr><td style="font-weight: bold">Loan ID</td><td><?php echo $loans['loan_id']; ?></td></tr>
+	<tr><td style="font-weight: bold">Member</td><td><?php echo $loans['member_name']; ?></td></tr><!--join from other table-->
 	<tr><td style="font-weight: bold">Equipment</td><td><a href="<?php echo site_url('/equipment/'. $loan['eq_id']); ?>"><?php echo $loan['eq_name']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Date Issued</td><td><?php echo $loan['loan_out_date']; ?></td></tr>
 	<tr><td style="font-weight: bold">Date Returned</td><td><?php echo $loan['loan_in_date']; ?></td></tr>
