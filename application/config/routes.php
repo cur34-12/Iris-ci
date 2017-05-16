@@ -19,6 +19,14 @@ $route['equipment/search'] = 'search/equiment';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 
+/* Loans Routes */
+$route['loans/delete'] = 'loans/select_delete';
+$route['loans/edit'] = 'loans/select_edit';
+$route['loans/create'] = 'loans/create';
+$route['loans/update'] = 'loans/update';
+$route['loans/(:any)'] = 'loans/view/$1';
+$route['loans'] = 'loans/index';
+
 /* Vehicle Routes */
 $route['vehicles/delete'] = 'vehicles/select_delete';
 $route['vehicles/edit'] = 'vehicles/select_edit';
