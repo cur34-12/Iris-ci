@@ -2,7 +2,7 @@
         
         //use Zend\Barcode\Barcode;
 
-        class Equipment extends CI_Controller {
+        class Loans extends CI_Controller {
                 public function index(){
                     $data['title'] = 'Loans'; 
 
