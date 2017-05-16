@@ -4,13 +4,13 @@
 
         class Loans extends CI_Controller {
                 public function index(){
-                    $data['title'] = 'Loans'; 
+                       $data['title'] = 'Loans';
 
-                    $data['loans'] = $this->Loans_model->get_loans();
+                       $data['loans'] = $this->Loans_model->get_loans();
                         
-        	       $this->load->view('templates/header', $data);
-        	       $this->load->view('loans/index', $data);
-        	       $this->load->view('templates/footer');
+        	           $this->load->view('templates/header', $data);
+        	           $this->load->view('loans/index', $data);
+        	           $this->load->view('templates/footer');
                 }
 
                 public function view($loan_id = null){
