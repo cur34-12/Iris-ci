@@ -33,7 +33,7 @@
 					<td><?php echo $loan['loan_comment']; ?></td>
 					<td><?php echo $loan['loan_last_modified']; ?></td>
 					<td><?php echo $loan['loan_last_modified_user']; ?></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="loans/edit/<?php echo $loans['loan_id']; ?>">Edit</a></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="loans/edit/<?php echo $loan['loan_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
