@@ -63,7 +63,7 @@
                                     <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
                                     <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>loans">Q Store</a></li>
+                                    <li><a href="<?php echo base_url(); ?>loans">Loans</a></li>
                                 </ul>
                         </li>
                         <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
