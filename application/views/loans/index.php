@@ -22,15 +22,17 @@
 	<tbody>
 		<?php foreach($loan as $loan) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/loans/'. $loan['loan_id']); ?>"><?php echo $loan['loan_name']; ?></a></td>
+					<td><a href="<?php echo site_url('/loans/'. $loan['loan_id']); ?>"><?php echo $loan['loan_id']; ?></a></td>
 					<td><?php echo $loan['loan_member']; ?></td>
 					<td><?php echo $loan['loan_equipment']; ?></td>
 					<td><?php echo $loan['loan_out_date']; ?></td>
 					<td><?php echo $loan['loan_in_date']; ?></td>
 					<td><?php echo $loan['loan_user']; ?></td>
 					<td><?php echo $loan['loan_created_date']; ?></td>
-					<td><a href="<?php echo site_url('/loans/groups/'. $loan['loangroup_id']); ?>"><?php echo $loan['loangroup_name']; ?></td>
+					<td><a href="<?php echo site_url('/loans/groups/'. $loan['loan_group_id']); ?>"><?php echo $loan['loan_group_name']; ?></td>
 					<td><?php echo $loan['loan_comment']; ?></td>
+					<td><?php echo $loan['loan_last_modified']; ?></td>
+					<td><?php echo $loan['loan_last_modified_user']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="loans/edit/<?php echo $loans['loan_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
