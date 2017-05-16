@@ -43,7 +43,7 @@
                 public function edit($loan_id){
                         $data['loan'] = $this->Loans_model->get_loans($loan_id);
 
-                        if(empty($data['loans'])){
+                        if(empty($data['loan'])){
                                 show_404();
                         }
 
