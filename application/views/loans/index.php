@@ -16,7 +16,7 @@
 			<th>Loan Group</th>
 			<th>Comment</th>
 			<th>Last Modified</th>
-			<th>Las Modified By</th>
+			<th>Last Modified By</th>
 		</tr>
 	</thead>
 	<tbody>

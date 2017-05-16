@@ -50,7 +50,7 @@
                         $data['title'] = 'Edit $loan_id';
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/update', $data);
+                        $this->load->view('loans/update', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -64,7 +64,7 @@
                     $data['loans'] = $this->Loans_model->get_loans();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('equipment/edit', $data);
+                    $this->load->view('loans/edit', $data);
                     $this->load->view('templates/footer');
                 }
                 
