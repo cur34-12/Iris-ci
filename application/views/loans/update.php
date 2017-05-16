@@ -52,19 +52,19 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Last Modified</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="loan_created_date" value="<?php echo $loan['loan_last_modified']; ?>" disabled>
+			<input type="text" class="form-control" name="loan_created_date" value="<?php echo date('d/m/y H:i:s');?>" disabled>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Last Modified By</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="loan_created_date" value="<?php echo $loan['loan_last_modified_user']; ?>" disabled>
+			<input type="text" class="form-control" name="loan_created_date" value="<?php echo echo $this->ion_auth->user()->row()->username; ?>" disabled>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Comments</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" name="loan_comments" value="<?php echo $loan['loan_comments']; ?>"></textarea>
+			<textarea rows="3" class="form-control" name="loan_comments" value="<?php echo $loan['loan_comment']; ?>"></textarea>
 		</div>
 	</div>
 	<div class="form-group">
