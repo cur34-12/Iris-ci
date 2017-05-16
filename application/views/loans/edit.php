@@ -11,6 +11,8 @@
 <?php foreach($loans as $loan) : ?>
 <tr>
 <td style="text-transform: uppercase;"><a href="<?php echo site_url('/loans/edit/'. $loan['loan_id']); ?>"><?php echo $loan['loan_id']; ?></a></td>
+<td style="text-transform: uppercase;"><a href="<?php echo site_url('/loans/edit/'. $loan['loan_id']); ?>"><?php echo $loan['loan_member']; ?></a></td>
+<td style="text-transform: uppercase;"><a href="<?php echo site_url('/loans/edit/'. $loan['loan_id']); ?>"><?php echo $loan['loan_out_date']; ?></a></td>
 </tr>
 <?php endforeach; ?>
 </table>
