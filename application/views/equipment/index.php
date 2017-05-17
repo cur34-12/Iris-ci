@@ -44,8 +44,8 @@
 					<td><?php echo $equipment['eq_in_service']; ?></td>
 					<td><?php echo $equipment['eq_inspection_frequency']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
-					<td><img src='<?php echo $bar->BarCode_link("UPC-A", "12", 50, 1, "#000000", "#ff6600"); ?>' /></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
+					<td><img src='<?php echo $bar->BarCode_link("UPC-A", $equipment['eq_id'], 50, 1, "#000000", "#ff6600"); ?>' /></td>
+					<td><img src='<?php echo $bar->QRCode_link('text', $equipment['eq_id'], 100, 2); ?>' /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
@@ -55,3 +55,5 @@
 <a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
 <a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>
 <a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> 
+
+
