@@ -1,61 +1,62 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Vehicle_model extends CI_Model{
+	class Suppliers_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
 		}
 
-		public function get_vehicles($veh_name = FALSE){
-			if($veh_name === FALSE){
-				$this->db->order_by('veh_name', 'ASC');
-				$query = $this->db->get('vehicles');
+		public function get_suppliers($supplier_id = FALSE){
+			if($supplier_id === FALSE){
+				$this->db->order_by('supplier_name', 'ASC');
+				$query = $this->db->get('suppliers');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('vehicles', array('veh_name' => $veh_name));
+			$query = $this->db->get_where('suppliers', array('supplier_id' => $supplier_id));
 			return $query->row_array();
 		}
 
-		public function create_vehicle(){
+		public function create_supplier(){
 			$data = array(
-				'veh_name' => $this->input->post('veh_name'),
-				'veh_rego' => $this->input->post('veh_rego'),
-				'veh_make' => $this->input->post('veh_make'),
-				'veh_category' => $this->input->post('veh_category'),
-				'veh_model' => $this->input->post('veh_model'),
-				'veh_year' => $this->input->post('veh_year'),
-				'veh_capacity' => $this->input->post('veh_capacity'),
-				'veh_location_id' => $this->input->post('veh_location_id'),
-				'veh_list_id' => $this->input->post('veh_list_id'),
-				'veh_eq_id' => $this->input->post('veh_name'),
-				'veh_license_type' => $this->input->post('veh_license_type')
+				'supplier_name' => $this->input->post('supplier_name'),
+				'supplier_street' => $this->input->post('supplier_street'),
+				'supplier_suburb' => $this->input->post('supplier_suburb'),
+				'supplier_number' => $this->input->post('supplier_phone'),
+				'supplier_services' => $this->input->post('supplier_services'),
+				'supplier_account' => $this->input->post('supplier_account'),
+				'supplier_account_num' => $this->input->post('supplier_account_num'),
+				'supplier_active' => $this->input->post('supplier_active'),
+				'supplier_created_date' => $this->input->post('supplier_created_date'),
+				'supplier_created_by' => $this->input->post('supplier_created_by'),
+				'supplier_last_updated' => $this->input->post('supplier_created_by'),
+				'supplier_last_updated_by' => $this->input->post('supplier_created_by')
 			);
 
-			return $this->db->insert('vehicles', $data);
+			return $this->db->insert('suppliers', $data);
 		}
 
-		public function delete_vehicle($name){
-			$this->db->where('name', $name);
-			$this->db->delete('vehicles');
+		public function delete_supplier($supplier_id){
+			$this->db->where('supplier_id', $supplier_id);
+			$this->db->delete('suppliers');
 			return true;
 		}
 
-		public function update_vehicle(){
+		public function update_supplier(){
 			$data = array(
-				'veh_name' => $this->input->post('veh_name'),
-				'veh_rego' => $this->input->post('veh_rego'),
-				'veh_make' => $this->input->post('veh_make'),
-				'veh_category' => $this->input->post('veh_category'),
-				'veh_model' => $this->input->post('veh_model'),
-				'veh_year' => $this->input->post('veh_year'),
-				'veh_capacity' => $this->input->post('veh_capacity'),
-				'veh_location_id' => $this->input->post('veh_location_id'),
-				'veh_list_id' => $this->input->post('veh_list_id'),
-				'veh_eq_id' => $this->input->post('veh_name'),
-				'veh_license_type' => $this->input->post('veh_license_type')
+				'supplier_id' => $this->input->post('supplier_id'),
+				'supplier_name' => $this->input->post('supplier_name'),
+				'supplier_street' => $this->input->post('supplier_street'),
+				'supplier_suburb' => $this->input->post('supplier_suburb'),
+				'supplier_number' => $this->input->post('supplier_phone'),
+				'supplier_services' => $this->input->post('supplier_services'),
+				'supplier_account' => $this->input->post('supplier_account'),
+				'supplier_account_num' => $this->input->post('supplier_account_num'),
+				'supplier_active' => $this->input->post('supplier_active'),
+				'supplier_last_updated' => $this->input->post('supplier_created_by'),
+				'supplier_last_updated_by' => $this->input->post('supplier_created_by')
 			);
 
-			$this->db->where('veh_id', $this->input->post('veh_id'));
-			return $this->db->update('vehicles', $data);
+			$this->db->where('supplier_id', $this->input->post('supplier_id'));
+			return $this->db->update('suppliers', $data);
 		}
 	}
