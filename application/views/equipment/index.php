@@ -1,5 +1,12 @@
 <head>
 	<title>Equipment - Logi</title>
+
+	<?php
+	require("barcode/barcode.class.php");
+	$bar	= new BARCODE();
+	?>
+
+
 </head>
 <!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
 
@@ -37,7 +44,7 @@
 					<td><?php echo $equipment['eq_in_service']; ?></td>
 					<td><?php echo $equipment['eq_inspection_frequency']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
+					<td><img src='<?php echo $bar->BarCode_link("UPC-A", "12", 50, 1, "#000000", "#ff6600"); ?>' /></td>
 					<td><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
 			</tr>
