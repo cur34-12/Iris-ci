@@ -1,5 +1,12 @@
 <head>
 	<title>Equipment - Logi</title>
+
+	<?php
+	require("barcode/barcode.class.php");
+	$bar	= new BARCODE();
+	?>
+
+
 </head>
 <!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
 
@@ -37,8 +44,8 @@
 					<td><?php echo $equipment['eq_in_service']; ?></td>
 					<td><?php echo $equipment['eq_inspection_frequency']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/EAN7-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
-					<td><img src="<?php echo site_url('/barcodes/equipment/QR-'. $equipment['eq_id'].'.jpg'); ?>" /></td>
+					<td><img src='<?php echo $bar->BarCode_link("EAN-13", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
+					<td><img src='<?php echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 50, 2); ?>' /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
@@ -48,3 +55,5 @@
 <a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
 <a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>
 <a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> 
+
+
