@@ -23,7 +23,8 @@
 		<?php foreach($issues as $issue) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['issueID']); ?>"><?php echo $issue['iss_id']; ?></a></td>
-					<td><?php echo $issue['iss_name']; //from equipment table join ?></td>
+					<td><?php echo $issue['iss_name']; ?></td>
+					<td><a href="/equipment/view/<?php echo['eq_id']; ?>"><?php echo $issue['eq_name']; ?></a></td>
 					<td><?php echo $issue['iss_title']; ?></td>
 					<td><?php echo word_limiter($issue['iss_description'], 8); ?></td>
 					<td><?php echo $issue['iss_reporter_id']; ?></td>
