@@ -3,7 +3,7 @@
                 public function index(){
                         $data['title'] = 'Supliers'; 
 
-                         $data['suppliers'] = $this->Vehicle_model->get_suppliers();
+                         $data['suppliers'] = $this->Suppliers_model->get_suppliers();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('suppliers/index', $data);
@@ -63,7 +63,7 @@
 
                 public function select_edit(){ 
 
-                    $data['suppliers'] = $this->Vehicle_model->get_suppliers();
+                    $data['suppliers'] = $this->Suppliers_model->get_suppliers();
                         
                     $this->load->view('templates/header', $data);
                     $this->load->view('suppliers/edit', $data);

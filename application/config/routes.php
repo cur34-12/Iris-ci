@@ -6,7 +6,6 @@ $route['issues/delete'] = 'issues/select_delete';
 $route['issues/edit'] = 'issues/select_edit';
 $route['issues/create'] = 'issues/create';
 $route['issues/update'] = 'issues/update';
-$route['issues/search'] = 'search/issues';
 $route['issues/(:any)'] = 'issues/view/$1';
 $route['issues'] = 'issues/index';
 
@@ -15,7 +14,6 @@ $route['equipment/delete'] = 'equipment/select_delete';
 $route['equipment/edit'] = 'equipment/select_edit';
 $route['equipment/create'] = 'equipment/create';
 $route['equipment/update'] = 'equipment/update';
-$route['equipment/search'] = 'search/equiment';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 
@@ -27,12 +25,27 @@ $route['loans/update'] = 'loans/update';
 $route['loans/(:any)'] = 'loans/view/$1';
 $route['loans'] = 'loans/index';
 
+/* Suppliers Routes */
+$route['suppliers/delete'] = 'suppliers/select_delete';
+$route['suppliers/edit'] = 'suppliers/select_edit';
+$route['suppliers/create'] = 'suppliers/create';
+$route['suppliers/update'] = 'suppliers/update';
+$route['suppliers/(:any)'] = 'suppliers/view/$1';
+$route['suppliers'] = 'suppliers/index';
+
+/* Member Routes */
+$route['members/delete'] = 'members/select_delete';
+$route['members/edit'] = 'members/select_edit';
+$route['members/create'] = 'members/create';
+$route['members/update'] = 'members/update';
+$route['members/(:any)'] = 'members/view/$1';
+$route['members'] = 'members/index';
+
 /* Vehicle Routes */
 $route['vehicles/delete'] = 'vehicles/select_delete';
 $route['vehicles/edit'] = 'vehicles/select_edit';
 $route['vehicles/create'] = 'vehicles/create';
 $route['vehicles/update'] = 'vehicles/update';
-$route['vehicles/search'] = 'search/vehicles';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
