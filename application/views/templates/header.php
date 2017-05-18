@@ -47,8 +47,7 @@
                         <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
-                                    <li><a href="<?php echo base_url(); ?>lists">AEL</a></li>
+                                    <li><a href="<?php echo base_url(); ?>vehicles">Register</a></li>
                                     <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
@@ -60,10 +59,12 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo base_url(); ?>equipment">Register</a></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment/lists">Lists</a></li>
                                     <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
-                                    <li role="separator" class="divider"></li>
                                     <li><a href="<?php echo base_url(); ?>loans">Loans</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/edit">Edit</a></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/create">Create</a></li>
+                                    <li><a href="<?php echo base_url(); ?>equipment/delete">Delete</a></li>
                                 </ul>
                         </li>
                         <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
