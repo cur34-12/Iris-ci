@@ -21,7 +21,7 @@
 		public function create_issue(){
 			$data = array(
 				'iss_title' => $this->input->post('iss_title'),
-				'iss_eq_id' => $this->input->post('isseq_id'),
+				'iss_eq_id' => $this->input->post('iss_eq_id'),
 				'iss_description' => $this->input->post('iss_description'),
 				'iss_reporter_id' => $this->input->post('iss_reporter_id'),
 				'iss_reported_date' => $this->input->post('iss_reported_date'),
