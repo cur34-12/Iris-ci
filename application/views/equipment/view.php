@@ -16,8 +16,8 @@
 	<tr><td style="font-weight: bold">Equipment ID</td><td><?php echo $equipment['eq_id']; ?></td></tr>
 	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['eq_serial']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode Number</td><td><?php echo $equipment['ass_name']; ?></td></tr>
-	<tr><td style="font-weight: bold">Barcode</td><td><img src="<?php echo site_url('/barcode/code39/code39_'. $equipment['eq_id'].'.jpg'); ?>" /></td></tr>
-	<tr><td style="font-weight: bold">QR</td><td><img src="<?php echo site_url('/barcode/qr/qr_'. $equipment['eq_id'].'.jpg'); ?>" /></td></tr>
+	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php echo $bar->BarCode_link("EAN-13", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
+	<tr><td style="font-weight: bold">QR</td><td><img src='<?php echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
 </table>
 
 <hr />
