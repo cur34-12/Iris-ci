@@ -32,11 +32,6 @@
                 moment().format();
             </script>
 
-            <?php
-                require(FCPATH . "barcode/barcode.class.php");
-                $bar = new BARCODE();
-            ?>
-
         </head>
         
         <body>
