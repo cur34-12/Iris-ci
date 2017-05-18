@@ -6,7 +6,6 @@
             ?>
 
 </head>
-<!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
 
 <table class="table table-striped table-hover ">
 	<thead>
@@ -27,7 +26,7 @@
 			<th>Edit</th>
 		</tr>
 	</thead>
-	<!--Fields must be added to this table if an extra field is added to the relevant table in the database-->
+	
 	<tbody>
 		<?php foreach($equipment as $equipment) : ?>
 			<tr>
