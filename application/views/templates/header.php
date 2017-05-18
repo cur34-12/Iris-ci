@@ -66,9 +66,7 @@
                                     <li><a href="<?php echo base_url(); ?>equipment/create">Create</a></li>
                                     <li><a href="<?php echo base_url(); ?>equipment/delete">Delete</a></li>
                                 </ul>
-                        </li>
-                        <li><a href="<?php echo base_url(); ?>attendance">Attendance</a></li><!--Not yet implemented-->
-                                        
+                        </li>                          
         			</ul>
                     <ul class="nav navbar-nav navbar-right">
                         <form class="navbar-form navbar-left">
