@@ -2,7 +2,7 @@
 	<title><?php echo $equipment['eq_name']; ?> - Logi</title>
 
 			<?php
-                require("/barcode/barcode.class.php");
+                require($_SERVER['DOCUMENT_ROOT'] . "/barcode/barcode.class.php");
                 $bar = new BARCODE();
             ?>
 
