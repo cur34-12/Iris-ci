@@ -1,11 +1,6 @@
 <head>
 	<title><?php echo $equipment['eq_name']; ?> - Logi</title>
 
-			<?php
-                require("barcode/barcode.class.php");
-                $bar = new BARCODE();
-            ?>
-
 </head>
 <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
 
