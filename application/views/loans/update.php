@@ -50,15 +50,9 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Last Modified</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="loan_created_date" value="<?php echo date('d/m/y H:i:s');?>" disabled>
-		</div>
-	</div>
-	<div class="form-group">
 		<label class="control-label col-sm-2">Last Modified By</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="loan_created_date" value="<?php echo $this->ion_auth->user()->row()->username; ?>" disabled>
+			<input type="text" class="form-control" name="loan_created_date" value="<?php echo $this->ion_auth->user()->row()->username; ?>" hidden>
 		</div>
 	</div>
 	<div class="form-group">
