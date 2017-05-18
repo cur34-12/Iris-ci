@@ -1,10 +1,5 @@
 <head>
 	<title>Equipment - Logi</title>
-			<?php
-                require($_SERVER['DOCUMENT_ROOT'] . "barcode/barcode.class.php");
-                $bar = new BARCODE();
-            ?>
-
 </head>
 
 <table class="table table-striped table-hover ">
