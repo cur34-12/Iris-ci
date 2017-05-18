@@ -33,8 +33,8 @@
             </script>
 
             <?php
-                require("barcode/barcode.class.php");
-                $bar    = new BARCODE();
+                require("/barcode/barcode.class.php");
+                $bar = new BARCODE();
             ?>
 
         </head>
