@@ -61,10 +61,6 @@ $route['([a-z0-9]+[-_]+[a-z0-9]+)|([a-z0-9]+\W+)'] = 'page/title/$1';
 $route['page'] = 'page';
 $route['sitemap\.xml'] = "seo";
 
-/* Barcode Route */
-$route['barcode/create_code39'] = 'barcoding/ean13';
-$route['barcode/create_qr'] = 'barcoding/qr';
-
 /* User Management */
 $route['admin/search'] = 'search/users';
 
