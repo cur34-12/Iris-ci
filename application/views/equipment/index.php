@@ -1,6 +1,9 @@
 <head>
 	<title>Equipment - Logi</title>
-
+			<?php
+                require($_SERVER['DOCUMENT_ROOT'] . "barcode/barcode.class.php");
+                $bar = new BARCODE();
+            ?>
 
 </head>
 <!--This table needs to be changed to be relevant for equipment, once its done it can be copied to any other relevant page that lists equipment-->
