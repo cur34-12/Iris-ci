@@ -28,6 +28,7 @@
                         $data['title'] = 'Create Issue';
                         $data['usernames'] = $this->User_model->get_users();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['members'] = $this->Unitmembers_model->get_members();
 
                         $this->form_validation->set_rules('title', 'Title', 'required');
 
@@ -48,6 +49,7 @@
                         $data['issue'] = $this->Issues_model->get_issues($iss_id);
                         $data['usernames'] = $this->User_model->get_users();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['members'] = $this->Unitmembers_model->get_members();
 
                         if(empty($data['issue'])){
                                 show_404();
