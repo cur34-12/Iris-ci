@@ -36,7 +36,7 @@
 				WHERE `loangroup_id` = '?'
 				",
 				array($loangroup_id)
-			)
+			);
 
 			return $query->row_array();
 		}
