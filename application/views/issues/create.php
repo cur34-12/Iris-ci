@@ -92,7 +92,7 @@ $(function() {
     .autocomplete( "instance" )._renderItem = function( ul, item ) {
     	
       return $( "<li>" )
-        .append( "<div>" + item.eq_name + "<br>" + "ID #: "+ item.eq_id + ", Serial #: " + item.eq_serial + ", Asset #:" + item.eq_asset_number + "</div>" )
+        .append( "<div>" + item.eq_name + "<br>" + "ID#: "+ item.eq_id + ", Serial#: " + item.eq_serial + ", Asset#:" + item.eq_asset_number + "</div>" )
         .appendTo( ul );
     };
   } );
