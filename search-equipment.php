@@ -20,7 +20,7 @@ if (isset($_GET['term'])){
         while($row = $stmt->fetch()) {
             $return_arr[] =  $row['eq_name'];
         }*/
-        $return_arr = $stmt.fetchall();
+        $return_arr = $stmt->fetchall();
 
     } catch(PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
