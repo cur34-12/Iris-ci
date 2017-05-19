@@ -36,9 +36,9 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reporting Member</label>
 		<div class="col-sm-10">
-			<select id=iss_reporter_id" name="iss_reporter_id" class="form-control" >
+			<select id="iss_reporter_id" name="iss_reporter_id" class="form-control" >
 				<?php foreach($members as $member): ?>
-        				<option value="<?php echo $members['member_id']; ?>"><?php echo $members['member_name']; ?></option>
+        				<option value="<?php echo $member['member_id']; ?>"><?php echo $member['member_name']; ?></option>
         		<?php endforeach; ?>
         	</select>
 		</div>
@@ -57,19 +57,25 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
-        				<option value="<?php echo $username['id']; ?>"><?php echo $usernames['username']; ?></option>
+        				<option value="<?php echo $username['id']; ?>"><?php echo $username['username']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
 	</div>
-
-	<!-- Hidden Values -->
-	<div class="form-group">
-		<!-- New Status -->
-		<input type="text" class="form-control" name="iss_status" value="New" hidden>
-		<!-- Created By User -->
-		<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>" hidden>
+	<div class="form-group" style="display: none;">
+		<label class="control-label col-sm-2">Status</label>
+		<div class="col-sm-10">
+			<!-- New Status -->
+			<input type="text" class="form-control" name="iss_status" value="New" hidden>
+		</div>
 	</div>
+	<div class="form-group" style="display: none;">
+		<label class="control-label col-sm-2">Creator ID</label>
+		<div class="col-sm-10">
+			<!-- Created By User -->
+			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>" hidden>
+		</div>
+	</div> 
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>

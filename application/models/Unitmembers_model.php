@@ -7,7 +7,6 @@
 
 		public function get_members($member_id = FALSE){
 			if($member_id === FALSE){
-				$this->db->order_by('member_id', 'ASC');
 				$query = $this->db->get('members');
 				return $query->result_array();
 			}
