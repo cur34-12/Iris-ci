@@ -16,10 +16,11 @@ if (isset($_GET['term'])){
         $stmt = $conn->prepare("SELECT eq_name, eq_id, eq_serial, eq_asset_number, concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) as searchValue FROM equipment WHERE concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) LIKE :term");
 
         $stmt->execute(array('term' => '%'.$_GET['term'].'%'));
-        
+        /*
         while($row = $stmt->fetch()) {
             $return_arr[] =  $row['eq_name'];
-        }
+        }*/
+        $return_arr = $stmt.fetchall();
 
     } catch(PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
