@@ -23,7 +23,7 @@
 
 
 
-<a class="btn btn-default" role="button" href="<?php echo site_url('/loans/groups/create'); ?>">Create Loan</a>
+<a class="btn btn-default" role="button" href="<?php echo site_url('/loan-groups/create'); ?>">Create Loan Group</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/loans/groups/edit/'. $loan['loan_id']); ?>">Edit Loan</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
 <?php echo form_open('/loans/delete/'.$loan['loan_id'], $attributes); ?>
