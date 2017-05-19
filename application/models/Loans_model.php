@@ -8,7 +8,7 @@
 		public function get_loans($loan_id = FALSE){
 			if($loan_id === FALSE){
 				$this->db->order_by('loan_out_date', 'ASC');
-				$this->db->join('loan_groups', 'loan_groups.loan_group_id = loans.loan_group');
+				$this->db->join('loangroups', 'loangroups.loangroup_id = loans.loan_group');
 				$this->db->join('members', 'members.member_id = loans.loan_member');
 				$this->db->join('equipment', 'equipment.eq_id = loans.loan_equipment');
 				$query = $this->db->get('loans');
@@ -30,6 +30,7 @@
 				'loan_in_date' => $this->input->post('loan_in_date'),
 				'loan_user' => $this->input->post('loan_user'),
 				'loan_last_modified_user' => $this->input->post('loan_last_modified_user'),
+				
 				'loan_created_date' => $this->input->post('loan_created_date'),
 				'loan_group' => $this->input->post('loan_group'),
 				'loan_comment' => $this->input->post('loan_comment')
