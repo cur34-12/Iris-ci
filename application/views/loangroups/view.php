@@ -8,9 +8,9 @@
 	<tr><td style="font-weight: bold">Loan Group Name</td><td><?php echo $loangroup['loangroup_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Member</td><td><a href="<?php echo site_url('/members/'. $loangroup['member_id']); ?>"><?php echo $loangroup['member_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Last Modified</td><td><?php echo $loangroup['loangroup_last_modified']; ?></a></td></tr>
-	<tr><td style="font-weight: bold">Loan Group Last Modified by</td><td><?php echo $loangroup['username']; ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group Last Modified by</td><td><?php echo $loangroup['ModifiedUserName']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Created Date</td><td><?php echo $loangroup['loangroup_created_date']; ?></td></tr>
-	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo json_encode($loangroup); ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo $loangroup['CreatedUserName']; ?></td></tr>
 </table>
 
 <hr />
