@@ -17,7 +17,8 @@
 			}
 			$this->db->join('members', 'members.member_id = loangroups.loangroup_member');
 			$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user');
-			$this->db->join('users', 'users.id = loangroups.loangroup_created_by');
+				$this->db->join('users as musers', 'musers.id = loangroups.loangroup_created_by');
+				$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user');
 			$query = $this->db->get_where('loangroups', array('loangroup_id' => $loangroup_id));
 			return $query->row_array();
 		}
