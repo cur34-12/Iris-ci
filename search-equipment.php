@@ -13,8 +13,8 @@ if (isset($_GET['term'])){
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         //$stmt = $conn->prepare('SELECT eq_name FROM equipment WHERE eq_name LIKE :term');
-        $stmt = $conn->prepare('SELECT eq_name FROM equipment WHERE eq_name LIKE :term');
-        //$stmt = $conn->prepare('SELECT eq_name, eq_id, eq_serial, eq_asset_number, concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) as value FROM equipment WHERE concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) LIKE :term');
+        //$stmt = $conn->prepare('SELECT eq_name FROM equipment WHERE eq_name LIKE :term');
+        $stmt = $conn->prepare('SELECT eq_name, eq_id, eq_serial, eq_asset_number, concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) as value FROM equipment WHERE concat(coalesce(eq_name,''),coalesce(eq_id,''),coalesce(eq_serial,''),coalesce(eq_asset_number,'')) LIKE :term');
 
         $stmt->execute(array('term' => '%'.$_GET['term'].'%'));
         
