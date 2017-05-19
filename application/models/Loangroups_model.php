@@ -15,11 +15,29 @@
 				$query = $this->db->get('loangroups');
 				return $query->result_array();
 			}
-			$this->db->join('members', 'members.member_id = loangroups.loangroup_member');
-			$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user');
-				$this->db->join('users as musers', 'musers.id = loangroups.loangroup_created_by');
-				$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user');
-			$query = $this->db->get_where('loangroups', array('loangroup_id' => $loangroup_id));
+
+			$query = $this->db->query("
+				SELECT
+					`loangroups`.`loangroup_id`,
+					`loangroups`.`loangroup_name`,
+					`loangroups`.`loangroup_member` ,
+					`loangroups`.`loangroup_last_modified`,
+					`loangroups`.`loangroup_last_modified_user`,
+					`loangroups`.`loangroup_created_date` ,
+					`loangroups`.`loangroup_created_by`,
+					members.member_name,
+					members.member_id,
+					cusers.username as CreatedUserName,
+					musers.username as ModifiedUserName
+				FROM `loangroups` 
+				INNER JOIN `members` ON `members`.`member_id` = `loangroups`.`loangroup_member` 
+				INNER JOIN `users` as `musers` ON `musers`.`id` = `loangroups`.`loangroup_last_modified_user` 
+				INNER JOIN `users` as `cusers` ON `cusers`.`id` = `loangroups`.`loangroup_created_by` 
+				WHERE `loangroup_id` = '?'
+				",
+				array($loangroup_id)
+			)
+
 			return $query->row_array();
 		}
 

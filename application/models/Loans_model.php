@@ -14,10 +14,26 @@
 				$query = $this->db->get('loans');
 				return $query->result_array();
 			}
-			$this->db->join('loangroups', 'loangroups.loangroup_id = loans.loan_group');
-			$this->db->join('members', 'members.member_id = loans.loan_member');
-			$this->db->join('equipment', 'equipment.eq_id = loans.loan_equipment');
-			$query = $this->db->get_where('loans', array('loan_id' => $loan_id));
+
+			$query = $this->db->query("
+				SELECT
+					`loangroups`.`loangroup_id`,
+					`loangroups`.`loangroup_name`,
+					`loangroups`.`loangroup_member` ,
+					`loangroups`.`loangroup_last_modified`,
+					`loangroups`.`loangroup_last_modified_user`,
+					`loangroups`.`loangroup_created_date` ,
+					`loangroups`.`loangroup_created_by`,
+					members.member_name,
+					members.member_id,
+					cusers.username as CreatedUserName,
+					musers.username as ModifiedUserName
+				FROM `loangroups` 
+				INNER JOIN `members` ON `members`.`member_id` = `loangroups`.`loangroup_member` 
+				INNER JOIN `users` as `musers` ON `musers`.`id` = `loangroups`.`loangroup_last_modified_user` 
+				INNER JOIN `users` as `cusers` ON `cusers`.`id` = `loangroups`.`loangroup_created_by` 
+				WHERE `loangroup_id` = '1'
+			")
 			return $query->row_array();
 		}
 
