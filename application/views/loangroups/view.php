@@ -18,11 +18,9 @@
 <h3>Loaned Items</h3>
 
 <table class="table table-striped table-hover ">
-	<?php foreach($loans as $loan) : ?>
 		<tr>
-			<td><?php echo $loan['loan_id']; ?></td>
+			<td><?php echo $loan['eq_name']; ?></td>
 		</tr>
-	<?php endforeach; ?>
 </table>
 
 
