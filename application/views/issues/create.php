@@ -61,14 +61,14 @@
 			</select>
 		</div>
 	</div>
-	<div class="form-group">
+	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Status</label>
 		<div class="col-sm-10">
 			<!-- New Status -->
 			<input type="text" class="form-control" name="iss_status" value="New" hidden>
 		</div>
 	</div>
-	<div class="form-group">
+	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Creator ID</label>
 		<div class="col-sm-10">
 			<!-- Created By User -->
