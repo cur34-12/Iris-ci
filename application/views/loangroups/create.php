@@ -29,7 +29,7 @@
 	</div>
 
 	<!--Hidden Elements-->
-	<div class="form-group">
+	<div class="form-group" style="display: none;">
 		<!--Last Modified By User-->
 		<input type="text" class="form-control" name="loangroup_last_modified_user" value="<?php echo $this->ion_auth->user()->row()->id; ?>" hidden>
 		<!--Created By User-->

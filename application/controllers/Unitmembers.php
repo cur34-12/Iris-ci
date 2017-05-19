@@ -1,13 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+
         class Unitmembers extends CI_Controller {
                 public function index(){
                         $data['title'] = 'Members'; 
 
-                         $data['members'] = $this->Unitmembers_model->get_members();
+                        $data['members'] = $this->Unitmembers_model->get_members();
                         
-        	       $this->load->view('templates/header', $data);
-        	       $this->load->view('members/index', $data);
-        	       $this->load->view('templates/footer');
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('members/index', $data);
+                        $this->load->view('templates/footer');
                 }
 
                 public function view($member_id = null){
