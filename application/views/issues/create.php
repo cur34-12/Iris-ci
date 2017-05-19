@@ -9,8 +9,8 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_eq_id" id="iss_eq_id">
-			<input type="hidden" id="iss_eq_id-id">
+			<input type="text" class="form-control" name="iss_equipment" id="iss_equipment">
+			<input type="hidden" id="iss_equipment-id">
 		</div>
 	</div>
 	<div class="form-group">
@@ -80,12 +80,12 @@ $(function() {
         source: "/search-equipment.php",
         minLength: 0,
 		focus: function( event, ui ) {
-        	$( "#iss_eq_id" ).val( ui.item.eq_name );
+        	$( "#iss_equipment" ).val( ui.item.eq_name );
         	return false;
       	},
       	select: function( event, ui ) {
-	        $( "#iss_eq_id" ).val( ui.item.eq_name );
-        	$( "#iss_eq_id-id" ).val( ui.item.eq_name );
+	        $( "#iss_equipment" ).val( ui.item.eq_name );
+        	$( "#iss_equipment-id" ).val( ui.item.eq_id );
 	        return false;
     	  }
     })
