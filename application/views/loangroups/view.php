@@ -1,7 +1,7 @@
 <head>
-	<title><?php echo $loan['loangroup_name']; ?> - Logi</title>
+	<title><?php echo $loangroup['loangroup_name']; ?> - Logi</title>
 </head>
-<h2 style="text-transform: uppercase;">Loan - <?php echo $loan['loangroup_name']; ?> - <?php echo $loan['member_name']; ?></h2>
+<h2 style="text-transform: uppercase;">Loan - <?php echo $loangroup['loangroup_name']; ?> - <?php echo $loangroup['member_name']; ?></h2>
 
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Loan Group ID</td><td><?php echo $loangroup['loangroup_id']; ?></td></tr>
@@ -18,15 +18,19 @@
 <h3>Loaned Items</h3>
 
 <table class="table table-striped table-hover ">
-	<!-- Future location of the foreach loan object in the loangroup -->
+	<?php foreach($loans as $loan) : ?>
+		<tr>
+			<td><?php echo $loan['eq_name']; ?></td>
+		</tr>
+	<?php endforeach; ?>
 </table>
 
 
 
 <a class="btn btn-default" role="button" href="<?php echo site_url('/loan-groups/create'); ?>">Create Loan Group</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/loans/groups/edit/'. $loan['loan_id']); ?>">Edit Loan</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/loan-groups/edit/'. $loangruop['loangroup_id']); ?>">Edit Loan Group</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/loans/delete/'.$loan['loan_id'], $attributes); ?>
-	<input type="submit" value="Delete Loan" class="btn btn-danger"/>
+<?php echo form_open('/loan-groups/'.$loangroup['loangroup_id'], $attributes); ?>
+	<input type="submit" value="Delete Loan Group" class="btn btn-danger"/>
 </form>
 
