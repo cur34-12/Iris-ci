@@ -86,10 +86,25 @@ $(function() {
     //autocomplete
     $("#iss_eq_id").autocomplete({
         source: "/search-equipment.php",
-        minLength: 3
-    });                
+        minLength: 0
+		focus: function( event, ui ) {
+        	$( "#iss_eq_id" ).val( ui.item.eq_name );
+        	return false;
+      	},
+      	select: function( event, ui ) {
+	        $( "#iss_eq_id" ).val( ui.item.eq_name );
+        	$( "#iss_eq_id-id" ).val( ui.item.eq_name );
+	        return false;
+    	  }
+    })
+    .autocomplete( "instance" )._renderItem = function( ul, item ) {
+      return $( "<li>" )
+        .append( "<div>" + item.eq_name + "<br>" + item.searchValue + "</div>" )
+        .appendTo( ul );
+    };
+  } );
+               
 
-});
 $( function() {
 
         $( "#testInput" ).autocomplete({
@@ -116,7 +131,7 @@ $( function() {
   } );
 
 </script>
-12
+123
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
