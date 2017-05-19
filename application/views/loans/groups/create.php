@@ -16,7 +16,7 @@
 			<input type="text" class="form-control" name="loangroup_name" placeholder="Eg. Initial Uniform Issue">
 		</div>
 	</div>
-	
+
 	<!--Loan Group member-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Group Member</label>
@@ -40,8 +40,3 @@
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
-
-
-
-
-

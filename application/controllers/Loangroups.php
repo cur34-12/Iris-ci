@@ -15,6 +15,7 @@
 
                 public function view($loangroup_id = null){
                         $data['loangroup'] = $this->Loangroups_model->get_loangroups($loangroup_id);
+                        $data['loans'] = $this->Loans_model->get_loans($loangroup_id);
 
                         if(empty($data['loangroups'])){
                                 show_404();
