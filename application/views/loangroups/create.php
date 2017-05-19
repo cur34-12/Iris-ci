@@ -29,14 +29,16 @@
 	</div>
 
 	<!--Hidden Elements-->
-	<div class="form-group" style="display: none;">
-		<!--Last Modified By User-->
-		<input type="text" class="form-control" name="loangroup_last_modified_user" value="<?php echo $this->ion_auth->user()->row()->id; ?>" hidden>
-		<!--Created By User-->
-		<input type="text" class="form-control" name="loangroup_created_by" value="<?php echo $this->ion_auth->user()->row()->id; ?>" hidden>
-		<!-- Created Date -->
-		<input type="text" class="form-control" name="loangroup_created_date" value="<?php echo date("Y-m-d h:i:sa"); ?>" hidden>
-	</div>	
+	<div class="form-group" >
+		<div class="col-sm-10" style="display: none;">
+			<!--Last Modified By User-->
+			<input type="text" class="form-control" name="loangroup_last_modified_user" value="<?php echo $this->ion_auth->user()->row()->id; ?>" hidden>
+			<!--Created By User-->
+			<input type="text" class="form-control" name="loangroup_created_by" value="<?php echo $this->ion_auth->user()->row()->id; ?>" hidden>
+			<!-- Created Date -->
+			<input type="text" class="form-control" name="loangroup_created_date" value="<?php echo date("Y-m-d h:i:sa"); ?>" hidden>
+		</div>
+	</div>
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
