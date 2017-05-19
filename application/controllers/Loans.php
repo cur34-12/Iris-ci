@@ -29,6 +29,10 @@
 
                 public function create(){
                         $data['title'] = 'Create Loan';
+                        $data['members'] = $this->Unitmembers_model->get_members();
+                        $data['usernames'] = $this->User_model->get_users();
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['loangroups'] = $this->Loangroups_model->get_loangroups();
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('loans/create', $data);
@@ -42,6 +46,10 @@
 
                 public function edit($loan_id){
                         $data['loan'] = $this->Loans_model->get_loans($loan_id);
+                        $data['members'] = $this->Unitmembers_model->get_members();
+                        $data['usernames'] = $this->User_model->get_users();
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['loangroups'] = $this->Loangroups_model->get_loangroups();
 
                         if(empty($data['loan'])){
                                 show_404();
