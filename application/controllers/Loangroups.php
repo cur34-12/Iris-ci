@@ -29,6 +29,7 @@
 
                 public function create(){
                         $data['title'] = 'Create Loan Group';
+                        $data['members'] = $this->Unitmembers_model->get_members();
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('loangroups/create', $data);
@@ -42,6 +43,7 @@
 
                 public function edit($loangroup_id){
                         $data['loangroup'] = $this->Loangroups_model->get_loangroups($loan_id);
+                        $data['members'] = $this->Unitmembers_model->get_members();
 
                         if(empty($data['loangroup'])){
                                 show_404();

@@ -31,9 +31,13 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Reporting User</label>
+		<label class="control-label col-sm-2">Reporting Member</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_reporter_id" placeholder="">
+			<select id=iss_reporter_id" name="iss_reporter_id" class="form-control" >
+				<?php foreach($members as $member): ?>
+        				<option value="<?php echo $members['member_id']; ?>"><?php echo $members['member_name']; ?></option>
+        		<?php endforeach; ?>
+        	</select>
 		</div>
 	</div>
     <div class="form-group">
@@ -50,28 +54,19 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
-        				<option value="<?php echo $username['username']; ?>"><?php echo $username['username']; ?></option>
+        				<option value="<?php echo $username['id']; ?>"><?php echo $usernames['username']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
 	</div>
-	<div class="form-group" style="display: none;">
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_status" value="New">
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Created By</label>
-		<div class="col-sm-10">
-			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" readonly>
-		</div>
-	</div>
-	<script>
-		$(function() {
-			$( '#iss_creator_id' ).val('<?php echo $this->ion_auth->user()->row()->username; ?>'); 
-		});
-	</script>
 
+	<!-- Hidden Values -->
+	<div class="form-group">
+		<!-- New Status -->
+		<input type="text" class="form-control" name="iss_status" value="New" hidden>
+		<!-- Created By User -->
+		<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>" hidden>
+	</div>
 
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
