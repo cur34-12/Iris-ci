@@ -20,7 +20,7 @@
 		<label class="control-label col-sm-2">Issued Equipment</label>
 		<div class="col-sm-10">
 			<select id="loan_member" name="loan_equipment" class="form-control" >
-				<?php foreach($members as $member): ?>
+				<?php foreach($equipment as $equipment): ?>
     				<option value="<?php echo $equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></option>
     			<?php endforeach; ?>
         	</select>
@@ -59,7 +59,7 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="loan_group" class="form-control" >
 				<?php foreach($loangroups as $loangroup): ?>
-        				<option value="<?php echo $username['id']; ?>"><?php echo $loangroup['loangroup_name']; ?> - <?php echo $loangroup['member_name']; ?></option>
+        				<option value="<?php echo $loangroup['loangroup_id']; ?>"><?php echo $loangroup['loangroup_name']; ?> - <?php echo $loangroup['member_name']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
