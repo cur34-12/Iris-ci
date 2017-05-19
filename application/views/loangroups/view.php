@@ -19,7 +19,7 @@
 
 <table class="table table-striped table-hover ">
 		<tr>
-			<td><?php echo $loan['eq_name']; ?></td>
+			<td><?php echo $loans['eq_name']; ?></td>
 		</tr>
 </table>
 
