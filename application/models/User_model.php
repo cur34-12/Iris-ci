@@ -6,7 +6,6 @@
 		}
 
 		public function get_users(){
-			$this->db->order_by('username');
         	$query = $this->db->get('users');
         	return $query->result_array();
 		}
