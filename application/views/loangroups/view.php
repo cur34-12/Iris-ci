@@ -20,7 +20,7 @@
 <table class="table table-striped table-hover ">
 	<?php foreach($loans as $loan) : ?>
 		<tr>
-			<td><?php echo $loan['eq_name']; ?></td>
+			<td><?php echo $loan['loan_id']; ?></td>
 		</tr>
 	<?php endforeach; ?>
 </table>
