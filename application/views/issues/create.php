@@ -86,7 +86,7 @@ $(function() {
     //autocomplete
     $("#iss_eq_id").autocomplete({
         source: "/search-equipment.php",
-        minLength: 0
+        minLength: 0,
 		focus: function( event, ui ) {
         	$( "#iss_eq_id" ).val( ui.item.eq_name );
         	return false;
@@ -131,7 +131,7 @@ $( function() {
   } );
 
 </script>
-123
+1234
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
