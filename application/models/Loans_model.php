@@ -30,7 +30,6 @@
 				'loan_in_date' => $this->input->post('loan_in_date'),
 				'loan_user' => $this->input->post('loan_user'),
 				'loan_last_modified_user' => $this->input->post('loan_last_modified_user'),
-				
 				'loan_created_date' => $this->input->post('loan_created_date'),
 				'loan_group' => $this->input->post('loan_group'),
 				'loan_comment' => $this->input->post('loan_comment')
