@@ -9,7 +9,7 @@
                        $data['loans'] = $this->Loangroups_model->get_loangroups();
                         
         	           $this->load->view('templates/header', $data);
-        	           $this->load->view('loangroups/index', $data);
+        	           $this->load->view('loans/groups/index', $data);
         	           $this->load->view('templates/footer');
                 }
 
@@ -24,7 +24,7 @@
                         $data['title'] = $data['loangroup']['loangroup_id'];
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('loangroups/view', $data);
+                        $this->load->view('loans/groups/view', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -33,7 +33,7 @@
                         $data['members'] = $this->Unitmembers_model->get_members();
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('loangroups/create', $data);
+                        $this->load->view('loans/groups/create', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -53,7 +53,7 @@
                         $data['title'] = 'Edit $loangroup_id';
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('loangroups/update', $data);
+                        $this->load->view('loans/groups/update', $data);
                         $this->load->view('templates/footer');
                 }
 
@@ -67,7 +67,7 @@
                     $data['loangroups'] = $this->Loangroups_model->get_loangroups();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('loangroups/edit', $data);
+                    $this->load->view('loans/groups/edit', $data);
                     $this->load->view('templates/footer');
                 }
                 
@@ -76,7 +76,7 @@
                     $data['loangroups'] = $this->Loangroups_model->get_loangroups();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('loangroups/delete', $data);
+                    $this->load->view('loans/groups/delete', $data);
                     $this->load->view('templates/footer');
                 }
 
