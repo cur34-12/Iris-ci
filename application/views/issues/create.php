@@ -90,9 +90,9 @@ $(function() {
     	  }
     })
     .autocomplete( "instance" )._renderItem = function( ul, item ) {
-    	$description = "ID #: "+ item.eq_id + ", Serial #: " + item.eq_serial + ", Asset #:" + item.eq_asset_number
+    	
       return $( "<li>" )
-        .append( "<div>" + item.eq_name + "<br>" + description + "</div>" )
+        .append( "<div>" + item.eq_name + "<br>" + "ID #: "+ item.eq_id + ", Serial #: " + item.eq_serial + ", Asset #:" + item.eq_asset_number + "</div>" )
         .appendTo( ul );
     };
   } );
