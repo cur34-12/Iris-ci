@@ -11,7 +11,7 @@
 	<tr><td style="font-weight: bold">Date Returned</td><td><?php echo $loan['loan_in_date']; ?></td></tr>
 	<tr><td style="font-weight: bold">Issuing Officer</td><td><?php echo $loan['loan_user']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Creation Date</td><td><?php echo $loan['loan_created_date']; ?></td></tr>
-	<tr><td style="font-weight: bold">Loan Group</td><td><?php echo $loan['loan_group_name']; ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group</td><td><a href="<?php echo site_url('/loan-groups/'. $loan['loangroup_id']); ?>"><?php echo $loan['loangroup_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Comment</td><td><?php echo $loan['loan_comment']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Last Modified</td><td><?php echo $loan['loan_last_modified']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Last Modified User</td><td><?php echo $loan['loan_last_modified_user']; ?></td></tr>
