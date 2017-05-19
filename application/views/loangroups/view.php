@@ -9,8 +9,8 @@
 	<tr><td style="font-weight: bold">Loan Group Member</td><td><a href="<?php echo site_url('/members/'. $loangroup['member_id']); ?>"><?php echo $loangroup['member_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Last Modified</td><td><?php echo $loangroup['loangroup_last_modified']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Last Modified by</td><td><?php echo $loangroup['loangroup_last_modified_user']; ?></td></tr>
-	<tr><td style="font-weight: bold">Loan Group Created Date</td><td><?php echo $loan['loangroup_created_date']; ?></td></tr>
-	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo $loan['loangroup_created_by']; ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group Created Date</td><td><?php echo $loangroup['loangroup_created_date']; ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo $loangroup['loangroup_created_by']; ?></td></tr>
 </table>
 
 <hr />
@@ -28,7 +28,7 @@
 
 
 <a class="btn btn-default" role="button" href="<?php echo site_url('/loan-groups/create'); ?>">Create Loan Group</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/loan-groups/edit/'. $loangruop['loangroup_id']); ?>">Edit Loan Group</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/loan-groups/edit/'. $loangroup['loangroup_id']); ?>">Edit Loan Group</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
 <?php echo form_open('/loan-groups/'.$loangroup['loangroup_id'], $attributes); ?>
 	<input type="submit" value="Delete Loan Group" class="btn btn-danger"/>
