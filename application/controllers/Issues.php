@@ -33,9 +33,7 @@
                         $this->load->view('templates/header', $data);
                         $this->load->view('issues/create', $data);
                         $this->load->view('templates/footer');  
-                    }
                 }
-
 
                 public function delete($iss_id){
                         $this->Issues_model->delete_issue($iss_id);
