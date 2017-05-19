@@ -5,7 +5,7 @@
                 public function index(){
                        $data['title'] = 'Loan Groups';
 
-                       $data['loans'] = $this->Loangroups_model->get_loangroups();
+                       $data['loangroups'] = $this->Loangroups_model->get_loangroups();
                         
         	           $this->load->view('templates/header', $data);
         	           $this->load->view('loangroups/index', $data);
