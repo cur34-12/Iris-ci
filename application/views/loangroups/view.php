@@ -26,10 +26,12 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td><a href="<?php echo site_url('/loans/'. $loans['loan_id']); ?>"><?php echo $loans['loan_id']; ?></a></td>
-			<td><a href="<?php echo site_url('/equipment/'. $loans['eq_id']); ?>"><?php echo $loans['eq_name']; ?></a></td>
-		</tr>
+		<?php foreach($loans as $loan) : ?>
+			<tr>
+				<td><a href="<?php echo site_url('/loans/'. $loan['loan_id']); ?>"><?php echo $loan['loan_id']; ?></a></td>
+				<td><a href="<?php echo site_url('/equipment/'. $loan['eq_id']); ?>"><?php echo $loan['eq_name']; ?></a></td>
+			</tr>
+		<?php endforeach; ?>
 	</tbody>
 </table>
 
