@@ -21,13 +21,13 @@
 
 	<thead>
 		<tr>
-			<th>ID</th>
-			<th>Item</th>
+			<th>Loan ID</th>
+			<th>Item Name</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><?php echo $loans['loan_id']; ?></td>
+			<td><a href="<?php echo site_url('/loans/'. $loans['loan_id']); ?>"><?php echo $loans['loan_id']; ?></a></td>
 			<td><a href="<?php echo site_url('/equipment/'. $loans['eq_id']); ?>"><?php echo $loans['eq_name']; ?></a></td>
 		</tr>
 	</tbody>
