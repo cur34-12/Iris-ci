@@ -86,17 +86,17 @@ $(function() {
 $( function() {
     var projects = [
       {
-        value: "jquery",
+        eq_name: "jquery",
         label: "jQuery",
         desc: "the write less, do more, JavaScript library"
       },
       {
-        value: "jquery-ui",
+        eq_name: "jquery-ui",
         label: "jQuery UI",
         desc: "the official user interface library for jQuery"
       },
       {
-        value: "sizzlejs",
+        eq_name: "sizzlejs",
         label: "Sizzle JS",
         desc: "a pure-JavaScript CSS selector engine"
       }
@@ -106,12 +106,12 @@ $( function() {
       minLength: 0,
       source: projects,
       focus: function( event, ui ) {
-        $( "#project" ).val( ui.item.label );
+        $( "#testInput" ).val( ui.item.label );
         return false;
       },
       select: function( event, ui ) {
-        $( "#testInput" ).val( ui.item.value );
-        $( "#testInput-id" ).val( ui.item.value );
+        $( "#testInput" ).val( ui.item.eq_name );
+        $( "#testInput-id" ).val( ui.item.eq_name );
         $( "#testInput-description" ).html( ui.item.desc );
 
         return false;
@@ -125,6 +125,7 @@ $( function() {
   } );
 
 </script>
+10
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
@@ -134,4 +135,3 @@ $( function() {
 	    todayHighlight: true
 	});
 </script>
-9
