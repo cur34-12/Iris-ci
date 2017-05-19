@@ -16,7 +16,7 @@
                         $data['loangroup'] = $this->Loangroups_model->get_loangroups($loangroup_id);
                         $data['loans'] = $this->Loans_model->get_loans($loangroup_id);
 
-                        if(empty($data['loangroups'])){
+                        if(empty($data['loangroup'])){
                                 show_404();
                         } 
 
