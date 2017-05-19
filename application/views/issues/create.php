@@ -134,4 +134,4 @@ $( function() {
 	    todayHighlight: true
 	});
 </script>
-7
+8
