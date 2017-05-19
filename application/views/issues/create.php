@@ -87,18 +87,15 @@ $( function() {
     var projects = [
       {
         eq_name: "jquery",
-        label: "jQuery",
-        desc: "the write less, do more, JavaScript library"
+        searchValue: "the write less, do more, JavaScript library"
       },
       {
         eq_name: "jquery-ui",
-        label: "jQuery UI",
-        desc: "the official user interface library for jQuery"
+        searchValue: "the official user interface library for jQuery"
       },
       {
         eq_name: "sizzlejs",
-        label: "Sizzle JS",
-        desc: "a pure-JavaScript CSS selector engine"
+        searchValue: "a pure-JavaScript CSS selector engine"
       }
     ];
 
@@ -106,26 +103,26 @@ $( function() {
       minLength: 0,
       source: projects,
       focus: function( event, ui ) {
-        $( "#testInput" ).val( ui.item.label );
+        $( "#testInput" ).val( ui.item.eq_name );
         return false;
       },
       select: function( event, ui ) {
         $( "#testInput" ).val( ui.item.eq_name );
         $( "#testInput-id" ).val( ui.item.eq_name );
-        $( "#testInput-description" ).html( ui.item.desc );
+        $( "#testInput-description" ).html( ui.item.searchValue );
 
         return false;
       }
     })
     .autocomplete( "instance" )._renderItem = function( ul, item ) {
       return $( "<li>" )
-        .append( "<div>" + item.label + "<br>" + item.desc + "</div>" )
+        .append( "<div>" + item.eq_name + "<br>" + item.searchValue + "</div>" )
         .appendTo( ul );
     };
   } );
 
 </script>
-10
+11
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
