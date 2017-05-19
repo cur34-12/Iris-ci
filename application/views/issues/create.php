@@ -14,14 +14,6 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Test Label</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="testInput" id="testInput">
-			<input type="hidden" id="testInput-id">
-			<!--<p id="testInput-description"></p>-->
-		</div>
-	</div>
-	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="title" placeholder="Eg. Chainbreak non-functional">
@@ -98,40 +90,15 @@ $(function() {
     	  }
     })
     .autocomplete( "instance" )._renderItem = function( ul, item ) {
+    	$description = "ID #: "+ item.eq_id + ", Serial #: " + item.eq_serial + ", Asset #:" + item.eq_asset_number
       return $( "<li>" )
-        .append( "<div>" + item.eq_name + "<br>" + item.searchValue + "</div>" )
+        .append( "<div>" + item.eq_name + "<br>" + description + "</div>" )
         .appendTo( ul );
     };
   } );
-               
-
-$( function() {
-
-        $( "#testInput" ).autocomplete({
-      minLength: 0,
-      //source: projects,
-      source: "/search-equipment.php",
-      focus: function( event, ui ) {
-        $( "#testInput" ).val( ui.item.eq_name );
-        return false;
-      },
-      select: function( event, ui ) {
-        $( "#testInput" ).val( ui.item.eq_name );
-        $( "#testInput-id" ).val( ui.item.eq_name );
-        //$( "#testInput-description" ).html( ui.item.searchValue );
-
-        return false;
-      }
-    })
-    .autocomplete( "instance" )._renderItem = function( ul, item ) {
-      return $( "<li>" )
-        .append( "<div>" + item.eq_name + "<br>" + item.searchValue + "</div>" )
-        .appendTo( ul );
-    };
-  } );
-
+     
 </script>
-1234
+12345
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
