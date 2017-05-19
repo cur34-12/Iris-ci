@@ -18,9 +18,19 @@
 <h3>Loaned Items</h3>
 
 <table class="table table-striped table-hover ">
+
+	<thead>
 		<tr>
+			<th>ID</th>
+			<th>Item</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><?php echo $loans['loan_id']; ?></td>
 			<td><?php echo $loans['eq_name']; ?></td>
 		</tr>
+	</tbody>
 </table>
 
 
