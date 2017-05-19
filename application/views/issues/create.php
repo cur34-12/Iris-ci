@@ -37,7 +37,7 @@
 		<div class="col-sm-10">
 			<select id=iss_reporter_id" name="iss_reporter_id" class="form-control" >
 				<?php foreach($members as $member): ?>
-        				<option value="<?php echo $members['member_id']; ?>"><?php echo $members['member_name']; ?></option>
+        				<option value="<?php echo $member['member_id']; ?>"><?php echo $member['member_name']; ?></option>
         		<?php endforeach; ?>
         	</select>
 		</div>
