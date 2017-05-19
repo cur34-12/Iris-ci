@@ -33,9 +33,9 @@
 				INNER JOIN `members` ON `members`.`member_id` = `loangroups`.`loangroup_member` 
 				INNER JOIN `users` as `musers` ON `musers`.`id` = `loangroups`.`loangroup_last_modified_user` 
 				INNER JOIN `users` as `cusers` ON `cusers`.`id` = `loangroups`.`loangroup_created_by` 
-				WHERE `loangroup_id` = '?'
-				",
-				array($loangroup_id)
+				WHERE `loangroup_id` = '1'
+				"#,
+				#array($loangroup_id)
 			);
 
 			return $query->row_array();
