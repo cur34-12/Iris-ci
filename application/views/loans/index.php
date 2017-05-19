@@ -26,7 +26,7 @@
 					<td><?php echo $loan['loan_in_date']; ?></td>
 					<td><?php echo $loan['loan_user']; ?></td>
 					<td><?php echo $loan['loan_created_date']; ?></td>
-					<td><a href="<?php echo site_url('/loans/groups/'. $loan['loangroup_id']); ?>"><?php echo $loan['loangroup_name']; ?></td>
+					<td><a href="<?php echo site_url('/loan-groups/'. $loan['loangroup_id']); ?>"><?php echo $loan['loangroup_name']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="loans/edit/<?php echo $loan['loan_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
