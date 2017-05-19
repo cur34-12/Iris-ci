@@ -10,7 +10,7 @@
 	<tr><td style="font-weight: bold">Loan Group Last Modified</td><td><?php echo $loangroup['loangroup_last_modified']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Last Modified by</td><td><?php echo $loangroup['username']; ?></td></tr>
 	<tr><td style="font-weight: bold">Loan Group Created Date</td><td><?php echo $loangroup['loangroup_created_date']; ?></td></tr>
-	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo implode(" ",$loangroup); ?></td></tr>
+	<tr><td style="font-weight: bold">Loan Group Created By</td><td><?php echo json_encode($loangroup); ?></td></tr>
 </table>
 
 <hr />
