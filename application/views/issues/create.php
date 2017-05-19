@@ -10,6 +10,7 @@
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="iss_eq_id" id="iss_eq_id">
+			<input type="hidden" id="iss_eq_id-id">
 		</div>
 	</div>
 	<div class="form-group">
@@ -17,7 +18,7 @@
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="testInput" id="testInput">
 			<input type="hidden" id="testInput-id">
-			<p id="testInput-description"></p>
+			<!--<p id="testInput-description"></p>-->
 		</div>
 	</div>
 	<div class="form-group">
@@ -84,20 +85,6 @@ $(function() {
 
 });
 $( function() {
-    var projects = [
-      {
-        eq_name: "jquery",
-        searchValue: "the write less, do more, JavaScript library"
-      },
-      {
-        eq_name: "jquery-ui",
-        searchValue: "the official user interface library for jQuery"
-      },
-      {
-        eq_name: "sizzlejs",
-        searchValue: "a pure-JavaScript CSS selector engine"
-      }
-    ];
 
         $( "#testInput" ).autocomplete({
       minLength: 0,
@@ -110,7 +97,7 @@ $( function() {
       select: function( event, ui ) {
         $( "#testInput" ).val( ui.item.eq_name );
         $( "#testInput-id" ).val( ui.item.eq_name );
-        $( "#testInput-description" ).html( ui.item.searchValue );
+        //$( "#testInput-description" ).html( ui.item.searchValue );
 
         return false;
       }
@@ -123,7 +110,7 @@ $( function() {
   } );
 
 </script>
-1
+12
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
