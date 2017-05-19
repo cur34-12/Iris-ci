@@ -35,7 +35,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Reporting Member</label>
 		<div class="col-sm-10">
-			<select id=iss_reporter_id" name="iss_reporter_id" class="form-control" >
+			<select id="iss_reporter_id" name="iss_reporter_id" class="form-control" >
 				<?php foreach($members as $member): ?>
         				<option value="<?php echo $member['member_id']; ?>"><?php echo $member['member_name']; ?></option>
         		<?php endforeach; ?>
