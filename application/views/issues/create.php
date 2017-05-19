@@ -110,7 +110,7 @@ $( function() {
         return false;
       },
       select: function( event, ui ) {
-        $( "#testInput" ).val( ui.item.label );
+        $( "#testInput" ).val( ui.item.value );
         $( "#testInput-id" ).val( ui.item.value );
         $( "#testInput-description" ).html( ui.item.desc );
 
