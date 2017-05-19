@@ -30,12 +30,9 @@
                         $data['equipment'] = $this->Equipment_model->get_equipment();
                         $data['members'] = $this->Unitmembers_model->get_members();
 
-                        $this->form_validation->set_rules('title', 'Title', 'required');
-
-                        if($this->form_validation->run() === FALSE){
-                                $this->load->view('templates/header', $data);
-                                $this->load->view('issues/create', $data);
-                                $this->load->view('templates/footer');  
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('issues/create', $data);
+                        $this->load->view('templates/footer');  
                     }
                 }
 
