@@ -101,7 +101,8 @@ $( function() {
 
         $( "#testInput" ).autocomplete({
       minLength: 0,
-      source: projects,
+      //source: projects,
+      source: "/search-equipment.php",
       focus: function( event, ui ) {
         $( "#testInput" ).val( ui.item.eq_name );
         return false;
@@ -122,7 +123,7 @@ $( function() {
   } );
 
 </script>
-11
+12
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
