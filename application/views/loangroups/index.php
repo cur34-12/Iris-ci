@@ -14,7 +14,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach($loans as $loan) : ?>
+		<?php foreach($loangroups as $loangroup) : ?>
 			<tr>
 					<td><?php echo $loangroup['loangroup_id']; ?></td>
 					<td><a href="<?php echo site_url('/loangroups/'. $loangroup['loangroup_id']); ?>"><?php echo $loangroup['lopangroup_name']; ?></a></td>
