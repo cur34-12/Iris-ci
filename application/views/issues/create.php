@@ -16,6 +16,8 @@
 		<label class="control-label col-sm-2">Test Label</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="testInput" id="testInput">
+			<input type="hidden" id="testInput-id">
+			<p id="testInput-description"></p>
 		</div>
 	</div>
 	<div class="form-group">
@@ -108,9 +110,9 @@ $( function() {
         return false;
       },
       select: function( event, ui ) {
-        $( "#project" ).val( ui.item.label );
-        $( "#project-id" ).val( ui.item.value );
-        $( "#project-description" ).html( ui.item.desc );
+        $( "#testInput" ).val( ui.item.label );
+        $( "#testInput-id" ).val( ui.item.value );
+        $( "#testInput-description" ).html( ui.item.desc );
 
         return false;
       }
