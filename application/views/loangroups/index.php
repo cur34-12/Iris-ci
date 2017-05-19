@@ -17,7 +17,7 @@
 		<?php foreach($loangroups as $loangroup) : ?>
 			<tr>
 					<td><?php echo $loangroup['loangroup_id']; ?></td>
-					<td><a href="<?php echo site_url('/loangroups/'. $loangroup['loangroup_id']); ?>"><?php echo $loangroup['lopangroup_name']; ?></a></td>
+					<td><a href="<?php echo site_url('/loangroups/'. $loangroup['loangroup_id']); ?>"><?php echo $loangroup['loangroup_name']; ?></a></td>
 					<td><?php echo $loangroup['member_name']; ?></td>
 					<td><?php echo $loangroup['loangroup_created_date']; ?></td>
 					<td><?php echo $loangroup['loangroup_last_modified']; ?></td>
