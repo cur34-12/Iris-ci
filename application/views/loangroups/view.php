@@ -28,7 +28,7 @@
 	<tbody>
 		<tr>
 			<td><?php echo $loans['loan_id']; ?></td>
-			<td><a href="<?php echo site_url('/equipment/'. $equipment['eq_id']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
+			<td><a href="<?php echo site_url('/equipment/'. $loan['eq_id']); ?>"><?php echo $loan['eq_name']; ?></a></td>
 		</tr>
 	</tbody>
 </table>
