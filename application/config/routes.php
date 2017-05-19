@@ -25,12 +25,12 @@ $route['loans/update'] = 'loans/update';
 $route['loans/(:any)'] = 'loans/view/$1';
 $route['loans'] = 'loans/index';
 
-$route['loans/groups/delete'] = 'loangroups/select_delete';
-$route['loans/groups/edit'] = 'loangroups/select_edit';
-$route['loans/groups/create'] = 'loangroups/create';
-$route['loans/groups/update'] = 'loangroups/update';
-$route['loans/groups/(:any)'] = 'loangroups/view/$1';
-$route['loans'] = 'loangroups/index';
+$route['loan-groups/delete'] = 'loangroups/select_delete';
+$route['loan-groups/edit'] = 'loangroups/select_edit';
+$route['loan-groups/create'] = 'loangroups/create';
+$route['loan-groups/update'] = 'loangroups/update';
+$route['loan-groups/(:any)'] = 'loangroups/view/$1';
+$route['loan-groups'] = 'loangroups/index';
 
 /* Suppliers Routes */
 $route['suppliers/delete'] = 'suppliers/select_delete';
