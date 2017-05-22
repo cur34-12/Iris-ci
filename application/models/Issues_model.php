@@ -8,12 +8,12 @@
 		public function get_issues($iss_id = FALSE){
 			if($iss_id === FALSE){
 				$this->db->order_by('iss_reported_date', 'ASC');
-				$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
+				$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id', 'left');
 				$query = $this->db->get('issues');
 				return $query->result_array();
 			}
 
-			$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id');
+			$this->db->join('equipment', 'equipment.eq_id = issues.iss_eq_id', 'left');
 			$query = $this->db->get_where('issues', array('iss_id' => $iss_id));
 			return $query->row_array();
 		}
