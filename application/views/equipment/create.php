@@ -68,7 +68,7 @@
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Date Purchased</label>
-        <div class='input-group date' id='eq_date_purchased'>
+        <div class='input-group date col-sm-10' id='eq_date_purchased'>
             <input type='text' class="form-control" name="eq_date_purchased"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
