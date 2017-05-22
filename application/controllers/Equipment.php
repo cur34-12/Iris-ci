@@ -72,10 +72,10 @@
                         }
                 }
 
-                //public function update(){
-                 //       $this->Equipment_model->update_equipment();
-                  //      redirect('equipment');
-                //}
+                public function update(){
+                      $this->Equipment_model->update_equipment();
+                      redirect('equipment');
+                }
 
                 public function select_edit(){ 
 
