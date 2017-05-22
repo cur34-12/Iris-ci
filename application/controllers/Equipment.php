@@ -32,6 +32,7 @@
                 public function create(){
                         $data['title'] = 'Create Equipment';
                         $data['categories'] = $this->Equipment_model->get_categories();
+                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('equipment/create', $data);
