@@ -12,8 +12,8 @@ $route['issues'] = 'issues/index';
 /* Equipment Routes */
 $route['equipment/delete'] = 'equipment/select_delete';
 $route['equipment/edit'] = 'equipment/select_edit';
-$route['equipment/create'] = 'equipment/create';
-$route['equipment/update'] = 'equipment/update';
+$route['equipment/create'] = 'equipment/create_equipment';
+$route['equipment/update'] = 'equipment/update_equipment';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 
