@@ -85,7 +85,7 @@
 				'eq_inspection_frequency' => $this->input->post('eq_inspection_frequency'),
 				'eq_category' => $this->input->post('eq_category'),
 				'eq_date_purchased' => $this->input->post('eq_date_purchased'),
-				'eq_end_ife' => $this->input->post('eq_end_life'),
+				'eq_end_life' => $this->input->post('eq_end_life'),
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
