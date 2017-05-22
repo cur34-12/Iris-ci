@@ -49,5 +49,3 @@
 <a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
 <a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>
 <a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> 
-
-
