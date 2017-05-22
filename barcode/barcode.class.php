@@ -94,7 +94,7 @@ class BARCODE {
 		// IF IN FOLDER OF LEVEL ABOVE, SET _PROCESSOR_LOCATION_ ABSOLUTE PATH
 		
 		//if ( !defined('__DIR__') ) define('__DIR__', dirname(__FILE__));
-		$this->_PROCESSOR_LOCATION_ = FCPATH."barcode/";
+		$this->_PROCESSOR_LOCATION_ = "/barcode/";
 		
 		////////////////////////////////////////
 		// CONFIGURE YOUR QR_DATA FOLDER HERE //
