@@ -14,6 +14,17 @@
 		</div>
 	</div>
 	<div class="form-group">
+		<label class="control-label col-sm-2">Issue Category</label>
+		<div class="col-sm-10">
+			<select id="iss_type" name="iss_type" class="form-control" >
+					<option value="Repair/Fix"> Repair/Fix</option>
+					<option value="Check/Inspection">Check/Inspection</option>
+					<option value="Replacement">Replacement</option>
+					<option value="Write Off">Write Off</option>
+			</select>
+		</div>
+	</div>	
+	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="title" placeholder="Eg. Chainbreak non-functional">

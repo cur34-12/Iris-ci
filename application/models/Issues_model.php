@@ -27,6 +27,7 @@
 				'iss_reported_date' => $this->input->post('iss_reported_date'),
 				'iss_assigned_user' => $this->input->pos('iss_assigned_user'),
 				'iss_creator_id' => $this->input->post('iss_creator_id'),
+				'iss_type' => $this->input->post('iss_type'),
 				'iss_status' => $this->input->post('iss_status') //This is a hidden field with the value of "new"
 			);
 
@@ -46,6 +47,7 @@
 				'iss_equipmentID' => $this->input->post('iss_eq_id'),
 				'iss_assigned_user' => $this->input->post('iss_assigned_user'),
 				'iss_resolution_date' => $this->input->post('iss_resolution_date'),
+				'iss_type' => $this->input->post('iss_type'),
 				'iss_status' => $this->input->post('iss_status')
 			);
 

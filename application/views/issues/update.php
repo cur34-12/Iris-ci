@@ -23,10 +23,26 @@
 		</div>
 		<script>
 			$(function() {
-				$( '#iss_eq_id' ).val('<?php echo $issues['iss_eq_id']; ?>'); 
+				$( '#iss_eq_id' ).val('<?php echo $issue['iss_eq_id']; ?>'); 
 			});
 		</script>
 	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Issue Category</label>
+		<div class="col-sm-10">
+			<select id="iss_type" name="iss_type" class="form-control" >
+					<option value="Repair/Fix"> Repair/Fix</option>
+					<option value="Check/Inspection">Check/Inspection</option>
+					<option value="Replacement">Replacement</option>
+					<option value="Write Off">Write Off</option>
+			</select>
+			<script>
+				$(function() {
+					$( '#iss_type' ).val('<?php echo $issue['iss_type']; ?>'); 
+				});
+		</script>
+		</div>
+	</div>		
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
@@ -72,7 +88,7 @@
 		</div>
 		<script>
 			$(function() {
-				$( '#iss_assigned_user' ).val('<?php echo $issues['iss_assigned_user']; ?>'); 
+				$( '#iss_assigned_user' ).val('<?php echo $issue['iss_assigned_user']; ?>'); 
 			});
 		</script>
 	</div>

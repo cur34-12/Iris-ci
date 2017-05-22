@@ -8,6 +8,7 @@
 		<tr>
 			<th>ID</th>
 			<th>Item</th>
+			<th>Category</th>
 			<th>Title</th>
 			<th>Description</th>
 			<th>Reporter</th>
@@ -24,6 +25,7 @@
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['iss_id']; ?></a></td>
 					<td><a href="<?php echo site_url('/equipment/view/'. $issue['eq_id']); ?>"><?php echo $issue['eq_name']; ?></a></td>
+					<td><?php echo $issue['iss_type']; ?></td>
 					<td><?php echo $issue['iss_title']; ?></td>
 					<td><?php echo word_limiter($issue['iss_description'], 8); ?></td>
 					<td><?php echo $issue['iss_reporter_id']; ?></td>
