@@ -121,7 +121,13 @@
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="eq_asset_number" placeholder="Eg. 34783698">
 		</div>
-	</div>		
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Serial Number</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="eq_serial_number" id="eq_serial_number" placeholder="Eg. 34783698">
+		</div>
+	</div>	
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
