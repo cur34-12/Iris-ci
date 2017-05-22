@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+
+/* $route['url/url'] = 'controller/controller'; */
+
 /* Issues Routes */
 $route['issues/delete'] = 'issues/select_delete';
 $route['issues/edit'] = 'issues/select_edit';
@@ -12,8 +16,8 @@ $route['issues'] = 'issues/index';
 /* Equipment Routes */
 $route['equipment/delete'] = 'equipment/select_delete';
 $route['equipment/edit'] = 'equipment/select_edit';
-$route['equipment/create'] = 'equipment/create_equipment';
-$route['equipment/update'] = 'equipment/update_equipment';
+$route['equipment/create'] = 'equipment/create';
+$route['equipment/update'] = 'equipment/update';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 

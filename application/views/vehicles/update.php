@@ -7,7 +7,7 @@
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('vehicles/update', $attributes); ?>
 	<div class="form-group">
-		<input type="hidden" name="vehID" value="<?php echo $vehicle['vehID']; ?>">
+		<input type="hidden" name="vehID" value="<?php echo $vehicle['veh_id']; ?>">
 		<label class="control-label col-sm-2">Vehicle Name</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="name" placeholder="Eg. HBY18" value="<?php echo strtoupper($vehicle['veh_name']); ?>">
