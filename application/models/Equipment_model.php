@@ -18,7 +18,7 @@
 		}
 
 		public function get_categories($eqcat_id = FALSE){
-			if($eq_id === FALSE){
+			if($eqcat_id === FALSE){
 				$query = $this->db->get('equipment_categories');
 				return $query->result_array();
 			}
