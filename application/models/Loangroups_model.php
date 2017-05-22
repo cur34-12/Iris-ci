@@ -8,9 +8,9 @@
 		public function get_loangroups($loangroup_id = FALSE){
 			if($loangroup_id === FALSE){
 				$this->db->order_by('loangroup_created_date', 'ASC');
-				$this->db->join('members', 'members.member_id = loangroups.loangroup_member');
-				$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user');
-				$this->db->join('users', 'users.id = loangroups.loangroup_created_by');
+				$this->db->join('members', 'members.member_id = loangroups.loangroup_member', 'left');
+				$this->db->join('users', 'users.id = loangroups.loangroup_last_modified_user', 'left');
+				$this->db->join('users', 'users.id = loangroups.loangroup_created_by', 'left');
 
 				$query = $this->db->get('loangroups');
 				return $query->result_array();

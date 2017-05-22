@@ -20,7 +20,7 @@
 <a class="btn btn-default" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
 
 <!--Edit Button-->
-<a class="btn btn-info" role="button" href="<?php echo site_url('/vissues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
 
 <!--Delete Button (as form to protect against abuse)-->
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
