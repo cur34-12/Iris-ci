@@ -62,15 +62,20 @@
 
                         $data['title'] = 'Edit $eq_name';
 
-                        $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/update', $data);
-                        $this->load->view('templates/footer');
+                        if($this->form_validation->run() === FALSE){
+                            $this->load->view('templates/header', $data);
+                            $this->load->view('equipment/update', $data);
+                            $this->load->view('templates/footer');
+                        } else {
+                            $this->Equipment_model->update_equipment();
+                            redirect('equipment');
+                        }
                 }
 
-                public function update(){
-                        $this->Equipment_model->update_equipment();
-                        redirect('equipment');
-                }
+                //public function update(){
+                 //       $this->Equipment_model->update_equipment();
+                  //      redirect('equipment');
+                //}
 
                 public function select_edit(){ 
 
