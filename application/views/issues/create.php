@@ -109,7 +109,6 @@ $(function() {
   } );
      
 </script>
-12345
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
 	    format: "dd/mm/yyyy",
