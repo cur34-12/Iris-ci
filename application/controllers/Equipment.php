@@ -34,9 +34,16 @@
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['assemblies'] = $this->Equipment_model->get_assemblies();
 
-                        $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/create', $data);
-                        $this->load->view('templates/footer');
+                        $this->form_validation->set_rules('veh_name', 'Name', 'required');
+
+                        if($this->form_validation->run() === FALSE){
+                            $this->load->view('templates/header', $data);
+                            $this->load->view('equipment/create', $data);
+                            $this->load->view('templates/footer');
+                        } else {
+                                $this->Equipment_model->create_equipment();
+                                redirect('equipment');
+                        }
                 }
 
                 public function delete($eq_id){
