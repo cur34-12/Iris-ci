@@ -27,7 +27,7 @@
 		}
 
 		public function get_assemblies($ass_id = FALSE){
-			if($eq_id === FALSE){
+			if($ass_id === FALSE){
 				$query = $this->db->get('assemblies');
 				return $query->result_array();
 			}

@@ -7,10 +7,10 @@
                     $data['title'] = 'Equipment'; 
 
                     $data['equipment'] = $this->Equipment_model->get_equipment();
-                        
-        	       $this->load->view('templates/header', $data);
-        	       $this->load->view('equipment/index', $data);
-        	       $this->load->view('templates/footer');
+
+                    $this->load->view('templates/header', $data);
+                    $this->load->view('equipment/index', $data);
+                    $this->load->view('templates/footer');
                 }
 
                 public function view($eq_id = null){
