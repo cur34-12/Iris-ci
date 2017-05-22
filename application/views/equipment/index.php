@@ -19,7 +19,7 @@
 			<th>Inspection Frequency</th>
 			<th>Equipment ID</th>
 			<th>Barcode</th>
-			<th>QR Code</th>
+			<!--<th>QR Code</th>-->
 			<th>Edit</th>
 		</tr>
 	</thead>
