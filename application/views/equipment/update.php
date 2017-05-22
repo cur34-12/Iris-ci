@@ -15,31 +15,31 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_name" value="<?php echo $equipment['eq_name']; ?>">
+			<input type="text" class="form-control" name="eq_name" id="eq_name" value="<?php echo $equipment['eq_name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<textarea name="eq_description" class="form-control" rows="3"><?php echo $equipment['eq_description']; ?></textarea>
+			<textarea name="eq_description" id="eq_description" class="form-control" rows="3"><?php echo $equipment['eq_description']; ?></textarea>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Size</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_size" value="<?php echo $equipment['eq_size']; ?>">
+			<input type="text" class="form-control" name="eq_size" id="eq_size" value="<?php echo $equipment['eq_size']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Brand</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="make" value="<?php echo $equipment['eq_brand']; ?>">
+			<input type="text" class="form-control" name="eq_brand" id="eq_brand" value="<?php echo $equipment['eq_brand']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Supplier</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="supplier" value="<?php echo $equipment['eq_supplier']; ?>">
+			<input type="text" class="form-control" name="eq_supplier" id="eq_supplier" value="<?php echo $equipment['eq_supplier']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
@@ -133,7 +133,7 @@
 				<option value="Donation">Donation</option>
 				<option value="Unit Funts">Unit Funds</option>
 				<option value="Region Funds">Region Funds</option>
-				<option value="USHQ Funds">SHQ Funds</option>
+				<option value="SHQ Funds">SHQ Funds</option>
 				<option value="Emergency Order">Emergency Order</option>
 			</select>
 			<script>
@@ -147,19 +147,19 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_assembly_id" value="<?php echo $equipment['ass_name']; ?>">
+			<input type="text" class="form-control" name="eq_assembly_id" id="eq_assembly_id" value="<?php echo $equipment['ass_name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Asset Number</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_asset_number" value="<?php echo $equipment['eq_asset_number']; ?>">
+			<input type="text" class="form-control" name="eq_asset_number" id="eq_asset_id" value="<?php echo $equipment['eq_asset_number']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Serial Number</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
+			<input type="text" class="form-control" name="eq_serial" id="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Update</button>
