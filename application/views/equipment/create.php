@@ -87,7 +87,7 @@
     </div>
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
-        <div class='input-group date' id='eq_end_life'>
+        <div class='input-group date col-sm-10' id='eq_end_life'>
             <input type='text' class="form-control" name="eq_end_life"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
@@ -105,7 +105,7 @@
     	</script>
     </div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Purchase Type</label>
+		<label class="control-label col-sm-2 col-sm-10">Purchase Type</label>
 		<div class="col-sm-10">
 			<select id="eq_purchase_type" name="eq_purchase_type" class="form-control">
 				<option value="Donation">Donation</option>
