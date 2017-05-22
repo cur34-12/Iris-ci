@@ -17,9 +17,37 @@
 			return $query->row_array();
 		}
 
+		public function get_categories($eqcat_id = FALSE){
+			if($eq_id === FALSE){
+				$query = $this->db->get('equipment_categories');
+				return $query->result_array();
+			}
+			$query = $this->db->get_where('equipment_categories', array('eqcat_id' => $eqcat_id));
+			return $query->row_array();
+		}
+
+		public function get_assemblies($ass_id = FALSE){
+			if($eq_id === FALSE){
+				$query = $this->db->get('assemblies');
+				return $query->result_array();
+			}
+			$query = $this->db->get_where('assemblies', array('ass_id' => $ass_id));
+			return $query->row_array();
+		}
+
+		public function create_assembly(){
+			$data = array(
+				'ass_name' => $this->input->post('ass_name'),
+				'ass_last_checked' => $this->input->post('ass_last_checked'),
+				'ass_inspection_frequency' => $this->input->post('ass_inspection_frequency'),
+				'ass_description' => $this->input->post('ass_description'),
+			);
+			return $this->db->insert('assemblies', $data);
+		}
+
+
 		public function create_equipment(){
 			$data = array(
-				'eq_id' => $this->input->post('eq_id'),
 				'eq_name' => $this->input->post('eq_name'),
 				'eq_description' => $this->input->post('eq_description'),
 				'eq_consumable' => $this->input->post('eq_consumable'),
@@ -36,11 +64,6 @@
 				'eq_serial' => $this->input->post('eq_serial'),
 				'eq_assembly' => $this->input->post('eq_assembly')
 			);
-
-			//$barcode_var = $this->input->post('equipmentID');
-			//$this->create_code39($barcode_var);
-			//$this->create_qr($barcode_var);
-
 			return $this->db->insert('equipment', $data);
 		}
 
@@ -72,16 +95,4 @@
 			$this->db->where('eq_id', $this->input->post('eq_id'));
 			return $this->db->update('equipment', $data);
 		}
-
-		public function search_equipment($q){
-	    	$this->db->select('eq_name');
-	    	$this->db->like('eq_name', $q);
-	    	$query = $this->db->get('equipment');
-	    		if($query->num_rows() > 0){
-	      			foreach ($query->result_array() as $row){
-	        			$row_set[] = htmlentities(stripslashes($row['eq_name'])); //build an array
-	      			}
-	      			echo json_encode($row_set); //format the array into json data
-	    		}
-  		}
 	}
