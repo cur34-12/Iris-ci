@@ -39,7 +39,7 @@
 					<td><?php echo $equipment['eq_inspection_frequency']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
 					<td><img src='<?php echo $bar->BarCode_link("EAN-13", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
-					<td><img src='<?php echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 50, 2); ?>' /></td>
+					<!--<td><img src='<//?php echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 50, 2); ?>' /></td>-->
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
