@@ -160,7 +160,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Serial Number</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_serial_number" value="<?php echo $equipment['eq_serial_number']; ?>">
+			<input type="text" class="form-control" name="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-default">Update</button>
