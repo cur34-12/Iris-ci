@@ -3,7 +3,6 @@
 </head>
 
 <!--Fields must be added to this form if an extra field is added to the vehicles table in the database-->
-<?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment/update', $attributes); ?>
 <h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['eq_name']; ?></h2>
@@ -144,7 +143,7 @@
 			</script>
 		</div>
 	</div>
-	<!--Da to add the live search functionality to the assemble select tool here-->
+	<!--Dan to add the live search functionality to the assemble select tool here-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
