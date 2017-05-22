@@ -62,7 +62,7 @@
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
-				'eq_assembly' => $this->input->post('eq_assembly')
+				'eq_assembly_id' => $this->input->post('eq_assembly_id')
 			);
 			return $this->db->insert('equipment', $data);
 		}
@@ -89,7 +89,7 @@
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
-				'eq_assembly' => $this->input->post('eq_assembly')
+				'eq_assembly_id' => $this->input->post('eq_assembly_id')
 			);
 
 			$this->db->where('eq_id', $this->input->post('eq_id'));
