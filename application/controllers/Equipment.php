@@ -34,7 +34,7 @@
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['assemblies'] = $this->Equipment_model->get_assemblies();
 
-                        $this->form_validation->set_rules('veh_name', 'Name', 'required');
+                        $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
                         if($this->form_validation->run() === FALSE){
                             $this->load->view('templates/header', $data);
