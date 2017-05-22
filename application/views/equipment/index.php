@@ -37,7 +37,7 @@
 					<td><?php echo $equipment['eq_supplier']; ?></td>
 					<td><?php echo $equipment['eq_in_service']; ?></td>
 					<td><?php echo $equipment['eq_asset_number']; ?></td>
-					<td><?php echo $equipment['eq_serial_number']; ?></td>
+					<td><?php echo $equipment['eq_serial']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
 					<td><img src='<?php echo $bar->BarCode_link("EAN-13", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
