@@ -4,7 +4,7 @@
 
 <?php $bar = new BARCODE(); ?>
 
-<table class="table table-striped table-hover ">
+<table id="content" class="table table-striped table-hover ">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -49,3 +49,9 @@
 <a class="btn btn-default" role="button" href="equipment/create">Create Equipment</a>
 <a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>
 <a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> 
+
+<script>
+	$(document).ready(function(){
+	    $('#content').DataTable();
+	});
+</script>
