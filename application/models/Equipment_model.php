@@ -8,11 +8,11 @@
 		public function get_equipment($eq_id = FALSE){
 			if($eq_id === FALSE){
 				$this->db->order_by('eq_category', 'ASC');
-				$this->db->join('assemblies', 'assemblies.ass_id = equipment.eq_assembly_id', 'left');
+				$this->db->join('equipment_groups', 'equipment_groups.eqgroup_id = equipment.eq_group_id', 'left');
 				$query = $this->db->get('equipment');
 				return $query->result_array();
 			}
-			$this->db->join('assemblies', 'assemblies.ass_id = equipment.eq_assembly_id', 'left');
+			$this->db->join('equipment_groups', 'equipment_groups.eqgroup_id = equipment.eq_group_id', 'left');
 			$query = $this->db->get_where('equipment', array('eq_id' => $eq_id));
 			return $query->row_array();
 		}
@@ -34,23 +34,23 @@
 			return $query->result_array();
 		}		
 
-		public function get_assemblies($ass_id = FALSE){
-			if($ass_id === FALSE){
-				$query = $this->db->get('assemblies');
+		public function get_equipmentgroups($eqgroup_id = FALSE){
+			if($eqgroup_id === FALSE){
+				$query = $this->db->get('equipment_groups');
 				return $query->result_array();
 			}
-			$query = $this->db->get_where('assemblies', array('ass_id' => $ass_id));
+			$query = $this->db->get_where('equipment_groups', array('eqgroup_id' => $eqgroup_id));
 			return $query->row_array();
 		}
 
-		public function create_assembly(){
+		public function create_equipmentgroup(){
 			$data = array(
-				'ass_name' => $this->input->post('ass_name'),
-				'ass_last_checked' => $this->input->post('ass_last_checked'),
-				'ass_inspection_frequency' => $this->input->post('ass_inspection_frequency'),
-				'ass_description' => $this->input->post('ass_description'),
+				'eqgroup_name' => $this->input->post('eqgroup_name'),
+				'eqgroup_last_checked' => $this->input->post('eqgroup_last_checked'),
+				'eqgroup_inspection_frequency' => $this->input->post('eqgroup_inspection_frequency'),
+				'eqgroup_description' => $this->input->post('eqgroup_description'),
 			);
-			return $this->db->insert('assemblies', $data);
+			return $this->db->insert('equipment_groups', $data);
 		}
 
 
@@ -70,7 +70,7 @@
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
-				'eq_assembly_id' => $this->input->post('eq_assembly_id')
+				'eq_group_id' => $this->input->post('eq_group_id')
 			);
 			return $this->db->insert('equipment', $data);
 		}
@@ -97,7 +97,7 @@
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
-				'eq_assembly_id' => $this->input->post('eq_assembly_id')
+				'eq_group_id' => $this->input->post('eq_group_id')
 			);
 
 			$this->db->where('eq_id', $this->input->post('eq_id'));
