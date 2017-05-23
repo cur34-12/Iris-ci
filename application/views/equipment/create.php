@@ -139,12 +139,12 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Assembly</label>
+		<label class="control-label col-sm-2">Equipment Group</label>
 		<div class="col-sm-10">
-			<select id="eq_assembly_id" name="eq_assembly_id" class="form-control">
+			<select id="eq_group_id" name="eq_assembly_id" class="form-control">
 						<option value="">N/A</option>
-				<?php foreach($assemblies as $assembly): ?>
-        				<option value="<?php echo $assembly['ass_id']; ?>"><?php echo $assembly['ass_name']; ?></option>
+				<?php foreach($equipmentgroups as $equipmentgroup): ?>
+        				<option value="<?php echo $equipmentgroup['eqgroup_id']; ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>

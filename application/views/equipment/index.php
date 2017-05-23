@@ -9,7 +9,7 @@
 		<tr>
 			<th>Name</th>
 			<th>Description</th>
-			<th>Assembly</th>
+			<th>Group</th>
 			<th>Category</th>	
 			<th>Consumable</th>
 			<th>Size</th>
@@ -29,7 +29,7 @@
 			<tr>
 					<td><a href="<?php echo site_url('/equipment/'. $equipment['eq_id']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
 					<td><?php echo $equipment['eq_description']; ?></td>
-					<td><a href="<?php echo site_url('/equipment/assembly/'. $equipment['ass_id']); ?>"><?php echo $equipment['ass_name']; ?></td>
+					<td><a href="<?php echo site_url('/equipment/group/'. $equipment['eqgroup_id']); ?>"><?php echo $equipment['eqgroup_name']; ?></td>
 					<td><?php echo $equipment['eq_category']; ?></td>
 					<td><?php echo $equipment['eq_consumable']; ?></td>
 					<td><?php echo $equipment['eq_size']; ?></td>

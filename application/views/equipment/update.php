@@ -145,9 +145,9 @@
 	</div>
 	<!--Dan to add the live search functionality to the assemble select tool here-->
 	<div class="form-group">
-		<label class="control-label col-sm-2">Assembly</label>
+		<label class="control-label col-sm-2">Equipment Group</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_assembly_id" id="eq_assembly_id" value="<?php echo $equipment['ass_name']; ?>">
+			<input type="text" class="form-control" name="eq_group_id" id="eq_group_id" value="<?php echo $equipment['eqgroup_name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">

@@ -16,7 +16,7 @@
                 public function view($eq_id = null){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
                         $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
 
                         if(empty($data['equipment'])){
@@ -34,7 +34,7 @@
                 public function create(){
                         $data['title'] = 'Create Equipment';
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
 
                         $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
@@ -56,7 +56,7 @@
                 public function edit($eq_id){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
 
                         if(empty($data['equipment'])){
                                 show_404();
