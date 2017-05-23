@@ -23,7 +23,7 @@
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">Open Issues</td><td><ul><?php
 	 //echo implode(",",$issues); 
-	foreach($issues as $issues) {
+	foreach($issues as $issue) {
 		?><li><?php implode(",",$issue) ?></li>	<?php
 	}
 
