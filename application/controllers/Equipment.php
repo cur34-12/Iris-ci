@@ -17,11 +17,12 @@
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['assemblies'] = $this->Equipment_model->get_assemblies();
+                        $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
 
                         if(empty($data['equipment'])){
                                 show_404();
                         } 
-                        $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
+                        
 
                         $data['title'] = $data['equipment']['eq_name'];
 

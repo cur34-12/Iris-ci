@@ -25,6 +25,7 @@
 			$query = $this->db->get_where('equipment_categories', array('eqcat_id' => $eqcat_id));
 			return $query->row_array();
 		}
+		
 		public function get_equipment_issues($eq_id = FALSE){
 			if($eq_id === FALSE){
 				return null;

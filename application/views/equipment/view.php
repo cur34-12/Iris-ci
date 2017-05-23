@@ -21,14 +21,17 @@
 	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['eq_serial']; ?></td></tr>
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
-	<tr><td style="font-weight: bold">Open Issues</td><td><ul><?php
-	 //echo implode(",",$issues); 
-	foreach($issues as $issue) {
-		 echo $issue;
-	}
-
-	 ?></ul> (note this is currently 'all' not just 'open'</td></tr>
 </table>
+<h3>Issues</h3>
+<table>
+	<!--echo implode(",",$issues); -->
+	<?php foreach($issues as $issue) : ?>
+		 <tr><td><?php echo $issue; ?></td></tr>
+	<?php endforeach; ?>
+</table>
+<p>(note this is currently 'all' not just 'open')</p>
+
+
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
