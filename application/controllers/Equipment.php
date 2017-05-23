@@ -13,10 +13,20 @@
                     $this->load->view('templates/footer');
                 }
 
+                public function groupsindex(){
+                    $data['title'] = 'Equipment Groups'; 
+
+                    $data['equipment_groups'] = $this->Equipment_model->get_equipment_groups();
+
+                    $this->load->view('templates/header', $data);
+                    $this->load->view('equipment/index', $data);
+                    $this->load->view('templates/footer');
+                }
+
                 public function view($eq_id = null){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
 
                         if(empty($data['equipment'])){
@@ -34,7 +44,7 @@
                 public function create(){
                         $data['title'] = 'Create Equipment';
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
 
                         $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
@@ -56,7 +66,7 @@
                 public function edit($eq_id){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['equipmentgroups'] = $this->Equipment_model->get_equipmentgroups();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
 
                         if(empty($data['equipment'])){
                                 show_404();

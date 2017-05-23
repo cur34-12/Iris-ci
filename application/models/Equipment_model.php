@@ -34,7 +34,7 @@
 			return $query->result_array();
 		}		
 
-		public function get_equipmentgroups($eqgroup_id = FALSE){
+		public function get_equipment_groups($eqgroup_id = FALSE){
 			if($eqgroup_id === FALSE){
 				$query = $this->db->get('equipment_groups');
 				return $query->result_array();
@@ -43,7 +43,7 @@
 			return $query->row_array();
 		}
 
-		public function create_equipmentgroup(){
+		public function create_equipment_group(){
 			$data = array(
 				'eqgroup_name' => $this->input->post('eqgroup_name'),
 				'eqgroup_last_checked' => $this->input->post('eqgroup_last_checked'),

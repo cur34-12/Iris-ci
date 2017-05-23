@@ -18,6 +18,14 @@
             <!-- JS for DateTimePicker -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
+            <!-- JS for DataTables -->
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+            <!-- JS for DataTables -->
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+
+            <!-- DataTables Style -->
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+
             <!-- Jquery UI Style -->
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
 
