@@ -24,7 +24,7 @@
 	<tr><td style="font-weight: bold">Open Issues</td><td><ul><?php
 	 //echo implode(",",$issues); 
 	foreach($issues as $issue) {
-		 echo "<li>" . implode(",",$issue) . "</li>";
+		 echo "<li>" . $issue . "</li>";
 	}
 
 	 ?></ul> (note this is currently 'all' not just 'open'</td></tr>
