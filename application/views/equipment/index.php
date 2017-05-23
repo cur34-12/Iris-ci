@@ -52,10 +52,11 @@
 
 <script>
 	$(document).ready(function(){
-	    $('#content').DataTable();
-	    	"columnDefs": [ {
-      			"targets": '-0, -1',
-      			"orderable": false
-    		} ]
+		$('#content').dataTable( {
+		  "columnDefs": [ {
+		      "targets": [ -1, -2 ],
+		      "orderable": false
+		    } ]
+		} );
 	});
 </script>
