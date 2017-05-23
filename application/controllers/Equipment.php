@@ -53,29 +53,23 @@
 
                 public function edit($eq_id){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
-                        $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
 
                         if(empty($data['equipment'])){
                                 show_404();
                         }
 
-                        $data['title'] = 'Edit $eq_name';
+                        $data['title'] = 'Edit Equipment';
 
-                        if($this->form_validation->run() === FALSE){
-                            $this->load->view('templates/header', $data);
-                            $this->load->view('equipment/update', $data);
-                            $this->load->view('templates/footer');
-                        } else {
-                            $this->Equipment_model->update_equipment();
-                            redirect('equipment');
-                        }
+                        $this->load->view('templates/header', $data);
+                        $this->load->view('equipment/update', $data);
+                        $this->load->view('templates/footer');
                 }
 
                 public function update(){
-                      $this->Equipment_model->update_equipment();
-                      redirect('equipment');
+                        $this->Equipment_model->update_equipment();
+                        redirect('equipment');
                 }
+
 
                 public function select_edit(){ 
 
