@@ -91,7 +91,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Date Purchased</label>
         <div class='input-group date col-sm-10' id='eq_date_purchased'>
-            <input type='text' class="form-control" name="eq_date_purchased" value="eq_date_purcahsed"/>
+            <input type='text' class="form-control" name="eq_date_purchased" value="<?php echo $equipment['eq_date_purchased']; ?>"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
@@ -110,7 +110,7 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
         <div class='input-group date col-sm-10' id='eq_end_life'>
-            <input type='text' class="form-control" name="eq_end_life" value="eq_end_life"/>
+            <input type='text' class="form-control" name="eq_end_life" value="<?php echo $equipment['eq_end_life']; ?>"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
