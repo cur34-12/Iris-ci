@@ -24,7 +24,6 @@
 </table>
 <h3>Issues</h3>
 <table>
-	<!--echo implode(",",$issues); -->
 	<thead>
 		<th>ID</th>
 		<th>Title</th>
