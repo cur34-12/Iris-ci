@@ -33,15 +33,14 @@
 	<tbody>
 		<?php foreach($issues as $issue) : ?>
 			<tr>
-				<td><?php echo $issue['iss_id']; ?></td>
-				<td><?php echo $issue['iss_title']; ?></td>
+				<td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_id']; ?></a></td>
+				<td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
 				<td><?php echo $issue['iss_reported_date']; ?></td>
 				<td><?php echo $issue['iss_status']; ?></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
-<p>(note this is currently 'all' not just 'open')</p>
 
 
 <hr />
