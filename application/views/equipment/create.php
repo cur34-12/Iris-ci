@@ -142,6 +142,7 @@
 		<label class="control-label col-sm-2">Assembly</label>
 		<div class="col-sm-10">
 			<select id="eq_assembly_id" name="eq_assembly_id" class="form-control">
+						<option value="">N/A</option>
 				<?php foreach($assemblies as $assembly): ?>
         				<option value="<?php echo $assembly['ass_id']; ?>"><?php echo $assembly['ass_name']; ?></option>
         		<?php endforeach; ?>
