@@ -25,9 +25,22 @@
 <h3>Issues</h3>
 <table>
 	<!--echo implode(",",$issues); -->
-	<?php foreach($issues as $issue) : ?>
-		 <tr><td><?php echo $issue; ?></td></tr>
-	<?php endforeach; ?>
+	<thead>
+		<th>ID</th>
+		<th>Title</th>
+		<th>Reported Date</th>
+		<th>Status</th>
+	</thead>
+	<tbody>
+		<?php foreach($issues as $issue) : ?>
+			<tr>
+				<td><?php echo $issue['iss_id']; ?></td>
+				<td><?php echo $issue['iss_title']; ?></td>
+				<td><?php echo $issue['iss_reported_date']; ?></td>
+				<td><?php echo $issue['iss_status']; ?></td>
+			</tr>
+		<?php endforeach; ?>
+	</tbody>
 </table>
 <p>(note this is currently 'all' not just 'open')</p>
 
