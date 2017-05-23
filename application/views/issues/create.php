@@ -87,7 +87,7 @@
 $(function() {
     
     //autocomplete
-    $("#iss_eq_id").autocomplete({
+    $("#iss_equipment").autocomplete({
         source: "/search-equipment.php",
         minLength: 0,
 		focus: function( event, ui ) {
