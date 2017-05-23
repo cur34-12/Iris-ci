@@ -23,7 +23,7 @@
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
 </table>
 <h3>Issues</h3>
-<table>
+<table class="table table-striped table-hover ">
 	<thead>
 		<th>ID</th>
 		<th>Title</th>
