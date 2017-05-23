@@ -102,7 +102,7 @@
 	            	useCurrent: true,
 	            	showTodayButton: true,
 	            	sideBySide: true,
-	            	format: 'YYYY-MM-DD',
+	            	format: 'YYYY-MM-DD'
 	            });
 	        });
 		</script>
@@ -121,7 +121,7 @@
 			    	useCurrent: true,
 			    	showTodayButton: true,
 			    	sideBySide: true,
-			    	format: 'YYYY-MM-DD',
+			    	format: 'YYYY-MM-DD'
 			    });
 			});
     	</script>
