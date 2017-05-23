@@ -26,7 +26,7 @@
 			return $query->row_array();
 		}
 		public function get_equipment_issues($eq_id = FALSE){
-			if($eqcat_id === FALSE){
+			if($eq_id === FALSE){
 				return null;
 			}
 			$query = $this->db->get_where('issues', array('iss_eq_id' => $eq_id));
