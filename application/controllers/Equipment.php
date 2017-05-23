@@ -53,6 +53,8 @@
 
                 public function edit($eq_id){
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
+                        $data['categories'] = $this->Equipment_model->get_categories();
+                        $data['assemblies'] = $this->Equipment_model->get_assemblies();
 
                         if(empty($data['equipment'])){
                                 show_404();
