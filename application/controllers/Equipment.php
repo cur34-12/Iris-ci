@@ -21,6 +21,7 @@
                         if(empty($data['equipment'])){
                                 show_404();
                         } 
+                        $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
 
                         $data['title'] = $data['equipment']['eq_name'];
 

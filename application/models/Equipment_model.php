@@ -25,6 +25,13 @@
 			$query = $this->db->get_where('equipment_categories', array('eqcat_id' => $eqcat_id));
 			return $query->row_array();
 		}
+		public function get_equipment_issues($eq_id = FALSE){
+			if($eqcat_id === FALSE){
+				return null;
+			}
+			$query = $this->db->get_where('issues', array('iss_eq_id' => $eq_id));
+			return $query->row_array();
+		}		
 
 		public function get_assemblies($ass_id = FALSE){
 			if($ass_id === FALSE){
