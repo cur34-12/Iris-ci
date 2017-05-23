@@ -53,5 +53,9 @@
 <script>
 	$(document).ready(function(){
 	    $('#content').DataTable();
+	    	"columnDefs": [ {
+      			"targets": '-0, -1',
+      			"orderable": false
+    		} ]
 	});
 </script>
