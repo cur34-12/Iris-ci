@@ -138,10 +138,11 @@
         	</select>
 		</div>
 	</div>
+	<!--Dan to add the live search functionality to the group select tool here-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment Group</label>
 		<div class="col-sm-10">
-			<select id="eq_group_id" name="eq_assembly_id" class="form-control">
+			<select id="eq_group_id" name="eq_group_id" class="form-control">
 						<option value="">N/A</option>
 				<?php foreach($equipmentgroups as $equipmentgroup): ?>
         				<option value="<?php echo $equipmentgroup['eqgroup_id']; ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></option>
