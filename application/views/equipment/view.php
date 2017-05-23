@@ -24,7 +24,7 @@
 	<tr><td style="font-weight: bold">Open Issues</td><td><ul><?php
 	 //echo implode(",",$issues); 
 	foreach($issues as $issue) {
-		 echo "<li><a href='/issues/". $issue['iss_id']."'>" . $issue['title'] . "</a></li>";
+		 echo "<li><a href='/issues/". $issue['iss_id'] . "'>" . $issue['title'] . "</a></li>";
 	}
 
 	 ?></ul> (note this is currently 'all' not just 'open'</td></tr>
