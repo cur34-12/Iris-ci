@@ -27,7 +27,7 @@
 					<td><a href="<?php echo site_url('/equipment/view/'. $issue['eq_id']); ?>"><?php echo $issue['eq_name']; ?></a></td>
 					<td><?php echo $issue['iss_type']; ?></td>
 					<td><?php echo $issue['iss_title']; ?></td>
-					<td><?php echo word_limiter($issue['iss_description'], 8); ?></td>
+					<td><div data-toggle="tooltip" title="<?php echo $issue['iss_description']; ?>"><?php echo word_limiter($issue['iss_description'], 8); ?></div></td>
 					<td><?php echo $issue['iss_reporter_id']; ?></td>
 					<td><?php echo $issue['iss_assigned_user']; ?></td>
 					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['iss_reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
