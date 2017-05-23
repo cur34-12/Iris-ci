@@ -12,6 +12,9 @@
 
                 public function view($iss_id = null){
                         $data['issue'] = $this->Issues_model->get_issues($iss_id);
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['members'] = $this->Unitmembers_model->get_members();
+                        $data['usernames'] = $this->User_model->get_users();
 
                         if(empty($data['issue'])){
                                 show_404();
