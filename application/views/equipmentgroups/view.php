@@ -8,7 +8,7 @@
 <h2 style="text-transform: uppercase;">Equipment Group - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
 
 <table class="table table-striped table-hover ">
-	<tr><td style="font-weight: bold"><a href="<?php echo site_url('/equipment-groups/'. $equipmentgroup['eqgroup_id']); ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
 	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_description']; ?></td>
 	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_category']; ?></td>
 	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_inspection_frequency']; ?></td>
@@ -17,6 +17,27 @@
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipmentgroup['eqgroup_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment-groups/'. $equipmentgroup['eqgroup_id']), 100, 2); ?>' /></td></tr>
 </table>
+
+<h3>Equipment</h3>
+<table class="table table-striped table-hover ">
+	<thead>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Consumable</th>
+	</thead>
+	<tbody>
+		<?php foreach($items as $item) : ?>
+			<tr>
+				<td><a href="/equipment/<?php echo $item['eq_id']; ?>"><?php echo $item['eq_id']; ?></a></td>
+				<td><a href="/equipment/<?php echo $item['eq_id']; ?>"><?php echo $item['eq_name']; ?></a></td>
+				<td><?php echo $item['eq_description']; ?></td>
+				<td><?php echo $item['eq_consumable']; ?></td>
+			</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>
+
 <h3>Related Groups</h3>
 <table class="table table-striped table-hover ">
 	<thead>

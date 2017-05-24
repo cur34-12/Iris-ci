@@ -43,6 +43,14 @@
 			return $query->row_array();
 		}
 
+		public function get_group_items($eq_groupid = FALSE){
+			if($eqgroup_id === FALSE){
+				return null;
+			}
+			$query = $this->db->get_where('equipment', array('eq_group_id' => $eq_groupid));
+			return $query->result_array();
+		}	
+
 		public function create_equipment_group(){
 			$data = array(
 				'eqgroup_name' => $this->input->post('eqgroup_name'),

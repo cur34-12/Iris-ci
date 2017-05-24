@@ -108,7 +108,7 @@
 
                 public function eqgroupsview($eqgroup_id = null){
                         $data['equipmentgroup'] = $this->Equipment_model->get_equipment_groups($eqgroup_id);
-                        $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['items'] = $this->Equipment_model->get_group_equipment($eqgroup_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
 
                         if(empty($data['equipmentgroup'])){
