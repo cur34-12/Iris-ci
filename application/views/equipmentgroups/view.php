@@ -63,7 +63,7 @@
 
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment-groups/create'); ?>">Create Equipment Group</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipment['eqgroup_id']); ?>">Edit Equipment Group</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>">Edit Equipment Group</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
 <?php echo form_open('/equipment-groups/delete/'.$equipmentgroup['eqgroup_id'], $attributes); ?>
 	<input type="submit" value="Delete Equipment Group" class="btn btn-danger"/>
