@@ -43,7 +43,7 @@
 			return $query->row_array();
 		}
 
-		public function get_group_items($eq_groupid = FALSE){
+		public function get_group_equipment($eq_groupid = FALSE){
 			if($eqgroup_id === FALSE){
 				return null;
 			}
