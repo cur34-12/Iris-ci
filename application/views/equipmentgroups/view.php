@@ -25,6 +25,7 @@
 		<th>Name</th>
 		<th>Description</th>
 		<th>Consumable</th>
+		<th>Barcode</th>
 	</thead>
 	<tbody>
 		<?php foreach($items as $item) : ?>
@@ -33,6 +34,7 @@
 				<td><a href="/equipment/<?php echo $item['eq_id']; ?>"><?php echo $item['eq_name']; ?></a></td>
 				<td><?php echo $item['eq_description']; ?></td>
 				<td><?php echo $item['eq_consumable']; ?></td>
+				<td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
