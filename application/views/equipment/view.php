@@ -9,7 +9,7 @@
 
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['eq_name']; ?></td></tr>
-	<tr><td style="font-weight: bold">Group</td><td><a href="/equipment/groups/<?php echo $equipment['eqgroup_id']; ?>"><?php echo $equipment['eqgroup_name']; ?></a>a</td></tr>
+	<tr><td style="font-weight: bold">Group</td><td><a href="/equipment/groups/<?php echo $equipment['eqgroup_id']; ?>"><?php echo $equipment['eqgroup_name']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Description</td><td><?php echo $equipment['eq_description']; ?></td></tr>
 	<tr><td style="font-weight: bold">Consumable?</td><td><?php echo $equipment['eq_consumable']; ?></td></tr>
 	<tr><td style="font-weight: bold">Category</td><td><?php echo $equipment['eq_category']; ?></td></tr>
