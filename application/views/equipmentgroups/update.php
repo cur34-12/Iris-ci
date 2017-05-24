@@ -9,14 +9,14 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eqgroup_name" value="<?php echo $equipmentgroups['eqgroup_name']; ?>">
+			<input type="text" class="form-control" name="eqgroup_name" value="<?php echo $equipmentgroup['eqgroup_name']; ?>">
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eqgroup_description" value="<?php echo $equipmentgroups['eqgroup_description']; ?>">
+			<input type="text" class="form-control" name="eqgroup_description" value="<?php echo $equipmentgroup['eqgroup_description']; ?>">
 		</div>
 	</div>
 
@@ -41,7 +41,7 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">Last Inspection</label>
         <div class='input-group date col-sm-10' id='eqgroup_last_checked'>
-            <input type='text' class="form-control" name="eqgroup_last_checked" value="<?php echo $equipmentgroups['eqgroup_last_checked']; ?>"/>
+            <input type='text' class="form-control" name="eqgroup_last_checked" value="<?php echo $equipmentgroup['eqgroup_last_checked']; ?>"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
@@ -68,7 +68,7 @@
         	</select>
         	<script>
 				$(function() {
-					$( '#eqgroup_category' ).val('<?php echo $equipment['eqgroup_category']; ?>'); 
+					$( '#eqgroup_category' ).val('<?php echo $equipmentgroup['eqgroup_category']; ?>'); 
 				});
 			</script>
 		</div>
@@ -78,7 +78,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eqgroup_location" id="eqgroup_location" value="<?php echo $category['eqcat_location']; ?>">
+			<input type="text" class="form-control" name="eqgroup_location" id="eqgroup_location" value="<?php echo $equipmentgroup['eqcat_location']; ?>">
 		</div>
 	</div>
 
