@@ -26,7 +26,7 @@
 					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['iss_id']; ?></a></td>
 					<td><a href="<?php echo $issue['eq_name']; ?>"</td>
 					<td><?php echo $issue['iss_type']; ?></td>
-					<td><a><?php echo site_url('/issues/view/'. $issue['iss_id']); ?>"><?php echo $issue['iss_title']; ?></a></td>
+					<td><a href="<?php echo site_url('/issues/view/'. $issue['iss_id']); ?>"><?php echo $issue['iss_title']; ?></a></td>
 					<td><div data-toggle="tooltip" title="<?php echo $issue['iss_description']; ?>"><?php echo word_limiter($issue['iss_description'], 8); ?></div></td>
 					<td><?php echo $issue['iss_reporter_id']; ?></td>
 					<td><?php echo $issue['iss_assigned_user']; ?></td>
