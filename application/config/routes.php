@@ -28,8 +28,6 @@ $route['equipment/groups/update'] = 'equipment/eqgroupsupdate';
 $route['equipment/groups/(:any)'] = 'equipment/eqgroupsview/$1';
 $route['equipment/groups'] = 'equipment/eqgroupsindex';
 
-
-
 /* Loans Routes */
 $route['loans/delete'] = 'loans/select_delete';
 $route['loans/edit'] = 'loans/select_edit';
