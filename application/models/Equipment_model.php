@@ -44,7 +44,7 @@
 		}
 
 		public function get_group_equipment($eq_groupid = FALSE){
-			if($eqgroup_id === FALSE){
+			if($eq_groupid === FALSE){
 				return null;
 			}
 			$query = $this->db->get_where('equipment', array('eq_group_id' => $eq_groupid));
