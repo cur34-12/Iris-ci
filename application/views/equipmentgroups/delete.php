@@ -1,5 +1,5 @@
 <head>
-	<title>Equipment - Delete</title>
+	<title>Equipment Group- Delete</title>
 </head>
 <h2 style="text-transform: uppercase;">Delete - Select an Equipment Item</h2>
 <?php $attributes = array('class' => 'form-horizontal'); ?>

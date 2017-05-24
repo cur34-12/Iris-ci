@@ -140,45 +140,45 @@
                         }
                 }
 
-                public function eqgroupsdelete($eq_id){
+                public function eqgroupsdelete($eqgroup_id){
                         $this->Equipment_model->delete_equipment($eq_id);
                         redirect('equipment');
                 }
 
-                public function eqgroupsedit($eq_id){
-                        $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
+                public function eqgroupsedit($eqgroup_id){
+                        $data['equipmentgroup'] = $this->Equipment_model->get_equipment_groups($eqgroup_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
-                        $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
 
                         if(empty($data['equipment'])){
                                 show_404();
                         }
 
-                        $data['title'] = 'Edit Equipment';
+                        $data['title'] = 'Edit Equipment Group';
 
                         $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/update', $data);
+                        $this->load->view('equipmentgroups/update', $data);
                         $this->load->view('templates/footer');
                 }
 
                 public function eqgroupsupdate(){
-                        $this->Equipment_model->update_equipment();
-                        redirect('equipment');
+                        $this->Equipment_model->update_equipmentgroup();
+                        redirect('equipment-groups');
                 }
 
 
                 public function eqgroupsselect_edit(){ 
 
-                    $data['equipment'] = $this->Equipment_model->get_equipment();
+                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         
                     $this->load->view('templates/header', $data);
-                    $this->load->view('equipment/edit', $data);
+                    $this->load->view('equipmentgroups/edit', $data);
                     $this->load->view('templates/footer');
                 }
                 
                 public function eqgroupsselect_delete(){ 
 
-                    $data['equipment'] = $this->Equipment_model->get_equipment();
+                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         
                     $this->load->view('templates/header', $data);
                     $this->load->view('equipment/delete', $data);
