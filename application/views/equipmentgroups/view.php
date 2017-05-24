@@ -40,27 +40,6 @@
 	</tbody>
 </table>
 
-<h3>Related Groups</h3>
-<table class="table table-striped table-hover ">
-	<thead>
-		<th>ID</th>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Location</th>
-	</thead>
-	<tbody>
-		<?php foreach($relatedgroups as $relatedgroup) : ?>
-			<tr>
-				<td><a href="/equipment-groups/<?php echo $relatedgroup['eqgroup_id']; ?>"><?php echo $relatedgroup['eqgroup_id']; ?></a></td>
-				<td><a href="/equipment-groups/<?php echo $relatedgroup['eqgroup_id']; ?>"><?php echo $relatedgroup['eqgroup_name']; ?></a></td>
-				<td><?php echo $relatedgroup['eqgroup_description']; ?></td>
-				<td><?php echo $relatedgroup['eqgroup_location']; ?></td>
-			</tr>
-		<?php endforeach; ?>
-	</tbody>
-</table>
-
-
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment-groups/create'); ?>">Create Equipment Group</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>">Edit Equipment Group</a>
