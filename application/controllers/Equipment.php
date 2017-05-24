@@ -151,7 +151,7 @@
                         $data['equipment'] = $this->Equipment_model->get_equipment();
 
                         if(empty($data['equipmentgroup'])){
-                                show_404();
+                                //show_404();
                         }
 
                         $data['title'] = 'Edit Equipment Group';
