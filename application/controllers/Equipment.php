@@ -150,7 +150,7 @@
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                        if(empty($data['equipment'])){
+                        if(empty($data['equipmentgroup'])){
                                 show_404();
                         }
 
