@@ -23,6 +23,7 @@ $route['equipment'] = 'equipment/index';
 
 $route['equipment-groups/delete'] = 'equipment/eqgroups_select_delete';
 $route['equipment-groups/edit'] = 'equipment/eqgroups_select_edit';
+$route['equipment-groups/edit/(:any)'] = 'equipment/eqgroups_edit/$1';
 $route['equipment-groups/create'] = 'equipment/eqgroups_create';
 $route['equipment-groups/update'] = 'equipment/eqgroups_update';
 $route['equipment-groups/(:any)'] = 'equipment/eqgroups_view/$1';
