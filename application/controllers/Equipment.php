@@ -99,7 +99,7 @@
                 public function eqgroupsindex(){
                     $data['title'] = 'Equipment Groups'; 
 
-                    $data['equipment_groups'] = $this->Equipment_model->get_equipment_groups();
+                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
 
                     $this->load->view('templates/header', $data);
                     $this->load->view('equipmentgroups/index', $data);
