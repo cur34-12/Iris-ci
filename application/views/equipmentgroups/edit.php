@@ -10,7 +10,7 @@
 </thead>
 <?php foreach($equipmentgroups as $equipmentgroup) : ?>
 <tr>
-<td style="text-transform: uppercase;"><a href="<?php echo site_url('/equipment/groups/edit/'. $equipmentgroup['eqgroup_id']); ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
+<td style="text-transform: uppercase;"><a href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
 </tr>
 <?php endforeach; ?>
 </table>

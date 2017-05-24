@@ -4,7 +4,7 @@
 <h2 style="text-transform: uppercase;">Create Equipment</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
-<?php echo form_open('equipment/groups/create', $attributes); ?>
+<?php echo form_open('equipment-groups/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>

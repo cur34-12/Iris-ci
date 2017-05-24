@@ -21,12 +21,12 @@ $route['equipment/update'] = 'equipment/update';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 
-$route['equipment/groups/delete'] = 'equipment/eqgroupsselect_delete';
-$route['equipment/groups/edit'] = 'equipment/eqgroupsselect_edit';
-$route['equipment/groups/create'] = 'equipment/eqgroupscreate';
-$route['equipment/groups/update'] = 'equipment/eqgroupsupdate';
-$route['equipment/groups/(:any)'] = 'equipment/eqgroupsview/$1';
-$route['equipment/groups'] = 'equipment/eqgroupsindex';
+$route['equipment-groups/delete'] = 'equipment/eqgroupsselect_delete';
+$route['equipment-groups/edit'] = 'equipment/eqgroupsselect_edit';
+$route['equipment-groups/create'] = 'equipment/eqgroupscreate';
+$route['equipment-groups/update'] = 'equipment/eqgroupsupdate';
+$route['equipment-groups/(:any)'] = 'equipment/eqgroupsview/$1';
+$route['equipment-groups'] = 'equipment/eqgroupsindex';
 
 /* Loans Routes */
 $route['loans/delete'] = 'loans/select_delete';
