@@ -9,11 +9,11 @@
 
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold"><a href="<?php echo site_url('/equipment/groups/'. $equipmentgroup['eqgroup_id']); ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
-	<tr><td style="font-weight: bold"><?php echo $equipment['eqgroup_description']; ?></td>
-	<tr><td style="font-weight: bold"><?php echo $equipment['eqgroup_category']; ?></td>
-	<tr><td style="font-weight: bold"><?php echo $equipment['eqgroup_inspection_frequency']; ?></td>
-	<tr><td style="font-weight: bold"><?php echo $equipment['eqgroup_last_checked']; ?></td>
-	<tr><td style="font-weight: bold"><?php echo $equipment['eqgroup_location']; ?></td>		
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_description']; ?></td>
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_category']; ?></td>
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_inspection_frequency']; ?></td>
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_last_checked']; ?></td>
+	<tr><td style="font-weight: bold"><?php echo $equipmentgroup['eqgroup_location']; ?></td>		
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipmentgroup['eqgroup_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/groups/'. $equipmentgroup['eqgroup_id']), 100, 2); ?>' /></td></tr>
 </table>
