@@ -78,7 +78,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eqgroup_location" id="eqgroup_location" value="<?php echo $equipmentgroup['eqcat_location']; ?>">
+			<input type="text" class="form-control" name="eqgroup_location" id="eqgroup_location" value="<?php echo $equipmentgroup['eqgroup_location']; ?>">
 		</div>
 	</div>
 
