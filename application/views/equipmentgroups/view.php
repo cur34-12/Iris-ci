@@ -5,7 +5,7 @@
 
 <?php $bar = new BARCODE(); ?>
 
-<h2 style="text-transform: uppercase;">Equipment - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
+<h2 style="text-transform: uppercase;">Equipment Group - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
 
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold"><a href="<?php echo site_url('/equipment/groups/'. $equipmentgroup['eqgroup_id']); ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></a></td>
@@ -40,7 +40,7 @@
 
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/groups/create'); ?>">Create Equipment Group</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/groups/edit/'. $equipment['eq_id']); ?>">Edit Equipment Group</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/groups/edit/'. $equipment['eqgroup_id']); ?>">Edit Equipment Group</a>
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
 <?php echo form_open('/equipment/groups/delete/'.$equipmentgroup['eqgroup_id'], $attributes); ?>
 	<input type="submit" value="Delete Equipment Group" class="btn btn-danger"/>
