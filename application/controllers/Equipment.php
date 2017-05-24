@@ -162,7 +162,7 @@
                 }
 
                 public function eqgroupsupdate(){
-                        $this->Equipment_model->update_equipmentgroup();
+                        $this->Equipment_model->update_equipment_group();
                         redirect('equipment-groups');
                 }
 
