@@ -129,6 +129,8 @@
 			$this->db->where('eqgroup_id', $this->input->post('eqgroup_id'));
 			return $this->db->update('equipment_groups', $data);
 
+		}
+
 		//
 		//
 		//Issues
