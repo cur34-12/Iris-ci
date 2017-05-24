@@ -13,7 +13,7 @@
 	<tr><td style="font-weight: bold">Category</td><td><?php echo $equipmentgroup['eqgroup_category']; ?></td>
 	<tr><td style="font-weight: bold">Inspection Frequency</td><td><?php echo $equipmentgroup['eqgroup_inspection_frequency']; ?></td>
 	<tr><td style="font-weight: bold">Last Checked</td><td><?php echo $equipmentgroup['eqgroup_last_checked']; ?></td>
-	<tr><td style="font-weight: bold">Location</td><td><?php echo $equipmentgroup['eqgroup_location']; ?></td>		
+	<tr><td style="font-weight: bold">Location</td><td><?php echo $equipmentgroup['loc_name']; ?></td>		
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipmentgroup['eqgroup_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment-groups/'. $equipmentgroup['eqgroup_id']), 100, 2); ?>' /></td></tr>
 </table>
