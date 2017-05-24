@@ -3,7 +3,7 @@
 </head>
 
 <?php $bar = new BARCODE(); ?>
-
+<h2 style="text-transform: uppercase;">Equipment</h2>
 <table id="content" class="table table-striped table-hover ">
 	<thead>
 		<tr>
