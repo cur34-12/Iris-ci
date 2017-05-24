@@ -24,7 +24,7 @@
 		<?php foreach($issues as $issue) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['iss_id']; ?></a></td>
-					<td><a href="<?php echo $issue['eq_name']; ?>"</td>
+					<td><?php echo $issue['eq_name']; ?></td>
 					<td><?php echo $issue['iss_type']; ?></td>
 					<td><a href="<?php echo site_url('/issues/view/'. $issue['iss_id']); ?>"><?php echo $issue['iss_title']; ?></a></td>
 					<td><div data-toggle="tooltip" title="<?php echo $issue['iss_description']; ?>"><?php echo word_limiter($issue['iss_description'], 8); ?></div></td>
