@@ -96,7 +96,7 @@
 
                 //Equipment Groups
 
-                public function eqgroupsindex(){
+                public function eqgroups_index(){
                     $data['title'] = 'Equipment Groups'; 
 
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
@@ -106,7 +106,7 @@
                     $this->load->view('templates/footer');
                 }
 
-                public function eqgroupsview($eqgroup_id = null){
+                public function eqgroups_view($eqgroup_id = null){
                         $data['equipmentgroup'] = $this->Equipment_model->get_equipment_groups($eqgroup_id);
                         $data['items'] = $this->Equipment_model->get_group_equipment($eqgroup_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
@@ -123,7 +123,7 @@
                         $this->load->view('templates/footer');
                 }
 
-                public function eqgroupscreate(){
+                public function eqgroups_create(){
                         $data['title'] = 'Create Equipment';
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
@@ -140,12 +140,12 @@
                         }
                 }
 
-                public function eqgroupsdelete($eqgroup_id){
+                public function eqgroups_delete($eqgroup_id){
                         $this->Equipment_model->delete_equipment($eq_id);
                         redirect('equipment');
                 }
 
-                public function eqgroupsedit($eqgroup_id){
+                public function eqgroups_edit($eqgroup_id){
                         $data['equipmentgroup'] = $this->Equipment_model->get_equipment_groups($eqgroup_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
@@ -161,13 +161,13 @@
                         $this->load->view('templates/footer');
                 }
 
-                public function eqgroupsupdate(){
+                public function eqgroups_update(){
                         $this->Equipment_model->update_equipment_group();
                         redirect('equipment-groups');
                 }
 
 
-                public function eqgroupsselect_edit(){ 
+                public function eqgroups_select_edit(){ 
 
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         
@@ -176,7 +176,7 @@
                     $this->load->view('templates/footer');
                 }
                 
-                public function eqgroupsselect_delete(){ 
+                public function eqgroups_select_delete(){ 
 
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         
