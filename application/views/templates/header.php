@@ -39,13 +39,17 @@
             <script type="text/javascript">
                 moment().format();
             </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+					integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+					crossorigin="anonymous">
+		    </script>
 
         </head>
         
         <body>
         <nav class="navbar navbar-default navbar-static-top">
         	<div class="container-fluid">
-        		<div clas="navbar-header">
+        		<div class="navbar-header">
         			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
         		</div>
         		<div id="navbar">
