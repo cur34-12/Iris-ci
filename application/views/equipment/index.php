@@ -17,6 +17,7 @@
 			<th>Supplier</th>
 			<th>In Service</th>
 			<th>Asset Number</th>
+            <th>Model</th>
 			<th>Serial Number</th>
 			<th>Equipment ID</th>
 			<th>Barcode</th>
@@ -37,6 +38,7 @@
 					<td><?php echo $equipment['eq_supplier']; ?></td>
 					<td><?php echo $equipment['eq_in_service']; ?></td>
 					<td><?php echo $equipment['eq_asset_number']; ?></td>
+                    <td><?php echo $equipment['eq_model_number']; ?></td>
 					<td><?php echo $equipment['eq_serial']; ?></td>
 					<td><?php echo $equipment['eq_id']; ?></td>
 					<td><img src='<?php echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
