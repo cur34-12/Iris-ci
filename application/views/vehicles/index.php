@@ -27,7 +27,7 @@
 					<td><?php echo $vehicle['veh_make']; ?></td>
 					<td><?php echo $vehicle['veh_year']; ?></td>
 					<td><?php echo $vehicle['veh_model']; ?></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['veh_name']; ?>">Edit</a></td>
+					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['veh_id']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
