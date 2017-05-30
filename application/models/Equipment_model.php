@@ -94,7 +94,7 @@
 
 		public function get_equipment_groups($eqgroup_id = FALSE){
 			if($eqgroup_id === FALSE){
-				$this->db->join('locations', 'locations.loc_name = equipment_groups.eqgroup_location', 'left');
+				$this->db->join('locations', 'locations.loc_id = equipment_groups.eqgroup_location', 'left');
 				$query = $this->db->get('equipment_groups');
 				return $query->result_array();
 			}
