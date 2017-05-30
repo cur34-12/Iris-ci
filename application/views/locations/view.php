@@ -3,7 +3,7 @@
 </head>
 <h2><?php echo $location['loc_name']; ?></h2>
 <table class="table table-striped table-hover ">
-	<tr><td style="font-weight: bold">Name</td><td style="text-transform: uppercase;"><?php echo $location['loc_name']; ?></td></tr>
+	<tr><td style="font-weight: bold">Name</td><td><?php echo $location['loc_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Manager</td><td><?php echo $location['loc_manager']; ?></td></tr>
 </table>
 <hr />
