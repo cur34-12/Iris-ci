@@ -26,7 +26,7 @@
 					<td><?php echo $equipmentgroup['eqgroup_category']; ?></td>
 					<td><?php echo $equipmentgroup['eqgroup_inspection_frequency']; ?></td>
 					<td><?php echo $equipmentgroup['eqgroup_last_checked']; ?></td>
-					<td><?php echo $equipmentgroup['eqgroup_location']; ?></td>
+					<td><?php echo $equipmentgroup['loc_name']; ?></td>
 					<td><img src='<?php echo $bar->BarCode_link("Code39", $equipmentgroup['eqgroup_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="equipment-groups/edit/<?php echo $equipmentgroup['eqgroup_id']; ?>">Edit</a></td>
 			</tr>
