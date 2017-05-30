@@ -19,13 +19,13 @@
         <div class="col-sm-10">
             <select id="loc_manager" name="loc_manager" class="form-control" >
                 <?php foreach($usernames as $username): ?>
-                    <option value="<?php echo $username['id']; ?>"><?php echo $username['username']; ?></option>
+                    <option value="<?php echo $username['username']; ?>"><?php echo $username['username']; ?></option>
                 <?php endforeach; ?>
             </select>
         </div>
         <script>
             $(function() {
-                $( '#loc_manager' ).val('<?php echo $location['username']; ?>');
+                $( '#loc_manager' ).val('<?php echo $location['loc_manager']; ?>');
             });
         </script>
     </div>
