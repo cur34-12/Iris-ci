@@ -13,6 +13,14 @@ $route['issues/update'] = 'issues/update';
 $route['issues/(:any)'] = 'issues/view/$1';
 $route['issues'] = 'issues/index';
 
+/* Locations Routes */
+$route['locations/delete'] = 'locations/select_delete';
+$route['locations/edit'] = 'locations/select_edit';
+$route['locations/create'] = 'locations/create';
+$route['locations/update'] = 'locations/update';
+$route['locations/(:any)'] = 'locations/view/$1';
+$route['locations'] = 'locations/index';
+
 /* Equipment Routes */
 $route['equipment/delete'] = 'equipment/select_delete';
 $route['equipment/edit'] = 'equipment/select_edit';
