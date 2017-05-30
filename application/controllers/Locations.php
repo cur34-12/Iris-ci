@@ -46,6 +46,7 @@
 
                 public function edit($loc_id){
                         $data['location'] = $this->Locations_model->get_locations($loc_id);
+                        $data['usernames'] = $this->User_model->get_users();
 
                         if(empty($data['location'])){
                                 show_404();
