@@ -1,6 +1,3 @@
-<head>
-	<title>Create Vehicle - Logi</title>
-</head>
 <h2 style="text-transform: uppercase;">Create Vehicle</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>

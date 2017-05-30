@@ -13,15 +13,13 @@
 			<th>Make</th>
 			<th>Year</th>
 			<th>Model</th>
-			<th>AEL</th>
 			<th>Edit</th>
 		</tr>
 	</thead>
-	<!--Fields must be added to this table if an extra field is added to the vehicles table in the database-->
 	<tbody>
 		<?php foreach($vehicles as $vehicle) : ?>
 			<tr>
-					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/'. $vehicle['veh_name']); ?>"><?php echo $vehicle['veh_name']; ?></a></td>
+					<td style="text-transform: uppercase;"><a href="<?php echo site_url('/vehicles/view/'. $vehicle['veh_id']); ?>"><?php echo $vehicle['veh_name']; ?></a></td>
 					<td><?php echo $vehicle['veh_rego']; ?></td>
 					<td><?php echo $vehicle['veh_capacity']; ?></td>
 					<td><?php echo $vehicle['veh_category']; ?></td>
@@ -29,7 +27,6 @@
 					<td><?php echo $vehicle['veh_make']; ?></td>
 					<td><?php echo $vehicle['veh_year']; ?></td>
 					<td><?php echo $vehicle['veh_model']; ?></td>
-					<td><a href="<?php echo site_url('/lists/' . $vehicle['veh_list_id']); ?>"><?php echo $vehicle['veh_list_id']; ?></a></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="vehicles/edit/<?php echo $vehicle['veh_name']; ?>">Edit</a></td>
 			</tr>
 		<?php endforeach; ?>

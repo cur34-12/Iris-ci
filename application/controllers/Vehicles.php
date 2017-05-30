@@ -10,14 +10,12 @@
         	       $this->load->view('templates/footer');
                 }
 
-                public function view($name = null){
-                        $data['vehicle'] = $this->Vehicle_model->get_vehicles($veh_name);
+                public function view($veh_id = null){
+                        $data['vehicle'] = $this->Vehicle_model->get_vehicles($veh_id);
 
                         if(empty($data['vehicle'])){
                                 show_404();
                         }
-
-                        $data['title'] = $data['vehicle']['veh_name'];
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('vehicles/view', $data);
@@ -39,13 +37,13 @@
                         }
                 }
 
-                public function delete($veh_name){
-                        $this->Vehicle_model->delete_vehicle($veh_name);
+                public function delete($veh_id){
+                        $this->Vehicle_model->delete_vehicle($veh_id);
                         redirect('vehicles');
                 }
 
-                public function edit($veh_name){
-                        $data['vehicle'] = $this->Vehicle_model->get_vehicles($veh_name);
+                public function edit($veh_id){
+                        $data['vehicle'] = $this->Vehicle_model->get_vehicles($veh_id);
 
                         if(empty($data['vehicle'])){
                                 show_404();

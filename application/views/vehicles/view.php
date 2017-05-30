@@ -19,10 +19,10 @@
 <a class="btn btn-default" role="button" href="<?php echo site_url('/vehicles/create'); ?>">Create Vehicle</a>
 
 <!--Edit Button-->
-<a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['veh_name']); ?>">Edit Vehicle</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['veh_id']); ?>">Edit Vehicle</a>
 
 <!--Delete Button (as form to protect against abuse)-->
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/vehicles/delete/'.$vehicle['veh_name'], $attributes); ?>
+<?php echo form_open('/vehicles/delete/'.$vehicle['veh_id'], $attributes); ?>
 	<input type="submit" value="Delete Vehicle" class="btn btn-danger"/>
 </form>

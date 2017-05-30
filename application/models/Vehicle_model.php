@@ -5,14 +5,14 @@
 			$this->load->database();
 		}
 
-		public function get_vehicles($veh_name = FALSE){
-			if($veh_name === FALSE){
+		public function get_vehicles($veh_id = FALSE){
+			if($veh_id === FALSE){
 				$this->db->order_by('veh_name', 'ASC');
 				$query = $this->db->get('vehicles');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('vehicles', array('veh_name' => $veh_name));
+			$query = $this->db->get_where('vehicles', array('veh_id' => $veh_id));
 			return $query->row_array();
 		}
 
@@ -34,8 +34,8 @@
 			return $this->db->insert('vehicles', $data);
 		}
 
-		public function delete_vehicle($name){
-			$this->db->where('name', $name);
+		public function delete_vehicle($veh_id){
+			$this->db->where('veh_id', $veh_id);
 			$this->db->delete('vehicles');
 			return true;
 		}
