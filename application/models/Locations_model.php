@@ -8,11 +8,13 @@
 		public function get_locations($loc_id = FALSE){
 			if($loc_id === FALSE){
 				$this->db->order_by('loc_name', 'ASC');
+                $this->db->join('users', 'users.id = locations.loc_manager', 'left');
 				$query = $this->db->get('locations');
 				return $query->result_array();
 			}
 
 			$query = $this->db->get_where('locations', array('loc_id' => $loc_id));
+            $this->db->join('users', 'users.id = locations.loc_manager', 'left');
 			return $query->row_array();
 		}
 
