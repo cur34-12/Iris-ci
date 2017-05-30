@@ -14,6 +14,8 @@
                 }
 
                 public function view($eq_id = null){
+
+
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();

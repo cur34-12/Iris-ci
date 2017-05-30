@@ -1,7 +1,3 @@
-<head>
-	<title>Edit Equipment - Logi</title>
-</head>
-
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment-groups/update', $attributes); ?>

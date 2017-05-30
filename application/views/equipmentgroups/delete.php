@@ -1,7 +1,4 @@
-<head>
-	<title>Equipment Group- Delete</title>
-</head>
-<h2 style="text-transform: uppercase;">Delete - Select an Equipment Item</h2>
+<h2 style="text-transform: uppercase;">Delete - Select an Equipment Group</h2>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 
 <table class="table table-striped table-hover ">

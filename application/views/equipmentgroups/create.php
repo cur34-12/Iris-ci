@@ -1,7 +1,4 @@
-<head>
-	<title>Create Equipment - Logi</title>
-</head>
-<h2 style="text-transform: uppercase;">Create Equipment</h2>
+<h2 style="text-transform: uppercase;">Create Equipment Group</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment-groups/create', $attributes); ?>
@@ -12,14 +9,12 @@
 			<input type="text" class="form-control" name="eqgroup_name" placeholder="Eg. Height Safety Kit (1 of 2)">
 		</div>
 	</div>
-
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="eqgroup_description" placeholder="Eg. Large Red Felling Axe, wooden handle">
 		</div>
 	</div>
-
 	<div class="form-group">
 		<label class="control-label col-sm-2">Inspection Frequency</label>
 		<div class="col-sm-10">
@@ -32,7 +27,6 @@
 			</select>
 		</div>
 	</div>
-
     <div class="form-group">
 		<label class="control-label col-sm-2">Last Inspection</label>
         <div class='input-group date col-sm-10' id='eqgroup_last_checked'>
@@ -52,7 +46,6 @@
 			});
     	</script>
     </div>
-
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
 		<div class="col-sm-10">
@@ -63,7 +56,6 @@
         	</select>
 		</div>
 	</div>
-
 	<!--Implement autocomplete search for a select box from the locations table-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location</label>
@@ -71,10 +63,5 @@
 			<input type="text" class="form-control" name="eqgroup_locationasset_number" id="eqgroup_location">
 		</div>
 	</div>
-
-
-
-	<!--implement a related to system for linking groups together, eg 2 part HSK kit. Table format might be: relatedgroup_id | eqgroup_id | related_eqgroup_id -->
-
 	<button type="submit" class="btn btn-default">Create</button>
 </form>
