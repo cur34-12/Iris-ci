@@ -1,6 +1,3 @@
-<head>
-	<title><?php echo strtoupper($vehicle['veh_name']); ?> - Logi</title>
-</head>
 <h2><?php echo strtoupper($vehicle['veh_name']); ?></h2>
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Name</td><td style="text-transform: uppercase;"><?php echo strtoupper($vehicle['veh_name']); ?></td></tr>
