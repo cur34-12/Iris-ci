@@ -13,7 +13,7 @@
 		<?php foreach($locations as $location) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/locations/'. $location['loc_id']); ?>"><?php echo $location['loc_id']; ?></a></td>
-					<td><a href="<?php echo site_url('/locations/'. $location['loc_name']); ?>"><?php echo $location['loc_rego']; ?></td>
+					<td><a href="<?php echo site_url('/locations/'. $location['loc_name']); ?>"><?php echo $location['loc_name']; ?></td>
 					<td><?php echo $location['loc_manager']; ?></td>
 					<td><a class="btn btn-primary btn-sm" role="button" href="locations/edit/<?php echo $location['loc_id']; ?>">Edit</a></td>
 			</tr>
