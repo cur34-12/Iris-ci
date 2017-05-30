@@ -1,61 +1,43 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Vehicle_model extends CI_Model{
+	class Locations_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
 		}
 
-		public function get_vehicles($veh_name = FALSE){
-			if($veh_name === FALSE){
-				$this->db->order_by('veh_name', 'ASC');
-				$query = $this->db->get('vehicles');
+		public function get_locations($loc_id = FALSE){
+			if($loc_id === FALSE){
+				$this->db->order_by('loc_name', 'ASC');
+				$query = $this->db->get('locations');
 				return $query->result_array();
 			}
 
-			$query = $this->db->get_where('vehicles', array('veh_name' => $veh_name));
+			$query = $this->db->get_where('locations', array('loc_id' => $loc_id));
 			return $query->row_array();
 		}
 
-		public function create_vehicle(){
+		public function create_location(){
 			$data = array(
-				'veh_name' => $this->input->post('veh_name'),
-				'veh_rego' => $this->input->post('veh_rego'),
-				'veh_make' => $this->input->post('veh_make'),
-				'veh_category' => $this->input->post('veh_category'),
-				'veh_model' => $this->input->post('veh_model'),
-				'veh_year' => $this->input->post('veh_year'),
-				'veh_capacity' => $this->input->post('veh_capacity'),
-				'veh_location_id' => $this->input->post('veh_location_id'),
-				'veh_list_id' => $this->input->post('veh_list_id'),
-				'veh_eq_id' => $this->input->post('veh_name'),
-				'veh_license_type' => $this->input->post('veh_license_type')
+				'loc_name' => $this->input->post('loc_name'),
+				'loc_manager' => $this->input->post('loc_manager')
 			);
 
-			return $this->db->insert('vehicles', $data);
+			return $this->db->insert('locations', $data);
 		}
 
-		public function delete_vehicle($name){
-			$this->db->where('name', $name);
-			$this->db->delete('vehicles');
+		public function delete_location($loc_id){
+			$this->db->where('loc_id', $loc_id);
+			$this->db->delete('locations');
 			return true;
 		}
 
-		public function update_vehicle(){
+		public function update_location(){
 			$data = array(
-				'veh_name' => $this->input->post('veh_name'),
-				'veh_rego' => $this->input->post('veh_rego'),
-				'veh_make' => $this->input->post('veh_make'),
-				'veh_category' => $this->input->post('veh_category'),
-				'veh_model' => $this->input->post('veh_model'),
-				'veh_year' => $this->input->post('veh_year'),
-				'veh_capacity' => $this->input->post('veh_capacity'),
-				'veh_location_id' => $this->input->post('veh_location_id'),
-				'veh_list_id' => $this->input->post('veh_list_id'),
-				'veh_eq_id' => $this->input->post('veh_name'),
-				'veh_license_type' => $this->input->post('veh_license_type')
+                'loc_name' => $this->input->post('loc_name'),
+                'loc_manager' => $this->input->post('loc_manager')
 			);
 
-			$this->db->where('veh_id', $this->input->post('veh_id'));
-			return $this->db->update('vehicles', $data);
+			$this->db->where('loc_id', $this->input->post('loc_id'));
+			return $this->db->update('locations', $data);
 		}
 	}

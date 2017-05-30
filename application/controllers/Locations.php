@@ -2,8 +2,7 @@
         class Locations extends CI_Controller {
                 public function index(){
                         $data['title'] = 'Locations';
-
-                         $data['locations'] = $this->Locations_model->get_locations();
+                        $data['locations'] = $this->Locations_model->get_locations();
                         
         	       $this->load->view('templates/header', $data);
         	       $this->load->view('locations/index', $data);
@@ -26,8 +25,9 @@
 
                 public function create(){
                         $data['title'] = 'Create location';
+                        $data['usernames'] = $this->User_model->get_users();
 
-                        $this->form_validation->set_rules('loc_name', 'Name', 'required');
+                        $this->form_validation->set_rules('loc_name', 'Location Name', 'required');
 
                         if($this->form_validation->run() === FALSE){
                                 $this->load->view('templates/header', $data);
