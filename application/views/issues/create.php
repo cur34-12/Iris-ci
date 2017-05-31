@@ -9,8 +9,8 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_equipment" id="iss_equipment" value="<?php if (isset($equipment['eq_name'])) { echo $equipment['eq_name']; } ?>">
-			<input type="hidden" id="iss_equipment-id" value=<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
+			<input type="text" class="form-control" name="iss_equipment" id="iss_eq_name" value="<?php if (isset($equipment['eq_name'])) { echo $equipment['eq_name']; } ?>">
+			<input type="hidden" id="iss_eq_id" value=<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
 		</div>
 	</div>
 	<div class="form-group">
@@ -27,13 +27,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="title" placeholder="Eg. Chainbreak non-functional">
+			<input type="text" class="form-control" name="iss_title" placeholder="Eg. Chainbreak non-functional">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" name="iss_make" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
+			<textarea rows="3" class="form-control" name="iss_description" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -87,16 +87,16 @@
 $(function() {
     
     //autocomplete
-    $("#iss_equipment").autocomplete({
+    $("#iss_eq_name").autocomplete({
         source: "/search-equipment.php",
         minLength: 0,
 		focus: function( event, ui ) {
-        	$( "#iss_equipment" ).val( ui.item.eq_name );
+        	$( "#iss_eq_name" ).val( ui.item.eq_name );
         	return false;
       	},
       	select: function( event, ui ) {
-	        $( "#iss_equipment" ).val( ui.item.eq_name );
-        	$( "#iss_equipment-id" ).val( ui.item.eq_id );
+	        $( "#iss_eq_name" ).val( ui.item.eq_name );
+        	$( "#iss_eq_id" ).val( ui.item.eq_id );
 	        return false;
     	  }
     })
