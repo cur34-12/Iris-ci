@@ -9,8 +9,8 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_equipment" id="iss_equipment">
-			<input type="hidden" id="iss_equipment-id">
+			<input type="text" class="form-control" name="iss_equipment" id="iss_equipment" value="<?php echo $equipment['eq_name']; ?>">
+			<input type="hidden" id="iss_equipment-id" value="<?php echo $equipment['eq_id']; ?>">
 		</div>
 	</div>
 	<div class="form-group">

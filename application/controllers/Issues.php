@@ -27,10 +27,10 @@
                         $this->load->view('templates/footer');
                 }
 
-                public function create(){
+                public function create($eq_id = null){
                         $data['title'] = 'Create Issue';
                         $data['usernames'] = $this->User_model->get_users();
-                        $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['members'] = $this->Unitmembers_model->get_members();
 
                         $this->load->view('templates/header', $data);
