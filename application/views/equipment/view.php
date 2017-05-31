@@ -24,7 +24,7 @@
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
 </table>
-<h3>Issues</h3><h4>(<a href="/issues/create/<?php echo $equipment['eq_id']; ?>New</a>)</h4>
+<h3>Issues</h3><h4>(<a href="/issues/create/<?php echo $equipment['eq_id']; ?>">New</a>)</h4>
 <table class="table table-striped table-hover ">
 	<thead>
 		<th>ID</th>
