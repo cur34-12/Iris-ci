@@ -43,7 +43,7 @@
                         redirect('issues');
                 }
 
-                public function edit($iss_id){
+                public function edit($iss_id = null){
                         $data['issue'] = $this->Issues_model->get_issues($iss_id);
                         $data['usernames'] = $this->User_model->get_users();
                         $data['equipment'] = $this->Equipment_model->get_equipment();
