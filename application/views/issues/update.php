@@ -17,7 +17,7 @@
 		<div class="col-sm-10">
 			<select id="iss_eq_id" name="iss_eq_id" class="form-control" >
 				<?php foreach($equipment as $equipment): ?>
-        				<option value=""><a href="<?php echo "/equipment/view/".$equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></a></option>
+        				<option value="<?php echo $equipment['eq_id']; ?>"><?php echo $equipment['eq_name']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
