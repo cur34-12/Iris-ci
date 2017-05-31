@@ -12,7 +12,7 @@
 		//
 
 		public function get_equipment($eq_id = FALSE){
-			if($eq_id === FALSE or $eq_id === null){
+			if($eq_id === FALSE or isnull($eq_id){
 				$this->db->order_by('eq_category', 'ASC');
 				$this->db->join('equipment_groups', 'equipment_groups.eqgroup_id = equipment.eq_group_id', 'left');
 				$query = $this->db->get('equipment');
