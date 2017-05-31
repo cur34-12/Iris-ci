@@ -43,6 +43,21 @@
 		<?php endforeach; ?>
 	</tbody>
 </table>
+<h3>Locations</h3>
+<table class="table table-striped table-hover ">
+    <thead>
+    <th>Name</th>
+    <th>Qty</th>
+    </thead>
+    <tbody>
+    <?php foreach($locations as $location) : ?>
+        <tr>
+            <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+            <td><?php echo $location['locqty_qty']; ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
 
 
 <hr />

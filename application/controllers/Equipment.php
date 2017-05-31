@@ -20,6 +20,7 @@
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                         $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
+                        $data['locations'] = $this->Equipment_model->get_equipment_locations($eq_id);
 
                         if(empty($data['equipment'])){
                                 show_404();

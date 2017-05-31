@@ -148,4 +148,17 @@
 			$query = $this->db->get_where('issues', array('iss_eq_id' => $eq_id));
 			return $query->result_array();
 		}
+
+		//
+        //
+        //Locations
+        //
+        //
+        public function get_equipment_locations($eq_id = FALSE){
+		    if($eq_id === FALSE){
+		        return null;
+            }
+            $query = $this->db->get_where('location_quantity', array('locqty_eq_id' => $eq_id));
+		    return $query->result_array();
+        }
 	}
