@@ -44,7 +44,7 @@
 			$data = array(
 				'iss_title' => $this->input->post('iss_title'),
 				'iss_description' => $this->input->post('iss_description'),
-				'iss_equipmentID' => $this->input->post('iss_eq_id'),
+				'iss_eq_id' => $this->input->post('iss_eq_id'),
 				'iss_assigned_user' => $this->input->post('iss_assigned_user'),
 				'iss_resolution_date' => $this->input->post('iss_resolution_date'),
 				'iss_type' => $this->input->post('iss_type'),

@@ -9,7 +9,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Issue ID</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="issueID" value="<?php echo $issue['iss_id']; ?>" readonly>
+			<input type="text" class="form-control" name="iss_id" value="<?php echo $issue['iss_id']; ?>" readonly>
 		</div>
 	</div>
 	<div class="form-group">
@@ -46,13 +46,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="title" value="<?php echo $issue['iss_title']; ?>">
+			<input type="text" class="form-control" name="iss_title" value="<?php echo $issue['iss_title']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" name="make" value=""><?php echo $issue['iss_description']; ?></textarea>
+			<textarea rows="3" class="form-control" name="iss_description" value=""><?php echo $issue['iss_description']; ?></textarea>
 		</div>
 	</div>
 	<div class="form-group">
