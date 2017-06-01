@@ -28,7 +28,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <h3>Issues</h3><h4>(<a href="/issues/create/<?php echo $equipment['eq_id']; ?>">New</a>)</h4>
+        <h3>Issues</h3>
         <table class="table table-striped table-hover ">
             <thead>
             <th>ID</th>
@@ -47,6 +47,7 @@
             <?php endforeach; ?>
             </tbody>
         </table>
+        <a class="btn btn-default" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
     </div>
     <div class="col-md-6">
         <h3>Locations</h3>
