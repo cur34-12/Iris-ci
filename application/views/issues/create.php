@@ -4,7 +4,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_eq_name" id="iss_eq_name" value="<?php if (isset($equipment['eq_name'])) { echo $equipment['eq_name']; } ?>">
+			<input type="text" class="form-control" id="iss_eq_name" name="iss_eq_name" id="iss_eq_name" value="<?php if (isset($equipment['eq_name'])) { echo $equipment['eq_name']; } ?>">
 			<input type="hidden" id="iss_eq_id" value="<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
 		</div>
 	</div>
@@ -22,13 +22,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Title</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="iss_title" placeholder="Eg. Chainbreak non-functional">
+			<input type="text" class="form-control" name="iss_title" id="iss_title" placeholder="Eg. Chainbreak non-functional">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
 		<div class="col-sm-10">
-			<textarea rows="3" class="form-control" name="iss_description" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
+			<textarea rows="3" class="form-control" id="iss_description" name="iss_description" placeholder="Eg. Chainsaw took a fall and now the break no longer engages when activated."></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -64,14 +64,14 @@
 		<label class="control-label col-sm-2">Status</label>
 		<div class="col-sm-10">
 			<!-- New Status -->
-			<input type="text" class="form-control" name="iss_status" value="New" hidden>
+			<input type="text" class="form-control" id="iss_status" name="iss_status" value="New">
 		</div>
 	</div>
 	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Creator ID</label>
 		<div class="col-sm-10">
 			<!-- Created By User -->
-			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>" hidden>
+			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
 		</div>
 	</div> 
 
