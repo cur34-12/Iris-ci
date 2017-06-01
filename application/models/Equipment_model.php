@@ -163,4 +163,12 @@
             $query = $this->db->get_where('equipment_location', array('eqloc_eq_id' => $eq_id));
 		    return $query->result_array();
         }
+        public function get_location_equipment($loc_id = FALSE){
+            if($loc_id === FALSE){
+                return null;
+            }
+            $this->db->join('equipment', 'equipment.eq_id = equipment_location.eqloc_eq_id', 'left');
+            $query = $this->db->get_where('equipment_location', array('eqloc_loc_id' => $loc_id));
+            return $query->result_array();
+        }
 	}
