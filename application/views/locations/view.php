@@ -1,6 +1,4 @@
-<head>
-	<title><?php echo strtoupper($location['loc_name']); ?> - Logi</title>
-</head>
+<?php $bar = new BARCODE(); ?>
 <h2><?php echo $location['loc_name']; ?></h2>
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Name</td><td><?php echo $location['loc_name']; ?></td></tr>
