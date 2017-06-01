@@ -67,13 +67,6 @@
         </table>
     </div>
 </div>
-
-
-
-
-
-
-
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
@@ -87,14 +80,6 @@
         data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
     Delete
 </a>
-
-<hr />
-
-<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/equipment/delete/'.$equipment['eq_id'], $attributes); ?>
-	<input type="submit" value="Delete Equipment" class="btn btn-danger"/>
-</form>
-
 <script>
     $('[data-toggle=confirmation]').confirmation({
         rootSelector: '[data-toggle=confirmation]',
