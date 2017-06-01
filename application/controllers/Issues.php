@@ -33,10 +33,6 @@
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['members'] = $this->Unitmembers_model->get_members();
 
-                        $this->load->view('templates/header', $data);
-                        $this->load->view('issues/create', $data);
-                        $this->load->view('templates/footer');
-
                         $this->form_validation->set_rules('iss_title', 'Title', 'required');
 
                         if($this->form_validation->run() === FALSE){
