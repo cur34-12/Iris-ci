@@ -6,9 +6,14 @@
 		<label class="control-label col-sm-2">Related Equipment</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="iss_eq_name" name="iss_eq_name" value="<?php if (isset($equipment['eq_name'])) { echo $equipment['eq_name']; } ?>">
-			<input type="hidden" id="iss_eq_id" value="<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
 		</div>
 	</div>
+    <div class="form-group" style="display: none;">
+        <label class="control-label col-sm-2">EQ ID</label>
+        <div class="col-sm-10">
+            <input type="text" id="iss_eq_id" value="<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
+        </div>
+    </div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Issue Category</label>
 		<div class="col-sm-10">
@@ -61,13 +66,7 @@
 			</select>
 		</div>
 	</div>
-	<div class="form-group" style="display: none;">
-		<label class="control-label col-sm-2">Status</label>
-		<div class="col-sm-10">
-			<!-- New Status -->
-			<input type="text" class="form-control" id="iss_status" name="iss_status" value="New">
-		</div>
-	</div>
+
 	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Creator ID</label>
 		<div class="col-sm-10">
