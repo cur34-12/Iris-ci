@@ -32,11 +32,11 @@
 			<!-- Bootstrap Theme -->
             <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
 
-            <!-- Custom CSS -->
-            <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
-
             <!-- Font Awesome -->
             <script src="https://use.fontawesome.com/25b079534d.js"></script>
+
+            <!-- Custom CSS -->
+            <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
             <!-- Init of the Date Parser-->
             <script type="text/javascript">

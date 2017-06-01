@@ -5,7 +5,7 @@
 <?php $bar = new BARCODE(); ?>
 <h2 style="text-transform: uppercase;">Equipment</h2>
 <div class="table-responsive">
-    <table id="content" class="table table-striped table-hover">
+    <table id="content" class="table table-striped table-hover logiTable">
         <thead>
             <tr>
                 <th>Name</th>
