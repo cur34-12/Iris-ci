@@ -11,6 +11,7 @@
 
                 public function view($loc_id = null){
                         $data['location'] = $this->Locations_model->get_locations($loc_id);
+                        $data['equipment'] = $this->Equipment_model->get_location_equipment($loc_id);
 
                         if(empty($data['location'])){
                                 show_404();

@@ -6,6 +6,31 @@
 	<tr><td style="font-weight: bold">Name</td><td><?php echo $location['loc_name']; ?></td></tr>
 	<tr><td style="font-weight: bold">Manager</td><td><?php echo $location['loc_manager']; ?></td></tr>
 </table>
+
+<h3>Equipment</h3>
+<table class="table table-striped table-hover ">
+    <thead>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>ID</th>
+    <th>Qty</th>
+    <th>Barcode</th>
+    </thead>
+    <tbody>
+    <?php foreach($equipment as $equipments) : ?>
+        <tr>
+            <td><a href="/equipment/view/<?php echo $equipments['eq_id']; ?>"><?php echo $equipments['eq_name']; ?></a></td>
+            <td><?php echo $equipments['eq_brand']; ?></td>
+            <td><?php echo $equipments['eq_size']; ?></td>
+            <td><?php echo $equipments['eq_id']; ?></td>
+            <td><?php echo $equipments['eqloc_quantity']; ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
+
+
 <hr />
 <!--Action buttons-->
 
