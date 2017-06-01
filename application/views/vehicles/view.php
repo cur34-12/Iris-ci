@@ -18,8 +18,18 @@
 <!--Edit Button-->
 <a class="btn btn-info" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['veh_id']); ?>">Edit Vehicle</a>
 
-<!--Delete Button (as form to protect against abuse)-->
-<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/vehicles/delete/'.$vehicle['veh_id'], $attributes); ?>
-	<input type="submit" value="Delete Vehicle" class="btn btn-danger"/>
-</form>
+<a href="<?php echo site_url('/vehicles/delete/'. $vehicle['veh_id']); ?>"
+   class="btn btn-large btn-primary" data-toggle="confirmation"
+   data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-ban-circle"
+   data-btn-ok-class="btn-danger"
+   data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-share-alt"
+   data-btn-cancel-class="btn-success"
+   data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
+    Delete
+</a>
+<script>
+    $('[data-toggle=confirmation]').confirmation({
+        rootSelector: '[data-toggle=confirmation]',
+        // other options
+    });
+</script>
