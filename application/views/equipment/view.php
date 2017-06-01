@@ -77,6 +77,19 @@
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
+
+<button href="<?php echo site_url('/equipment/delete/'. $equipment['eq_id']); ?>"
+        class="btn btn-large btn-primary" data-toggle="confirmation"
+        data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-share-alt"
+        data-btn-ok-class="btn-danger"
+        data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-ban-circle"
+        data-btn-cancel-class="btn-sucess"
+        data-title="Is it ok?" data-content="This might be dangerous">
+    Delete
+</button>
+
+<hr />
+
 <?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
 <?php echo form_open('/equipment/delete/'.$equipment['eq_id'], $attributes); ?>
 	<input type="submit" value="Delete Equipment" class="btn btn-danger"/>

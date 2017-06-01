@@ -15,6 +15,9 @@
             <!-- JS Time Parser-->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
+            <!-- JS Confirmation Dialogue -->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-confirmation.js"></script>
+
             <!-- JS for DateTimePicker -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
