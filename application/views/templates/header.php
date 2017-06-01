@@ -30,7 +30,7 @@
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
 
 			<!-- Bootstrap Theme -->
-            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">
 
             <!-- Font Awesome -->
             <script src="https://use.fontawesome.com/25b079534d.js"></script>
