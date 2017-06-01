@@ -66,12 +66,17 @@
 			</select>
 		</div>
 	</div>
-
+    <div class="form-group" style="display: none;">
+        <label class="control-label col-sm-2">Status</label>
+        <div class="col-sm-10">
+            <input type="text" name="iss_status" id="iss_status" value="New">
+        </div>
+    </div>
 	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Creator ID</label>
 		<div class="col-sm-10">
 			<!-- Created By User -->
-			<input id="iss_creator_id" type="text" class="form-control" name="iss_creator_id" placeholder="" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
+			<input id="iss_creator_id" type="text" name="iss_creator_id" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
 		</div>
 	</div> 
 
