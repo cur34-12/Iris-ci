@@ -66,7 +66,7 @@
                                 </ul>
                         </li>
                         <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
+                                <a href="<?php echo base_url(); ?>equipment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
                                     <li role="separator" class="divider"></li>
@@ -76,7 +76,7 @@
                                 </ul>
                         </li>  
                         <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment Groups<span class="caret"></span></a>
+                                <a href="<?php echo base_url(); ?>equipment-groups" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment Groups<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo base_url(); ?>equipment-groups">List</a></li>
                                     <li role="separator" class="divider"></li>
@@ -86,7 +86,7 @@
                                 </ul>
                         </li>
                         <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Issues<span class="caret"></span></a>
+                                <a href="<?php echo base_url(); ?>issues" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Issues<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo base_url(); ?>issues">List</a></li>
                                     <li role="separator" class="divider"></li>
@@ -96,7 +96,7 @@
                                 </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations<span class="caret"></span></a>
+                            <a href="<?php echo base_url(); ?>locations" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo base_url(); ?>locations">List</a></li>
                                 <li role="separator" class="divider"></li>
@@ -117,7 +117,21 @@
                             <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
                             <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
                         <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>  
-                            <li><?php echo anchor(LOGIN_PAGE, 'Login'); ?></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+                            <div class="dropdown-menu">
+                            <form action="http://logi.dev1.strat.is/profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
+                                <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username/Email" required="" autofocus="" />
+                                <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password" required="" autofocus="" /> 
+                                <input type="submit" name="login_submit" value="Login" class="btn btn-block">
+                                <div class="checkbox"><label><input type="checkbox" name="remember" value="1"  id="remember" />Remember Me</div>
+                                    <a href="http://logi.dev1.strat.is/register">Register</a> 
+                                </label>        
+                                <label class="checkbox"> 
+                                    <a href="http://logi.dev1.strat.is/profile/forgot_login">Forgot Password</a> 
+                                </label>
+                            </form>     
+                            </div>
+                            </li>
                         <?php endif ?>  
                     </ul>
         		</div>
