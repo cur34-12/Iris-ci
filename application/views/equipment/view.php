@@ -95,3 +95,9 @@
 	<input type="submit" value="Delete Equipment" class="btn btn-danger"/>
 </form>
 
+<script>
+    $('[data-toggle=confirmation]').confirmation({
+        rootSelector: '[data-toggle=confirmation]',
+        // other options
+    });
+</script>
