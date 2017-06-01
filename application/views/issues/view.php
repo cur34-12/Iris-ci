@@ -28,7 +28,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<a lass="btn btn-default" role="button" href="comment/new">New Comment</a>
+<a class="btn btn-default" role="button" href="comment/new">New Comment</a>
 
 <hr />
 
