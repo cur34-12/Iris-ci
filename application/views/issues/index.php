@@ -40,7 +40,7 @@
 </table>
 
 <a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
-<a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>
+<!--<a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>-->
 <a class="btn btn-danger" role="button" href="issues/delete">Delete Issue</a>
 
 <script>
