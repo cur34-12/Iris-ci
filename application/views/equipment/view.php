@@ -80,9 +80,3 @@
         data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
     Delete
 </a>
-<script>
-    $('[data-toggle=confirmation]').confirmation({
-        rootSelector: '[data-toggle=confirmation]',
-        // other options
-    });
-</script>
