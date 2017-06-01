@@ -43,8 +43,12 @@
 <hr />
 <a class="btn btn-default" role="button" href="<?php echo site_url('/equipment-groups/create'); ?>">Create Equipment Group</a>
 <a class="btn btn-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>">Edit Equipment Group</a>
-<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<?php echo form_open('/equipment-groups/delete/'.$equipmentgroup['eqgroup_id'], $attributes); ?>
-	<input type="submit" value="Delete Equipment Group" class="btn btn-danger"/>
-</form>
-
+<a href="<?php echo site_url('/equipment-groups/delete/'. $equipment['eqgroup_id']); ?>"
+   class="btn btn-large btn-primary" data-toggle="confirmation"
+   data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-ban-circle"
+   data-btn-ok-class="btn-danger"
+   data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-share-alt"
+   data-btn-cancel-class="btn-success"
+   data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
+    Delete
+</a>
