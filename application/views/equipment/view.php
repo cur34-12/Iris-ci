@@ -24,40 +24,53 @@
 	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
 	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
 </table>
-<h3>Issues</h3><h4>(<a href="/issues/create/<?php echo $equipment['eq_id']; ?>">New</a>)</h4>
-<table class="table table-striped table-hover ">
-	<thead>
-		<th>ID</th>
-		<th>Title</th>
-		<th>Reported Date</th>
-		<th>Status</th>
-	</thead>
-	<tbody>
-		<?php foreach($issues as $issue) : ?>
-			<tr>
-				<td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_id']; ?></a></td>
-				<td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
-				<td><?php echo $issue['iss_reported_date']; ?></td>
-				<td><?php echo $issue['iss_status']; ?></td>
-			</tr>
-		<?php endforeach; ?>
-	</tbody>
-</table>
-<h3>Locations</h3>
-<table class="table table-striped table-hover ">
-    <thead>
-    <th>Name</th>
-    <th>Qty</th>
-    </thead>
-    <tbody>
-    <?php foreach($locations as $location) : ?>
-        <tr>
-            <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-            <td><?php echo $location['eqloc_quantity']; ?></td>
-        </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Issues</h3><h4>(<a href="/issues/create/<?php echo $equipment['eq_id']; ?>">New</a>)</h4>
+        <table class="table table-striped table-hover ">
+            <thead>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Reported Date</th>
+            <th>Status</th>
+            </thead>
+            <tbody>
+            <?php foreach($issues as $issue) : ?>
+                <tr>
+                    <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_id']; ?></a></td>
+                    <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
+                    <td><?php echo $issue['iss_reported_date']; ?></td>
+                    <td><?php echo $issue['iss_status']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h3>Locations</h3>
+        <table class="table table-striped table-hover ">
+            <thead>
+            <th>Name</th>
+            <th>Qty</th>
+            </thead>
+            <tbody>
+            <?php foreach($locations as $location) : ?>
+                <tr>
+                    <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+                    <td><?php echo $location['eqloc_quantity']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
 
 
 <hr />
