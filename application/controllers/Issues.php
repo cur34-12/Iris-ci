@@ -35,7 +35,18 @@
 
                         $this->load->view('templates/header', $data);
                         $this->load->view('issues/create', $data);
-                        $this->load->view('templates/footer');  
+                        $this->load->view('templates/footer');
+
+                        $this->form_validation->set_rules('iss_title', 'Title', 'required');
+
+                        if($this->form_validation->run() === FALSE){
+                            $this->load->view('templates/header', $data);
+                            $this->load->view('issues/create', $data);
+                            $this->load->view('templates/footer');
+                        } else {
+                            $this->Issues_model->create_issue();
+                            redirect('issues');
+                        }
                 }
 
                 public function delete($iss_id){
