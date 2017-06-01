@@ -1,8 +1,6 @@
 <head>
 	<title>Equipment - Logi</title>
 </head>
-
-<?php $bar = new BARCODE(); ?>
 <h2 style="text-transform: uppercase;">Equipment</h2>
 <div class="table-responsive">
     <table id="content" class="table table-striped table-hover logiTable">
@@ -17,7 +15,6 @@
                 <th>Brand</th>
                 <th>In Service</th>
                 <th>Model</th>
-                <th>Barcode</th>
                 <th>Edit</th>
             </tr>
         </thead>
@@ -34,7 +31,6 @@
                         <td><?php echo $equipment['eq_brand']; ?></td>
                         <td><?php echo $equipment['eq_in_service']; ?></td>
                         <td><?php echo $equipment['eq_model_number']; ?></td>
-                        <td><img src='<?php echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
                         <td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
