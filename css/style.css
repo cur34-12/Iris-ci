@@ -67,6 +67,6 @@ div.today {
     padding-right: 15px;
 }
 
-.logiTable td {
+table#content.logiTable td {
 	vertical-align: middle;
 }
