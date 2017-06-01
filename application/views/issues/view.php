@@ -14,7 +14,7 @@
 	<tr><td style="font-weight: bold">Created By</td><td><?php echo $issue['iss_creator_id']; ?></td></tr>
 </table>
 
-<table>
+<table class="table table-striped table-hover ">
     <thead>
         <th>Date / Time</th>
         <th>User</th>
