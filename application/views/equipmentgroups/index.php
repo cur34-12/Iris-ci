@@ -34,9 +34,9 @@
 	</tbody>
 </table>
 
-<a class="btn btn-default" role="button" href="equipment-groups/create">Create Equipment Group</a>
+<a class="btn btn-default" role="button" href="equipment-groups/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 <!--<a class="btn btn-info" role="button" href="equipment-groups/edit">Edit Equipment Group</a>-->
-<a class="btn btn-danger" role="button" href="equipment-groups/delete">Delete Equipment Group</a>
+<!--<a class="btn btn-danger" role="button" href="equipment-groups/delete">Delete Equipment Group</a>-->
 
 <script>
 	$(document).ready(function(){

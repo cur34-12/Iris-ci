@@ -19,6 +19,6 @@
 		<?php endforeach; ?>
 	</tbody>
 </table>
-<a class="btn btn-default" role="button" href="locations/create">Create Location</a>
+<a class="btn btn-default" role="button" href="locations/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 <!--<a class="btn btn-info" role="button" href="locations/edit">Edit Location</a>-->
-<a class="btn btn-danger" role="button" href="locations/delete">Delete Location</a>
+<!--<a class="btn btn-danger" role="button" href="locations/delete">Delete Location</a>-->

@@ -39,9 +39,9 @@
 	</tbody>
 </table>
 
-<a class="btn btn-default" role="button" href="issues/create">Create Issue</a>
+<a class="btn btn-default" role="button" href="issues/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 <!--<a class="btn btn-info" role="button" href="issues/edit">Edit Issue</a>-->
-<a class="btn btn-danger" role="button" href="issues/delete">Delete Issue</a>
+<!--<a class="btn btn-danger" role="button" href="issues/delete">Delete Issue</a>-->
 
 <script>
     document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, '&nbsp;');
