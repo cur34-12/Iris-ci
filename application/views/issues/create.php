@@ -11,7 +11,7 @@
     <div class="form-group" style="display: none;">
         <label class="control-label col-sm-2">EQ ID</label>
         <div class="col-sm-10">
-            <input type="text" id="iss_eq_id" value="<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
+            <input type="text" name="iss_eq_id" id="iss_eq_id" value="<?php if (isset($equipment['eq_id'])) { echo $equipment['eq_id']; } ?>">
         </div>
     </div>
 	<div class="form-group">
