@@ -158,9 +158,8 @@
 		    if($eq_id === FALSE){
 		        return null;
             }
-            $query = $this->db->get_where('equipment_location', array('eqloc_eq_id' => $eq_id));
-            $this->db->join('equipment', 'equipment.eq_id = equipment_location.eqloq_eq_id', 'left');
             $this->db->join('locations', 'locations.loc_id = equipment_location.eqloc_loc_id', 'left');
+            $query = $this->db->get_where('equipment_location', array('eqloc_eq_id' => $eq_id));
 		    return $query->result_array();
         }
 	}
