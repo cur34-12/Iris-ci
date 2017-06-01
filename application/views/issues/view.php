@@ -15,6 +15,25 @@
 </table>
 <hr />
 
+<table>
+    <thead>
+        <th>Date / Time</th>
+        <th>User</th>
+        <th>Comment</th>
+    </thead>
+    <tbody>
+        <?php foreach($comments as $comment) : ?>
+            <tr>
+                <td><?php echo $comment['isscom_date']; ?></td>
+                <td><?php echo $comment['isscom_user']; ?></td>
+                <td><?php echo $comment['isscom_comment']; ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<a href="issuecomments/new">New Comment</a>
+
+
 <!--Action buttons-->
 <!--Create Button buttons-->
 <a class="btn btn-default" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>

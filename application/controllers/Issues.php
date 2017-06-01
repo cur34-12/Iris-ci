@@ -15,6 +15,7 @@
                         $data['equipment'] = $this->Equipment_model->get_equipment();
                         $data['members'] = $this->Unitmembers_model->get_members();
                         $data['usernames'] = $this->User_model->get_users();
+                        $data['comments'] = $this->Issues_model->get_comments($iss_id);
 
                         if(empty($data['issue'])){
                                 show_404();

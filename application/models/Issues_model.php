@@ -54,4 +54,12 @@
 			$this->db->where('iss_id', $this->input->post('iss_id'));
 			return $this->db->update('issues', $data);
 		}
+
+		public function get_comments($iss_id){
+            if($iss_id === FALSE){
+                return null;
+            }
+            $query = $this->db->get_where('issues_comments', array('isscom_related_iss' => $iss_id));
+            return $query->row_array();
+        }
 	}
