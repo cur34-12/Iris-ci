@@ -1,6 +1,3 @@
-<head>
-	<title><?php echo strtoupper($issue['iss_id']); ?> - Logi</title>
-</head>
 <h2><?php echo $issue['iss_title']; ?></h2>
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Title</td><td><?php echo $issue['iss_title']; ?></td></tr>
@@ -31,7 +28,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<a href="issuecomments/new">New Comment</a>
+<a lass="btn btn-default" role="button" href="comment/new">New Comment</a>
 
 <hr />
 
