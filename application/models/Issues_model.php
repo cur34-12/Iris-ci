@@ -60,6 +60,6 @@
                 return null;
             }
             $query = $this->db->get_where('issues_comments', array('isscom_related_iss' => $iss_id));
-            return $query->row_array();
+            return $query->result_array();
         }
 	}

@@ -13,7 +13,6 @@
 	<tr><td style="font-weight: bold">Resolution Date</td><?php echo '<td style="font-weight: bold"><script type="text/javascript">var res_date; $res_date = moment(\''.$issue['iss_resolution_date'].'\').format(\'DD-MM-YYYY\'); document.write($res_date);</script></td>'; ?></tr>
 	<tr><td style="font-weight: bold">Created By</td><td><?php echo $issue['iss_creator_id']; ?></td></tr>
 </table>
-<hr />
 
 <table>
     <thead>
@@ -33,6 +32,7 @@
 </table>
 <a href="issuecomments/new">New Comment</a>
 
+<hr />
 
 <!--Action buttons-->
 <!--Create Button buttons-->
