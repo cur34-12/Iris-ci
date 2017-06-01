@@ -35,7 +35,7 @@
                         <td><?php echo $equipment['eq_in_service']; ?></td>
                         <td><?php echo $equipment['eq_model_number']; ?></td>
                         <td><img src='<?php echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
-                        <td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>">Edit</a></td>
+                        <td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

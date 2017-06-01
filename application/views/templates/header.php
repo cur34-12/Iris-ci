@@ -35,6 +35,9 @@
             <!-- Custom CSS -->
             <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
+            <!-- Font Awesome -->
+            <script src="https://use.fontawesome.com/25b079534d.js"></script>
+
             <!-- Init of the Date Parser-->
             <script type="text/javascript">
                 moment().format();
