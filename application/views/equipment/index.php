@@ -38,7 +38,7 @@
     </table>
 </div>
 
-<a class="btn btn-default" role="button" href="equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<a class="btn btn-default" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 <!--<a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>-->
 <!--<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> -->
 
