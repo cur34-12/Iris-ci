@@ -154,6 +154,7 @@
         //Locations
         //
         //
+
         public function get_equipment_locations($eq_id = FALSE){
 		    if($eq_id === FALSE){
 		        return null;
