@@ -125,7 +125,7 @@
     <div class="form-group">
         <label class="control-label col-sm-2">Model</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="eq_model_number" placeholder="Eg. XT5467">
+            <input type="text" class="form-control" name="eq_model" placeholder="Eg. XT5467">
         </div>
     </div>
 	<div class="form-group">

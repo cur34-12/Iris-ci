@@ -169,7 +169,7 @@
     <div class="form-group">
         <label class="control-label col-sm-2">Model</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="eq_model_number" value="<?php echo $equipment['eq_model_number']; ?>">
+            <input type="text" class="form-control" name="eq_model" value="<?php echo $equipment['eq_model']; ?>">
         </div>
     </div>
 	<div class="form-group">

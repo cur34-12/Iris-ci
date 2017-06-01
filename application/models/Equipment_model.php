@@ -46,7 +46,7 @@
 				'eq_date_purchased' => $this->input->post('eq_date_purchased'),
 				'eq_end_life' => $this->input->post('eq_end_life'),
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
-                'eq_model' => $this->input->post('eq_purchase_type'),
+                'eq_model' => $this->input->post('eq_model'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
 				'eq_group_id' => $this->input->post('eq_group_id')
@@ -74,7 +74,7 @@
 				'eq_date_purchased' => $this->input->post('eq_date_purchased'),
 				'eq_end_life' => $this->input->post('eq_end_life'),
 				'eq_purchase_type' => $this->input->post('eq_purchase_type'),
-                'eq_model_number' => $this->input->post('eq_purchase_type'),
+                'eq_model' => $this->input->post('eq_model'),
 				'eq_asset_number' => $this->input->post('eq_asset_number'),
 				'eq_serial' => $this->input->post('eq_serial'),
 				'eq_group_id' => $this->input->post('eq_group_id')

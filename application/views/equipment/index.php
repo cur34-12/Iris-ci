@@ -30,7 +30,7 @@
                         <td><?php echo $equipment['eq_size']; ?></td>
                         <td><?php echo $equipment['eq_brand']; ?></td>
                         <td><?php echo $equipment['eq_in_service']; ?></td>
-                        <td><?php echo $equipment['eq_model_number']; ?></td>
+                        <td><?php echo $equipment['eq_model']; ?></td>
                         <td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
