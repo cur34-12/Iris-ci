@@ -53,7 +53,7 @@
     <?php foreach($locations as $location) : ?>
         <tr>
             <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-            <td><?php echo $location['locqty_qty']; ?></td>
+            <td><?php echo $location['eqloc_quantity']; ?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
