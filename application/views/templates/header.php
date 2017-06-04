@@ -51,68 +51,80 @@
             </script>
 
         </head>
-        
         <body>
         <div class="container-fluid">
-        <nav class="navbar navbar-light bg-faded navbar-static-top">
-        		<div class="navbar-header">
-        			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
-        		</div>
-        		<div id="navbar">
-        			<ul class="nav navbar-nav">
-        				<li><a href="<?php echo base_url(); ?>">Home</a></li>
-        				<li><a href="<?php echo base_url(); ?>about">About</a></li>
-                        <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>vehicles" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehicles<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>vehicles/edit">Edit</a></li>
-                                    <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
-                                    <li><a href="<?php echo base_url(); ?>vehicles/delete">Delete</a></li>
-                                </ul>
+
+
+
+
+
+
+            <nav class="navbar navbar-inverse bg-primary">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>equipment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment/edit">Edit</a></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment/create">Create</a></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment/delete">Delete</a></li>
-                                </ul>
-                        </li>  
-                        <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>equipment-groups" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equipment Groups<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>equipment-groups">List</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment-groups/edit">Edit</a></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment-groups/create">Create</a></li>
-                                    <li><a href="<?php echo base_url(); ?>equipment-groups/delete">Delete</a></li>
-                                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
                         </li>
-                        <li class="dropdown">
-                                <a href="<?php echo base_url(); ?>issues" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Issues<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url(); ?>issues">List</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="<?php echo base_url(); ?>issues/edit">Edit</a></li>
-                                    <li><a href="<?php echo base_url(); ?>issues/create">Create</a></li>
-                                    <li><a href="<?php echo base_url(); ?>issues/delete">Delete</a></li>
-                                </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Vehicles
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles">List</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles/edit">Edit</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles/create">Create</a>
+                            </div>
                         </li>
-                        <li class="dropdown">
-                            <a href="<?php echo base_url(); ?>locations" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url(); ?>locations">List</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="<?php echo base_url(); ?>locations/edit">Edit</a></li>
-                                <li><a href="<?php echo base_url(); ?>locations/create">Create</a></li>
-                                <li><a href="<?php echo base_url(); ?>locations/delete">Delete</a></li>
-                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Equipment
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment">List</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment/edit">Edit</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment/create">Create</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups">Groups</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups/edit">Edit Groups</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups/create">Create Group</a>
+                            </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Issues
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>isssues">List</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>issues/edit">Edit</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>issues/create">Create</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Locations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>locations">List</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>locations/edit">Edit</a>
+                                <a class="dropdown-item" href="<?php echo base_url(); ?>locations/create">Create</a>
+                            </div>
+                        </li>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
                     </ul>
+                </div>
+            </nav>
+
+
+
                     <ul class="nav navbar-nav navbar-right">
                         <form class="navbar-form navbar-left">
                             <div class="form-group">
