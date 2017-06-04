@@ -1,8 +1,3 @@
-<head>
-	<title><?php echo $equipmentgroup['eqgroup_name']; ?> - Logi</title>
-
-</head>
-
 <?php $bar = new BARCODE(); ?>
 
 <h2 style="text-transform: uppercase;">Equipment Group - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
