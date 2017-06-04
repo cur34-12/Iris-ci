@@ -15,9 +15,9 @@
             <!-- Bootstrap Theme -->
             <!--<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">-->
 
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
             <!-- JS Confirmation Dialogue -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-confirmation.js"></script>
@@ -31,8 +31,7 @@
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
 
             <!-- DataTables Style -->
-            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
-
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"
 
             <!-- JS for DataTables -->
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
@@ -44,7 +43,7 @@
             <script src="https://use.fontawesome.com/25b079534d.js"></script>
 
             <!-- Custom CSS -->
-            <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+            <!--<link rel="stylesheet" href="<?php //echo base_url(); ?>css/style.css">-->
 
             <!-- Init of the Date Parser-->
             <script type="text/javascript">
@@ -54,7 +53,7 @@
         </head>
         
         <body>
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-light bg-faded navbar-static-top">
         	<div class="container-fluid">
         		<div class="navbar-header">
         			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
