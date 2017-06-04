@@ -1,11 +1,7 @@
-<head>
-	<title>Edit Equipment - Logi</title>
-</head>
-
+<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['eq_name']; ?></h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment/update', $attributes); ?>
-<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['eq_name']; ?></h2>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
 		<div class="col-sm-10">
@@ -144,40 +140,40 @@
 		</div>
 	</div>
 	<!--Dan to add the live search functionality to the group select tool here-->
-<div class="form-group">
-		<label class="control-label col-sm-2">Equipment Group</label>
-		<div class="col-sm-10">
-			<select id="eq_group_id" name="eq_group_id" class="form-control">
-						<option value="">N/A</option>
-				<?php foreach($equipmentgroups as $equipmentgroup): ?>
-        				<option value="<?php echo $equipmentgroup['eqgroup_id']; ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></option>
-        		<?php endforeach; ?>
-			</select>
-		</div>
-		<script>
-				$(function() {
-					$( '#eq_group_id' ).val('<?php echo $equipment['eq_group_id']; ?>'); 
-				});
-		</script>
-	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Asset Number</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_asset_number" id="eq_asset_id" value="<?php echo $equipment['eq_asset_number']; ?>">
+			<label class="control-label col-sm-2">Equipment Group</label>
+			<div class="col-sm-10">
+				<select id="eq_group_id" name="eq_group_id" class="form-control">
+							<option value="">N/A</option>
+					<?php foreach($equipmentgroups as $equipmentgroup): ?>
+	        				<option value="<?php echo $equipmentgroup['eqgroup_id']; ?>"><?php echo $equipmentgroup['eqgroup_name']; ?></option>
+	        		<?php endforeach; ?>
+				</select>
+			</div>
+			<script>
+					$(function() {
+						$( '#eq_group_id' ).val('<?php echo $equipment['eq_group_id']; ?>'); 
+					});
+			</script>
 		</div>
-	</div>
-    <div class="form-group">
-        <label class="control-label col-sm-2">Model</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" name="eq_model" value="<?php echo $equipment['eq_model']; ?>">
-        </div>
-    </div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Serial Number</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_serial" id="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
+		<div class="form-group">
+			<label class="control-label col-sm-2">Asset Number</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="eq_asset_number" id="eq_asset_id" value="<?php echo $equipment['eq_asset_number']; ?>">
+			</div>
 		</div>
-	</div>
-	<button type="submit" name="submit" class="btn btn-default">Update</button>
-	<a class="btn btn-info" role="button" href="/equipment">Cancel</a>
-</form>
+	    <div class="form-group">
+	        <label class="control-label col-sm-2">Model</label>
+	        <div class="col-sm-10">
+	            <input type="text" class="form-control" name="eq_model" value="<?php echo $equipment['eq_model']; ?>">
+	        </div>
+	    </div>
+		<div class="form-group">
+			<label class="control-label col-sm-2">Serial Number</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="eq_serial" id="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
+			</div>
+		</div>
+		<button type="submit" name="submit" class="btn btn-default">Update</button>
+		<a class="btn btn-info" role="button" href="/equipment">Cancel</a>
+	</form>

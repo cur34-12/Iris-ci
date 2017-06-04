@@ -1,6 +1,3 @@
-<head>
-	<title>Create Equipment - Logi</title>
-</head>
 <h2 style="text-transform: uppercase;">Create Equipment</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
