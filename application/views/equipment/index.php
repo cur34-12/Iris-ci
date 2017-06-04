@@ -1,7 +1,7 @@
 <head>
 	<title>Equipment - Logi</title>
 </head>
-<div class="container-fluid">
+<div class="container-fluid" style="width: 95%;">
     <h2 style="text-transform: uppercase;">Equipment</h2>
     <div class="table-responsive">
         <table id="content" class="table table-striped table-hover logiTable">
