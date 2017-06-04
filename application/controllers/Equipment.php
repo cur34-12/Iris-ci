@@ -8,9 +8,9 @@
 
                     $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                    $this->load->view('templates/header/header.resources', $data);
-                    $this->load->view('templates/header/header.nav');
-                    $this->load->view('templates/header/header.container.95');
+                    $this->load->view('templates/header/header-resources', $data);
+                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-container-95');
                     $this->load->view('equipment/index', $data);
                     $this->load->view('templates/footer-container');
                     $this->load->view('templates/footer-container');
