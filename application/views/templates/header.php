@@ -27,13 +27,12 @@
             <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
-            <!-- JS for DataTables -->
-            <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-
-            <!-- DataTables Style -->
-            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"
-
-            <!-- JS for DataTables -->
+            <!-- JS/CSS for DataTables -->
+            <!--<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>-->
+            <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">-->
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js">
+            <script type="text/javascript" src="https://cdn.datatables.net/autofill/2.2.0/js/dataTables.autoFill.min.js"></script>
+            <script type="stylesheet" src="https://cdn.datatables.net/autofill/2.2.0/css/autoFill.dataTables.min.css"></script>
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 
             <!-- Jquery UI Style -->
