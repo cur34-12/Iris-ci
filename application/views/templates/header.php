@@ -55,7 +55,7 @@
         </head>
         <body>
 
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -114,7 +114,7 @@
                     </ul>
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav">
                         <?php if ($this->ion_auth->logged_in()): ?>
