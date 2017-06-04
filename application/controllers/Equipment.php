@@ -12,8 +12,8 @@
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('equipment/index', $data);
-                    $this->load->view('templates/footer-container');
-                    $this->load->view('templates/footer-required');
+                    $this->load->view('templates/footer/footer-container');
+                    $this->load->view('templates/footer/footer-required');
                 }
 
                 public function view($eq_id = null){
