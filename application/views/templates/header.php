@@ -32,8 +32,10 @@
             <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">-->
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
             <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js">
+            <script type="text/javascript" src="https://cdn.datatables.net/autofill/2.2.0/js/autoFill.bootstrap4.min.js"></script>
             <script type="text/javascript" src="https://cdn.datatables.net/autofill/2.2.0/js/dataTables.autoFill.min.js"></script>
             <script type="stylesheet" src="https://cdn.datatables.net/autofill/2.2.0/css/autoFill.dataTables.min.css"></script>
+
 
             <!-- Jquery UI Style -->
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
@@ -114,23 +116,19 @@
                                 <a class="dropdown-item" href="<?php echo base_url(); ?>locations/create">Create</a>
                             </div>
                         </li>
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
                     </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav">
+
                 </div>
             </nav>
 
 
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Search</button>
-                        </form>
+
                         <?php if ($this->ion_auth->logged_in()): ?>   
                             <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
                             <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
