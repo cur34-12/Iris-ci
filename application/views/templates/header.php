@@ -57,7 +57,7 @@
 
             <nav class="navbar navbar-inverse bg-primary">
                 <a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
@@ -141,5 +141,4 @@
                         </li>
                         <?php endif ?>
                     </ul>
-                </div>
             </nav>
