@@ -8,12 +8,16 @@
             <!-- Jquery / UI -->
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
-            <!-- Full bootstrap js plugins-->
+<!--
+            !-- Full bootstrap js plugins--
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.js"></script>
 
-            <!-- JS Time Parser-->
-            <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
+            !-- Bootstrap Theme --
+            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">
+-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
             <!-- JS Confirmation Dialogue -->
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-confirmation.js"></script>
@@ -22,18 +26,19 @@
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
             <!-- JS for DataTables -->
-            <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-            <!-- JS for DataTables -->
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
 
             <!-- DataTables Style -->
             <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
 
+            <!-- JS Time Parser-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
+
+            <!-- JS for DataTables -->
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
             <!-- Jquery UI Style -->
             <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css">
-
-			<!-- Bootstrap Theme -->
-            <link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">
 
             <!-- Font Awesome -->
             <script src="https://use.fontawesome.com/25b079534d.js"></script>
