@@ -51,7 +51,8 @@
 		$('#content').dataTable( {
 		  "columnDefs": [ {
 		      "targets": [ -1, -2 ],
-		      "orderable": false
+		      "orderable": false,
+              "pageLength": 50
 		    } ]
 		} );
 	});
