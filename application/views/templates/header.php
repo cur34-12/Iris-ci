@@ -53,8 +53,8 @@
         </head>
         
         <body>
+        <div class="container-fluid">
         <nav class="navbar navbar-light bg-faded navbar-static-top">
-        	<div class="container-fluid">
         		<div class="navbar-header">
         			<a class="navbar-brand" href="<?php echo base_url(); ?>">LOGI</a>
         		</div>
@@ -148,5 +148,5 @@
                         <?php endif ?>  
                     </ul>
         		</div>
-        	</div>
         </nav>
+        </div>
