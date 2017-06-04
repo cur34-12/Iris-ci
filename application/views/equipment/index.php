@@ -53,7 +53,7 @@
 		      "targets": [ -1, -2 ],
 		      "orderable": false
 		    } ],
-          "pageLength": 20
+          "pageLength": 25
 		} );
 	});
 </script>
