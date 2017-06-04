@@ -23,6 +23,8 @@
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-confirmation.js"></script>
 
             <!-- JS for DateTimePicker -->
+            <!-- JS Time Parser-->
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
             <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-datetimepicker.js"></script>
 
             <!-- JS for DataTables -->
@@ -31,8 +33,6 @@
             <!-- DataTables Style -->
             <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
 
-            <!-- JS Time Parser-->
-            <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
             <!-- JS for DataTables -->
             <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
