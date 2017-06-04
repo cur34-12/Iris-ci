@@ -53,12 +53,6 @@
 
         </head>
         <body>
-        <div class="container-fluid">
-
-
-
-
-
 
             <nav class="navbar navbar-inverse bg-primary">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,40 +116,32 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav">
-
+                        <?php if ($this->ion_auth->logged_in()): ?>
+                            <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
+                            <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li>
+                        <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+                            <div class="dropdown-menu" style="width:250px;">
+                                <form action="http://logi.dev1.strat.is/profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
+                                    <div class="input-group margin-bottom-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username/Email" required="" autofocus="" />
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                                        <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password" required="" autofocus="" />
+                                    </div>
+                                    <input type="submit" name="login_submit" value="Login" class="btn btn-block">
+                                    <div class="checkbox"><label><input type="checkbox" name="remember" value="1"  id="remember" />Remember Me</div>
+                                    <a href="http://logi.dev1.strat.is/register">Register</a>
+                                    </label>
+                                    <label class="checkbox">
+                                        <a href="http://logi.dev1.strat.is/profile/forgot_login">Forgot Password</a>
+                                    </label>
+                                </form>
+                            </div>
+                        </li>
+                        <?php endif ?>
+                    </ul>
                 </div>
             </nav>
-
-
-
-
-                        <?php if ($this->ion_auth->logged_in()): ?>   
-                            <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
-                            <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li> 
-                        <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>  
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
-                            <div class="dropdown-menu" style="width:250px;">
-                            <form action="http://logi.dev1.strat.is/profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
-                                <div class="input-group margin-bottom-sm">
-                                    <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username/Email" required="" autofocus="" />
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password" required="" autofocus="" /> 
-                                </div>
-                                <input type="submit" name="login_submit" value="Login" class="btn btn-block">
-                                <div class="checkbox"><label><input type="checkbox" name="remember" value="1"  id="remember" />Remember Me</div>
-                                    <a href="http://logi.dev1.strat.is/register">Register</a> 
-                                </label>        
-                                <label class="checkbox"> 
-                                    <a href="http://logi.dev1.strat.is/profile/forgot_login">Forgot Password</a> 
-                                </label>
-                            </form>     
-                            </div>
-                            </li>
-                        <?php endif ?>  
-                    </ul>
-        		</div>
-        </nav>
-        </div>
