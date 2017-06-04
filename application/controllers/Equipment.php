@@ -32,9 +32,12 @@
 
                         $data['title'] = $data['equipment']['eq_name'];
 
-                        $this->load->view('templates/header', $data);
-                        $this->load->view('equipment/view', $data);
-                        $this->load->view('templates/footer');
+                    $this->load->view('templates/header/header-resources-std', $data);
+                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-container');
+                    $this->load->view('equipment/view', $data);
+                    $this->load->view('templates/footer/footer-container');
+                    $this->load->view('templates/footer/footer-required');
                 }
 
                 public function create(){
