@@ -61,15 +61,5 @@
     </div>
 </div>
 <hr />
-<a class="btn btn-default" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
-
-<a href="<?php echo site_url('/equipment/delete/'. $equipment['eq_id']); ?>"
-        class="btn btn-large btn-primary" data-toggle="confirmation"
-        data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-ban-circle"
-        data-btn-ok-class="btn-danger"
-        data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-share-alt"
-        data-btn-cancel-class="btn-success"
-        data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
-    Delete
-</a>
+<button class="btn btn-outline-primary" type="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</button>
+<button class="btn btn-outline-warning" type="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</button>
