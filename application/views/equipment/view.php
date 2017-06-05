@@ -23,7 +23,7 @@
     <div class="col-md-6">
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
-            <thead class="thead-default">
+            <thead class="thead-inverse">
                 <th>ID</th>
                 <th>Title</th>
                 <th>Reported Date</th>
@@ -45,7 +45,7 @@
     <div class="col-md-6">
         <h3>Locations</h3>
         <table class="table table-striped table-hover table-sm">
-            <thead class="thead-default">
+            <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
             </thead>

@@ -1,7 +1,7 @@
 <?php $bar = new BARCODE(); ?>
 <h2 style="text-transform: uppercase;">Equipment Groups</h2>
 <table id="content" class="table table-striped table-hover ">
-	<thead class="thead-default">
+	<thead class="thead-inverse">
 		<tr>
 			<th>Name</th>
 			<th>Description</th>

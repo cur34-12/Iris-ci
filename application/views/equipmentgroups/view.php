@@ -15,7 +15,7 @@
 
 <h3>Equipment</h3>
 <table class="table table-striped table-hover table-sm">
-	<thead class="thead-default">
+	<thead class="thead-inverse">
 		<th>ID</th>
 		<th>Name</th>
 		<th>Description</th>
