@@ -42,5 +42,12 @@
             moment().format();
         </script>
 
+        <style>
+            .navbar-nav > li{
+              padding-left:1%;
+              padding-right:1%;
+            }
+        </style>
+
     </head>
     <body>
