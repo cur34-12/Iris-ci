@@ -42,7 +42,7 @@
                     Issues
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="<?php echo base_url(); ?>isssues">List</a>
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>issues">List</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>issues/edit">Edit</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>issues/create">Create</a>
