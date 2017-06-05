@@ -1,26 +1,30 @@
 <?php $bar = new BARCODE(); ?>
-<h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
-<table class="table table-striped table-hover ">
-    <tbody>
-    	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['eq_name']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Group</td><td><a href="/equipment/groups/<?php echo $equipment['eqgroup_id']; ?>"><?php echo $equipment['eqgroup_name']; ?></a></td></tr>
-    	<tr><td style="font-weight: bold">Description</td><td><?php echo $equipment['eq_description']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Consumable?</td><td><?php echo $equipment['eq_consumable']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Category</td><td><?php echo $equipment['eq_category']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Size</td><td><?php echo $equipment['eq_size']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Brand</td><td><?php echo $equipment['eq_brand']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Supplier</td><td><?php echo $equipment['eq_supplier']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Item in service?</td><td><?php echo $equipment['eq_in_service']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Inspection Frequency</td><td><?php echo $equipment['eq_inspection_frequency']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Equipment ID</td><td><?php echo $equipment['eq_id']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['eq_serial']; ?></td></tr>
-        <tr><td style="font-weight: bold">Model</td><td><?php echo $equipment['eq_model']; ?></td></tr>
-    	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
-    	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
-    </tbody>
-</table>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col">
+        <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
+        <table class="table table-striped table-hover ">
+            <tbody>
+            	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['eq_name']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Group</td><td><a href="/equipment/groups/<?php echo $equipment['eqgroup_id']; ?>"><?php echo $equipment['eqgroup_name']; ?></a></td></tr>
+            	<tr><td style="font-weight: bold">Description</td><td><?php echo $equipment['eq_description']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Consumable?</td><td><?php echo $equipment['eq_consumable']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Category</td><td><?php echo $equipment['eq_category']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Size</td><td><?php echo $equipment['eq_size']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Brand</td><td><?php echo $equipment['eq_brand']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Supplier</td><td><?php echo $equipment['eq_supplier']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Item in service?</td><td><?php echo $equipment['eq_in_service']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Inspection Frequency</td><td><?php echo $equipment['eq_inspection_frequency']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Equipment ID</td><td><?php echo $equipment['eq_id']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Serial</td><td><?php echo $equipment['eq_serial']; ?></td></tr>
+                <tr><td style="font-weight: bold">Model</td><td><?php echo $equipment['eq_model']; ?></td></tr>
+            	<tr><td style="font-weight: bold">Barcode</td><td><img src='<?php $bar = new BARCODE(); echo $bar->BarCode_link("Code39", $equipment['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td></tr>
+            	<tr><td style="font-weight: bold">QR</td><td><img src='<?php $bar = new BARCODE(); echo $bar->QRCode_link('text', site_url('/equipment/'. $equipment['eq_id']), 100, 2); ?>' /></td></tr>
+            </tbody>
+        </table>
+        <a class="btn btn-primary" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
+        <a class="btn btn-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
+    </div>    
+    <div class="col">
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
@@ -40,9 +44,8 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-outline-info" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
-    </div>
-    <div class="col-md-6">
+        <a class="btn btn-info" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
+        <hr />
         <h3>Locations</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
@@ -58,9 +61,8 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-outline-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
+        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
     </div>
 </div>
 <hr />
-<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
-<a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
+
