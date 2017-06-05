@@ -1,5 +1,5 @@
-<h2 style="text-transform: uppercase;">Members</h2>
-<table class="table table-striped table-hover">
+<h2 style="text-transform: uppercase;">Suppliers</h2>
+<table id="content" class="table table-striped table-hover logiTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Name</th>
@@ -11,16 +11,13 @@
 	<tbody>
 		<?php foreach($suppliers as $supplier) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['iss_id']; ?></a></td>
-					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['eq_name']; ?></td>
-					<td><a class="btn btn-outline-warning btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>">Edit</a></td>
+					<td><a href="<?php echo site_url('/suppliers/'. $supplier['supplier_id']); ?>"><?php echo $supplier['supplier_name']; ?></a></td>
+					<td><?php echo $supplier['supplier_street']; ?> <?php echo $supplier['supplier_suburb']; ?></td>
+                    <td><?php echo $supplier['supplier_number']; ?></td>
+					<td><a class="btn btn-warning btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
 
-<a class="btn btn-outline-primary" role="button" href="issues/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-
-<script>
-    document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, '&nbsp;');
-</script>
+<a class="btn btn-primary" role="button" href="suppliers/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>

@@ -34,21 +34,6 @@
     </table>
 </div>
 
-
 <a class="btn btn-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>-->
-<!--<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> -->
 
 </div>
-
-<script>
-	$(document).ready(function(){
-		$('#content').dataTable( {
-		  "columnDefs": [ {
-		      "targets": [ -1, -2 ],
-		      "orderable": false
-		    } ],
-          "pageLength": 25
-		} );
-	});
-</script>
