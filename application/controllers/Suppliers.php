@@ -13,6 +13,7 @@
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('suppliers/index', $data);
+                    $this->load->view('templates/footer/footer-datatable');
                     $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
