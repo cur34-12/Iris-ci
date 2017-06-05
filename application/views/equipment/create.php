@@ -153,5 +153,6 @@
 			</select>
 		</div>
 	</div>
-	<button type="submit" class="btn btn-default">Create</button>
+	<button type="submit" class="btn btn-outline-primary">Create</button>
+	<button class="btn btn-outline-warning" type="button" href="/equipment">Cancel</button>
 </form>

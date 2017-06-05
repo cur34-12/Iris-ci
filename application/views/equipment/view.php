@@ -40,7 +40,7 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-default" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
+        <button class="btn btn-outline-info" type="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
     </div>
     <div class="col-md-6">
         <h3>Locations</h3>

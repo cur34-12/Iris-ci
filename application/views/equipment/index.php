@@ -27,7 +27,7 @@
                         <td><?php echo $equipment['eq_brand']; ?></td>
                         <td><?php echo $equipment['eq_in_service']; ?></td>
                         <td><?php echo $equipment['eq_model']; ?></td>
-                        <td><a class="btn btn-primary btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
+                        <td><button class="btn btn-outline-warning btn-sm" type="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -35,7 +35,7 @@
 </div>
 
 
-<a class="btn btn-default" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<button class="btn btn-outline-primary" type="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</button>
 <!--<a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>-->
 <!--<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> -->
 
