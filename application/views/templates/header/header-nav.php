@@ -66,8 +66,12 @@
         </form>
         <ul class="navbar-nav">
             <?php if ($this->ion_auth->logged_in()): ?>
-                <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
-                <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url(); ?>profile"><?php echo $this->ion_auth->user()->row()->username); ?></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url(); ?>profile/logout">Logout</a>
+                </li>
             <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
