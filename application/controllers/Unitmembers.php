@@ -9,9 +9,12 @@
 
                     $data['members'] = $this->Unitmembers_model->get_members();
                         
-                        $this->load->view('templates/header', $data);
-                        $this->load->view('members/index', $data);
-                        $this->load->view('templates/footer');
+                    $this->load->view('templates/header/header-resources-datatable', $data);
+                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-container-95');
+                    $this->load->view('members/index', $data);
+                    $this->load->view('templates/footer/footer-container');
+                    $this->load->view('templates/footer/footer-required');
                 }
 
                 public function view($member_id = null){
