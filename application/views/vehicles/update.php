@@ -88,6 +88,6 @@
 		    </script>			
 		</div>
 	</div>
-	<button type="submit" class="btn btn-default">Update</button>
-	<a class="btn btn-info" role="button" href="/vehicles">Cancel</a>
+	<button type="submit" name="submit" class="btn btn-outline-primary">Update</button>
+	<a class="btn btn-outline-warning" role="button" href="/vehicles">Cancel</a>
 </form>

@@ -90,5 +90,5 @@
 			<input type="text" class="form-control" name="veh_location_id" placeholder="NOT YET IMPLEMENTED">
 		</div>
 	</div>
-	<button type="submit" class="btn btn-default">Create</button>
+	<button type="submit" class="btn btn-outline-primary">Create</button>
 </form>

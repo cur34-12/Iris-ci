@@ -175,5 +175,5 @@
 			</div>
 		</div>
 		<button type="submit" name="submit" class="btn btn-outline-primary">Update</button>
-		<a class="btn btn-outline-warning" class="button" href="/equipment">Cancel</a>
+		<a class="btn btn-outline-warning" role="button" href="/equipment">Cancel</a>
 	</form>
