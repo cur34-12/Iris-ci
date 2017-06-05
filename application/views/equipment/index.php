@@ -27,7 +27,7 @@
                         <td><?php echo $equipment['eq_brand']; ?></td>
                         <td><?php echo $equipment['eq_in_service']; ?></td>
                         <td><?php echo $equipment['eq_model']; ?></td>
-                        <td><a class="btn btn-outline-warning btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
+                        <td><a class="btn btn-warning btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
@@ -35,9 +35,9 @@
 </div>
 
 
-<a class="btn btn-outline-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-outline-info" role="button" href="equipment/edit">Edit Equipment</a>-->
-<!--<a class="btn btn-outline-danger" role="button" href="equipment/delete">Delete Equipment</a> -->
+<a class="btn btn-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<!--<a class="btn btn-info" role="button" href="equipment/edit">Edit Equipment</a>-->
+<!--<a class="btn btn-danger" role="button" href="equipment/delete">Delete Equipment</a> -->
 
 </div>
 
