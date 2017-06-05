@@ -43,7 +43,7 @@
 
                     $data['categories'] = $this->Equipment_model->get_categories();
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
-
+                    $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
                     $data['title'] = 'Logi - Create Equipment';
 
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
@@ -56,8 +56,8 @@
                         $this->load->view('templates/footer/footer-container');
                         $this->load->view('templates/footer/footer-required');
                     } else {
-                            $this->Equipment_model->create_equipment();
-                            redirect('equipment');
+                        $this->Equipment_model->create_equipment();
+                        redirect('equipment');
                     }
                 }
 

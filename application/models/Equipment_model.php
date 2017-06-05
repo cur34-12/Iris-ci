@@ -51,7 +51,15 @@
 				'eq_serial' => $this->input->post('eq_serial'),
 				'eq_group_id' => $this->input->post('eq_group_id')
 			);
-			return $this->db->insert('equipment', $data);
+			$this->db->insert('equipment', $data);
+			if(!empty($this->input->post('eqloc_loc_id'))) {
+				$eqloc_eq_id = $this->db->insert_id();
+				$locationData = array(
+					'eqloc_loc_id' => $this->input->post('eqloc_loc_id'),
+					'eqloc_eq_id' => $eqloc_eq_id,
+					'eqloc_quantity' => $this->input->post('eqloc_quantity')
+				);
+			}
 		}
 
 		public function delete_equipment($eq_id){
@@ -157,7 +165,8 @@
 
         public function get_equipment_locations($eq_id = FALSE){
 		    if($eq_id === FALSE){
-		        return null;
+				$query = $this->db->get('equipment_locations');
+				return $query->result_array();
             }
             $this->db->join('locations', 'locations.loc_id = equipment_location.eqloc_loc_id', 'left');
             $query = $this->db->get_where('equipment_location', array('eqloc_eq_id' => $eq_id));

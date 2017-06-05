@@ -153,6 +153,20 @@
 			</select>
 		</div>
 	</div>
-	<button type="submit" class="btn btn-outline-primary">Create</button>
-	<a class="btn btn-outline-warning" role="button" href="/equipment">Cancel</a>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Location</label>
+		<div class="col-sm-10">
+			<select id="eqloc_loc_id" name="eqloc_loc_id" class="form-control">
+				<?php foreach($equipmentlocations as $equipmentlocation): ?>
+        				<option value="<?php echo $equipmentlocation['eqloc_loc_id']; ?>"><?php echo $equipmentlocation['eqloc_loc_id']; ?></option>
+        		<?php endforeach; ?>
+			</select>
+		</div>
+		<label class="control-label col-sm-2">Quantity</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="eqloc_quantity" placeholder="Eg. 1">
+		</div>
+	</div>	
+	<button type="submit" class="btn btn-primary">Create</button>
+	<a class="btn btn-warning" role="button" href="/equipment">Cancel</a>
 </form>
