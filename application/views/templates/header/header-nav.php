@@ -67,7 +67,7 @@
         <ul class="navbar-nav">
             <?php if ($this->ion_auth->logged_in()): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url(); ?>profile"><?php echo $this->ion_auth->user()->row()->username); ?></a>
+                    <a class="nav-link" href="<?php echo base_url(); ?>profile"><?php echo $this->ion_auth->user()->row()->username; ?></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>profile/logout">Logout</a>
