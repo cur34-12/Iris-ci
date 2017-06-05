@@ -28,8 +28,8 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<a class="btn btn-ouline-info" role="button" href="comment/new">New Comment</a>
+<a class="btn btn-outline-info" role="button" href="comment/new">New Comment</a>
 
 <hr />
 <a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
-<a class="btn btn-outline-info" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
+<a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
