@@ -69,9 +69,12 @@
                 <li><?php echo anchor( site_url('profile'), $this->ion_auth->user()->row()->username); ?></li>
                 <li><?php echo anchor( site_url('profile/logout'),'Logout'); ?></li>
             <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
-                    <div class="dropdown-menu" style="width:250px;">
-                        <form action="http://logi.dev1.strat.is/profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login <span class="glyphicon glyphicon-log-in"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width:250px;">
+                        <form action="<?php echo base_url(); ?>profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
                             <div class="input-group margin-bottom-sm">
                                 <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
                                 <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username/Email" required="" autofocus="" />
@@ -81,11 +84,15 @@
                                 <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password" required="" autofocus="" />
                             </div>
                             <input type="submit" name="login_submit" value="Login" class="btn btn-block">
-                            <div class="checkbox"><label><input type="checkbox" name="remember" value="1"  id="remember" />Remember Me</div>
-                            <a href="http://logi.dev1.strat.is/register">Register</a>
-                            </label>
+                            <div class="checkbox"> 
+                                <label>
+                                    <input type="checkbox" name="remember" value="1"  id="remember" />
+                                    Remember Me
+                                </label>
+                            </div>
+                            <a href="<?php echo base_url(); ?>register">Register</a>
                             <label class="checkbox">
-                                <a href="http://logi.dev1.strat.is/profile/forgot_login">Forgot Password</a>
+                                <a href="<?php echo base_url(); ?>profile/forgot_login">Forgot Password</a>
                             </label>
                         </form>
                     </div>
