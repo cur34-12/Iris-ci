@@ -166,7 +166,7 @@
         public function get_equipment_locations($eq_id = FALSE){
 		    if($eq_id === FALSE){
 				$query = $this->db->get('locations');
-				return $query->row_array();
+				return $query->result_array();
             }
             $this->db->join('locations', 'locations.loc_id = equipment_location.eqloc_loc_id', 'left');
             $query = $this->db->get_where('equipment_location', array('eqloc_eq_id' => $eq_id));
