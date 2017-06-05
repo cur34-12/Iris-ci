@@ -123,6 +123,6 @@
             });
         });
     </script>
-	<button type="submit" class="btn btn-default">Update</button>
+	<button type="submit" class="btn btn-outline-primary">Update</button>
 	<a class="btn btn-outline-warning" role="button" href="/issues">Cancel</a>
 </form>
