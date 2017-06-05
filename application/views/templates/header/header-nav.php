@@ -17,6 +17,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles">List</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles/edit">Edit</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>vehicles/create">Create</a>
                 </div>
@@ -27,8 +28,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment">List</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment/edit">Edit</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment/create">Create</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups">Groups</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups/edit">Edit Groups</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>equipment-groups/create">Create Group</a>
@@ -40,6 +43,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="<?php echo base_url(); ?>isssues">List</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>issues/edit">Edit</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>issues/create">Create</a>
                 </div>
@@ -50,6 +54,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="<?php echo base_url(); ?>locations">List</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>locations/edit">Edit</a>
                     <a class="dropdown-item" href="<?php echo base_url(); ?>locations/create">Create</a>
                 </div>
