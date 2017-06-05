@@ -31,5 +31,6 @@
     </div>
 </div>
 
-<button type="submit" class="btn btn-default">Create</button>
+<button type="submit" class="btn btn-outline-primary">Create</button>
+<a class="btn btn-outline-warning" role="button" href="/issues/<?php echo $issue['$iss_id']; ?>">Cancel</a>
 </form>

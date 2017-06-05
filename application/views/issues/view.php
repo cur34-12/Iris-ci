@@ -12,8 +12,8 @@
 </table>
 
 <h2>Comments</h2>
-<table class="table table-striped table-hover ">
-    <thead>
+<table class="table table-striped table-hover table-sm">
+    <thead class="thead-inverse">
         <th>Date / Time</th>
         <th>User</th>
         <th>Comment</th>
@@ -28,25 +28,8 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<a class="btn btn-default" role="button" href="comment/new">New Comment</a>
+<a class="btn btn-ouline-info" role="button" href="comment/new">New Comment</a>
 
 <hr />
-
-<!--Action buttons-->
-<!--Create Button buttons-->
-<a class="btn btn-default" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
-
-<!--Edit Button-->
-<a class="btn btn-info" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
-
-<!--Delete Button (as form to protect against abuse)-->
-<?php $attributes = array('class' => 'form-inline', 'style' => 'display: inline;'); ?>
-<a href="<?php echo site_url('/issues/delete/'. $issue['iss_id']); ?>"
-   class="btn btn-large btn-primary" data-toggle="confirmation"
-   data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-ban-circle"
-   data-btn-ok-class="btn-danger"
-   data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-share-alt"
-   data-btn-cancel-class="btn-success"
-   data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
-    Delete
-</a>
+<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
+<a class="btn btn-outline-info" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>

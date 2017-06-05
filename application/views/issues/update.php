@@ -1,8 +1,4 @@
-<head>
-	<title>Edit Issue - Logi</title>
-</head>
 <h2 style="text-transform: uppercase;">Edit Issue <?php echo $issue['iss_id']; ?></h2>
-<!--Fields must be added to this form if an extra field is added to the vehicles table in the-->
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('issues/update', $attributes); ?>
@@ -128,5 +124,5 @@
         });
     </script>
 	<button type="submit" class="btn btn-default">Update</button>
-	<a class="btn btn-info" role="button" href="/issues">Cancel</a>
+	<a class="btn btn-outline-warning" role="button" href="/issues">Cancel</a>
 </form>
