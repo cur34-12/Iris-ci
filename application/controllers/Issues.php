@@ -26,7 +26,7 @@
                             show_404();
                     }
 
-                    $data['title'] = $data['issue']['iss_id'];
+                    $data['title'] = $data['issue']['iss_title'];
 
                     $this->load->view('templates/header/header-resources-std', $data);
                     $this->load->view('templates/header/header-nav');

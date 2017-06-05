@@ -2,7 +2,7 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('issues/update', $attributes); ?>
-	<div class="form-group">
+	<div class="form-group" style="display: none;">
 		<label class="control-label col-sm-2">Issue ID</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="iss_id" value="<?php echo $issue['iss_id']; ?>" readonly>
