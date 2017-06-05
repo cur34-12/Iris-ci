@@ -159,7 +159,7 @@
 		<div class="col-sm-10">
 			<select id="eqloc_loc_id" name="eqloc_loc_id" class="form-control">
 				<?php foreach($equipmentlocations as $equipmentlocation): ?>
-        				<option value="<?php echo $equipmentlocation['eqloc_loc_id']; ?>"><?php echo $equipmentlocation['eqloc_loc_name']; ?></option>
+        				<option value="<?php echo $equipmentlocation[1]; ?>"><?php echo $equipmentlocation[2]; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
