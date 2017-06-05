@@ -40,26 +40,26 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-        <button class="btn btn-outline-info" type="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
+        <a class="btn btn-outline-info" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
     </div>
     <div class="col-md-6">
         <h3>Locations</h3>
         <table class="table table-striped table-hover ">
             <thead>
-            <th>Name</th>
-            <th>Qty</th>
+                <th>Name</th>
+                <th>Qty</th>
             </thead>
             <tbody>
-            <?php foreach($locations as $location) : ?>
-                <tr>
-                    <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-                    <td><?php echo $location['eqloc_quantity']; ?></td>
-                </tr>
-            <?php endforeach; ?>
+                <?php foreach($locations as $location) : ?>
+                    <tr>
+                        <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+                        <td><?php echo $location['eqloc_quantity']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
 </div>
 <hr />
-<button class="btn btn-outline-primary" type="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</button>
-<button class="btn btn-outline-warning" type="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</button>
+<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
+<a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
