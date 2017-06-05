@@ -5,19 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><?php echo isset($title) ? $title : 'Logi' ; ?></title>
 
         <!-- JQuery / UI -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
+        <!--JS/CSS for Bootstrap -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.min.css">
         <script src="<?php echo base_url(); ?>/js/tether.min.js"></script>
         <script src="<?php echo base_url(); ?>/js/bootstrap.js"></script>
 
-        <!-- JS Confirmation Dialogue -->
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap-confirmation.js"></script>
-
-        <!-- JS for DateTimePicker -->
         <!-- JS Time Parser-->
         <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
@@ -33,9 +31,6 @@
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Custom CSS -->
-        <!--<link rel="stylesheet" href="<?php //echo base_url(); ?>css/style.css">-->
 
         <!-- Init of the Date Parser-->
         <script type="text/javascript">
