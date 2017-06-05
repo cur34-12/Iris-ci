@@ -73,7 +73,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Login <span class="glyphicon glyphicon-log-in"></span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width:250px;">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="width:250px;">
                         <form action="<?php echo base_url(); ?>profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
                             <div class="input-group margin-bottom-sm">
                                 <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
