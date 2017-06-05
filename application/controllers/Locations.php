@@ -58,11 +58,13 @@
                 }
 
                 public function delete($loc_id){
+
                         $this->Locations_model->delete_location($loc_id);
                         redirect('locations');
                 }
 
                 public function edit($loc_id){
+                    
                         $data['location'] = $this->Locations_model->get_locations($loc_id);
                         $data['usernames'] = $this->User_model->get_users();
 
