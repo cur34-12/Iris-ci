@@ -11,7 +11,7 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
         <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.min.css">
-        <script src="<?php echo base_url(); ?>js/tether.min.js"></script>
+        <script src="<?php echo base_url(); ?>/js/tether.min.js"></script>
         <script src="<?php echo base_url(); ?>/js/bootstrap.js"></script>
 
         <!-- JS Confirmation Dialogue -->
