@@ -58,6 +58,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <a class="btn btn-outline-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
     </div>
 </div>
 <hr />
