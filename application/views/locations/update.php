@@ -29,6 +29,6 @@
             });
         </script>
     </div>
-	<button type="submit" class="btn btn-default">Update</button>
-	<a class="btn btn-info" role="button" href="/locations">Cancel</a>
+	<button type="submit" class="btn btn-outline-primary">Update</button>
+	<a class="btn btn-outline-warning" role="button" href="/locations">Cancel</a>
 </form>

@@ -5,7 +5,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location Name</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="loc_name" placeholder="Eg. Wet Storee">
+			<input type="text" class="form-control" name="loc_name" placeholder="Eg. Wet Store">
 		</div>
 	</div>
     <div class="form-group">
@@ -18,5 +18,5 @@
             </select>
         </div>
     </div>
-	<button type="submit" class="btn btn-default">Create</button>
+	<button type="submit" class="btn btn-outline-primary">Create</button>
 </form>
