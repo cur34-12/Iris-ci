@@ -25,6 +25,23 @@
         <a class="btn btn-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
     </div>    
     <div class="col">
+        <h3>Locations</h3>
+        <table class="table table-striped table-hover table-sm">
+            <thead class="thead-inverse">
+                <th>Name</th>
+                <th>Qty</th>
+            </thead>
+            <tbody>
+                <?php foreach($locations as $location) : ?>
+                    <tr>
+                        <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+                        <td><?php echo $location['eqloc_quantity']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
+        <hr />
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
@@ -45,23 +62,6 @@
             </tbody>
         </table>
         <a class="btn btn-info" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
-        <hr />
-        <h3>Locations</h3>
-        <table class="table table-striped table-hover table-sm">
-            <thead class="thead-inverse">
-                <th>Name</th>
-                <th>Qty</th>
-            </thead>
-            <tbody>
-                <?php foreach($locations as $location) : ?>
-                    <tr>
-                        <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-                        <td><?php echo $location['eqloc_quantity']; ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
     </div>
 </div>
 <hr />
