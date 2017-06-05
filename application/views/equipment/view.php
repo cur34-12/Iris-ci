@@ -22,12 +22,12 @@
 <div class="row">
     <div class="col-md-6">
         <h3>Issues</h3>
-        <table class="table table-striped table-hover ">
-            <thead>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Reported Date</th>
-            <th>Status</th>
+        <table class="table table-striped table-hover table-sm">
+            <thead class="thead-default">
+                <th>ID</th>
+                <th>Title</th>
+                <th>Reported Date</th>
+                <th>Status</th>
             </thead>
             <tbody>
             <?php foreach($issues as $issue) : ?>
@@ -44,8 +44,8 @@
     </div>
     <div class="col-md-6">
         <h3>Locations</h3>
-        <table class="table table-striped table-hover ">
-            <thead>
+        <table class="table table-striped table-hover table-sm">
+            <thead class="thead-default">
                 <th>Name</th>
                 <th>Qty</th>
             </thead>

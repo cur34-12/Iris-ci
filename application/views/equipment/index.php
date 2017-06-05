@@ -1,7 +1,7 @@
 <h2 style="text-transform: uppercase;">Equipment</h2>
 <div class="table-responsive">
     <table id="content" class="table table-striped table-hover logiTable">
-        <thead>
+        <thead class="thead-default">
             <tr>
                 <th>Name</th>
                 <th>Description</th>

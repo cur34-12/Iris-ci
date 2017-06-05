@@ -14,8 +14,8 @@
 </table>
 
 <h3>Equipment</h3>
-<table class="table table-striped table-hover ">
-	<thead>
+<table class="table table-striped table-hover table-sm">
+	<thead class="thead-default">
 		<th>ID</th>
 		<th>Name</th>
 		<th>Description</th>
@@ -36,14 +36,6 @@
 </table>
 
 <hr />
-<a class="btn btn-default" role="button" href="<?php echo site_url('/equipment-groups/create'); ?>">Create Equipment Group</a>
-<a class="btn btn-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>">Edit Equipment Group</a>
-<a href="<?php echo site_url('/equipment-groups/delete/'. $equipment['eqgroup_id']); ?>"
-   class="btn btn-large btn-primary" data-toggle="confirmation"
-   data-btn-ok-label="Delete" data-btn-ok-icon="glyphicon glyphicon-ban-circle"
-   data-btn-ok-class="btn-danger"
-   data-btn-cancel-label="Return" data-btn-cancel-icon="glyphicon glyphicon-share-alt"
-   data-btn-cancel-class="btn-success"
-   data-title="Confirm Deletion" data-content="Are you sure you want to delete?">
-    Delete
-</a>
+<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/equipment-groups/create'); ?>">Create Equipment Group</a>
+<a class="btn btn-outline-info" role="button" href="<?php echo site_url('/equipment-groups/edit/'. $equipmentgroup['eqgroup_id']); ?>">Edit Equipment Group</a>
+

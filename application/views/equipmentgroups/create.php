@@ -63,5 +63,5 @@
 			<input type="text" class="form-control" name="eqgroup_locationasset_number" id="eqgroup_location">
 		</div>
 	</div>
-	<button type="submit" class="btn btn-default">Create</button>
+	<button type="submit" class="btn btn-outline-primary">Create</button>
 </form>

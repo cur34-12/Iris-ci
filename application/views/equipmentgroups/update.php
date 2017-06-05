@@ -1,7 +1,7 @@
+<h2 style="text-transform: uppercase;">Edit - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('equipment-groups/update', $attributes); ?>
-<h2 style="text-transform: uppercase;">Edit - <?php echo $equipmentgroup['eqgroup_name']; ?></h2>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
@@ -69,7 +69,6 @@
 			</script>
 		</div>
 	</div>
-	
 	<!--Implement autocomplete search for a select box from the locations table-->
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location</label>
@@ -77,8 +76,5 @@
 			<input type="text" class="form-control" name="eqgroup_location" id="eqgroup_location" value="<?php echo $equipmentgroup['eqgroup_location']; ?>">
 		</div>
 	</div>
-
-	<!--implement a related to system for linking groups together, eg 2 part HSK kit. Table format might be: relatedgroup_id | eqgroup_id | related_eqgroup_id -->
-
-	<button type="submit" class="btn btn-default">Create</button>
+	<button type="submit" class="btn btn-outline-primary">Create</button>
 </form>

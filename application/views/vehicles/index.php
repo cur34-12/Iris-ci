@@ -1,6 +1,6 @@
 <h2 style="text-transform: uppercase;">Vehicles</h2>
 <table class="table table-striped table-hover ">
-	<thead>
+	<thead class="thead-default">
 		<tr>
 			<th>Name</th>
 			<th>Rego</th>

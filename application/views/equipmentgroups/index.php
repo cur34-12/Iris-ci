@@ -1,11 +1,7 @@
-<head>
-	<title>Equipment - Logi</title>
-</head>
-
 <?php $bar = new BARCODE(); ?>
 <h2 style="text-transform: uppercase;">Equipment Groups</h2>
 <table id="content" class="table table-striped table-hover ">
-	<thead>
+	<thead class="thead-default">
 		<tr>
 			<th>Name</th>
 			<th>Description</th>
@@ -28,15 +24,15 @@
 					<td><?php echo $equipmentgroup['eqgroup_last_checked']; ?></td>
 					<td><?php echo $equipmentgroup['loc_name']; ?></td>
 					<td><img src='<?php echo $bar->BarCode_link("Code39", $equipmentgroup['eqgroup_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
-					<td><a class="btn btn-primary btn-sm" role="button" href="equipment-groups/edit/<?php echo $equipmentgroup['eqgroup_id']; ?>">Edit</a></td>
+					<td><a class="btn btn-outline-warning btn-sm" role="button" href="equipment-groups/edit/<?php echo $equipmentgroup['eqgroup_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
 
-<a class="btn btn-default" role="button" href="equipment-groups/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-info" role="button" href="equipment-groups/edit">Edit Equipment Group</a>-->
-<!--<a class="btn btn-danger" role="button" href="equipment-groups/delete">Delete Equipment Group</a>-->
+<a class="btn btn-outline-primary" role="button" href="equipment-groups/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<!--<a class="btn btn-outline-info" role="button" href="equipment-groups/edit">Edit Equipment Group</a>-->
+<!--<a class="btn btn-outline-danger" role="button" href="equipment-groups/delete">Delete Equipment Group</a>-->
 
 <script>
 	$(document).ready(function(){
