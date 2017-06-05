@@ -22,7 +22,7 @@
                     $data['supplier'] = $this->Suppliers_model->get_suppliers($supplier_id);
 
                     if(empty($data['supplier'])){
-                            show_404();
+                        show_404();
                     }
 
                     $data['title'] = $data['supplier']['supplier_name'];
@@ -63,7 +63,7 @@
                     $data['supplier'] = $this->Suppliers_model->get_suppliers($supplier_id);
 
                     if(empty($data['supplier'])){
-                            show_404();
+                        show_404();
                     }
 
                     $data['title'] = 'Edit Supplier';

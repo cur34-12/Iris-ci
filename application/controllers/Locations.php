@@ -23,7 +23,7 @@
                     $data['equipment'] = $this->Equipment_model->get_location_equipment($loc_id);
 
                     if(empty($data['location'])){
-                            show_404();
+                        show_404();
                     }
 
                     $data['title'] = $data['location']['loc_name'];
@@ -45,15 +45,15 @@
                     $this->form_validation->set_rules('loc_name', 'Location Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                            $this->load->view('templates/header/header-resources-std', $data);
-                            $this->load->view('templates/header/header-nav');
-                            $this->load->view('templates/header/header-container');
-                            $this->load->view('locations/create', $data);
-                            $this->load->view('templates/footer/footer-container');
-                            $this->load->view('templates/footer/footer-required');  
+                        $this->load->view('templates/header/header-resources-std', $data);
+                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-container');
+                        $this->load->view('locations/create', $data);
+                        $this->load->view('templates/footer/footer-container');
+                        $this->load->view('templates/footer/footer-required');  
                     } else {
-                            $this->Locations_model->create_location();
-                            redirect('locations');
+                        $this->Locations_model->create_location();
+                        redirect('locations');
                     }
                 }
 
@@ -69,7 +69,7 @@
                     $data['usernames'] = $this->User_model->get_users();
 
                     if(empty($data['location'])){
-                            show_404();
+                        show_404();
                     }
 
                     $data['title'] = 'Edit location';
