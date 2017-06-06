@@ -14,15 +14,6 @@
         <textarea rows="3" class="form-control" id="isscom_comment" name="iss_comment" placeholder="Eg. Chainsaw now at the stihl shop."></textarea>
     </div>
 </div>
-<div class="form-group">
-    <label class="control-label col-sm-2">Reported Date</label>
-    <div class='col-sm-10 input-group date'>
-        <input type='text' class="form-control" id='iss_reported_date' name="iss_reported_date"/>
-        <span class="input-group-addon">
-	                <span class="glyphicon glyphicon-calendar"></span>
-        </span>
-    </div>
-</div>
 <div class="form-group" style="display: none;">
     <label class="control-label col-sm-2">Creator ID</label>
     <div class="col-sm-10">
@@ -31,6 +22,6 @@
     </div>
 </div>
 
-<button type="submit" class="btn btn-outline-primary">Create</button>
-<a class="btn btn-outline-warning" role="button" href="/issues/<?php echo $issue['$iss_id']; ?>">Cancel</a>
+<button type="submit" class="btn btn-primary">Create</button>
+<a class="btn btn-warning" role="button" href="/issues/<?php echo $issue['$iss_id']; ?>">Cancel</a>
 </form>
