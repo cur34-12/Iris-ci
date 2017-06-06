@@ -116,5 +116,12 @@
                     $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
+
+                public function delete_comment($isscom_id){
+
+                    $this->Issues_model->delete_comment($isscom_id);
+                    header("Refresh:0");
+                    #redirect('issues');
+                }
         }
 ?>
