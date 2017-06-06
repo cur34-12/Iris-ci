@@ -11,7 +11,7 @@
 		<?php foreach($members as $member) : ?>
 			<tr>
 					<td><a href="<?php echo site_url('/members/'. $member['member_id']); ?>"><?php echo $member['member_id']; ?></a></td>
-					<td><a href="<?php echo site_url('/issues/'. $member['member_name']); ?>"><?php echo $member['member_name']; ?></td>
+					<td><a href="<?php echo site_url('/issues/'. $member['member_id']); ?>"><?php echo $member['member_name']; ?></td>
 					<td><a class="btn btn-warning btn-sm" role="button" href="members/edit/<?php echo $member['member_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
