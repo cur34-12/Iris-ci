@@ -10,15 +10,15 @@
 	<tbody>
 		<?php foreach($members as $member) : ?>
 			<tr>
-					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['iss_id']; ?></a></td>
-					<td><a href="<?php echo site_url('/issues/'. $issue['iss_id']); ?>"><?php echo $issue['eq_name']; ?></td>
-					<td><a class="btn btn-outline-warning btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>">Edit</a></td>
+					<td><a href="<?php echo site_url('/members/'. $member['member_id']); ?>"><?php echo $member['member_id']; ?></a></td>
+					<td><a href="<?php echo site_url('/issues/'. $issue['member_name']); ?>"><?php echo $member['member_name']; ?></td>
+					<td><a class="btn btn-warning btn-sm" role="button" href="members/edit/<?php echo $member['member_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
 
-<a class="btn btn-outline-primary" role="button" href="issues/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<a class="btn btn-primary" role="button" href="members/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 
 <script>
     document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, '&nbsp;');
