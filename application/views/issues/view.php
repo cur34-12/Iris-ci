@@ -17,6 +17,7 @@
         <th>Date / Time</th>
         <th>User</th>
         <th>Comment</th>
+        <th>Delete</th>
     </thead>
     <tbody>
         <?php foreach($comments as $comment) : ?>
@@ -24,6 +25,7 @@
                 <td><?php echo $comment['isscom_date']; ?></td>
                 <td><?php echo $comment['isscom_user']; ?></td>
                 <td><?php echo $comment['isscom_comment']; ?></td>
+                <td><a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/issues/delete-comment/'. $comment['isscom_id']); ?>">Delete</a></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

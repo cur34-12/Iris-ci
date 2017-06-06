@@ -62,4 +62,10 @@
             $query = $this->db->get_where('issues_comments', array('isscom_related_iss' => $iss_id));
             return $query->result_array();
         }
+
+        public function delete_comment($isscom_id){
+            $this->db->where('isscom_id', $isscom_id);
+            $this->db->delete('issues_comments');
+            return true;
+        }
 	}
