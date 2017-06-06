@@ -30,7 +30,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
-<a class="btn btn-outline-info" role="button" href="comment/new">New Comment</a>
+<a class="btn btn-outline-info" role="button" href="issue/new-comment">New Comment</a>
 
 <hr />
 <a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
