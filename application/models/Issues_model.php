@@ -63,7 +63,7 @@
             return $query->result_array();
         }
 
-        public function create_comment(){
+        public function new_comment(){
             $data = array(
                 'isscom_related_iss' => $this->input->post('isscom_related_iss'),
                 'isscom_comment' => $this->input->post('isscom_comment'),
