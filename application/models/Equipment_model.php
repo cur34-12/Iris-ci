@@ -181,11 +181,11 @@
             $query = $this->db->get_where('equipment_location', array('eqloc_loc_id' => $loc_id));
             return $query->result_array();
         }
-        
+
 		public function remove_location(){
 			$data = array(
 				'eqloc_eq_id' => $this->input->post('eq_id'),
-				'eqloc_loc_id' => $this->input->post('eqloc_loc_id'
+				'eqloc_loc_id' => $this->input->post('eqloc_loc_id')
 			);
 
 			$this->db->where('eqloc_loc_id', $this->input->data['eqloc_loc_id']);
