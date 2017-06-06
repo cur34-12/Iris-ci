@@ -30,12 +30,16 @@
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
+                <th></th>
+                <th></th>
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
                     <tr>
                         <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td><?php echo $location['eqloc_quantity']; ?></td>
+                        <td><button type="submit" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                        <td><button type="submit" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Remove</button></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
