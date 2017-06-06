@@ -1,5 +1,5 @@
 <h2 style="text-transform: uppercase;">Members</h2>
-<table class="table table-striped table-hover">
+<table id="content" class="table table-striped table-hover logiTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Member ID</th>
@@ -19,7 +19,3 @@
 </table>
 
 <a class="btn btn-primary" role="button" href="members/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-
-<script>
-    document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, '&nbsp;');
-</script>
