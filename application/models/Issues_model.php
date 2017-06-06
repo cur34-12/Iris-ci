@@ -63,6 +63,16 @@
             return $query->result_array();
         }
 
+        public function create_comment(){
+            $data = array(
+                'isscom_related_iss' => $this->input->post('isscom_related_iss'),
+                'isscom_comment' => $this->input->post('isscom_comment'),
+                'isscom_user' => $this->input->post('isscom_user'),
+            );
+
+            return $this->db->insert('issues_comments', $data);
+        }
+
         public function delete_comment($isscom_id){
             $this->db->where('isscom_id', $isscom_id);
             $this->db->delete('issues_comments');

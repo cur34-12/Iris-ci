@@ -1,7 +1,7 @@
 <h2 style="text-transform: uppercase;">Add Comment</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
-<?php echo form_open('comments/new', $attributes); ?>
+<?php echo form_open('issues/new-comment', $attributes); ?>
 <div class="form-group" style="display: none;">
     <label class="control-label col-sm-2">Related Issue</label>
     <div class="col-sm-10">
