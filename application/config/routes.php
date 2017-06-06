@@ -63,12 +63,12 @@ $route['suppliers/(:any)'] = 'suppliers/view/$1';
 $route['suppliers'] = 'suppliers/index';
 
 /* Member Routes */
-$route['members/delete'] = 'members/select_delete';
-$route['members/edit'] = 'members/select_edit';
-$route['members/create'] = 'members/create';
-$route['members/update'] = 'members/update';
-$route['members/(:any)'] = 'members/view/$1';
-$route['members'] = 'members/index';
+$route['members/delete'] = 'unitmembers/select_delete';
+$route['members/edit'] = 'unitmembers/select_edit';
+$route['members/create'] = 'unitmembers/create';
+$route['members/update'] = 'unitmembers/update';
+$route['members/(:any)'] = 'unitmembers/view/$1';
+$route['members'] = 'unitmembers/index';
 
 /* Vehicle Routes */
 $route['vehicles/delete'] = 'vehicles/select_delete';
