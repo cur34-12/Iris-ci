@@ -59,6 +59,7 @@
 					'eqloc_eq_id' => $eqloc_eq_id,
 					'eqloc_quantity' => $this->input->post('eqloc_quantity')
 				);
+				$this->db->insert('equipment_location', $locationData);
 			}
 		}
 
