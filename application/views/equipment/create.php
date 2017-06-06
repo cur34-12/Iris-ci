@@ -155,11 +155,10 @@
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Location</label>
-		<?php var_dump($equipmentlocations) ?>
 		<div class="col-sm-10">
 			<select id="eqloc_loc_id" name="eqloc_loc_id" class="form-control">
 				<?php foreach($equipmentlocations as $equipmentlocation): ?>
-        				<option value="<?php echo $equipmentlocation['eqloc_loc_id']; ?>"><?php echo $equipmentlocation['eqloc_loc_name']; ?></option>
+        				<option value="<?php echo $equipmentlocation['loc_id']; ?>"><?php echo $equipmentlocation['loc_name']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
