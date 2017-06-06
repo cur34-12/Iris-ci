@@ -59,6 +59,15 @@
                     <a class="dropdown-item" href="<?php echo base_url(); ?>locations/create">Create</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>members">Members</a>
+                    <a class="dropdown-item" href="<?php echo base_url(); ?>suppliers">Suppliers</a>
+                </div>
+            </li>
         </ul>
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
