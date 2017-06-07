@@ -38,8 +38,8 @@
                     <tr>
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
-                        <td style="text-align: centre;"><button type="submit" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                        <td style="text-align: centre;"><button type="submit" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Remove</button></td>
+                        <td style="text-align: right;"><button type="submit" class="btn btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                        <td style="text-align: right;"><button type="submit" class="btn btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Remove</button></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
