@@ -36,10 +36,10 @@
             <tbody>
                 <?php foreach($locations as $location) : ?>
                     <tr>
-                        <td><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-                        <td><?php echo $location['eqloc_quantity']; ?></td>
-                        <td><button type="submit" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                        <td><button type="submit" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Remove</button></td>
+                        <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+                        <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
+                        <td style="text-align: centre;"><button type="submit" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                        <td style="text-align: centre;"><button type="submit" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Remove</button></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
