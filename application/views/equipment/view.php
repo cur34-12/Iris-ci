@@ -25,12 +25,11 @@
         <a class="btn btn-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
     </div>    
     <div class="col">
-        <h3>Locations</h3>
+        <h3>Locations <a class="btn btn-info btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
-                <th></th>
                 <th></th>
             </thead>
             <tbody>
@@ -46,7 +45,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a>
+        
         <hr />
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
