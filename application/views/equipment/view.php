@@ -38,13 +38,15 @@
                     <tr>
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
-                        <td style="text-align: right;"><button type="submit" class="btn btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                        <td style="text-align: right;"><button type="submit" class="btn btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button></td>
+                        <td style="text-align: right;">
+                            <button type="submit" class="btn btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                            <button type="submit" class="btn btn-sm"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</button>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>">New Location(TODO)</a>
+        <a class="btn btn-info" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a>
         <hr />
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
