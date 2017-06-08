@@ -54,7 +54,7 @@
                 <th>Title</th>
                 <th>Reported Date</th>
                 <th>Status</th>
-                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
             <?php foreach($issues as $issue) : ?>
@@ -68,7 +68,6 @@
             <?php endforeach; ?>
             </tbody>
         </table>
-        <a class="btn btn-info" role="button" href="/issues/create/<?php echo $equipment['eq_id']; ?>">New Issue</a>
     </div>
 </div>
 <hr />
