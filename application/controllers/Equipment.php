@@ -243,7 +243,7 @@
                     $this->load->view('templates/footer/footer-required');
                 }
                 public function delete_equipment_location($eq_id,$loc_id){ 
-                    $this->Equipment_model->delete_equipment_location();
+                    $this->Equipment_model->delete_equipment_location($eq_id,$loc_id);
                     redirect('equipment/view/' . $eq_id);
                 }
         }
