@@ -25,12 +25,12 @@
         <a class="btn btn-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
     </div>    
     <div class="col">
-        <h3>Locations </h3><a class="btn btn-info btn-xs" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a>
+        <h3>Locations </h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
-                <th></th>
+                <th><a class="btn btn-default btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
@@ -38,8 +38,8 @@
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
                         <td style="text-align: right;">
-                            <button type="submit" class="btn btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                            <button type="submit" class="btn btn-xs"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</button>
+                            <a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="/?/remove/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
