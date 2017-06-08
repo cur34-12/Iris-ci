@@ -184,11 +184,12 @@
 
 		public function delete_equipment_location($eq_id = FALSE,$loc_id = FALSE){
             if($loc_id === FALSE or $eq_id === FALSE){			
-				$data = array(
-					'eqloc_eq_id' => $eq_id,
-					'eqloc_loc_id' => $loc_id
-				);
+            	return null;
 			}
+			$data = array(
+				'eqloc_eq_id' => $eq_id,
+				'eqloc_loc_id' => $loc_id
+			);
 			$this->db->where('eqloc_loc_id', $this->input->data['eqloc_loc_id']);
 			$this->db->where('eqloc_eq_id', $this->input->data['eqloc_eq_id']);
 			return $this->db->delete('equipment_location');
