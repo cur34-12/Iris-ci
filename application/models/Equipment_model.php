@@ -187,6 +187,6 @@
             	return null;
 			}
 
-			return $this->db->delete('equipment_location', array('eqloc_eq_id' => $eq_id),'eqloc_eq_id' => $loc_id); 
+			return $this->db->delete('equipment_location', array('eqloc_eq_id' => $eq_id,'eqloc_eq_id' => $loc_id)); 
 		}
 	}
