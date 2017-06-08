@@ -37,7 +37,7 @@
                     <tr>
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
-                        <td style="text-align: right;">
+                        <td style="text-align: right;vertical-align: middle;">
                             <a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
                             <a class="btn btn-basic btn-sm" role="button" href="/?/remove/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
@@ -58,10 +58,10 @@
             <tbody>
             <?php foreach($issues as $issue) : ?>
                 <tr>
-                    <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
-                    <td><?php echo $issue['iss_reported_date']; ?></td>
-                    <td><?php echo $issue['iss_status']; ?></td>
-                    <td><a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
+                    <td style="vertical-align: middle;"><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
+                    <td style="vertical-align: middle;"><?php echo $issue['iss_reported_date']; ?></td>
+                    <td style="vertical-align: middle;"><?php echo $issue['iss_status']; ?></td>
+                    <td style="text-align: right;vertical-align: middle;"><a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
