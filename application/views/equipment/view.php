@@ -50,7 +50,6 @@
         <h3>Issues</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
-                <th>ID</th>
                 <th>Title</th>
                 <th>Reported Date</th>
                 <th>Status</th>
@@ -59,7 +58,6 @@
             <tbody>
             <?php foreach($issues as $issue) : ?>
                 <tr>
-                    <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_id']; ?></a></td>
                     <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
                     <td><?php echo $issue['iss_reported_date']; ?></td>
                     <td><?php echo $issue['iss_status']; ?></td>
