@@ -14,7 +14,7 @@ $route['issues/update'] = 'issues/update';
 $route['issues/(:any)'] = 'issues/view/$1';
 $route['issues'] = 'issues/index';
 
-$route['issues/new-comment'] = 'issues/new_comment';
+$route['issues/comment'] = 'issues/new_comment';
 $route['issues/delete-comment/(:any)'] = 'issues/delete_comment/$1';
 
 /* Locations Routes */
