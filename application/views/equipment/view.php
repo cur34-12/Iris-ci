@@ -30,7 +30,7 @@
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
-                <th><a class="btn btn-default btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
@@ -54,6 +54,7 @@
                 <th>Title</th>
                 <th>Reported Date</th>
                 <th>Status</th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="/?/create/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
             <?php foreach($issues as $issue) : ?>
@@ -62,6 +63,7 @@
                     <td><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
                     <td><?php echo $issue['iss_reported_date']; ?></td>
                     <td><?php echo $issue['iss_status']; ?></td>
+                    <td><a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
