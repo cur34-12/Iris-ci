@@ -186,13 +186,7 @@
             if($loc_id === FALSE or $eq_id === FALSE){			
             	return null;
 			}
-			$data = array(
-				'eqloc_eq_id' => $eq_id,
-				'eqloc_loc_id' => $loc_id
-			);
-			$this->db->where('eqloc_loc_id', $this->input->data['eqloc_loc_id']);
-			$this->db->where('eqloc_eq_id', $this->input->data['eqloc_eq_id']);
-			return $this->db->delete('equipment_location');
 
+			return $this->db->delete('equipment_location', array('eqloc_eq_id' => $eq_id),'eqloc_eq_id' => $loc_id); 
 		}
 	}
