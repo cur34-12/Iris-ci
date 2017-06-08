@@ -39,7 +39,7 @@
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
                         <td style="text-align: right;vertical-align: middle;">
                             <a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
-                            <a class="btn btn-basic btn-sm" role="button" href="/?/remove/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
