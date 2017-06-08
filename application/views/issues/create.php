@@ -78,15 +78,14 @@
 			<!-- Created By User -->
 			<input id="iss_creator_id" type="text" name="iss_creator_id" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
 		</div>
-	</div> 
-
-	<button type="submit" class="btn btn-outline-primary">Create</button>
-	<a class="btn btn-outline-warning" role="button" href="/issues/">Cancel</a>
+	</div>
+	<button type="submit" class="btn btn-primary">Create</button>
+	<a class="btn btn-warning" role="button" href="/issues/">Cancel</a>
 </form>
 
 <script type="text/javascript">
 $(function() {
-    
+
     //autocomplete
     $("#iss_eq_name").autocomplete({
         source: "/search-equipment.php",
@@ -108,7 +107,6 @@ $(function() {
         .appendTo( ul );
     };
   } );
-     
 </script>
 <script type="text/javascript">
 	$('#iss_reported_date').datepicker({
