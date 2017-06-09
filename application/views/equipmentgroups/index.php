@@ -1,6 +1,7 @@
 <?php $bar = new BARCODE(); ?>
 <h2 style="text-transform: uppercase;">Equipment Groups</h2>
-<table id="content" class="table table-striped table-hover ">
+<hr />
+<table id="content" class="table table-striped table-hover dataTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Name</th>
@@ -31,16 +32,3 @@
 </table>
 
 <a class="btn btn-outline-primary" role="button" href="equipment-groups/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-outline-info" role="button" href="equipment-groups/edit">Edit Equipment Group</a>-->
-<!--<a class="btn btn-outline-danger" role="button" href="equipment-groups/delete">Delete Equipment Group</a>-->
-
-<script>
-	$(document).ready(function(){
-		$('#content').dataTable( {
-		  "columnDefs": [ {
-		      "targets": [ -1, -2 ],
-		      "orderable": false
-		    } ]
-		} );
-	});
-</script>

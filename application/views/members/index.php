@@ -1,5 +1,6 @@
 <h2 style="text-transform: uppercase;">Members</h2>
-<table id="content" class="table table-striped table-hover logiTable">
+<hr />
+<table id="content" class="table table-striped table-hover dataTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Member ID</th>
