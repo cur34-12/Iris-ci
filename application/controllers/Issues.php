@@ -79,11 +79,10 @@
 
                     $data['title'] = 'Edit Issue';
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('issues/update', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -96,24 +95,22 @@
                 public function select_edit(){ 
 
                     $data['issues'] = $this->Issues_model->get_issues();
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('issues/edit', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
                 public function select_delete(){ 
 
                     $data['issues'] = $this->Issues_model->get_issues();
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('issues/delete', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -126,11 +123,10 @@
                     $this->form_validation->set_rules('isscom_comment', 'Comment', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
-                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('issues/comment', $data);
-                        $this->load->view('templates/footer/footer-container');
                         $this->load->view('templates/footer/footer-required');
                     } else {
                         $this->Issues_model->new_comment();
