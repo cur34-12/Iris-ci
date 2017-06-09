@@ -174,6 +174,6 @@
 				<input type="text" class="form-control" name="eq_serial" id="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
 			</div>
 		</div>
-		<button type="submit" name="submit" class="btn btn-outline-primary">Update</button>
-		<a class="btn btn-outline-warning" role="button" href="/equipment">Cancel</a>
+		<button type="submit" name="submit" class="btn btn-primary">Update</button>
+		<a class="btn btn-warning" role="button" href="/equipment">Cancel</a>
 	</form>
