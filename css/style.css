@@ -156,6 +156,7 @@ table#content.logiTable td {
     font-size:18px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    line-height: 1.5;
     font-weight:lighter;
 }
 .quick-actions li a i[class^="glyphicon-"],
