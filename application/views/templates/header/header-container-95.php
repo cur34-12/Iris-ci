@@ -6,4 +6,4 @@
         <span class="hamb-middle"></span>
         <span class="hamb-bottom"></span>
     </button>
-<div class="container" style="width: 80%;">
+<div class="container" style="margin-left 5%; width: 80%;">
