@@ -124,6 +124,7 @@ table#content.logiTable td {
 .quick-actions li:hover,
 .quick-actions-horizontal li:hover {
     background: #2E363F;
+    text-decoration: none;
 }
 .quick-actions li {
     min-width:14%;
@@ -132,6 +133,7 @@ table#content.logiTable td {
 
 .quick-actions li a {
     padding:10px 30px;
+    text-decoration: none;
 }
 
 .quick-actions_homepage
