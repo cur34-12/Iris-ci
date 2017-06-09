@@ -2,7 +2,7 @@
 <!--Action boxes-->
 <div class="quick-actions_homepage">
     <ul class="quick-actions">
-        <li class="bg_lb span3"> <a href="index.html"> <span class="glyphicon glyphicon-dashboard"></span> My Dashboard </a> </li>
+        <li class="bg_lb span3"> <a href="index.html"> <i class="glyphicon glyphicon-dashboard"></i> My Dashboard </a> </li>
         <li class="bg_lg span3"> <a href="charts.html"> <i class="glyphicon glyphicon-signal"></i> Charts</a> </li>
         <li class="bg_ly span3"> <a href="widgets.html"> <i class="glyphicon glyphicon-inbox"></i> Widgets </a> </li>
         <li class="bg_lo span3"> <a href="tables.html"> <i class="glyphicon glyphicon-th"></i> Tables</a> </li>
