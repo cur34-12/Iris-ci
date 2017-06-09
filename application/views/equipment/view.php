@@ -2,7 +2,7 @@
 <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
 <hr />
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <table class="table table-striped table-hover ">
             <tbody>
             	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['eq_name']; ?></td></tr>
@@ -25,7 +25,7 @@
         <a class="btn btn-primary" role="button" href="<?php echo site_url('/equipment/create'); ?>">Create Equipment</a>
         <a class="btn btn-warning" role="button" href="<?php echo site_url('/equipment/edit/'. $equipment['eq_id']); ?>">Edit Equipment</a>
     </div>    
-    <div class="col-md-4">
+    <div class="col-md-6">
         <h3>Locations </h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
