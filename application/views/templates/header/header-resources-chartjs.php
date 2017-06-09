@@ -19,8 +19,7 @@
         <!-- JS Time Parser-->
         <script type="text/javascript" src="<?php echo base_url(); ?>js/moment.js"></script>
 
-        <!-- JS/CSS for chart.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+
 
         <!-- Jquery UI Style -->
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
