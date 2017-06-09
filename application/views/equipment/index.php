@@ -35,5 +35,3 @@
 </div>
 
 <a class="btn btn-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-
-</div>
