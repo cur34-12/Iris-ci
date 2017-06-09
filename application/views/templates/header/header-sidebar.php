@@ -52,6 +52,12 @@
                     <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
                 </ul>
             </li>
+            <li>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
