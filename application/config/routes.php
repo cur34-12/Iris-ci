@@ -82,18 +82,6 @@ $route['vehicles/update'] = 'vehicles/update';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
-/* Calendar Routes */
-$route[LOGIN_PAGE] = 'profile/login';
-$route['register'] = 'register';
-$route['feeds'] = 'feeds'; 
-$route['home'] = 'profile/login';   
-$route['profile/home'] = 'profile/login'; 
-$route['profile'] = 'profile/home'; 
-$route['admin'] = 'admin/home';
-$route['([a-z0-9]+[-_]+[a-z0-9]+)|([a-z0-9]+\W+)'] = 'page/title/$1';
-$route['page'] = 'page';
-$route['sitemap\.xml'] = "seo";
-
 /* User Management */
 $route['admin/search'] = 'search/users';
 
