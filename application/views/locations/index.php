@@ -1,6 +1,6 @@
 <h2 style="text-transform: uppercase;">Locations</h2>
 <hr />
-<table id="content" class="table table-striped table-hover dataTable">
+<table id="content" class="table table-striped table-hover table-condensed dataTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>ID</th>
