@@ -11,7 +11,7 @@
 
                         $this->load->view('templates/header/header-resources-std', $data);
                         $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container-sidebar');
+                        $this->load->view('templates/header/header-sidebar-container');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('pages/'.$page, $data);
                         $this->load->view('templates/footer/footer-container');
