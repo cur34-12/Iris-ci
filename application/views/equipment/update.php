@@ -4,43 +4,43 @@
 <?php echo form_open('equipment/update', $attributes); ?>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Equipment ID</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<input type="text" id="eq_id" class="form-control" name="eq_id" value="<?php echo $equipment['eq_id']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<input type="text" class="form-control" name="eq_name" id="eq_name" value="<?php echo $equipment['eq_name']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Description</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<textarea name="eq_description" id="eq_description" class="form-control" rows="3"><?php echo $equipment['eq_description']; ?></textarea>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Size</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<input type="text" class="form-control" name="eq_size" id="eq_size" value="<?php echo $equipment['eq_size']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Brand</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<input type="text" class="form-control" name="eq_brand" id="eq_brand" value="<?php echo $equipment['eq_brand']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Supplier</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<input type="text" class="form-control" name="eq_supplier" id="eq_supplier" value="<?php echo $equipment['eq_supplier']; ?>">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Category</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<select id="eq_category" name="eq_category" class="form-control" >
 				<?php foreach($categories as $category): ?>
         				<option value="<?php echo $category['eqcat_name']; ?>"><?php echo $category['eqcat_name']; ?></option>
@@ -55,7 +55,7 @@
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Inspection Frequency</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<select id="eq_inspection_frequency" name="eq_inspection_frequency" class="form-control">
 				<option value="1 Week">1 Week</option>
 				<option value="1 Month">1 Month</option>
@@ -72,7 +72,7 @@
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">In Service</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<select id="eq_in_service" name="eq_in_service" class="form-control" >
 				<option value="Yes">Yes</option>
 				<option value="No">No</option>
@@ -86,7 +86,7 @@
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Date Purchased</label>
-        <div class='input-group date col-sm-10' id='eq_date_purchased'>
+        <div class='input-group date col-sm-7' id='eq_date_purchased'>
             <input type='text' class="form-control" name="eq_date_purchased" value="<?php echo $equipment['eq_date_purchased']; ?>"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
@@ -105,7 +105,7 @@
     </div>
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
-        <div class='input-group date col-sm-10' id='eq_end_life'>
+        <div class='input-group date col-sm-7' id='eq_end_life'>
             <input type='text' class="form-control" name="eq_end_life" value="<?php echo $equipment['eq_end_life']; ?>"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
@@ -124,7 +124,7 @@
     </div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Purchase Type</label>
-		<div class="col-sm-10">
+		<div class="col-sm-7">
 			<select id="eq_purchase_type" name="eq_purchase_type" class="form-control">
 				<option value="Donation">Donation</option>
 				<option value="Unit Funts">Unit Funds</option>
@@ -142,7 +142,7 @@
 	<!--Dan to add the live search functionality to the group select tool here-->
 	<div class="form-group">
 			<label class="control-label col-sm-2">Equipment Group</label>
-			<div class="col-sm-10">
+			<div class="col-sm-7">
 				<select id="eq_group_id" name="eq_group_id" class="form-control">
 							<option value="">N/A</option>
 					<?php foreach($equipmentgroups as $equipmentgroup): ?>
@@ -158,19 +158,19 @@
 		</div>
 		<div class="form-group">
 			<label class="control-label col-sm-2">Asset Number</label>
-			<div class="col-sm-10">
+			<div class="col-sm-7">
 				<input type="text" class="form-control" name="eq_asset_number" id="eq_asset_id" value="<?php echo $equipment['eq_asset_number']; ?>">
 			</div>
 		</div>
 	    <div class="form-group">
 	        <label class="control-label col-sm-2">Model</label>
-	        <div class="col-sm-10">
+	        <div class="col-sm-7">
 	            <input type="text" class="form-control" name="eq_model" value="<?php echo $equipment['eq_model']; ?>">
 	        </div>
 	    </div>
 		<div class="form-group">
 			<label class="control-label col-sm-2">Serial Number</label>
-			<div class="col-sm-10">
+			<div class="col-sm-7">
 				<input type="text" class="form-control" name="eq_serial" id="eq_serial" value="<?php echo $equipment['eq_serial']; ?>">
 			</div>
 		</div>
