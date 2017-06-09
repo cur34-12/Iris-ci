@@ -73,44 +73,5 @@
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav">
-            <?php if ($this->ion_auth->logged_in()): ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url(); ?>profile"><?php echo $this->ion_auth->user()->row()->username; ?></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url(); ?>profile/logout">Logout</a>
-                </li>
-            <?php elseif (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()): ?>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login <span class="glyphicon glyphicon-log-in"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="width:250px;">
-                        <form action="<?php echo base_url(); ?>profile/login" class="form container-fluid" id="form_signin" name="form_signin" role="form" method="post" accept-charset="utf-8">
-                            <div class="input-group margin-bottom-sm">
-                                <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username/Email" required="" autofocus="" />
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
-                                <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password" required="" autofocus="" />
-                            </div>
-                            <input type="submit" name="login_submit" value="Login" class="btn btn-block">
-                            <div class="checkbox"> 
-                                <label>
-                                    <input type="checkbox" name="remember" value="1"  id="remember" />
-                                    Remember Me
-                                </label>
-                            </div>
-                            <a href="<?php echo base_url(); ?>register">Register</a>
-                            <label class="checkbox">
-                                <a href="<?php echo base_url(); ?>profile/forgot_login">Forgot Password</a>
-                            </label>
-                        </form>
-                    </div>
-                </li>
-            <?php endif ?>
-        </ul>
     </div>
 </nav>
