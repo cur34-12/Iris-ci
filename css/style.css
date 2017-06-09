@@ -92,52 +92,72 @@ table#content.logiTable td {
     float:left;
     margin-top:10px;
 }
-.quick-actions, .quick-actions-horizontal {
+.quick-actions,
+.quick-actions-horizontal {
     display: block;
     list-style: none outside none;
     margin: 15px 0;
     text-align: center;
 }
-.quick-actions_homepage .quick-actions li {
+.quick-actions_homepage
+.quick-actions li {
     position:relative;
 }
-.quick-actions_homepage .quick-actions li .label{
+.quick-actions_homepage
+.quick-actions li .label{
     position:absolute; padding:5px; top:-10px; right:-5px;
 }
-.quick-actions li, .quick-actions-horizontal li {
+.quick-actions li,
+.quick-actions-horizontal li {
     float: left;
     line-height: 18px;
     margin: 0 10px 10px 0px;
     padding: 0 10px;
 }
-.quick-actions li a:hover, .quick-actions-horizontal li a:hover, .quick-actions li:hover, .quick-actions-horizontal li:hover {
+.quick-actions li,
+.quick-actions-horizontal li {
+    padding: 0;
+}
+
+.quick-actions li a:hover,
+.quick-actions-horizontal li a:hover,
+.quick-actions li:hover,
+.quick-actions-horizontal li:hover {
     background: #2E363F;
 }
 .quick-actions li {
     min-width:14%;
     min-height:70px;
 }
-.quick-actions_homepage .quick-actions .span3 {
+
+.quick-actions li a {
+    padding:10px 30px;
+}
+
+.quick-actions_homepage
+.quick-actions
+.span3 {
     width:30%;
 }
-.quick-actions li, .quick-actions-horizontal li {
-    padding: 0;
-}
+
 .quick-actions-horizontal li a span {
     padding: 10px 12px 10px 10px;
     display: inline-block;
 }
-.quick-actions li a, .quick-actions-horizontal li a {
+.quick-actions li a,
+.quick-actions-horizontal li a {
     display: block;
     color: #fff; font-size:14px;
     font-weight:lighter;
 }
-.quick-actions li a i[class^="icon-"], .quick-actions li a i[class*=" icon-"] {
+.quick-actions li a i[class^="glyphicon-"],
+.quick-actions li a i[class*=" glyphicon-"] {
     font-size:30px;
     display: block;
     margin: 0 auto 5px;
 }
-.quick-actions-horizontal li a i[class^="glyphicon-"], .quick-actions-horizontal li a i[class*=" glyphicon-"] {
+.quick-actions-horizontal li a i[class^="glyphicon-"],
+.quick-actions-horizontal li a i[class*=" glyphicon-"] {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
@@ -152,7 +172,8 @@ table#content.logiTable td {
     vertical-align: middle;
 }
 
-.quick-actions li:active, .quick-actions-horizontal li:active {
+.quick-actions li:active,
+.quick-actions-horizontal li:active {
     background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#EEEEEE), to(#F4F4F4));
     background-image: -webkit-linear-gradient(top, #EEEEEE 0%, #F4F4F4 100%);
     background-image: -moz-linear-gradient(top, #EEEEEE 0%, #F4F4F4 100%);
@@ -160,7 +181,4 @@ table#content.logiTable td {
     background-image: -o-linear-gradient(top, #EEEEEE 0%, #F4F4F4 100%);
     background-image: linear-gradient(top, #EEEEEE 0%, #F4F4F4 100%);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2) inset, 0 1px 0 rgba(255,255,255,0.4);
-}
-.quick-actions li a {
-    padding:10px 30px;
 }
