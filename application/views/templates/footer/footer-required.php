@@ -41,7 +41,7 @@
 <script>
     $(document).ready(function () {
         var trigger = $('.hamburger'),
-            overlay = $('.overlay'),
+            //overlay = $('.overlay'),
             isClosed = false;
 
         trigger.click(function () {
@@ -51,12 +51,12 @@
         function hamburger_cross() {
 
             if (isClosed == true) {
-                overlay.hide();
+                //overlay.hide();
                 trigger.removeClass('is-open');
                 trigger.addClass('is-closed');
                 isClosed = false;
             } else {
-                overlay.show();
+                //overlay.show();
                 trigger.removeClass('is-closed');
                 trigger.addClass('is-open');
                 isClosed = true;
