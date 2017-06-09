@@ -1,45 +1,52 @@
 <div id="wrapper">
     <div class="overlay"></div>
-
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
+                <a href="<?php echo base_url(); ?>">
                     LOGI
                 </a>
             </li>
             <li>
-                <a href="#">Home</a>
+                <a href="<?php echo base_url(); ?>">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="<?php echo base_url(); ?>about">About</a>
             </li>
             <li>
-                <a href="#">Events</a>
-            </li>
-            <li>
-                <a href="#">Team</a>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipment <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>equipment/create">Create</a></li>
+                    <li class="dropdown-header">Equipment Groups</li>
+                    <li><a href="<?php echo base_url(); ?>equipment-groups">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>equipment-groups/create">Create</a></li>
+                    <li class="dropdown-header">Issues</li>
+                    <li><a href="<?php echo base_url(); ?>issues">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>issues/create">Create</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fleet <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
+                </ul>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="<?php echo base_url(); ?>locations">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>locations/create">Create</a></li>
+                </ul>
             </li>
             <li>
-                <a href="https://twitter.com/maridlcrmn">Follow me</a>
+                <a href="#">Admin</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="<?php echo base_url(); ?>members">Members</a></li>
+                    <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
