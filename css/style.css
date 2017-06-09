@@ -87,7 +87,8 @@ table#content.logiTable td {
 
 .quick-actions_homepage {
     width:100%;
-    text-align:center; position:relative;
+    text-align:center;
+    position:relative;
     float:left;
     margin-top:10px;
 }
@@ -136,7 +137,7 @@ table#content.logiTable td {
     display: block;
     margin: 0 auto 5px;
 }
-.quick-actions-horizontal li a i[class^="icon-"], .quick-actions-horizontal li a i[class*=" icon-"] {
+.quick-actions-horizontal li a i[class^="glyphicon-"], .quick-actions-horizontal li a i[class*=" glyphicon-"] {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
