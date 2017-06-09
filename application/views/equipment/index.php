@@ -1,3 +1,4 @@
+<div class="row col-xs-9 col-md-offset-1">
 <h2 style="text-transform: uppercase;">Equipment</h2>
 <div class="table-responsive">
     <table id="content" class="table table-striped table-hover logiTable">
@@ -35,3 +36,4 @@
 </div>
 
 <a class="btn btn-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+</div>
