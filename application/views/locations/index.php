@@ -1,5 +1,6 @@
 <h2 style="text-transform: uppercase;">Locations</h2>
-<table class="table table-striped table-hover ">
+<hr />
+<table id="content" class="table table-striped table-hover dataTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>ID</th>
@@ -20,5 +21,3 @@
 	</tbody>
 </table>
 <a class="btn btn-outline-primary" role="button" href="locations/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-info" role="button" href="locations/edit">Edit Location</a>-->
-<!--<a class="btn btn-danger" role="button" href="locations/delete">Delete Location</a>-->
