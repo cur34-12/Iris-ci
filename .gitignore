@@ -10,6 +10,8 @@ application/logs/*
 
 composer.lock
 
+/.idea
+
 /vendor/
 /application/vendor/
 /application/vendor/*
@@ -24,3 +26,4 @@ composer.lock
 *.sublime-workspace
 *.sublime-project
 *.swp
+/.editorconfig
