@@ -23,5 +23,5 @@
 </div>
 
 <button type="submit" class="btn btn-primary">Create</button>
-<a class="btn btn-warning" role="button" href="/issues/<?php echo $issue['$iss_id']; ?>">Cancel</a>
+<a class="btn btn-warning" role="button" href="/issues/<?php echo $issue['iss_id']; ?>">Cancel</a>
 </form>
