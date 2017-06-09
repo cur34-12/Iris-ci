@@ -1,7 +1,8 @@
 <?php $bar = new BARCODE(); ?>
+<h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
+<hr />
 <div class="row">
     <div class="col-md-8">
-        <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
         <table class="table table-striped table-hover ">
             <tbody>
             	<tr><td style="font-weight: bold">Name</td><td><?php echo $equipment['eq_name']; ?></td></tr>
