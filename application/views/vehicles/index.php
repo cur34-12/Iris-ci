@@ -1,5 +1,5 @@
 <h2 style="text-transform: uppercase;">Vehicles</h2>
-<table class="table table-striped table-hover ">
+<table class="table table-striped table-hover logiTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Name</th>
@@ -24,11 +24,9 @@
 				<td><?php echo $vehicle['veh_make']; ?></td>
 				<td><?php echo $vehicle['veh_year']; ?></td>
 				<td><?php echo $vehicle['veh_model']; ?></td>
-				<td><a class="btn btn-outline-warning btn-sm" role="button"  href="vehicles/edit/<?php echo $vehicle['veh_id']; ?>">Edit</a></td>
+				<td><a class="btn btn-warning btn-sm" role="button"  href="vehicles/edit/<?php echo $vehicle['veh_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
 </table>
-<a class="btn btn-outline-primary" role="button" href="vehicles/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
-<!--<a class="btn btn-outline-info" role="button" href="vehicles/edit">Edit Vehicle</a>-->
-<!--<a class="btn btn-outline-danger" role="button" href="vehicles/delete">Delete Vehicle</a>-->
+<a class="btn btn-primary" role="button" href="vehicles/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
