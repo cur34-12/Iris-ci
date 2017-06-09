@@ -31,7 +31,6 @@
     </tbody>
 </table>
 
-<h2 style="text-transform: uppercase;">Add Comment</h2>
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('issues/new-comment', $attributes); ?>
@@ -42,7 +41,7 @@
     </div>
 </div>
 <div class="form-group">
-    <label class="control-label col-sm-2">Comment</label>
+    <label class="control-label col-sm-2">New Comment</label>
     <div class="col-sm-10">
         <textarea rows="3" class="form-control" id="isscom_comment" name="iss_comment" placeholder="Eg. Chainsaw now at the stihl shop."></textarea>
     </div>
@@ -54,8 +53,9 @@
         <input id="isscom_user" type="text" name="isscom_user" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
     </div>
 </div>
+<div class="form-group">
+<a class="btn btn-outline-info" role="button" href="<?php echo site_url('issues/comment/'. $issue['iss_id']); ?>">Add Comment</a></div>
 </form>
-<a class="btn btn-outline-info" role="button" href="<?php echo site_url('issues/comment/'. $issue['iss_id']); ?>">Add Comment</a>
 <hr />
 <a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
 <a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
