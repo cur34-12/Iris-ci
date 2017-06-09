@@ -117,7 +117,7 @@
                     $this->load->view('templates/footer/footer-required');
                 }
 
-                public function new_comment($iss_id){
+                public function new_comment($iss_id = null){
 
                     $data['issue'] = $this->Issues_model->get_issues($iss_id);
 
