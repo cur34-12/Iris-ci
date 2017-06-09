@@ -5,9 +5,9 @@
                     $data['title'] = 'Issues'; 
 
                     $data['issues'] = $this->Issues_model->get_issues();
-                        
-                    $this->load->view('templates/header/header-resources-datatable', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('issues/index', $data);
                     $this->load->view('templates/footer/footer-datatable');
@@ -29,8 +29,8 @@
 
                     $data['title'] = $data['issue']['iss_title'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('issues/view', $data);
                     $this->load->view('templates/footer/footer-container');
@@ -48,8 +48,8 @@
                     $this->form_validation->set_rules('iss_title', 'Title', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
-                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('issues/create', $data);
                         $this->load->view('templates/footer/footer-container');
