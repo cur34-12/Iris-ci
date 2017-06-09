@@ -153,7 +153,9 @@ table#content.logiTable td {
 .quick-actions-horizontal li a {
     display: block;
     color: #fff;
-    font-size:14px;
+    font-size:18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight:lighter;
 }
 .quick-actions li a i[class^="glyphicon-"],
