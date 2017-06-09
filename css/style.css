@@ -135,7 +135,7 @@ table#content.logiTable td {
 }
 
 .quick-actions li a {
-    padding:10px 30px;
+    padding:20px 30px;
     text-decoration: none;
 }
 
@@ -154,7 +154,7 @@ table#content.logiTable td {
     display: block;
     color: #fff;
     font-size:18px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight:lighter;
 }
