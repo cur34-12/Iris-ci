@@ -8,13 +8,11 @@
                     $data['title'] = 'Members'; 
 
                     $data['members'] = $this->Unitmembers_model->get_members();
-                        
-                    $this->load->view('templates/header/header-resources-datatable', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('members/index', $data);
-                    $this->load->view('templates/footer/footer-datatable');
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -28,11 +26,10 @@
 
                     $data['title'] = $data['member']['member_name'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('members/view', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -41,11 +38,10 @@
                     $data['title'] = 'Create member';
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
-                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('members/create', $data);
-                        $this->load->view('templates/footer/footer-container');
                         $this->load->view('templates/footer/footer-required');  
                     } else {
                             $this->Unitmembers_model->create_member();
@@ -69,11 +65,10 @@
 
                     $data['title'] = 'Edit member';
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('members/update', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -88,12 +83,11 @@
                     $data['members'] = $this->Unitmembers_model->get_members();
 
                     $data['title'] = 'Logi - Edit';
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('members/edit', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -102,12 +96,11 @@
                     $data['members'] = $this->Unitmembers_model->get_members();
 
                     $data['title'] = 'Logi - Delete';
-                    
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('members/delete', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
         }
