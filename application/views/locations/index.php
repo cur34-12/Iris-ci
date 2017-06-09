@@ -15,7 +15,7 @@
 				<td><a href="<?php echo site_url('/locations/'. $location['loc_id']); ?>"><?php echo $location['loc_id']; ?></a></td>
 				<td><a href="<?php echo site_url('/locations/'. $location['loc_id']); ?>"><?php echo $location['loc_name']; ?></td>
 				<td><?php echo $location['loc_manager']; ?></td>
-				<td><a class="btn btn-outline-warning btn-sm" role="button" href="locations/edit/<?php echo $location['loc_id']; ?>">Edit</a></td>
+				<td><a class="btn btn-outline-warning btn-sm" role="button" href="locations/edit/<?php echo $location['loc_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>

@@ -29,7 +29,7 @@
 					<?php echo '<td><script type="text/javascript">var rp_date; $rp_date = moment(\''.$issue['iss_reported_date'].'\').format(\'DD-MM-YYYY\'); document.write($rp_date);</script></td>'; ?>
 					<?php echo '<td><script type="text/javascript">var res_date; $res_date = moment(\''.$issue['iss_resolution_date'].'\').format(\'DD-MM-YYYY\'); document.write($res_date);</script></td>'; ?>
 					<td><?php echo $issue['iss_status']; ?></td>
-					<td><a class="btn btn-outline-warning btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>">Edit</a></td>
+					<td><a class="btn btn-warning btn-sm" role="button" href="issues/edit/<?php echo $issue['iss_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
