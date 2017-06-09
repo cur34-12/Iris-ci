@@ -8,10 +8,8 @@
 
                     $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container-95');
+                    $this->load->view('templates/header/header-container');
                     $this->load->view('issues/index', $data);
-                    $this->load->view('templates/footer/footer-datatable');
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -33,7 +31,6 @@
                     $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('issues/view', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -52,7 +49,6 @@
                         $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('issues/create', $data);
-                        $this->load->view('templates/footer/footer-container');
                         $this->load->view('templates/footer/footer-required');
                     } else {
                         $this->Issues_model->create_issue();

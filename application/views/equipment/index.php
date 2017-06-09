@@ -1,4 +1,3 @@
-<div class="row col-xs-9 col-md-offset-1">
 <h2 style="text-transform: uppercase;">Equipment</h2>
 <div class="table-responsive">
     <table id="content" class="table table-striped table-hover logiTable">

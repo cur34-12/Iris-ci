@@ -11,7 +11,7 @@
 
                     $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container-95');
+                    $this->load->view('templates/header/header-container');
                     $this->load->view('members/index', $data);
                     $this->load->view('templates/footer/footer-required');
                 }
