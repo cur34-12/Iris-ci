@@ -10,7 +10,7 @@
                         $data['title'] = ucfirst($page); // Capitalize the first letter               
 
                         $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('pages/'.$page, $data);
                         $this->load->view('templates/footer/footer-required');
