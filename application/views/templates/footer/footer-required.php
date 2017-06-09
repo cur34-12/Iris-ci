@@ -1,6 +1,7 @@
 </div>
 <div style="padding-top: 2%;">
 </div>
+</div>
 
 <!-- JQuery / UI -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

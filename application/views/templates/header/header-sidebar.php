@@ -10,19 +10,19 @@
                 </a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
+                <a href="#">About</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+                <a href="#">Events</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
+                <a href="#">Team</a>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">Dropdown heading</li>
                     <li><a href="#">Action</a></li>
@@ -33,13 +33,13 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+                <a href="#">Services</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+                <a href="#">Contact</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+                <a href="https://twitter.com/maridlcrmn">Follow me</a>
             </li>
         </ul>
     </nav>
