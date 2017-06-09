@@ -7,3 +7,4 @@
         <span class="hamb-bottom"></span>
     </button>
     <div class="container-fluid">
+        <div class="row col-xs-9 col-md-offset-1">
