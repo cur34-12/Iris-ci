@@ -5,7 +5,7 @@
 <div class="form-group" style="display: none;">
     <label class="control-label col-sm-2">Related Issue</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" id="isscom_related_iss" name="isscom_related_iss" value="<?php echo $issue['$iss_id']; ?>">
+        <input type="text" class="form-control" id="isscom_related_iss" name="isscom_related_iss" value="<?php echo $issue['iss_id']; ?>">
     </div>
 </div>
 <div class="form-group">
