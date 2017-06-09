@@ -1,4 +1,4 @@
-<h2 style="text-transform: uppercase;">Edit - </h2><h3><?php echo $equipment['eq_name']; ?></h3>
+<h2 style="text-transform: uppercase;">Edit - <?php echo $equipment['eq_name']; ?></h2>
 <hr />
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
