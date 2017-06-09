@@ -1,4 +1,4 @@
-<div class="row" class="col-xs-9">
+<div class="row col-xs-9">
 <h1>Logi - An emergency services resource management system</h1>
 <p>Developed with unit based NSW State Emergency Service users in mind Logi aims to create a multifaceted data management system. The main functions sit around the marrying of users/members to equipment loans and time management. The system is build completely with user experience in mind so that minimal training or guidance is required for use from both a manager and end user perspective.</p>
 <hr />
