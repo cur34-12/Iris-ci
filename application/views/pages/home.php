@@ -8,7 +8,7 @@
         <li class="bg_ls span3"> <a href="grid.html"> <i class="glyphicon glyphicon-tags"></i> Q Store</a> </li>
         <li class="bg_lo span3"> <a href="form-common.html"> <i class="glyphicon glyphicon-user"></i> Members</a> </li>
         <li class="bg_ls span3"> <a href="buttons.html"> <i class="glyphicon glyphicon-cog"></i> Suppliers</a> </li>
-        <li class="bg_lb span3"> <a href="interface.html"> <i class="glyphicon glyphicon-pictures"></i> Locations</a> </li>
+        <li class="bg_lb span3"> <a href="interface.html"> <i class="glyphicon glyphicon-picture"></i> Locations</a> </li>
         <li class="bg_lg span3"> <a href="calendar.html"> <i class="glyphicon glyphicon-stats"></i> Dashboards</a> </li>
         <li class="bg_lr span3"> <a href="error404.html"> <i class="glyphicon glyphicon-duplicate"></i> Reports</a> </li>
     </ul>
