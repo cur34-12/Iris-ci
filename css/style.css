@@ -105,7 +105,10 @@ table#content.logiTable td {
 }
 .quick-actions_homepage
 .quick-actions li .label{
-    position:absolute; padding:5px; top:-10px; right:-5px;
+    position:absolute;
+    padding:5px;
+    top:-10px;
+    right:-5px;
 }
 .quick-actions li,
 .quick-actions-horizontal li {
@@ -128,7 +131,7 @@ table#content.logiTable td {
 }
 .quick-actions li {
     min-width:14%;
-    min-height:70px;
+    min-height:100px;
 }
 
 .quick-actions li a {
@@ -149,7 +152,8 @@ table#content.logiTable td {
 .quick-actions li a,
 .quick-actions-horizontal li a {
     display: block;
-    color: #fff; font-size:14px;
+    color: #fff;
+    font-size:14px;
     font-weight:lighter;
 }
 .quick-actions li a i[class^="glyphicon-"],
