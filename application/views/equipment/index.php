@@ -1,6 +1,7 @@
 <h2 style="text-transform: uppercase;">Equipment</h2>
+<hr />
 <div class="table-responsive">
-    <table id="content" class="table table-striped table-hover logiTable">
+    <table id="content" class="table table-striped table-hover dataTable">
         <thead class="thead-inverse">
             <tr>
                 <th>Name</th>

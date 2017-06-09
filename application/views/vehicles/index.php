@@ -1,5 +1,6 @@
 <h2 style="text-transform: uppercase;">Vehicles</h2>
-<table class="table table-striped table-hover logiTable">
+<hr />
+<table id="content" class="table table-striped table-hover dataTable">
 	<thead class="thead-inverse">
 		<tr>
 			<th>Name</th>
