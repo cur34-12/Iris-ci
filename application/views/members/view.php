@@ -18,7 +18,7 @@
     <tbody>
         <?php foreach($loanitems as $loanitem) : ?>
             <tr>
-                <td><?php echo $loanitem['$loan_something']); ?></td>
+                <td><?php echo $loanitem['$loan_something']; ?></td>
                 <td><?php echo $loanitem['$loan_something']; ?></td>
             </tr>
         <?php endforeach; ?>
