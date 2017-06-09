@@ -1,8 +1,8 @@
-<h2><?php echo $member['$member_name']); ?></h2>
+<h2><?php echo $member['$member_name']; ?></h2>
 <hr />
 <table class="table table-striped table-hover ">
     <tbody>
-    <tr><td style="font-weight: bold">Member ID</td><td><?php echo $member['$member_id']); ?></td></tr>
+    <tr><td style="font-weight: bold">Member ID</td><td><?php echo $member['$member_id']; ?></td></tr>
     <tr><td style="font-weight: bold">Member Name</td><td><?php echo $member['$member_name']; ?></td></tr>
     </tbody>
 </table>
