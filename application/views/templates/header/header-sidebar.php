@@ -5,7 +5,7 @@
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand">
                 <a href="<?php echo base_url(); ?>">
-                    LOGI
+                    <strong>LOGI</strong>
                 </a>
             </li>
             <li>
