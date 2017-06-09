@@ -45,9 +45,6 @@
     <div class="col-sm-10">
         <textarea rows="3" class="form-control" id="isscom_comment" name="iss_comment" placeholder="Eg. Chainsaw now at the stihl shop."></textarea>
     </div>
-    <div class="col-sm-10">
-        <a class="btn btn-outline-info" role="button" href="<?php echo site_url('issues/comment/'. $issue['iss_id']); ?>">Add Comment</a>
-    </div>
 </div>
 <div class="form-group" style="display: none;">
     <label class="control-label col-sm-2">Creator ID</label>
@@ -56,6 +53,7 @@
         <input id="isscom_user" type="text" name="isscom_user" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
     </div>
 </div>
+<button type="submit" class="btn btn-primary">Add</button>
 </form>
 <hr />
 <a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
