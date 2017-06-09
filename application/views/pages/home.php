@@ -1,4 +1,2 @@
-<head>
-	<title>Logi</title>
-</head>
-<p>Welcome to Logi, an SES focused logistics resource planning system</p>
+<div class="row col-xs-9 col-md-offset-1">
+<h1>Welcome to <strong>Logi</strong>, an SES focused logistics resource planning system</h1>
