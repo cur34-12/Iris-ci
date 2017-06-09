@@ -8,12 +8,11 @@
                     $data['locations'] = $this->Locations_model->get_locations();
 
                     $data['title'] = 'Locations';
-                    
-                    $this->load->view('templates/header/header-resources-datatable', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('locations/index', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -28,11 +27,10 @@
 
                     $data['title'] = $data['location']['loc_name'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('locations/view', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -45,11 +43,10 @@
                     $this->form_validation->set_rules('loc_name', 'Location Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
-                        $this->load->view('templates/header/header-nav');
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('locations/create', $data);
-                        $this->load->view('templates/footer/footer-container');
                         $this->load->view('templates/footer/footer-required');  
                     } else {
                         $this->Locations_model->create_location();
@@ -74,11 +71,10 @@
 
                     $data['title'] = 'Edit location';
 
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('locations/update', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -93,12 +89,11 @@
                     $data['locations'] = $this->Locations_model->get_locations();
 
                     $data['title'] = 'Logi - Edit';
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('locations/edit', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
 
@@ -107,12 +102,11 @@
                     $data['locations'] = $this->Locations_model->get_locations();
 
                     $data['title'] = 'Logi - Delete';
-                    
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
+
+                    $this->load->view('templates/header/header-required', $data);
+                    $this->load->view('templates/header/header-sidebar');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('locations/delete', $data);
-                    $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
         }
