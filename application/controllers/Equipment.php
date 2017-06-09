@@ -9,11 +9,10 @@
 
                     $data['title'] = 'Logi - Equipment';
 
-                    $this->load->view('templates/header/header-resources-datatable', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('equipment/index', $data);
-                    $this->load->view('templates/footer/footer-datatable');
                     $this->load->view('templates/footer/footer-container');
                     $this->load->view('templates/footer/footer-required');
                 }
@@ -32,7 +31,7 @@
                     
                     $data['title'] = $data['equipment']['eq_name'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipment/view', $data);
@@ -50,7 +49,7 @@
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
+                        $this->load->view('templates/header/header-required', $data);
                         $this->load->view('templates/header/header-nav');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('equipment/create', $data);
@@ -80,7 +79,7 @@
 
                     $data['title'] = $data['equipment']['eq_name'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipment/update', $data);
@@ -100,8 +99,8 @@
                     $data['equipment'] = $this->Equipment_model->get_equipment();
 
                     $data['title'] = 'Logi - Edit';
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
+
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipment/edit', $data);
@@ -114,8 +113,8 @@
                     $data['equipment'] = $this->Equipment_model->get_equipment();
 
                     $data['title'] = 'Logi - Delete';
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
+
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipment/delete', $data);
@@ -132,7 +131,7 @@
 
                     $data['title'] = 'Equipment Groups';
 
-                    $this->load->view('templates/header/header-resources-datatable', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container-95');
                     $this->load->view('equipmentgroups/index', $data);
@@ -152,7 +151,7 @@
 
                     $data['title'] = $data['equipmentgroup']['eqgroup_name'];
 
-                    $this->load->view('templates/header/header-resources-std', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipmentgroups/view', $data);
@@ -170,7 +169,7 @@
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-resources-std', $data);
+                        $this->load->view('templates/header/header-required', $data);
                         $this->load->view('templates/header/header-nav');
                         $this->load->view('templates/header/header-container');
                         $this->load->view('equipmentgroups/create', $data);
@@ -200,7 +199,7 @@
 
                     $data['title'] = 'Edit Equipment Group';
 
-                    $this->load->view('templates/header/header-resources-std', $data);
+                    $this->load->view('templates/header/header-required', $data);
                     $this->load->view('templates/header/header-nav');
                     $this->load->view('templates/header/header-container');
                     $this->load->view('equipmentgroups/update', $data);
@@ -214,34 +213,6 @@
                     redirect('equipment-groups');
                 }
 
-
-                public function eqgroups_select_edit(){ 
-
-                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
-                    
-                    $data['title'] = 'Logi - Edit';
-
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
-                    $this->load->view('templates/header/header-container');
-                    $this->load->view('equipmentgroups/edit', $data);
-                    $this->load->view('templates/footer/footer-container');
-                    $this->load->view('templates/footer/footer-required');
-                }
-                
-                public function eqgroups_select_delete(){ 
-
-                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
-
-                    $data['title'] = 'Logi - Delete';
-                        
-                    $this->load->view('templates/header/header-resources-std', $data);
-                    $this->load->view('templates/header/header-nav');
-                    $this->load->view('templates/header/header-container');
-                    $this->load->view('equipmentgroups/delete', $data);
-                    $this->load->view('templates/footer/footer-container');
-                    $this->load->view('templates/footer/footer-required');
-                }
                 public function delete_equipment_location($eq_id,$loc_id){ 
                     $this->Equipment_model->delete_equipment_location($eq_id,$loc_id);
                     redirect('equipment/view/' . $eq_id);
