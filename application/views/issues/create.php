@@ -76,7 +76,7 @@
 		<label class="control-label col-sm-2">Creator ID</label>
 		<div class="col-sm-10">
 			<!-- Created By User -->
-			<input id="iss_creator_id" type="text" name="iss_creator_id" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
+			<input id="iss_creator_id" type="text" name="iss_creator_id" value="">
 		</div>
 	</div>
 	<button type="submit" class="btn btn-primary">Create</button>
