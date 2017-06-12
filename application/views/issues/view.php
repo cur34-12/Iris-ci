@@ -50,7 +50,7 @@
     <label class="control-label col-sm-2">Creator ID</label>
     <div class="col-sm-10">
         <!-- Created By User -->
-        <input id="isscom_user" type="text" name="isscom_user" value="<?php echo $this->ion_auth->user()->row()->username; ?>">
+        <input id="isscom_user" type="text" name="isscom_user" value="">
     </div>
 </div>
 <button type="submit" class="btn btn-primary">Add</button>
