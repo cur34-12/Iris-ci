@@ -56,5 +56,5 @@
 <button type="submit" class="btn btn-primary">Add</button>
 </form>
 <hr />
-<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
-<a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
+<a class="btn btn-primary" role="button" href="<?php echo site_url('/issues/create'); ?>">Create Issue</a>
+<a class="btn btn-warning" role="button" href="<?php echo site_url('/issues/edit/'. $issue['iss_id']); ?>">Edit Issue</a>
