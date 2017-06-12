@@ -204,7 +204,8 @@
                 }
 
                 public function delete_equipment_location($eq_id,$loc_id){ 
-                    $this->Equipment_model->delete_equipment_location($eq_id,$loc_id);
+                    $result = $this->Equipment_model->delete_equipment_location($eq_id,$loc_id);
+                    log_message('error', $result);
                     redirect('equipment/view/' . $eq_id);
                 }
         }
