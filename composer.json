@@ -9,7 +9,8 @@
         "nnnick/chartjs": "^2.6",
         "components/bootstrap": "^3.3",
         "datatables/datatables": "^1.10",
-        "fullcalendar/fullcalendar": "^3.4"
+        "fullcalendar/fullcalendar": "^3.4",
+        "components/font-awesome": "^4.7"
     },
     "authors": [
         {
