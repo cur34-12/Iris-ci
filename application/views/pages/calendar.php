@@ -23,7 +23,7 @@
                         start:'<?php echo $event['event_start']; ?>',
                         end:'<?php echo $event['event_end']; ?>',
                         url:'<?php echo site_url('/issues/'. $event['event_issueid']); ?>',
-                        allDay: '<?php echo $event['event_allday']; ?>''
+                        allDay: '<?php echo $event['event_allday']; ?>'
                     }
                 <?php endforeach; ?>
             ]
