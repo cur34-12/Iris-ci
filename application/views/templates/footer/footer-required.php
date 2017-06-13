@@ -24,7 +24,7 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/af-2.2.0/cr-1.3.3/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
 
 <!-- Init of Moment-->
-<script type="text/javascript">
+<script>
     moment().format();
 </script>
 
