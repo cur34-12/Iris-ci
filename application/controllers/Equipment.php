@@ -207,8 +207,9 @@
                     $result = $this->Equipment_model->delete_equipment_location($eq_id,$loc_id);
                     redirect('equipment/view/' . $eq_id);
                 }
-                public function update_equipment_location($eq_id,$loc_id,$qty){ 
-                    $result = $this->Equipment_model->update_equipment_location($eq_id,$loc_id,$qty);
-                    redirect('equipment/view/' . $eq_id);
+                public function update_equipment_location(){ 
+                    //$result = $this->Equipment_model->update_equipment_location($eq_id,$loc_id,$qty);
+                    $result = $this->Equipment_model->update_equipment_location();
+                    redirect('equipment/view/' . $this->input->post('eqloc_eq_id'));
                 }
         }

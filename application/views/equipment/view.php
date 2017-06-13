@@ -54,15 +54,23 @@ function hideEditLocation(locationID) {
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
                         <td style="text-align: right;vertical-align: middle;">
-                            <a class="btn btn-basic btn-sm" role="button" href="" onclick="showEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="#" onclick="showEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
                             <a class="btn btn-basic btn-sm" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
+                    <!-- edit location div -->
                     <tr id="loc_edit_<?php echo $location['loc_id']; ?>" class="loc_edit" style="display:none;">
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
-                        <td style="vertical-align: middle;"><form><input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>" style="width:50px;display:inline;"><button type="submit" class="btn btn-primary btn-sm">Save</button></form></td>
+                        <td style="vertical-align: middle;">
+                            <form method="post" accept-charset="utf-8" action="/equipment/updateLocation">
+                                <input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>" style="width:50px;display:inline;" />
+                                <input type="hidden" name="eqloc_loc_id" value="<?php echo $location['loc_id']; ?>" />
+                                <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?> /">
+                                <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                            </form>
+                        </td>
                         <td style="text-align: right;vertical-align: middle;">
-                            <a class="btn btn-basic btn-sm" role="button" href="" onclick="hideEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="#" onclick="hideEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
                             <a class="btn btn-basic btn-sm disabled" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>

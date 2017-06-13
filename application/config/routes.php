@@ -35,6 +35,8 @@ $route['equipment/update'] = 'equipment/update';
 $route['equipment/(:any)'] = 'equipment/view/$1';
 $route['equipment'] = 'equipment/index';
 $route['equipment/deleteLocation/(:any)/(:any)'] = 'equipment/delete_equipment_location/$1/$2';
+$route['equipment/updateLocation'] = 'equipment/update_equipment_location';
+
 
 $route['equipment-groups/delete'] = 'equipment/eqgroups_select_delete';
 $route['equipment-groups/edit'] = 'equipment/eqgroups_select_edit';
