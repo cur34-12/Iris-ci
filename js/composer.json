@@ -1,0 +1,12 @@
+{
+  "name": "stratis/logi",
+  "description": "Logi, emergency service resource managment system",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ross Wallace",
+      "email": "ross.wallace@member.ses.nsw.gov.au"
+    }
+  ]
+}

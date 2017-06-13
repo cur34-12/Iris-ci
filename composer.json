@@ -1,0 +1,19 @@
+{
+    "name": "rwallace/logi",
+    "description": "Emergency service resource/asset management system",
+    "type": "project",
+    "require": {
+        "moment/moment": "^2.18",
+        "components/jquery": "^3.2",
+        "components/jqueryui": "^1.12",
+        "nnnick/chartjs": "^2.6",
+        "components/bootstrap": "^3.3",
+        "datatables/datatables": "^1.10"
+    },
+    "authors": [
+        {
+            "name": "paralittic",
+            "email": "ross.wallace@stratis-media.com"
+        }
+    ]
+}
