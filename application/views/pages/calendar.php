@@ -34,7 +34,7 @@
                 {
                     id: 999,
                     title: 'Repeating Event',
-                    start: '2017-05-16T16:00:00'
+                    start: '2017-06-16T16:00:00'
                 },
                 {
                     title: 'Conference',
