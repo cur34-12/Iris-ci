@@ -92,7 +92,7 @@ $route['admin/search'] = 'search/users';
 
 /* Catch All Routes */
 $route['search'] = "search/index";
-
+$route[LOGIN_PAGE] = 'examples/login';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
