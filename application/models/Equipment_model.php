@@ -188,4 +188,12 @@
 			}
 			return $this->db->delete('equipment_location', array('eqloc_eq_id' => $eq_id,'eqloc_loc_id' => $loc_id));
 		}
+		public function update_equipment_location($eq_id = FALSE,$loc_id = FALSE){
+            if($loc_id === FALSE or $eq_id === FALSE){			
+            	return null;
+			}
+			$this.db.where('eqloc_loc_id',$loc_id);
+			$this.db.where('eqloc_eq_id',$eq_id);
+			return $this->db->update('equipment_location', array('eqloc_qty' => $qty));
+		}		
 	}
