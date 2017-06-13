@@ -28,6 +28,5 @@ composer.lock
 *.swp
 /.editorconfig
 components/
-/composer.phar
 composer.phar
-/components/
+
