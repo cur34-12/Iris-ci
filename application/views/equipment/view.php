@@ -36,12 +36,20 @@
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
-                    <tr>
+                    <tr id="loc_view_<?php echo $location['loc_id']; ?>" class="loc_view">
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
                         <td style="text-align: right;vertical-align: middle;">
                             <a class="btn btn-basic btn-sm" role="button" href="/?/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
                             <a class="btn btn-basic btn-sm" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
+                        </td>
+                    </tr>
+                    <tr id="loc_edit_<?php echo $location['loc_id']; ?>" class="loc_edit" zzzstyle="display:none;">
+                        <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
+                        <td style="vertical-align: middle;"><form><input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>"><button type="submit" class="btn btn-primary btn-sm">Save</button></form></td>
+                        <td style="text-align: right;vertical-align: middle;">
+                            <a class="btn btn-basic btn-sm" role="button" href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
+                            <a class="btn btn-basic btn-sm disabled" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -59,7 +67,6 @@
             </thead>
             <tbody>
             <?php foreach($issues as $issue) : ?>
-                <tr>
                     <td style="vertical-align: middle;"><a href="/issues/<?php echo $issue['iss_id']; ?>"><?php echo $issue['iss_title']; ?></a></td>
                     <td style="vertical-align: middle;"><?php echo $issue['iss_reported_date']; ?></td>
                     <td style="vertical-align: middle;"><?php echo $issue['iss_status']; ?></td>
