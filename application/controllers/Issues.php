@@ -135,5 +135,23 @@
                     $this->Issues_model->delete_comment($isscom_id);
                     redirect('issues');
                 }
+
+                public function create_event(){
+
+                    $data['title'] = 'Create Event';
+
+                    $this->form_validation->set_rules('event_title', 'Title', 'required');
+
+                    if($this->form_validation->run() === FALSE){
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
+                        $this->load->view('templates/header/header-container');
+                        $this->load->view('issues/event', $data);
+                        $this->load->view('templates/footer/footer-required');
+                    } else {
+                        $this->Events_model->create_event();
+                        redirect('calendar');
+                    }
+            }
         }
 ?>
