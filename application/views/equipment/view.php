@@ -65,7 +65,7 @@ function hideEditLocation(locationID) {
                             <?php echo form_open('equipment/location/update'); ?>
                                 <input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>" style="width:50px;display:inline;" />
                                 <input type="hidden" name="eqloc_loc_id" value="<?php echo $location['loc_id']; ?>" />
-                                <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?> /">
+                                <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?>" />
                                 <button type="submit" class="btn btn-primary btn-sm">Save</button>
                             </form>
                         </td>
