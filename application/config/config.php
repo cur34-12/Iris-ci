@@ -524,4 +524,4 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 /*Loading the barcode class*/
-require_once(FCPATH.'barcode/barcode.class.php');
+/*require_once(FCPATH.'barcode/barcode.class.php');*/
