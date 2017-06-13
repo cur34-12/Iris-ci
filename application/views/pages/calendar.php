@@ -10,7 +10,7 @@
             header: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'month,agendaWeek,agendaDay,listWeek,listMonth'
+                right: 'month,agendaWeek,agendaDay,listMonth'
 
             },
             navLinks: true, // can click day/week names to navigate views
