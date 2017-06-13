@@ -15,6 +15,9 @@
                 <a href="<?php echo base_url(); ?>about">About</a>
             </li>
             <li>
+                <a href="<?php echo base_url(); ?>calendar">Calendar</a>
+            </li>
+            <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipment <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li class="dropdown-header">Equipment</li>
