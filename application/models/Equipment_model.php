@@ -183,7 +183,6 @@
         }
 
 		public function delete_equipment_location($eq_id = FALSE,$loc_id = FALSE){
-*
             if($loc_id === FALSE or $eq_id === FALSE){			
             	return null;
 			}
