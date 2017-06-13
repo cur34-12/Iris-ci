@@ -19,7 +19,7 @@
             events: [
                 {
                     title: 'All Day Event',
-                    start: '2017-05-01'
+                    start: '2017-05-01',
                     url: '<?php echo base_url(); ?>issues/1'
                 },
                 {
