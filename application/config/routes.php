@@ -82,6 +82,9 @@ $route['vehicles/update'] = 'vehicles/update';
 $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
+/* Calendar */
+$route['calendar'] = 'pages/calendar';
+
 /* User Management */
 $route['admin/search'] = 'search/users';
 
