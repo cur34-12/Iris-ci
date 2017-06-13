@@ -9,7 +9,7 @@
 
         public function get_events($event_category = FALSE){
             if($event_category === FALSE or is_null($event_category)){
-                $this->db->order_by('$event_category', 'ASC');
+                $this->db->order_by('$event_id', 'ASC');
                 $query = $this->db->get('events');
                 return $query->result_array();
             }
