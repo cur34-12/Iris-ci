@@ -8,14 +8,14 @@
     <title><?php echo isset($title) ? $title : 'Logi' ; ?></title>
 
     <!--CSS for Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" /
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/bootstrap/css/bootstrap-theme.css" />
 
     <!-- Jquery UI Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/jqueryui/themes/base/jquery-ui.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/font-awesome/css/font-awesome.css">
 
     <!-- DataTables Styles -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/bs/dt-1.10.15/af-2.2.0/cr-1.3.3/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css"/>
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jquery/jquery.js"></script>
 
     <!-- Sidebar CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/sidebar-style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sidebar-style.css"/>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
