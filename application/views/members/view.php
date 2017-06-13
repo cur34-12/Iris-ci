@@ -28,5 +28,3 @@
 
 <a class="btn btn-primary" role="button" href="<?php echo site_url('/members/create'); ?>">Create Member</a>
 <a class="btn btn-warning" role="button" href="<?php echo site_url('/members/edit/'. $member['member_id']); ?>">Edit Member</a>
-
-
