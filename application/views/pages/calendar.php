@@ -10,12 +10,12 @@
             header: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'month,agendaWeek,agendaDay,listWeek'
+                right: 'month,agendaWeek,agendaDay,listWeek,listMonth'
 
             },
             navLinks: true, // can click day/week names to navigate views
-            editable: true,
-            eventLimit: true, // allow "more" link when too many events
+            editable: false,
+            eventLimit: false, // allow "more" link when too many events
             events: [
                 {
                     title: 'All Day Event',
