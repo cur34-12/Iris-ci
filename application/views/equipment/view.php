@@ -1,12 +1,16 @@
 <?php $bar = new BARCODE(); ?>
 <script>
-function showEditLocation(divName) {
-    var locDiv = document.getElementById(divName);
-    locDiv.style.display = ''
+function showEditLocation(locationID) {
+    var editDiv = document.getElementById('loc_edit_'+locationID);
+    var viewDiv = document.getElementById('loc_view_'+locationID);
+    editDiv.style.display = '';
+    viewDiv.style.display = 'none';
 }
-function hideEditLocation(divName) {
-    var locDiv = document.getElementById(divName);
-    locDiv.style.display = 'none'
+function hideEditLocation(locationID) {
+    var editDiv = document.getElementById('loc_edit_'+locationID);
+    var viewDiv = document.getElementById('loc_view_'+locationID);
+    editDiv.style.display = 'none';
+    viewDiv.style.display = '';
 }
 </script>
 <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
@@ -50,7 +54,7 @@ function hideEditLocation(divName) {
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><?php echo $location['eqloc_quantity']; ?></td>
                         <td style="text-align: right;vertical-align: middle;">
-                            <a class="btn btn-basic btn-sm" role="button" href="" onclick="showEditLocation('loc_view_<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="" onclick="showEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
                             <a class="btn btn-basic btn-sm" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
@@ -58,7 +62,7 @@ function hideEditLocation(divName) {
                         <td style="vertical-align: middle;"><a href="/locations/<?php echo $location['loc_id']; ?>"><?php echo $location['loc_name']; ?></a></td>
                         <td style="vertical-align: middle;"><form><input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>" style="width:50px;display:inline;"><button type="submit" class="btn btn-primary btn-sm">Save</button></form></td>
                         <td style="text-align: right;vertical-align: middle;">
-                            <a class="btn btn-basic btn-sm" role="button" href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
+                            <a class="btn btn-basic btn-sm" role="button" href="" onclick="hideEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
                             <a class="btn btn-basic btn-sm disabled" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
