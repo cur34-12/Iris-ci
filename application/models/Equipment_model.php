@@ -191,6 +191,6 @@
 		public function update_equipment_location(){
 			$this->db->where('eqloc_loc_id',$this->input->post('eqloc_loc_id'));
 			$this->db->where('eqloc_eq_id',$this->input->post('eqloc_eq_id'));
-			return $this->db->update('equipment_location', array('eqloc_qty' => $this->input->post('eqloc_quantity')));
+			return $this->db->update('equipment_location', array('eqloc_quantity' => $this->input->post('eqloc_quantity')));
 		}		
 	}
