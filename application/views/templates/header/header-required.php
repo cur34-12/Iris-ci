@@ -24,6 +24,9 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css"/>
 
+    <!-- JQuery / UI -->
+    <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jquery/jquery.js"></script>
+
     <!-- Sidebar CSS -->
     <link rel="stylesheet" type="text/css" href="/css/sidebar-style.css"/>
 
