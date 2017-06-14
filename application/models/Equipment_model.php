@@ -34,6 +34,7 @@
 		
 		public function create_equipment(){
 			$data = array(
+				'eq_id' => $this->input->post('eq_id'),
 				'eq_name' => $this->input->post('eq_name'),
 				'eq_description' => $this->input->post('eq_description'),
 				'eq_consumable' => $this->input->post('eq_consumable'),

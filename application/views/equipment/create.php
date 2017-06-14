@@ -4,6 +4,12 @@
 <?php echo form_open('equipment/create', $attributes); ?>
 <!--This form needs to be changed to be relevant for equipment, once its done it can be copied to the update page and modifed to pull in current data-->
 	<div class="form-group">
+		<label class="control-label col-sm-2">Barcode Number</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="eq_name" placeholder="Leave blank if not yet barcoded">
+		</div>
+	</div>
+	<div class="form-group">
 		<label class="control-label col-sm-2">Name</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="eq_name" placeholder="Eg. Axe">
