@@ -101,7 +101,7 @@ function hideAddLocation() {
                     </td>
                     <td style="vertical-align: middle;">   
                         <input type="text" class="form-control" name="eqloc_quantity" style="width:50px;display:inline;" />
-                            <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?> /">
+                            <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?>" />
                         </form>
                     </td>
                     <td style="text-align: right;vertical-align: middle;">
