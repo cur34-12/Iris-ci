@@ -54,7 +54,7 @@ function hideAddLocation() {
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
-                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="#" onclick="hideAddLocation()"?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="#" onclick="showAddLocation()"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
