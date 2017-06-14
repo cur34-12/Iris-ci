@@ -12,7 +12,6 @@
       <th>Size</th>
       <th>ID</th>
       <th>Qty</th>
-      <th>Barcode</th>
     </thead>
     <tbody>
       <?php foreach($equipment as $equipments) : ?>
@@ -22,7 +21,6 @@
               <td><?php echo $equipments['eq_size']; ?></td>
               <td><?php echo $equipments['eq_id']; ?></td>
               <td><?php echo $equipments['eqloc_quantity']; ?></td>
-              <td><img src='<?php echo $bar->BarCode_link("Code39", $equipments['eq_id'], 50, 1, "#ffffff", "#000000"); ?>' /></td>
           </tr>
       <?php endforeach; ?>
     </tbody>
