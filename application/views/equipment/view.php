@@ -15,10 +15,12 @@ function hideEditLocation(locationID) {
 function showAddLocation() {
     var addTable = document.getElementById('loc_add');
     addTable.style.display = '';
+    document.getElementById('addLocationButton').style.display = 'none';
 }
 function hideAddLocation() {
     var addTable = document.getElementById('loc_add');
     addTable.style.display = 'none';
+    document.getElementById('addLocationButton').style.display = '';
 }
 </script>
 <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
@@ -54,7 +56,7 @@ function hideAddLocation() {
             <thead class="thead-inverse">
                 <th>Name</th>
                 <th>Qty</th>
-                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="#" onclick="showAddLocation()"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" id='addLocationButton' role="button" href="#" onclick="showAddLocation()"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
             </thead>
             <tbody>
                 <?php foreach($locations as $location) : ?>
@@ -86,10 +88,10 @@ function hideAddLocation() {
             </tbody>
         </table>
     <?php echo form_open('equipment/location/add'); ?>
-        <table class="table table-striped table-hover table-sm" id="loc_add" style="display:none;">
+        <table class="table table-striped table-hover table-sm" id="loc_add"  class="loc_add" style="display:none;">
             <tbody>
                 <!-- add location row -->
-                <tr id="loc_add" class="loc_add" style="display:none;">
+                <tr>
                     <td style="vertical-align: middle;">
                         <select id="eqloc_loc_id" name="eqloc_loc_id" class="form-control">
                             <?php foreach($equipmentlocations as $equipmentlocation): ?>
@@ -98,7 +100,7 @@ function hideAddLocation() {
                         </select>   
                     </td>
                     <td style="vertical-align: middle;">   
-                        <input type="text" class="form-control" name="eqloc_quantity" value="<?php echo $location['eqloc_quantity']; ?>" style="width:50px;display:inline;" />
+                        <input type="text" class="form-control" name="eqloc_quantity" style="width:50px;display:inline;" />
                             <input type="hidden" name="eqloc_eq_id" value="<?php echo $equipment['eq_id']; ?> /">
                         </form>
                     </td>
