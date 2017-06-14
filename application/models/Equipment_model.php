@@ -192,5 +192,13 @@
 			$this->db->where('eqloc_loc_id',$this->input->post('eqloc_loc_id'));
 			$this->db->where('eqloc_eq_id',$this->input->post('eqloc_eq_id'));
 			return $this->db->update('equipment_location', array('eqloc_quantity' => $this->input->post('eqloc_quantity')));
-		}		
+		}
+		public function insert_equipment_location(){
+			$data = array(
+				'eqloc_loc_id' => $this->input->post('eqloc_loc_id'),
+				'eqloc_eq_id' => $this->input->post('eqloc_eq_id'),
+				'eqloc_quantity' => $this->input->post('eqloc_quantity')
+			);
+			return $this->db->insert('equipment_location', $data);
+		}				
 	}

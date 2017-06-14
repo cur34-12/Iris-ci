@@ -213,4 +213,8 @@
                     $result = $this->Equipment_model->update_equipment_location();
                     redirect('equipment/view/' . $this->input->post('eqloc_eq_id'));
                 }
+                public function insert_equipment_location(){ 
+                    $result = $this->Equipment_model->insert_equipment_location();
+                    redirect('equipment/view/' . $this->input->post('eqloc_eq_id'));
+                }
         }
