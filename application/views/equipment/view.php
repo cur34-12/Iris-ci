@@ -81,7 +81,7 @@ function hideAddLocation() {
                         </td>
                         <td style="text-align: right;vertical-align: middle;">
                             <a class="btn btn-basic btn-sm" role="button" href="#" onclick="hideEditLocation('<?php echo $location['loc_id']; ?>')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cancel</a>
-                            <a class="btn btn-basic btn-sm disabled" role="button" href="/equipment/deleteLocation/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
+                            <a class="btn btn-basic btn-sm disabled" role="button" href="/equipment/location/delete/<?php echo $equipment['eq_id']; ?>/<?php echo $location['eqloc_loc_id']; ?>"><i class="fa fa-times-rectangle-o" aria-hidden="true"></i> Remove</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
