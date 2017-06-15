@@ -19,8 +19,8 @@ class Expenses_model extends CI_Model{
     public function create_supplier(){
         $data = array(
             'expense_name' => $this->input->post('expense_name'),
-            'expense_description' => $this->input->post('supplier_description'),
-            'expense_date' => $this->input->post('epense_date'),
+            'expense_description' => $this->input->post('expense_description'),
+            'expense_date' => $this->input->post('expense_date'),
             'expense_created_date' => $this->input->post('expense_created_date'),
             'expense_created_by' => $this->input->post('expense_created_by'),
             'expense_last_updated' => $this->input->post('expense_created_by'),
@@ -40,7 +40,7 @@ class Expenses_model extends CI_Model{
         $data = array(
             'expense_id' => $this->input->post('expense_id'),
             'expense_name' => $this->input->post('expense_name'),
-            'expense_description' => $this->input->post('supplier_description'),
+            'expense_description' => $this->input->post('expense_description'),
             'expense_date' => $this->input->post('expense_date'),
             'expense_last_updated' => $this->input->post('expense_created_by'),
             'expense_last_updated_by' => $this->input->post('expense_created_by')
