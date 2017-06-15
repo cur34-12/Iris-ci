@@ -5,6 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /* $route['url/url'] = 'controller/controller'; */
 
+/* Expenses */
+$route['expenses/create'] = 'expenses/create';
+$route['expenses/update'] = 'expenses/update';
+$route['expenses/(:any)'] = 'expenses/view/$1';
+$route['expenses'] = 'expenses/index';
+
 /* Issues Routes */
 $route['issues/delete'] = 'issues/select_delete';
 $route['issues/edit'] = 'issues/select_edit';
