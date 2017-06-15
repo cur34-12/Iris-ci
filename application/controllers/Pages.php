@@ -7,7 +7,7 @@
             public function calendar()
             {
                 //Authentication wrapper for making sure user is a certain role
-                if( $this->require_role('admin') )
+                if( $this->require_role('user') )
                 {
                     $data['events'] = $this->Events_model->get_events();
 
