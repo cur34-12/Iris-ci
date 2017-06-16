@@ -67,3 +67,6 @@
         </div>
     </div>
 </div>
+<div class="col-sm-6">
+    <iframe src="https://trello.com/b/ktp7EBju.html" frameBorder="0" width="100%" height="600"></iframe>
+</div>
