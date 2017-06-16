@@ -19,7 +19,7 @@
 
             public function dodash()
             {
-                $data['duties'] = $this->Pages_model->get_duties();
+                $data['duties'] = $this->Duties_model->get_duties();
 
                 $data['title'] = 'Duty Officer - Dash';
 
