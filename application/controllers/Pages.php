@@ -19,6 +19,9 @@
 
             public function dodash()
             {
+                $this->load->library('rssparser');
+                $data['rss'] = $this->rssparser->set_feed_url('http://rss.weatherzone.com.au/?u=12994-1285&lt=aploc&lc=624&obs=1&fc=1&warn=1')->set_cache_life(30)->getFeed(2);
+
                 $data['duties'] = $this->Duties_model->get_duties();
 
                 $data['title'] = 'Duty Officer - Dash';

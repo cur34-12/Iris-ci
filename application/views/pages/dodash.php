@@ -30,5 +30,15 @@
         </table>
         <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duties_lastupdated']; ?>, <?php echo $duties['duties_lastupdatedby']; ?></span>
     </div>
-    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-8">
+        <h3>Weather</h3>
+        <table class="table table-striped table-hover table-sm">
+            <?php foreach ($rss as $item) : ?>
+            <tr>
+                <td><?php echo $item['title']; ?></td>
+                <td><?php echo $item['description']; ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    </div>
 </div>
