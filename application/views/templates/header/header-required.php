@@ -26,6 +26,10 @@
     <!-- JQuery / UI -->
     <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jquery/jquery.js"></script>
 
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/kde8jqk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <!-- Sidebar CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sidebar-style.css"/>
 
