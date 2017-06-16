@@ -9,6 +9,8 @@ h1 {
 }
 
 h3 {
+    letter-spacing: 1px !important;
+    text-transform: uppercase;
     font-family: "proxima-nova",sans-serif;
 }
 
