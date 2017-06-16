@@ -49,10 +49,9 @@
         </table>
         <div class="row">
             <div class="col-sm-6">
-                <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
+                <h4 style="text-transform: uppercase; letter-spacing: 1px;">Current</h4>
                 <table class="table table-striped table-sm">
                         <tr>
-                            <td><?php echo $rss_weather[0]['title']; ?></td>
                             <td><?php echo $rss_weather[0]['description']; ?></td>
                         </tr>
                 </table>
@@ -61,7 +60,6 @@
                 <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
                 <table class="table table-striped table-sm">
                         <tr>
-                            <td><?php echo $rss_weather[1]['title']; ?></td>
                             <td><?php echo $rss_weather[1]['description']; ?></td>
                         </tr>
                 </table>
