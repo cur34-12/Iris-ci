@@ -1,6 +1,11 @@
 h2 {
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: "proxima-nova",sans-serif;
+}
+
+h1 {
+    font-family: "proxima-nova",sans-serif;
 }
 
 .page-title{
