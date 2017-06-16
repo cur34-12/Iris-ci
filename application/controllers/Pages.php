@@ -17,6 +17,19 @@
                 $this->load->view('templates/footer/footer-required');
             }
 
+            public function dodash()
+            {
+                $data['duties'] = $this->Pages_model->get_duties();
+
+                $data['title'] = 'Duty Officer - Dash';
+
+                $this->load->view('templates/header/header-required', $data);
+                $this->load->view('templates/header/header-sidebar');
+                $this->load->view('templates/header/header-container');
+                $this->load->view('pages/dodash', $data);
+                $this->load->view('templates/footer/footer-required');
+            }
+
             public function view($page = 'home')
             {
                 if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))

@@ -94,6 +94,7 @@ $route['vehicles'] = 'vehicles/index';
 
 /* Calendar */
 $route['calendar'] = 'pages/calendar';
+$route['operations/duty-officer'] = 'pages/dodash';
 
 /* User Management */
 $route['admin/search'] = 'search/users';
