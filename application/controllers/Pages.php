@@ -20,8 +20,8 @@
             public function dodash()
             {
                 $this->load->library('rssparser');
-                $data['rss'] = $this->rssparser->set_feed_url('http://rss.weatherzone.com.au/?u=12994-1285&lt=aploc&lc=624&obs=1&fc=1&warn=1')->set_cache_life(30)->getFeed(2);
-
+                $data['rss_weather'] = $this->rssparser->set_feed_url('http://rss.weatherzone.com.au/?u=12994-1285&lt=aploc&lc=624&obs=1&fc=1&warn=1')->set_cache_life(30)->getFeed(2);
+                $data['rss_warnings'] = $this->rssparser->set_feed_url('http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml')->set_cache_life(30)->getFeed(10);
                 $data['duties'] = $this->Duties_model->get_duties();
 
                 $data['title'] = 'Duty Officer - Dash';

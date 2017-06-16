@@ -32,11 +32,21 @@
     </div>
     <div class="col-md-8">
         <h3>Weather</h3>
+        <h4>Warnings</h4>
         <table class="table table-striped table-hover table-sm">
-            <?php foreach ($rss as $item) : ?>
+            <?php foreach ($rss_warnings as $warning_item) : ?>
+                <tr>
+                    <td><?php echo $warning_item['title']; ?></td>
+                    <td><?php echo $warning_item['link']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <h4>Forcast</h4>
+        <table class="table table-striped table-hover table-sm">
+            <?php foreach ($rss_weather as $weather_item) : ?>
             <tr>
-                <td><?php echo $item['title']; ?></td>
-                <td><?php echo $item['description']; ?></td>
+                <td><?php echo $weather_item['title']; ?></td>
+                <td><?php echo $weather_item['description']; ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
