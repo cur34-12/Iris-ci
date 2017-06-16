@@ -48,37 +48,28 @@
     </table>
     <div class="col-md-8">
         <div class="row">
-            <div class="col-xs-8 col-sm-6">
+            <div class="col-sm-6">
                 <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
                 <table class="table table-striped table-sm">
                     <?php foreach ($rss_weather as $weather_item) : ?>
                         <tr>
-                            <td><?php echo $weather_item['title'][0]; ?></td>
-                            <td><?php echo $weather_item['description'][0]; ?></td>
+                            <td><?php echo $weather_item[0]['title']; ?></td>
+                            <td><?php echo $weather_item[0]['description']; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>
             </div>
-            <div class="col-xs-4 col-sm-6">
+            <div class="col-sm-6">
                 <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
                 <table class="table table-striped table-sm">
                     <?php foreach ($rss_weather as $weather_item) : ?>
                         <tr>
-                            <td><?php echo $weather_item['title'][1]; ?></td>
-                            <td><?php echo $weather_item['description'][1]; ?></td>
+                            <td><?php echo $weather_item[1]['title']; ?></td>
+                            <td><?php echo $weather_item[1]['description']; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </table>
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
     </div>
 </div>
