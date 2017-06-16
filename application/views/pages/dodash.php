@@ -33,16 +33,15 @@
     <div class="col-md-8">
         <h3>Weather</h3>
         <h4>Warnings</h4>
-        <table class="table table-striped table-hover table-sm">
+        <table class="table table-striped table-sm">
             <?php foreach ($rss_warnings as $warning_item) : ?>
                 <tr>
-                    <td><?php echo $warning_item['title']; ?></td>
-                    <td><?php echo $warning_item['link']; ?></td>
+                    <td><a target="_blank" href="<?php echo $warning_item['link']; ?>"><?php echo $warning_item['title']; ?></a></td>
                 </tr>
             <?php endforeach; ?>
         </table>
         <h4>Forcast</h4>
-        <table class="table table-striped table-hover table-sm">
+        <table class="table table-striped table-sm">
             <?php foreach ($rss_weather as $weather_item) : ?>
             <tr>
                 <td><?php echo $weather_item['title']; ?></td>
