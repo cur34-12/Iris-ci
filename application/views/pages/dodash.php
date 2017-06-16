@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-4">
         <h3 style="text-align: center;"><?php echo $duties['duties_team']; ?></h3>
-        <table>
+        <table class="table table-striped table-hover table-sm">
             <tr>
                 <td>TL</td>
                 <td><?php echo $duties['duties_tl']; ?></td>
@@ -28,7 +28,7 @@
                 <td><?php echo $duties['duties_doo_no']; ?></td>
             </tr>
         </table>
-        <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duty_lastupdated']; ?>, <?php echo $duties['duty_lastupdatedby']; ?></span>
+        <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duties_lastupdated']; ?>, <?php echo $duties['duties_lastupdatedby']; ?></span>
     </div>
     <div class="col-md-8">.col-md-8</div>
 </div>
