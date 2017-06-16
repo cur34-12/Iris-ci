@@ -1,7 +1,7 @@
 <h2 style="text-transform: uppercase; letter-spacing: 2px;">Duty Officer - Dashboard</h2>
 <div class="row">
     <div class="col-md-4">
-        <h3 style="text-align: center; margin-bottom: 10px;">Duty Team: <?php echo $duties['duties_team']; ?></h3>
+        <h3 style="text-align: center; padding-bottom: 10px;">Duty Team: <?php echo $duties['duties_team']; ?></h3>
         <h4 style="text-transform: uppercase; letter-spacing: 1px;">Team Leader</h4>
         <table class="table table-striped table-hover table-sm">
             <tr>
@@ -38,7 +38,7 @@
         <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duties_lastupdated']; ?>, <?php echo $duties['duties_lastupdatedby']; ?></span>
     </div>
     <div class="col-md-8">
-        <h3 style="text-align: center; margin-bottom: 10px;">Weather</h3>
+        <h3 style="text-align: center; padding-bottom: 10px;">Weather</h3>
         <h4 style="text-transform: uppercase; letter-spacing: 1px;">Warnings</h4>
         <table class="table table-striped table-sm">
             <?php foreach ($rss_warnings as $warning_item) : ?>
