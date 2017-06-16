@@ -2,29 +2,36 @@
 <div class="row">
     <div class="col-md-4">
         <h3 style="text-align: center;"><strong>Duty Team:</strong> <?php echo $duties['duties_team']; ?></h3>
+        <h4 style="text-transform: uppercase; letter-spacing: 1px;">Team Leader</h4>
         <table class="table table-striped table-hover table-sm">
             <tr>
-                <td>TL</td>
+                <td>Name</td>
                 <td><?php echo $duties['duties_tl']; ?></td>
             </tr>
             <tr>
-                <td>TL No.</td>
+                <td>Phone</td>
                 <td><?php echo $duties['duties_tl_no']; ?></td>
             </tr>
+        </table>
+        <h4 style="text-transform: uppercase; letter-spacing: 1px;">Deputy Team Leader</h4>
+        <table class="table table-striped table-hover table-sm">
             <tr>
-                <td>DTL</td>
+                <td>Name</td>
                 <td><?php echo $duties['duties_dtl']; ?></td>
             </tr>
             <tr>
-                <td>DTL No.</td>
+                <td>Phone</td>
                 <td><?php echo $duties['duties_dtl_no']; ?></td>
             </tr>
+        </table>
+        <h4 style="text-transform: uppercase; letter-spacing: 1px;">Duty Operations Officer</h4>
+        <table class="table table-striped table-hover table-sm">
             <tr>
-                <td>DOO</td>
+                <td>Name</td>
                 <td><?php echo $duties['duties_doo']; ?></td>
             </tr>
             <tr>
-                <td>DOO No.</td>
+                <td>Phone</td>
                 <td><?php echo $duties['duties_doo_no']; ?></td>
             </tr>
         </table>
