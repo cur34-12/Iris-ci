@@ -1,7 +1,7 @@
 <h2 style="text-transform: uppercase; letter-spacing: 2px;">Duty Officer - Dashboard</h2>
 <div class="row">
     <div class="col-md-4">
-        <h3 style="text-align: center;"><strong>Duty Team:</strong> <?php echo $duties['duties_team']; ?></h3>
+        <h3 style="text-align: center;">Duty Team: <?php echo $duties['duties_team']; ?></h3>
         <h4 style="text-transform: uppercase; letter-spacing: 1px;">Team Leader</h4>
         <table class="table table-striped table-hover table-sm">
             <tr>
