@@ -70,6 +70,6 @@
 </div>
 <script>
     $(document).ready(function() {
-        $('#radar').contents().find('body').html('<style>.top{display: none !important;</style>');
+        $('#radar').contents().find('body').html('<style>top{display: none !important;</style>');
     });
 </script>
