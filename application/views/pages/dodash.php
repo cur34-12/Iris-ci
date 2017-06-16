@@ -9,7 +9,7 @@
             </tr>
             <tr>
                 <td>TL No.</td>
-                <td><?php echo $duties['duty_tl_no']; ?></td>
+                <td><?php echo $duties['duties_tl_no']; ?></td>
             </tr>
             <tr>
                 <td>DTL</td>
@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td>DTL No.</td>
-                <td><?php echo $duties['duty_dtl_no']; ?></td>
+                <td><?php echo $duties['duties_dtl_no']; ?></td>
             </tr>
             <tr>
                 <td>DOO</td>
@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td>DOO No.</td>
-                <td><?php echo $duties['duty_doo_no']; ?></td>
+                <td><?php echo $duties['duties_doo_no']; ?></td>
             </tr>
         </table>
         <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duty_lastupdated']; ?>, <?php echo $duties['duty_lastupdatedby']; ?></span>
