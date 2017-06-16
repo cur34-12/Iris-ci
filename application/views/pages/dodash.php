@@ -37,37 +37,33 @@
         </table>
         <span style="font-size: xx-small; color: grey;">Last Updated: <?php echo $duties['duties_lastupdated']; ?>, <?php echo $duties['duties_lastupdatedby']; ?></span>
     </div>
-    <h3 style="text-align: center;">Weather</h3>
-    <h4 style="text-transform: uppercase; letter-spacing: 1px;">Warnings</h4>
-    <table class="table table-striped table-sm">
-        <?php foreach ($rss_warnings as $warning_item) : ?>
-            <tr>
-                <td><a target="_blank" href="<?php echo $warning_item['link']; ?>"><?php echo $warning_item['title']; ?></a></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
     <div class="col-md-8">
+        <h3 style="text-align: center;">Weather</h3>
+        <h4 style="text-transform: uppercase; letter-spacing: 1px;">Warnings</h4>
+        <table class="table table-striped table-sm">
+            <?php foreach ($rss_warnings as $warning_item) : ?>
+                <tr>
+                    <td><a target="_blank" href="<?php echo $warning_item['link']; ?>"><?php echo $warning_item['title']; ?></a></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
         <div class="row">
             <div class="col-sm-6">
                 <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
                 <table class="table table-striped table-sm">
-                    <?php foreach ($rss_weather as $weather_item) : ?>
                         <tr>
-                            <td><?php echo $weather_item[0]['title']; ?></td>
-                            <td><?php echo $weather_item[0]['description']; ?></td>
+                            <td><?php echo $rss_weather[0]['title']; ?></td>
+                            <td><?php echo $rss_weather[0]['description']; ?></td>
                         </tr>
-                    <?php endforeach; ?>
                 </table>
             </div>
             <div class="col-sm-6">
                 <h4 style="text-transform: uppercase; letter-spacing: 1px;">Forcast</h4>
                 <table class="table table-striped table-sm">
-                    <?php foreach ($rss_weather as $weather_item) : ?>
                         <tr>
-                            <td><?php echo $weather_item[1]['title']; ?></td>
-                            <td><?php echo $weather_item[1]['description']; ?></td>
+                            <td><?php echo $rss_weather[1]['title']; ?></td>
+                            <td><?php echo $rss_weather[1]['description']; ?></td>
                         </tr>
-                    <?php endforeach; ?>
                 </table>
             </div>
         </div>
