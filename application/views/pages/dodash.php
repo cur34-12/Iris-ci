@@ -65,11 +65,5 @@
                 </table>
             </div>
         </div>
-        <iframe id="radar" src="http://m.bom.gov.au/nsw/sydney/radar/" />
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        $('#radar').contents().find('body').html('<style>top{display: none !important;</style>');
-    });
-</script>
