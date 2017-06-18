@@ -35,7 +35,7 @@
 	</tbody>
 </table>
 
-<a class="btn btn-outline-primary" role="button" href="issues/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<a class="btn btn-primary" role="button" href="issues/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
 
 <script>
     document.body.innerHTML = document.body.innerHTML.replace(/Invalid date/g, '&nbsp;');
