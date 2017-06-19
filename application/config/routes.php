@@ -100,8 +100,9 @@ $route['operations/duty-officer'] = 'pages/dodash';
 $route['admin/search'] = 'search/users';
 
 /* Catch All Routes */
-$route['search'] = "search/index";
-$route[LOGIN_PAGE] = 'examples/login';
+$route['search'] = 'search/index';
+$route['login'] = 'pages/login_page';
+$route[LOGIN_PAGE] = 'pages/login_page';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';

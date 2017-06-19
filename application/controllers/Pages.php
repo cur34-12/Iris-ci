@@ -4,6 +4,28 @@
 
             //Pages
 
+            public function login_page()
+            {
+                $data['title'] = 'Login';
+
+                // Method should not be directly accessible
+                if( $this->uri->uri_string() == 'login')
+                    show_404();
+
+                if( strtolower( $_SERVER['REQUEST_METHOD'] ) == 'post' )
+                    $this->require_min_level(1);
+
+                $this->setup_login_form();
+
+                $html = $this->load->view('templates/header/header-required', '', TRUE);
+                $html .= $this->load->view('templates/header/header-sidebar', '', TRUE);
+                $html .= $this->load->view('templates/header/header-container', '', TRUE);
+                $html .= $this->load->view('login', '', TRUE);
+                $html .= $this->load->view('templates/footer/footer-required', '', TRUE);
+
+                echo $html;
+            }
+
             public function calendar()
             {
                 $data['events'] = $this->Events_model->get_events();
