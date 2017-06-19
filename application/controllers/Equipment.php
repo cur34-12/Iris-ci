@@ -2,40 +2,47 @@
         
         //Equipment
 
-        class Equipment extends CI_Controller {
+        class Equipment extends MY_Controller {
                 public function index(){
+                    if( $this->require_min_level(1) ) {
+                        $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                    $data['equipment'] = $this->Equipment_model->get_equipment();
+                        $data['title'] = 'Logi - Equipment';
 
-                    $data['title'] = 'Logi - Equipment';
-
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
-                    $this->load->view('equipment/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
+                        $this->load->view('templates/header/header-container');
+                        $this->load->view('equipment/index', $data);
+                        $this->load->view('templates/footer/footer-required');
+                    }
+                    else {
+                        redirect(LOGIN_PAGE);
+                    }
                 }
 
                 public function view($eq_id = null){
+                    if( $this->require_min_level(1) ) {
+                        $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
+                        $data['categories'] = $this->Equipment_model->get_categories();
+                        $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
+                        $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
+                        $data['locations'] = $this->Equipment_model->get_equipment_locations($eq_id);
+                        $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
 
-                    $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
-                    $data['categories'] = $this->Equipment_model->get_categories();
-                    $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
-                    $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
-                    $data['locations'] = $this->Equipment_model->get_equipment_locations($eq_id);
-                    $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
-
-                    if(empty($data['equipment'])){
+                        if (empty($data['equipment'])) {
                             show_404();
-                    } 
-                    
-                    $data['title'] = $data['equipment']['eq_name'];
+                        }
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
-                    $this->load->view('equipment/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                        $data['title'] = $data['equipment']['eq_name'];
+
+                        $this->load->view('templates/header/header-required', $data);
+                        $this->load->view('templates/header/header-sidebar');
+                        $this->load->view('templates/header/header-container');
+                        $this->load->view('equipment/view', $data);
+                        $this->load->view('templates/footer/footer-required');
+                    } else {
+                        redirect(LOGIN_PAGE);
+                    }
                 }
 
                 public function create(){
