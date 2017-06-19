@@ -16,7 +16,6 @@
 <!-- D3 -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/mbostock/d3/d3.js"></script>
 
-
 <!-- Full Calendar -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.js"></script>
 
