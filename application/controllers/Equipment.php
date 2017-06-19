@@ -4,7 +4,6 @@
 
         class Equipment extends MY_Controller {
                 public function index(){
-                    if( $this->require_min_level(1) ) {
                         $data['equipment'] = $this->Equipment_model->get_equipment();
 
                         $data['title'] = 'Logi - Equipment';
@@ -14,14 +13,9 @@
                         $this->load->view('templates/header/header-container');
                         $this->load->view('equipment/index', $data);
                         $this->load->view('templates/footer/footer-required');
-                    }
-                    else {
-                        redirect(LOGIN_PAGE);
-                    }
                 }
 
                 public function view($eq_id = null){
-                    if( $this->require_min_level(1) ) {
                         $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                         $data['categories'] = $this->Equipment_model->get_categories();
                         $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
@@ -40,9 +34,6 @@
                         $this->load->view('templates/header/header-container');
                         $this->load->view('equipment/view', $data);
                         $this->load->view('templates/footer/footer-required');
-                    } else {
-                        redirect(LOGIN_PAGE);
-                    }
                 }
 
                 public function create(){
