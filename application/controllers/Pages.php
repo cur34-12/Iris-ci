@@ -20,7 +20,7 @@
                 $html = $this->load->view('templates/header/header-required', '', TRUE);
                 $html .= $this->load->view('templates/header/header-sidebar', '', TRUE);
                 $html .= $this->load->view('templates/header/header-container', '', TRUE);
-                $html .= $this->load->view('login', '', TRUE);
+                $html .= $this->load->view('pages/login', '', TRUE);
                 $html .= $this->load->view('templates/footer/footer-required', '', TRUE);
 
                 echo $html;
