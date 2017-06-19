@@ -1,6 +1,6 @@
 </div>
 </div>
-<div style="padding-top: 2%;">
+<div style="padding-bottom: 2%;">
 </div>
 </div>
 
