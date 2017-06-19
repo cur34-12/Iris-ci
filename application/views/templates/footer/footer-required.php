@@ -13,8 +13,9 @@
 <!-- Moment Time Parser-->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/moment/moment/moment.js"></script>
 
-<!-- Chart.js -->
-<script type="text/javascript" src="<?php echo base_url(); ?>vendor/nnnick/chartjs/dist/Chart.bundle.js"></script>
+<!-- D3 -->
+<script type="text/javascript" src="<?php echo base_url(); ?>vendor/mbostock/d3/d3.js"></script>
+
 
 <!-- Full Calendar -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.js"></script>

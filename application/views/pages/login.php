@@ -1,5 +1,5 @@
 <?php if (!isset($optional_login)) {
-    echo '<h1>Login</h1>';
+    echo '<h2 style="text-transform: uppercase;">Login</h2>';
 }
 
 if (!isset($on_hold_message)) {
