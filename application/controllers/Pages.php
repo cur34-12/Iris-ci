@@ -9,8 +9,8 @@
                 $data['title'] = 'Login';
 
                 // Method should not be directly accessible
-                if( $this->uri->uri_string() == 'login')
-                    show_404();
+                //if( $this->uri->uri_string() == 'login')
+                //   show_404();
 
                 if( strtolower( $_SERVER['REQUEST_METHOD'] ) == 'post' )
                     $this->require_min_level(1);
