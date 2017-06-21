@@ -1,87 +1,35 @@
-# Logi - An emergency services resource management system
-Developed with unit based NSW State Emergency Service users in mind Logi aims to create a multifaceted data management system. The main functions sit around the marrying of users/members to equipment loans and time management. The system is build completely with user experience in mind so that minimal training or guidance is required for use from both a manager and end user perspective.
+## About Iris
 
-## Functional Areas
-### Sign-on/Time Management
-Track and manage the time onsite and time type of members. Facilitates the reporting of activity and attendance and automated reporting.
-#### Planned
-- Member clock on/clock off
-- Visitor clock on/clock Off
-- Visit/time categorisation
-- Currently onsite list
-- Reporting/scheduled email reporting
-- Barcode scanning/ID based sign-on
-- Data export (xls/csv)
-- Dashboard for operations screens to view members onsite and rank/skill level
-#### In Progress
-- None yet :(
-#### Completed
-- None yet :(
+Iris is a web application for managing unit level operations (in a non rescue context). Iris has three main focus areas:
 
-### Inventory
-Track and manage the movement, allocation and level of inventory held in the unit through the use of barcoding. 
-#### Planned
-- Team/Manager responsible
-- Reporting and export
-- Automatic notifications of stock reductions
-- Inspection management and scheduling
-- Logging of loans of specific equipment
-- Email notifications if out over 24 hours
-- List of current and historical loans with which member
-#### In Progress
-- Equipment quantity tracking
-- Barcode management of assets
-- Location of assets
-- Functional area of assets
-#### Completed
-- None yet :(
+- Logistics Management (Inventory, Operational Capability, Equipment Maintenance and Loans)
+- Situational Awareness (Operational Dashboards, Resource Management)
+- Timetabling/Calendaring (Unit Resourcecs, Leave/Hoidays, Duty Rosters)
 
-### Q Store
-Management of loans and issuing of equipment to members.
-#### Planned
-- Logging of equiment issuing
-- Logging returns
-- Equipment requests
-- List of current loans with which member
-- Sizing/equipment preference saving
-- Reporting on equipment issue activity
-#### In Progress
-- None yet :(
-#### Completed
-- None yet :(
+## Using Iris
 
-### Vehicles
-Complete replacement of current paper vehicle management system.
-#### Planned
-- Vehicle sign out and indicated location/purpose
-- Current driver contact details displayed
-- Issue management with vehicles
-- Mapping against AEL/Vehicle equipment lists
-- Odometer and Purpose tracking (replace paper method)
-- Reporting and Export of data
-#### In Progress
-- None yet :(
-#### Completed
-- None yet :(
+Iris is not currently released for general usage.  
 
-## Software Features
-### User Authentication
-- Authenticated against a locally managed user database
-- Various access levels and permissions
-- User activity history to view user actions
+If you wish to use the development version of Iris, it is reccomended you are familiar with the setup and management of Apache2/Nginx and MySQL. Iris is built on the [Laravel](http://laravel.com/) framework and can be installed to any standard PHP capable webserver and MySQL(style) database. To use the dev version of Iris:
 
-### Data Management
-Data will be managaed through a RDBMS such as:
-- MariaDB
-- MySQL
-The current platform is MariaDB.
+1. Install and configure Apache2/NGINX with PHP
+2. Install and configure a MySQL/MariaDB database server
+3. Install [Composer](https://getcomposer.org/)
+4. Clone Iris from [Github](https://github.com/paralittic/Iris/)
+5. Configure the application/config/config.php file to suit your environment
+6. Configure the application/config/database.php file to suit your environment
+7. Run `composer update` in the Iris root directory
+8. Configure the function create_user in `application/controllers/Examples.php` to give yourself a login
+9. Write the rest of this list!
 
-### Multiplatform
-Logi will also be developed for:
-- [Windows](https://github.com/paralittic/Logi-Client)
-- OSX
-- iOS
-- Android
+## Contributing
 
-### Language and Platform
-Logi is written in PHP using the MVC framework Codeigniter. Logi will run on any standard webserver and php5 combination.
+Thank you for considering contributing to the Iris! Feel free to fork the project in Github or to join the discussion, send us an email at ross.wallace@memeber.ses.nsw.gov.au.
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Iris, please send an e-mail to Ross Wallace at ross.wallace@member.ses.nsw.gov.au. All security vulnerabilities will be promptly addressed.
+
+## License
+
+Iris is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
