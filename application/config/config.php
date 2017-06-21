@@ -380,8 +380,8 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= 'logi';
-$config['cookie_domain']	= '.logi.dev1.strat.is';
+$config['cookie_prefix']	= 'iris';
+$config['cookie_domain']	= '.iris.dev1.strat.is';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
