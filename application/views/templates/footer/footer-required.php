@@ -52,7 +52,9 @@
      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
 </script>
-
+</main>
+</div>
+</div>
 </div>
 <!-- /#wrapper -->
 
