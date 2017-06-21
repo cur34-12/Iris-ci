@@ -1,4 +1,3 @@
-</head>
 <body>
 <header>
     <nav class="top-nav">
