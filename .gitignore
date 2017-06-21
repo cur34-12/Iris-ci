@@ -31,3 +31,4 @@ components/
 composer.phar
 
 /application/config/main_url.php
+/application/config/db_settings.php

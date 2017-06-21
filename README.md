@@ -12,11 +12,12 @@ Iris is not currently released for general usage.
 
 If you wish to use the development version of Iris, it is recommended you are familiar with the setup and management of Apache2/Nginx and MySQL. Iris is built on the [Code Igniter](https://codeigniter.com/) framework and can be installed to any standard PHP capable webserver and MySQL(style) database. To use the dev version of Iris:
 
-1. Install and configure Apache2/NGINX with PHP
-2. Install and configure a MySQL/MariaDB database server
+1. Install and configure Apache2/NGINX with PHP (if on Windows we recommend [WAMP](http://www.wampserver.com/en/))
+2. Install and configure a MySQL/MariaDB database server (if on Windows we recommend [WAMP](http://www.wampserver.com/en/))
 3. Install [Composer](https://getcomposer.org/)
-4. Clone Iris from [Github](https://github.com/paralittic/Iris/)
-5. Import the db_setup.sql file into a empty MySQL database (yet to be created)
+4. Clone Iris from [Github](https://github.com/paralittic/Iris/) into `WampInstallDir/www`
+5. Using PhpMyAdmin or your MySQL tool or choice create an empty database called `iris`
+5. Import the `iris-structure.sql` file into your new database (optional: for dummy data import the `iris-sample-data.sql` file)
 6. Configure the application/config/config.php file to suit your environment
 7. Configure the application/config/database.php file to suit your environment
 8. Run `composer update` in the Iris root directory
