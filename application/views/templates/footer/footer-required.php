@@ -43,11 +43,11 @@
 <!--Sidebar-->
 <script>
     // Initialize collapse button
-        $('.button-collapse').sideNav({
-            menuWidth: 300, // Default is 300
-            edge: 'left' // Choose the horizontal origin
-            }
-        );
+    //    $('.button-collapse').sideNav({
+    //        menuWidth: 300, // Default is 300
+     //       edge: 'left' // Choose the horizontal origin
+     //       }
+     //   );
 
      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
