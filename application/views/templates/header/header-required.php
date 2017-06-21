@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo isset($title) ? $title : 'Iris' ; ?></title>
 
-    <!--CSS for Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/bootstrap/css/bootstrap-theme.css" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
     <!-- Jquery UI Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/jqueryui/themes/base/jquery-ui.css">
@@ -30,11 +32,6 @@
     <script src="https://use.typekit.net/kde8jqk.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <!-- Sidebar CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sidebar-style.css"/>
-
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
 
-    <!-- MaterializeCSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">

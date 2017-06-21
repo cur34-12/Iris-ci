@@ -7,9 +7,6 @@
 <!-- JQuery / UI -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jqueryui/jquery-ui.min.js"></script>
 
-<!--Bootstrap-->
-<script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/bootstrap/js/bootstrap.js"></script>
-
 <!-- materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
@@ -45,34 +42,15 @@
 
 <!--Sidebar-->
 <script>
-    $(document).ready(function () {
-        var trigger = $('.hamburger'),
-            //overlay = $('.overlay'),
-            isClosed = true;
-
-        trigger.click(function () {
-            hamburger_cross();
-        });
-
-        function hamburger_cross() {
-
-            if (isClosed === true) {
-                //overlay.hide();
-                trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
-            } else {
-                //overlay.show();
-                trigger.removeClass('is-closed');
-                trigger.addClass('is-open');
-                isClosed = true;
+    // Initialize collapse button
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left' // Choose the horizontal origin
             }
-        }
+        );
 
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-    });
+     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
 </script>
 
 </div>

@@ -1,60 +1,27 @@
-<div id="wrapper" class="toggled">
-    <div class="overlay"></div>
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="<?php echo base_url(); ?>">
-                    <strong>IRIS</strong>
-                </a>
-            </li>
+</head>
+<body>
+<ul id="slide-out" class="side-nav">
+    <li><a href="<?php echo base_url(); ?>">Home</a></li>
+    <li><a href="<?php echo base_url(); ?>about">About</a></li>
+    <li><a href="<?php echo base_url(); ?>calendar">Calendar</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
             <li>
-                <a href="<?php echo base_url(); ?>">Home</a>
-            </li>
-            <li>
-                <a href="<?php echo base_url(); ?>about">About</a>
-            </li>
-            <li>
-                <a href="<?php echo base_url(); ?>calendar">Calendar</a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipment <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Equipment</li>
-                    <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
-                    <li><a href="<?php echo base_url(); ?>equipment/create">Create</a></li>
-                    <li class="dropdown-header">Equipment Groups</li>
-                    <li><a href="<?php echo base_url(); ?>equipment-groups">List</a></li>
-                    <li><a href="<?php echo base_url(); ?>equipment-groups/create">Create</a></li>
-                    <li class="dropdown-header">Issues</li>
-                    <li><a href="<?php echo base_url(); ?>issues">List</a></li>
-                    <li><a href="<?php echo base_url(); ?>issues/create">Create</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fleet <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
-                    <li><a href="<?php echo base_url(); ?>vehicles">List</a></li>
-                    <li><a href="<?php echo base_url(); ?>vehicles/create">Create</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
-                    <li><a href="<?php echo base_url(); ?>locations">List</a></li>
-                    <li><a href="<?php echo base_url(); ?>locations/create">Create</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
-                    <li><a href="<?php echo base_url(); ?>members">Members</a></li>
-                    <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
-                </ul>
+                <a class="collapsible-header">Equipment<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
+                        <li><a href="<?php echo base_url(); ?>equipment-groups">Groups</a></li>
+                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                        <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
-    </nav>
-    <!-- /#sidebar-wrapper -->
+    </li>
+    <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
+    <li><a href="<?php echo base_url(); ?>members">Members</a></li>
+    <li><a href="<?php echo base_url(); ?>locations">locations</a></li>
+</ul>
+
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
