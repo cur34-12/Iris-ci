@@ -1,2 +1,5 @@
- <div class="container">
-     <div class="row col-xs-9 col-md-offset-1">
+</header>
+<main><div class="container">
+        <div class="row">
+
+            <div class="col s12 m9 l10">
