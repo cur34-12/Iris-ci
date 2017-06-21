@@ -35,3 +35,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
+
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
