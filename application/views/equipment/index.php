@@ -1,4 +1,5 @@
 <h2>Equipment</h2>
+<hr />
 <table id="content" class="table table-striped table-hover dataTable">
         <thead class="thead-inverse">
             <tr>
