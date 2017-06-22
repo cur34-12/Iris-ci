@@ -74,6 +74,6 @@
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
-        <div class="container">
+        <div class="container-fluid" style="width: 95%;">
             <div class="row">
                 <div class="col-md-10">
