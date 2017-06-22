@@ -1,4 +1,5 @@
 <?php
+//THESE DETAILS NEED UPDAED WITH THE PRODUCTION CREDENTIALS ON THE SERVER
 define('DB_SERVER', 'int.db1.strat.is');
 define('DB_USER', 'logi_dbuser');
 define('DB_PASSWORD', 'dblogi0911>');
