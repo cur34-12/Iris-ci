@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/font-awesome/css/font-awesome.css">
 
     <!-- DataTables Styles -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/bs/dt-1.10.15/af-2.2.0/cr-1.3.3/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/datatables/datatables/media/css/dataTables.material.css"/>
 
     <!-- Full Calendar Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.css"/>
