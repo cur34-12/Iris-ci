@@ -19,6 +19,7 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.js"></script>
 
 <!-- DataTables -->
+<script type="text/javascript" src="<?php echo base_url(); ?>vendor/datatables/datatables/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/datatables/datatables/media/js/dataTables.material.js"></script>
 
 <!-- Init of Moment-->
