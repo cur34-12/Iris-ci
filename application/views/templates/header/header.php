@@ -37,7 +37,7 @@
 </head>
 <body>
 <header class="wrapper-sidebar">
-        <nav id="slide-out" class="top-nav">
+        <nav class="top-nav">
             <div class="container">
                 <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
             </div>
@@ -45,7 +45,7 @@
         <div class="container"><a href="#" data-activates="nav-mobile"
                                   class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
         </div>
-        <ul id="nav-mobile" class="side-nav fixed">
+        <ul class="side-nav fixed">
             <li class="logo"><a id="logo-container" href="/" class="brand-logo">
                     <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not
                         support SVG
@@ -79,7 +79,7 @@
             <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
         </ul>
 </header>
-<main>
+<main style="padding-left:300px;">
     <div class="container">
         <div class="row">
             <div class="col s12 m9 l10">
