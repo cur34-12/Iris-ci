@@ -3,13 +3,11 @@
             <tr>
                 <th>Name</th>
                 <th>Description</th>
-                <th>Group</th>
                 <th>Category</th>
                 <th>Consumable</th>
-                <th>Size</th>
                 <th>Brand</th>
-                <th>In Service</th>
                 <th>Model</th>
+                <th>Group</th>
                 <th>Edit</th>
             </tr>
         </thead>
