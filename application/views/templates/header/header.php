@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/font-awesome/css/font-awesome.css">
 
     <!-- DataTables Styles -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/datatables/datatables/media/css/dataTables.material.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/datatables/datatables/media/css/dataTables.bootstrap.css"/>
 
     <!-- Full Calendar Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.css"/>
