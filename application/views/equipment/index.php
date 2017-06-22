@@ -17,14 +17,12 @@
             <?php foreach($equipment as $equipment) : ?>
                 <tr>
                         <td><a href="<?php echo site_url('/equipment/'. $equipment['eq_id']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
-                        <td><?php echo $equipment['eq_description']; ?></td>
-                        <td><a href="<?php echo site_url('/equipment-groups/'. $equipment['eqgroup_id']); ?>"><?php echo $equipment['eqgroup_name']; ?></td>
+                        <td><?php mb_strimwidth($equipment['eq_description'], 0, 50, "..."); ?></td>
                         <td><?php echo $equipment['eq_category']; ?></td>
                         <td><?php echo $equipment['eq_consumable']; ?></td>
-                        <td><?php echo $equipment['eq_size']; ?></td>
                         <td><?php echo $equipment['eq_brand']; ?></td>
-                        <td><?php echo $equipment['eq_in_service']; ?></td>
                         <td><?php echo $equipment['eq_model']; ?></td>
+                        <td><a href="<?php echo site_url('/equipment-groups/'. $equipment['eqgroup_id']); ?>"><?php echo $equipment['eqgroup_name']; ?></td>
                         <td><a class="btn btn-warning btn-sm" role="button" href="equipment/edit/<?php echo $equipment['eq_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
