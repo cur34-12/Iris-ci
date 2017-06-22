@@ -17,13 +17,13 @@ If you wish to use the development version of Iris, it is recommended you are fa
     <ol>
     <li>Install and configure Apache2/NGINX with PHP (if on Windows we recommend WAMP)</li>
     <li>Install and configure a MySQL/MariaDB database server (if on Windows we recommend WAMP)</li>
-    <li>Install Composer</li>
+    <li>Install <a href="getcomposer.org">Composer</a></li>
     <li>Clone Iris from Github into your web root</li>
     <li>Using PhpMyAdmin or your MySQL tool or choice create an empty database called iris</li>
     <li>Import the <code>iris-structure.sql</code> file into your new database (optional: for dummy data import the <code>iris-sample-data.sql</code> file)</li>
-    <li>Configure the <code></code>application/config/config.php</code> file to suit your environment</li>
+    <li>Configure the <code>application/config/config.php</code> file to suit your environment</li>
     <li>Configure the <code>application/config/database.php</code> file to suit your environment</li>
-    <li>Run composer update in the Iris root directory</li>
+    <li>Run <code>composer update</code> in the Iris root directory</li>
     <li>Configure the function create_user in <code>application/controllers/Examples.php</code> to give yourself a login</li>
     <li>Write the rest of this list!</li>
 </ol>
