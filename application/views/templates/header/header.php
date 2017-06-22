@@ -74,6 +74,6 @@
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
-        <div class="container-fluid" style="padding-left: 3%; padding-right: 3%;">
+        <div class="container-fluid" style="padding-left: 2%; padding-right: 2%;">
             <div class="row">
                 <div class="col-md-10">
