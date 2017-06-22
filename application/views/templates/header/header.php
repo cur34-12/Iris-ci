@@ -37,37 +37,41 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
 </head>
 <body>
-<header>
-        <nav class="top-nav">
-            <div class="container">
-                <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
-            </div>
-        </nav>
-</header>
-<main>
-        <div class="row">
-            <div class="col s2">
-                <ul class="center-align">
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>">Home</a></li>
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>about">About</a></li>
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>calendar">Calendar</a></li>
-                    <li class="no-padding">
-                        <ul class="collapsible collapsible-accordion">
-                            <li><a class="collapsible-header waves-effect waves-teal">Equipment</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
-                                        <li><a href="<?php echo base_url(); ?>equipment-groups">Groups</a></li>
-                                        <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
-                                        <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>members">Members</a></li>
-                    <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Brand
+                </a>
+            </li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>">Home</a></li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>about">About</a></li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>calendar">Calendar</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipment <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
+                    <li><a href="<?php echo base_url(); ?>equipment-groups">Groups</a></li>
+                    <li><a href="<?php echo base_url(); ?>issues">Issues</a></li>
+                    <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
                 </ul>
-            </div>
-            <div class="col s10"</div>
+            </li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>members">Members</a></li>
+            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
