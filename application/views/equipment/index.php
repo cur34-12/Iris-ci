@@ -1,4 +1,5 @@
- <table id="content" class="table table-striped table-hover dataTable">
+<h2>Equipment</h2>
+<table id="content" class="table table-striped table-hover dataTable">
         <thead class="thead-inverse">
             <tr>
                 <th>Name</th>
