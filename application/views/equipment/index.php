@@ -1,4 +1,4 @@
- <table id="content" class="responsive-table striped highlight dataTable">
+ <table id="content" class="table-fluid table-striped focus dataTable">
         <thead>
             <tr>
                 <th>Name</th>
