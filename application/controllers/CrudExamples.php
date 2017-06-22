@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Examples extends CI_Controller {
+class CrudExamples extends MY_Controller {
 
 	public function __construct()
 	{
@@ -8,7 +8,6 @@ class Examples extends CI_Controller {
 
 		$this->load->database();
 		$this->load->helper('url');
-
 		$this->load->library('grocery_CRUD');
 	}
 
