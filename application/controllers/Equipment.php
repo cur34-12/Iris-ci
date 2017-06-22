@@ -6,13 +6,11 @@
                 public function index(){
                         $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                        $data['title'] = 'Logi - Equipment';
+                        $data['title'] = 'Equipment';
 
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('equipment/index', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                 }
 
                 public function view($eq_id = null){
@@ -29,11 +27,9 @@
 
                         $data['title'] = $data['equipment']['eq_name'];
 
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('equipment/view', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                 }
 
                 public function create(){
@@ -41,16 +37,14 @@
                     $data['categories'] = $this->Equipment_model->get_categories();
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                     $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
-                    $data['title'] = 'Logi - Create Equipment';
+                    $data['title'] = 'Create Equipment';
 
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('equipment/create', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Equipment_model->create_equipment();
                         redirect('equipment');
@@ -75,11 +69,9 @@
 
                     $data['title'] = $data['equipment']['eq_name'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipment/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function update(){
@@ -93,26 +85,22 @@
 
                     $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                    $data['title'] = 'Logi - Edit';
+                    $data['title'] = 'Edit';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipment/edit', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
                 
                 public function select_delete(){ 
 
                     $data['equipment'] = $this->Equipment_model->get_equipment();
 
-                    $data['title'] = 'Logi - Delete';
+                    $data['title'] = 'Delete';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipment/delete', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
 
@@ -124,11 +112,9 @@
 
                     $data['title'] = 'Equipment Groups';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container-95');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipmentgroups/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function eqgroups_view($eqgroup_id = null){
@@ -143,11 +129,9 @@
 
                     $data['title'] = $data['equipmentgroup']['eqgroup_name'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipmentgroups/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function eqgroups_create(){
@@ -160,11 +144,9 @@
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('equipmentgroups/create', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                             $this->Equipment_model->create_equipment();
                             redirect('equipment');
@@ -187,13 +169,11 @@
                             show_404();
                     }
 
-                    $data['title'] = 'Edit Equipment Group';
+                    $data['title'] = 'Edit Group';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('equipmentgroups/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function eqgroups_update(){

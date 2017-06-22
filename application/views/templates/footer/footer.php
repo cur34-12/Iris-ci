@@ -20,7 +20,7 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/fullcalendar/fullcalendar/dist/fullcalendar.js"></script>
 
 <!-- DataTables -->
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/af-2.2.0/cr-1.3.3/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>vendor/datatables/datatables/media/js/dataTables.material.js"></script>
 
 <!-- Init of Moment-->
 <script>
@@ -42,13 +42,6 @@
 
 <!--Sidebar-->
 <script>
-    // Initialize collapse button
-    //    $('.button-collapse').sideNav({
-    //        menuWidth: 300, // Default is 300
-     //       edge: 'left' // Choose the horizontal origin
-     //       }
-     //   );
-
      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
 </script>
