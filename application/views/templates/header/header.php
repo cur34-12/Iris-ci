@@ -46,7 +46,7 @@
 <main>
         <div class="row">
             <div class="col s2">
-                <ul>
+                <ul class="center-align">
                     <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>">Home</a></li>
                     <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>about">About</a></li>
                     <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>calendar">Calendar</a></li>
