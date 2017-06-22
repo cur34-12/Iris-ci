@@ -33,8 +33,12 @@
     <script src="https://use.typekit.net/kde8jqk.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <!-- Sidebar Style -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sidebar-style.css"/>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
+
 </head>
 <body>
 <div id="wrapper" class="toggled">
