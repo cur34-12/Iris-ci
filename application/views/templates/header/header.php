@@ -69,11 +69,13 @@
     </nav>
     <!-- /#sidebar-wrapper -->
     <div id="page-content-wrapper">
+        <!-- Removing hamburger
         <button type="button" class="hamburger is-open" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
+        -->
         <div class="container-fluid" style="width: 95%;">
             <div class="row">
                 <div class="col-md-10">
