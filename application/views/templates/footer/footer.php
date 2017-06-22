@@ -1,11 +1,11 @@
 </div>
 </main>
 
-<!-- JQuery / UI -->
+<!-- JQuery UI -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jqueryui/jquery-ui.min.js"></script>
 
 <!-- materialize -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/bootstrap/js/bootstrap.js"></script>
 
 <!-- Moment Time Parser-->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/moment/moment/moment.js"></script>
