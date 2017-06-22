@@ -37,7 +37,7 @@
 </head>
 <body>
 <header>
-    <nav class="top-nav">
+    <nav id="slide-out" class="top-nav">
         <div class="container">
             <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
         </div>
@@ -62,7 +62,7 @@
         <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>calendar">Calendar</a></li>
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header  waves-effect waves-teal">Equipment</a>
+                <li><a class="collapsible-header waves-effect waves-teal">Equipment</a>
                     <div class="collapsible-body">
                         <ul>
                             <li><a href="<?php echo base_url(); ?>equipment">List</a></li>
@@ -79,6 +79,7 @@
         <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
     </ul>
 </header>
-<main><div class="container">
+<main>
+    <div class="container">
         <div class="row">
             <div class="col s12 m9 l10">

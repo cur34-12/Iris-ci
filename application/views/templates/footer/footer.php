@@ -1,6 +1,5 @@
+</main>
 </div>
-</div>
-<div style="padding-bottom: 2%;">
 </div>
 </div>
 
@@ -45,10 +44,7 @@
      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
 </script>
-</main>
-</div>
-</div>
-</div>
+
 <!-- /#wrapper -->
 
 </body>
