@@ -1,5 +1,5 @@
- <table id="content" class="table-fluid table-striped focus dataTable">
-        <thead>
+ <table id="content" class="table table-striped table-hover dataTable">
+        <thead class="thead-inverse">
             <tr>
                 <th>Name</th>
                 <th>Description</th>
@@ -33,4 +33,4 @@
              document.getElementById("myImage").src = "landscape.jpg";
          </script>
     </table>
-<a class="waves-effect waves-light btn" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
+<a class="btn btn-primary" role="button" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
