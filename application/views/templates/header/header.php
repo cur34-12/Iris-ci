@@ -36,8 +36,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
 </head>
 <body>
-<header>
-    <div class="wrapper-sidebar">
+<header class="wrapper-sidebar">
         <nav id="slide-out" class="top-nav">
             <div class="container">
                 <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
@@ -79,7 +78,6 @@
             <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>members">Members</a></li>
             <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
         </ul>
-    </div>
 </header>
 <main>
     <div class="container">
