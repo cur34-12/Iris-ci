@@ -37,7 +37,7 @@
 </head>
 <body>
 <header>
-        <nav class="top-nav" style="padding-left:300px;">
+        <nav class="top-nav">
             <div class="container">
                 <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
             </div>
