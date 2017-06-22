@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
 </head>
 <body>
-<div id="wrapper">
+<div id="wrapper" class="toggled">
     <div class="overlay"></div>
 
     <!-- Sidebar -->
