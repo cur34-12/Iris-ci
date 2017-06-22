@@ -36,8 +36,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css"/>
 </head>
 <body>
-<header class="wrapper-sidebar">
-        <nav class="top-nav">
+<header>
+        <nav class="top-nav" style="padding-left:300px;">
             <div class="container">
                 <div class="nav-wrapper"><a class="page-title"><?php echo isset($title) ? $title : 'Iris' ; ?></a></div>
             </div>
