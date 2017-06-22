@@ -1,4 +1,4 @@
-<h1><strong>IRIS</strong> unit management system</h1>
+<h2><strong>IRIS</strong> - Unit Management System</h2>
 <!--Action boxes-->
 <div class="quick-actions_homepage">
     <ul class="quick-actions">
