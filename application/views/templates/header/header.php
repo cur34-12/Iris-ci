@@ -48,8 +48,8 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
-                    Brand
+                <a href="/">
+                    IRIS
                 </a>
             </li>
             <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>">Home</a></li>
