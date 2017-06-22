@@ -52,9 +52,9 @@
                     IRIS
                 </a>
             </li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>">Home</a></li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>about">About</a></li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>calendar">Calendar</a></li>
+            <li><a href="<?php echo base_url(); ?>">Home</a></li>
+            <li><a href="<?php echo base_url(); ?>about">About</a></li>
+            <li><a href="<?php echo base_url(); ?>calendar">Calendar</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipment <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -64,9 +64,9 @@
                     <li><a href="<?php echo base_url(); ?>suppliers">Suppliers</a></li>
                 </ul>
             </li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>members">Members</a></li>
-            <li><a class="waves-effect waves-teal" href="<?php echo base_url(); ?>locations">locations</a></li>
+            <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
+            <li><a href="<?php echo base_url(); ?>members">Members</a></li>
+            <li><a href="<?php echo base_url(); ?>locations">locations</a></li>
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
@@ -76,6 +76,6 @@
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
