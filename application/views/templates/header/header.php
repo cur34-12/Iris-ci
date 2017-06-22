@@ -44,7 +44,6 @@
         </nav>
 </header>
 <main>
-    <div id="main-container" class="container">
         <div class="row">
             <div class="col s2">
                 <ul>
