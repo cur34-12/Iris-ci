@@ -15,7 +15,7 @@
             <?php foreach($equipment as $equipment) : ?>
                 <tr>
                         <td><a href="<?php echo site_url('/equipment/'. $equipment['eq_id']); ?>"><?php echo $equipment['eq_name']; ?></a></td>
-                        <td><?php mb_strimwidth($equipment['eq_description'], 0, 50, "..."); ?></td>
+                        <td><?php echo rtrim(mb_strimwidth($equipment['eq_description'], 0, 30))."..."; ?></td>
                         <td><?php echo $equipment['eq_category']; ?></td>
                         <td><?php echo $equipment['eq_consumable']; ?></td>
                         <td><?php echo $equipment['eq_brand']; ?></td>
