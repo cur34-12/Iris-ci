@@ -1,6 +1,4 @@
-<h2 style="text-transform: uppercase;">Equipment</h2>
-<hr />
-    <table id="content" class="responsive-table striped highlight dataTable">
+ <table id="content" class="responsive-table striped highlight dataTable">
         <thead>
             <tr>
                 <th>Name</th>
