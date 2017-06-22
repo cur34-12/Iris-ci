@@ -2,6 +2,7 @@
 </div>
 </div>
 </div>
+</div>
 
 <!-- JQuery UI -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jqueryui/jquery-ui.min.js"></script>
