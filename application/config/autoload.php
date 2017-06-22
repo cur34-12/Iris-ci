@@ -58,7 +58,7 @@ $autoload['packages'] = array(APPPATH.'third_party/community_auth');
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('grocery_CRUD','form_validation','database','session','tokens','Authentication','rssparser');
+$autoload['libraries'] = array('form_validation','database','session','tokens','Authentication','rssparser');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('Grocery_crud_model','Duties_model','Vehicle_model','Locations_model','Equipment_model','Issues_model','User_model','Loans_model','Loangroups_model','Suppliers_model','Unitmembers_model','Events_model','Auth_model');
+$autoload['model'] = array('Duties_model','Vehicle_model','Locations_model','Equipment_model','Issues_model','User_model','Loans_model','Loangroups_model','Suppliers_model','Unitmembers_model','Events_model','Auth_model');

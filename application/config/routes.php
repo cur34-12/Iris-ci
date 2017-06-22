@@ -93,7 +93,6 @@ $route['vehicles/(:any)'] = 'vehicles/view/$1';
 $route['vehicles'] = 'vehicles/index';
 
 /* Calendar */
-$route['suppliers'] = 'pages/suppliers';
 $route['calendar'] = 'pages/calendar';
 $route['operations/duty-officer'] = 'pages/dodash';
 

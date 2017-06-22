@@ -4,20 +4,6 @@
 
             //Pages
 
-            function suppliers()
-            {
-                $crud = new grocery_CRUD();
-                $crud->set_table('suppliers');
-
-                $output = $crud->render();
-
-                $this->_example_output($output);
-            }
-            public function _example_output($output = null)
-            {
-                $this->load->view('example.php',(array)$output);
-            }
-
             public function calendar()
             {
                 $data['events'] = $this->Events_model->get_events();
