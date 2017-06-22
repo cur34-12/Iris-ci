@@ -43,5 +43,14 @@
                 $this->load->view('templates/footer/footer');
             }
 
+            public function my_boss_is_in_a_hurry()
+            {
+                $crud = new grocery_CRUD();
+                $crud->set_table('suppliers');
+
+                $output = $crud->render();
+
+                $this->_example_output($output);
+            }
 
         }
