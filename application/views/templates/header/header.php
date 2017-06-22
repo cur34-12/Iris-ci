@@ -64,7 +64,7 @@
             </li>
             <li><a href="<?php echo base_url(); ?>vehicles">Vehicles</a></li>
             <li><a href="<?php echo base_url(); ?>members">Members</a></li>
-            <li><a href="<?php echo base_url(); ?>locations">locations</a></li>
+            <li><a href="<?php echo base_url(); ?>locations">Locations</a></li>
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
