@@ -29,5 +29,8 @@
                 </tr>
             <?php endforeach; ?>
         </tbody>
+         <script>
+             document.getElementById("myImage").src = "landscape.jpg";
+         </script>
     </table>
 <a class="waves-effect waves-light btn" href="/equipment/create"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</a>
