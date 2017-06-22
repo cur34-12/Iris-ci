@@ -2,18 +2,16 @@
 
         //Members
 
-        class Unitmembers extends CI_Controller {
+        class Unitmembers extends MY_Controller {
                 public function index(){
 
                     $data['title'] = 'Members'; 
 
                     $data['members'] = $this->Unitmembers_model->get_members();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('members/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function view($member_id = null){
@@ -26,11 +24,9 @@
 
                     $data['title'] = $data['member']['member_name'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('members/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function create(){
@@ -38,11 +34,9 @@
                     $data['title'] = 'Create member';
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('members/create', $data);
-                        $this->load->view('templates/footer/footer-required');  
+                        $this->load->view('templates/footer/footer');
                     } else {
                             $this->Unitmembers_model->create_member();
                             redirect('members');     
@@ -65,11 +59,9 @@
 
                     $data['title'] = 'Edit member';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('members/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function update(){
@@ -82,26 +74,22 @@
 
                     $data['members'] = $this->Unitmembers_model->get_members();
 
-                    $data['title'] = 'Logi - Edit';
+                    $data['title'] = 'Edit';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('members/edit', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function select_delete(){ 
 
                     $data['members'] = $this->Unitmembers_model->get_members();
 
-                    $data['title'] = 'Logi - Delete';
+                    $data['title'] = 'Delete';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('members/delete', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
         }
 ?>

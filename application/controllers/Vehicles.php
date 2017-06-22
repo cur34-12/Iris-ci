@@ -2,18 +2,16 @@
 
         //Vehicles
 
-        class Vehicles extends CI_Controller {
+        class Vehicles extends MY_Controller {
                 public function index(){
 
                     $data['vehicles'] = $this->Vehicle_model->get_vehicles();
 
                     $data['title'] = 'Vehicles';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('vehicles/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function view($veh_id = null){
@@ -26,11 +24,9 @@
 
                     $data['title'] = $data['vehicle']['veh_name'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('vehicles/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function create(){
@@ -40,11 +36,9 @@
                     $this->form_validation->set_rules('veh_name', 'Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('vehicles/create', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Vehicle_model->create_vehicle();
                         redirect('vehicles');     
@@ -67,11 +61,9 @@
 
                     $data['title'] = 'Edit Vehicle';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('vehicles/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function update(){
@@ -84,23 +76,19 @@
 
                     $data['vehicles'] = $this->Vehicle_model->get_vehicles();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('vehicles/edit', $data);
                     $this->load->view('templates/footer/footer-container');
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function select_delete(){ 
 
                     $data['vehicles'] = $this->Vehicle_model->get_vehicles();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('vehicles/delete', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
         }
 ?>

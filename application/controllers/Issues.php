@@ -1,16 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-        class Issues extends CI_Controller {
+        class Issues extends MY_Controller {
                 public function index(){
 
                     $data['title'] = 'Issues'; 
 
                     $data['issues'] = $this->Issues_model->get_issues();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('issues/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function view($iss_id = null){
@@ -27,11 +25,9 @@
 
                     $data['title'] = $data['issue']['iss_title'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('issues/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function create($eq_id = null){
@@ -45,11 +41,9 @@
                     $this->form_validation->set_rules('iss_title', 'Title', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('issues/create', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Issues_model->create_issue();
                         redirect('issues');
@@ -75,11 +69,9 @@
 
                     $data['title'] = 'Edit Issue';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('issues/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function update(){
@@ -92,22 +84,18 @@
 
                     $data['issues'] = $this->Issues_model->get_issues();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('issues/edit', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function select_delete(){ 
 
                     $data['issues'] = $this->Issues_model->get_issues();
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('issues/delete', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function new_comment($iss_id = null){
@@ -119,11 +107,9 @@
                     $this->form_validation->set_rules('isscom_comment', 'Comment', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('issues/comment', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Issues_model->new_comment();
                         redirect('issues/'.$iss_id);
@@ -143,11 +129,9 @@
                     $this->form_validation->set_rules('event_title', 'Title', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('issues/event', $data);
-                        $this->load->view('templates/footer/footer-required');
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Events_model->create_event();
                         redirect('calendar');

@@ -9,11 +9,9 @@ class Expenses extends MY_Controller {
 
         $data['expenses'] = $this->Expenses_model->get_expenses();
 
-        $this->load->view('templates/header/header-required', $data);
-        $this->load->view('templates/header/header-sidebar');
-        $this->load->view('templates/header/header-container');
+        $this->load->view('templates/header/header', $data);
         $this->load->view('expenses/index', $data);
-        $this->load->view('templates/footer/footer-required');
+        $this->load->view('templates/footer/footer');
     }
 
     public function view($expense_id = null){
@@ -26,11 +24,9 @@ class Expenses extends MY_Controller {
 
         $data['title'] = $data['expense']['expense_id'];
 
-        $this->load->view('templates/header/header-required', $data);
-        $this->load->view('templates/header/header-sidebar');
-        $this->load->view('templates/header/header-container');
+        $this->load->view('templates/header/header', $data);
         $this->load->view('expenses/view', $data);
-        $this->load->view('templates/footer/footer-required');
+        $this->load->view('templates/footer/footer');
     }
 
     public function create(){
@@ -38,11 +34,9 @@ class Expenses extends MY_Controller {
         $data['title'] = 'Create Expense';
 
         if($this->form_validation->run() === FALSE){
-            $this->load->view('templates/header/header-required', $data);
-            $this->load->view('templates/header/header-sidebar');
-            $this->load->view('templates/header/header-container');
+            $this->load->view('templates/header/header', $data);
             $this->load->view('expenses/create', $data);
-            $this->load->view('templates/footer/footer-required');
+            $this->load->view('templates/footer/footer');
         } else {
             $this->Expenses_model->create_expense();
             redirect('expenses');
@@ -65,11 +59,9 @@ class Expenses extends MY_Controller {
 
         $data['title'] = 'Edit Expense';
 
-        $this->load->view('templates/header/header-required', $data);
-        $this->load->view('templates/header/header-sidebar');
-        $this->load->view('templates/header/header-container');
+        $this->load->view('templates/header/header', $data);
         $this->load->view('expenses/update', $data);
-        $this->load->view('templates/footer/footer-required');
+        $this->load->view('templates/footer/footer');
     }
 
     public function update(){

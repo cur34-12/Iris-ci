@@ -2,18 +2,16 @@
 
         //Locations
 
-        class Locations extends CI_Controller {
+        class Locations extends MY_Controller {
                 public function index(){
 
                     $data['locations'] = $this->Locations_model->get_locations();
 
                     $data['title'] = 'Locations';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('locations/index', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function view($loc_id = null){
@@ -27,11 +25,9 @@
 
                     $data['title'] = $data['location']['loc_name'];
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('locations/view', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function create(){
@@ -43,11 +39,9 @@
                     $this->form_validation->set_rules('loc_name', 'Location Name', 'required');
 
                     if($this->form_validation->run() === FALSE){
-                        $this->load->view('templates/header/header-required', $data);
-                        $this->load->view('templates/header/header-sidebar');
-                        $this->load->view('templates/header/header-container');
+                        $this->load->view('templates/header/header', $data);
                         $this->load->view('locations/create', $data);
-                        $this->load->view('templates/footer/footer-required');  
+                        $this->load->view('templates/footer/footer');
                     } else {
                         $this->Locations_model->create_location();
                         redirect('locations');
@@ -71,11 +65,9 @@
 
                     $data['title'] = 'Edit location';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('locations/update', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function update(){
@@ -88,26 +80,22 @@
 
                     $data['locations'] = $this->Locations_model->get_locations();
 
-                    $data['title'] = 'Logi - Edit';
+                    $data['title'] = 'Edit';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('locations/edit', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
 
                 public function select_delete(){ 
 
                     $data['locations'] = $this->Locations_model->get_locations();
 
-                    $data['title'] = 'Logi - Delete';
+                    $data['title'] = 'Delete';
 
-                    $this->load->view('templates/header/header-required', $data);
-                    $this->load->view('templates/header/header-sidebar');
-                    $this->load->view('templates/header/header-container');
+                    $this->load->view('templates/header/header', $data);
                     $this->load->view('locations/delete', $data);
-                    $this->load->view('templates/footer/footer-required');
+                    $this->load->view('templates/footer/footer');
                 }
         }
 ?>
