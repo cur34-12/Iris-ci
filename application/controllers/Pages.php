@@ -10,11 +10,9 @@
 
                 $data['title'] = 'Calendar';
 
-                $this->load->view('templates/header/header-required', $data);
-                $this->load->view('templates/header/header-sidebar');
-                $this->load->view('templates/header/header-container');
+                $this->load->view('templates/header/header', $data);
                 $this->load->view('pages/calendar', $data);
-                $this->load->view('templates/footer/footer-required');
+                $this->load->view('templates/footer/footer');
             }
 
             public function dodash()
@@ -26,11 +24,9 @@
 
                 $data['title'] = 'Duty Officer - Dash';
 
-                $this->load->view('templates/header/header-required', $data);
-                $this->load->view('templates/header/header-sidebar');
-                $this->load->view('templates/header/header-container');
+                $this->load->view('templates/header/header', $data);
                 $this->load->view('pages/dodash', $data);
-                $this->load->view('templates/footer/footer-required');
+                $this->load->view('templates/footer/footer');
             }
 
             public function view($page = 'home')
@@ -42,11 +38,9 @@
 
                 $data['title'] = ucfirst($page); // Capitalize the first letter
 
-                $this->load->view('templates/header/header-required', $data);
-                $this->load->view('templates/header/header-sidebar');
-                $this->load->view('templates/header/header-container');
+                $this->load->view('templates/header/header', $data);
                 $this->load->view('pages/'.$page, $data);
-                $this->load->view('templates/footer/footer-required');
+                $this->load->view('templates/footer/footer');
             }
 
 
