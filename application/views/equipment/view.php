@@ -1,28 +1,4 @@
 <?php $bar = new BARCODE(); ?>
-<script>
-function showEditLocation(locationID) {
-    var editDiv = document.getElementById('loc_edit_'+locationID);
-    var viewDiv = document.getElementById('loc_view_'+locationID);
-    editDiv.style.display = '';
-    viewDiv.style.display = 'none';
-}
-function hideEditLocation(locationID) {
-    var editDiv = document.getElementById('loc_edit_'+locationID);
-    var viewDiv = document.getElementById('loc_view_'+locationID);
-    editDiv.style.display = 'none';
-    viewDiv.style.display = '';
-}
-function showAddLocation() {
-    var addTable = document.getElementById('loc_add');
-    addTable.style.display = '';
-    document.getElementById('addLocationButton').style.display = 'none';
-}
-function hideAddLocation() {
-    var addTable = document.getElementById('loc_add');
-    addTable.style.display = 'none';
-    document.getElementById('addLocationButton').style.display = '';
-}
-</script>
 <h2 style="text-transform: uppercase;">Equipment - <?php echo $equipment['eq_name']; ?></h2>
 <hr />
 <div class="row">
@@ -134,4 +110,27 @@ function hideAddLocation() {
     </div>
 </div>
 <hr />
-
+<script>
+    function showEditLocation(locationID) {
+        var editDiv = document.getElementById('loc_edit_'+locationID);
+        var viewDiv = document.getElementById('loc_view_'+locationID);
+        editDiv.style.display = '';
+        viewDiv.style.display = 'none';
+    }
+    function hideEditLocation(locationID) {
+        var editDiv = document.getElementById('loc_edit_'+locationID);
+        var viewDiv = document.getElementById('loc_view_'+locationID);
+        editDiv.style.display = 'none';
+        viewDiv.style.display = '';
+    }
+    function showAddLocation() {
+        var addTable = document.getElementById('loc_add');
+        addTable.style.display = '';
+        document.getElementById('addLocationButton').style.display = 'none';
+    }
+    function hideAddLocation() {
+        var addTable = document.getElementById('loc_add');
+        addTable.style.display = 'none';
+        document.getElementById('addLocationButton').style.display = '';
+    }
+</script>

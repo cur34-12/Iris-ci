@@ -20,6 +20,7 @@
                         $data['issues'] = $this->Equipment_model->get_equipment_issues($eq_id);
                         $data['locations'] = $this->Equipment_model->get_equipment_locations($eq_id);
                         $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
+                        $data['suppliers'] = $this->Suppliers_model->get_suppliers();
 
                         if (empty($data['equipment'])) {
                             show_404();
@@ -37,6 +38,7 @@
                     $data['categories'] = $this->Equipment_model->get_categories();
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
                     $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
+                    $data['suppliers'] = $this->Suppliers_model->get_suppliers();
                     $data['title'] = 'Create Equipment';
 
                     $this->form_validation->set_rules('eq_name', 'Name', 'required');
@@ -62,6 +64,7 @@
                     $data['equipment'] = $this->Equipment_model->get_equipment($eq_id);
                     $data['categories'] = $this->Equipment_model->get_categories();
                     $data['equipmentgroups'] = $this->Equipment_model->get_equipment_groups();
+                    $data['suppliers'] = $this->Suppliers_model->get_suppliers();
 
                     if(empty($data['equipment'])){
                             show_404();
