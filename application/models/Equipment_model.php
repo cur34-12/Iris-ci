@@ -18,6 +18,7 @@
 				$query = $this->db->get('equipment');
 				return $query->result_array();
 			}
+			$this->db->join('suppliers','suppliers.supplier_id = equipment.eq_supplier', 'left');
 			$this->db->join('equipment_groups', 'equipment_groups.eqgroup_id = equipment.eq_group_id', 'left');
 			$query = $this->db->get_where('equipment', array('eq_id' => $eq_id));
 			return $query->row_array();
