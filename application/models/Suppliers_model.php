@@ -28,8 +28,7 @@
 				'supplier_active' => $this->input->post('supplier_active'),
 				'supplier_created_date' => $this->input->post('supplier_created_date'),
 				'supplier_created_by' => $this->input->post('supplier_created_by'),
-				'supplier_last_updated' => $this->input->post('supplier_created_by'),
-				'supplier_last_updated_by' => $this->input->post('supplier_created_by')
+				'supplier_last_updated_by' => $this->input->post('supplier_updated_by')
 			);
 
 			return $this->db->insert('suppliers', $data);
@@ -52,8 +51,7 @@
 				'supplier_account' => $this->input->post('supplier_account'),
 				'supplier_account_num' => $this->input->post('supplier_account_num'),
 				'supplier_active' => $this->input->post('supplier_active'),
-				'supplier_last_updated' => $this->input->post('supplier_created_by'),
-				'supplier_last_updated_by' => $this->input->post('supplier_created_by')
+				'supplier_last_updated_by' => $this->input->post('supplier_updated_by')
 			);
 
 			$this->db->where('supplier_id', $this->input->post('supplier_id'));
