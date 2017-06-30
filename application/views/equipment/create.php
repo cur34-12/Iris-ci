@@ -115,7 +115,7 @@
 				<option value="Donation">Donation</option>
 				<option value="Unit Funts">Unit Funds</option>
 				<option value="Region Funds">Region Funds</option>
-				<option value="USHQ Funds">SHQ Funds</option>
+				<option value="SHQ Funds">SHQ Funds</option>
 				<option value="Emergency Order">Emergency Order</option>
 			</select>
 		</div>
