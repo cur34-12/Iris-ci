@@ -17,6 +17,9 @@
     <!-- Jquery UI Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/jqueryui/themes/base/jquery-ui.css">
 
+    <!-- Bootstrap DateTimePicker -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>vendor/components/font-awesome/css/font-awesome.css">
 

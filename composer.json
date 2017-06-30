@@ -11,7 +11,8 @@
         "datatables/datatables": "^1.10",
         "fullcalendar/fullcalendar": "^3.4",
         "components/font-awesome": "^4.7",
-        "mbostock/d3": "^3.5"
+        "mbostock/d3": "^3.5",
+        "components/bootstrap-datetimepicker": "^2.4"
     },
     "authors": [
         {

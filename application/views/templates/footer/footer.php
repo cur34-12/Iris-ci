@@ -7,8 +7,11 @@
 <!-- JQuery UI -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/jqueryui/jquery-ui.min.js"></script>
 
-<!-- materialize -->
+<!-- Bootstrap -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/bootstrap/js/bootstrap.js"></script>
+
+<!-- Bootstrap DateTime Picker-->
+<script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 
 <!-- Moment Time Parser-->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/moment/moment/moment.js"></script>
