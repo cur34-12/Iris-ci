@@ -86,7 +86,7 @@
         </div>
         <script type="text/javascript">
 	        $(function () {
-	            $('#eq_date_purchased').datetimepicker({
+	            $('#eq_date_purchased').datepicker({
 	            	useCurrent: true,
 	            	showTodayButton: true,
 	            	sideBySide: true,
@@ -105,7 +105,7 @@
         </div>
 	    <script type="text/javascript">
 			$(function () {
-			    $('#eq_end_life').datetimepicker({
+			    $('#eq_end_life').datepicker({
 			    	useCurrent: true,
 			    	showTodayButton: true,
 			    	sideBySide: true,
@@ -124,12 +124,6 @@
 				<option value="USHQ Funds">SHQ Funds</option>
 				<option value="Emergency Order">Emergency Order</option>
 			</select>
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label col-sm-2">Asset Number</label>
-		<div class="col-sm-10">
-			<input type="text" class="form-control" name="eq_asset_number" placeholder="Eg. 34783698">
 		</div>
 	</div>
     <div class="form-group">
