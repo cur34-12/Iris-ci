@@ -87,10 +87,7 @@
         <script type="text/javascript">
 	        $(function () {
 	            $('#eq_date_purchased').datepicker({
-	            	useCurrent: true,
-	            	showTodayButton: true,
-	            	sideBySide: true,
-	            	format: 'YYYY-MM-DD',
+	            	format: 'DD-MM-YYYY'
 	            });
 	        });
 		</script>
@@ -106,10 +103,7 @@
 	    <script type="text/javascript">
 			$(function () {
 			    $('#eq_end_life').datepicker({
-			    	useCurrent: true,
-			    	showTodayButton: true,
-			    	sideBySide: true,
-			    	format: 'YYYY-MM-DD',
+			    	format: 'DD-MM-YYYY'
 			    });
 			});
     	</script>
