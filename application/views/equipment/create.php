@@ -87,7 +87,8 @@
         <script type="text/javascript">
 	        $(function () {
 	            $('#eq_date_purchased').datetimepicker({
-	            	format: 'DD-MM-YYYY'
+	            	format: 'DD/MM/YYYY',
+                    pickerPosition: 'top-left'
 	            });
 	        });
 		</script>
@@ -103,7 +104,8 @@
 	    <script type="text/javascript">
 			$(function () {
 			    $('#eq_end_life').datetimepicker({
-			    	format: 'DD-MM-YYYY'
+                    format: 'DD/MM/YYYY',
+                    pickerPosition: 'top-left'
 			    });
 			});
     	</script>
