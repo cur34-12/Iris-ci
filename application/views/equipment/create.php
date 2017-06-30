@@ -86,7 +86,7 @@
         </div>
         <script type="text/javascript">
 	        $(function () {
-	            $('#eq_date_purchased').datepicker({
+	            $('#eq_date_purchased').datetimepicker({
 	            	format: 'DD-MM-YYYY'
 	            });
 	        });
@@ -102,7 +102,7 @@
         </div>
 	    <script type="text/javascript">
 			$(function () {
-			    $('#eq_end_life').datepicker({
+			    $('#eq_end_life').datetimepicker({
 			    	format: 'DD-MM-YYYY'
 			    });
 			});
