@@ -1,7 +1,12 @@
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 <h2><?php echo $issue['iss_title']; ?></h2>
 <table class="table table-striped table-hover ">
 	<tr><td style="font-weight: bold">Title</td><td><?php echo $issue['iss_title']; ?></td></tr>
-	<tr><td style="font-weight: bold">Equipment</td><td><a href="/equipment/view/<?php echo $issue['eq_id']; ?>"><?php echo $issue['eq_name']; ?></a></td></tr>
+	<tr><td style="font-weight: bold">Equipment</td><td><a href="<?php echo site_url('/equipment/view/'. $issue['eq_id']); ?>" data-toggle="tooltip" data-placement="bottom" title="<?php echo $issue['eq_description']; ?>"><?php echo $issue['eq_name']; ?></a></td></tr>
 	<tr><td style="font-weight: bold">Status</td><td><?php echo $issue['iss_status']; ?></td></tr>
 	<tr><td style="font-weight: bold">Description</td><td><?php echo $issue['iss_description']; ?></td></tr>
 	<tr><td style="font-weight: bold">Reported By</td><td><?php echo $issue['iss_reporter_id']; ?></td></tr>
