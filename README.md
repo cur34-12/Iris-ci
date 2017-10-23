@@ -12,7 +12,7 @@ Iris is not currently released for general usage.
 
 If you wish to use the development version of Iris, it is recommended you are familiar with the setup and management of web server and database. Iris is built on the [Code Igniter](https://codeigniter.com/) framework and can be installed to any standard PHP capable webserver and MySQL(style) database. To use the dev version of Iris:
 
-1. Install and configure [Apache2](https://httpd.apache.org/) or [NGINX](https://nginx.org/en/) with [PHP56](http://php.net/
+1. Install and configure [Apache2](https://httpd.apache.org/) or [NGINX](https://nginx.org/en/) with [PHP56](http://php.net/)
 2. Install and configure [MySQL](https://www.mysql.com/) or [MariaDB](https://mariadb.org/)
 3. Install [Composer](https://getcomposer.org/)
 4. Clone Iris from [Github](https://github.com/hbyses/Iris/) into your webroot
