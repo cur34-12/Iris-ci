@@ -10,19 +10,19 @@ Iris is a web application for managing unit level operations (in a non rescue co
 
 Iris is not currently released for general usage.  
 
-If you wish to use the development version of Iris, it is recommended you are familiar with the setup and management of Apache2/Nginx and MySQL. Iris is built on the [Code Igniter](https://codeigniter.com/) framework and can be installed to any standard PHP capable webserver and MySQL(style) database. To use the dev version of Iris:
+If you wish to use the development version of Iris, it is recommended you are familiar with the setup and management of web server and database. Iris is built on the [Code Igniter](https://codeigniter.com/) framework and can be installed to any standard PHP capable webserver and MySQL(style) database. To use the dev version of Iris:
 
-1. Install and configure Apache2/NGINX with PHP (if on Windows we recommend [WAMP](http://www.wampserver.com/en/))
-2. Install and configure a MySQL/MariaDB database server (if on Windows we recommend [WAMP](http://www.wampserver.com/en/))
+1. Install and configure a web server with PHP56
+2. Install and configure a MySQL
 3. Install [Composer](https://getcomposer.org/)
-4. Clone Iris from [Github](https://github.com/paralittic/Iris/) into `WampInstallDir/www`
-5. Using PhpMyAdmin or your MySQL tool or choice create an empty database called `iris`
-5. Import the `iris-structure.sql` file into your new database (optional: for dummy data import the `iris-sample-data.sql` file)
-6. Configure the application/config/config.php file to suit your environment
-7. Configure the application/config/database.php file to suit your environment
+4. Clone Iris from [Github](https://github.com/hbyses/Iris/) into your webroot
+5. Using PhpMyAdmin or your MySQL editor of choice create an empty database called `iris`
+5. Import the `migrations/iris-structure.sql` file into your new database (optional: for dummy data import the `migrations/iris-sample-data.sql` file)
+6. Configure `application/config/main_url.php` file to suit your environment
+7. Configure `application/config/db_settings.php` file to suit your environment
 8. Run `composer update` in the Iris root directory
-9. Configure the function create_user in `application/controllers/Examples.php` to give yourself a login
-10. Write the rest of this list!
+9. Start your web server and database server
+10. Navigate in your web browser to the url you configured in step 6
 
 ## Contributing
 
