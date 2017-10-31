@@ -7,15 +7,16 @@
             $this->load->database();
         }
 
-        public function get_events($event_category = FALSE){
-            if($event_category === FALSE or is_null($event_category)){
-                $this->db->order_by('event_id', 'ASC');
-                $query = $this->db->get('events');
-                return $query->result_array();
-            }
-            $query = $this->db->get_where('events', array('event_category' => $event_category));
-            return $query->row_array();
-        }
+        public function get_events($event_id = FALSE){
+			if($veh_id === FALSE){
+				$this->db->order_by('event_title', 'ASC');
+				$query = $this->db->get('events');
+				return $query->result_array();
+			}
+
+			$query = $this->db->get_where('events', array('event_id' => $event_id));
+			return $query->row_array();
+		}
 
         public function create_event(){
             $data = array(
