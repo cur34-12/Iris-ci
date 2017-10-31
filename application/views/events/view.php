@@ -8,7 +8,6 @@
 		<tr><td style="font-weight: bold">Related Asset</td><td><?php echo $event['event_related_asset']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Owner</td><td><?php echo $event['event_owner']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Description</td><td><?php echo $event['event_description']; ?></td></tr>
-=
 	</tbody>
 </table>
 <hr />
