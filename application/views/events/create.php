@@ -47,6 +47,18 @@
 			<input type="text" class="form-control" name="event_related_asset" placeholder="Eg.Large">
 		</div>
 	</div>
+    <div class="form-group">
+		<label class="control-label col-sm-2">Event Category</label>
+		<div class="col-sm-10">
+			<select id="event_category" name="event_category" class="form-control">
+				<option value="Operations">Operations</option>
+                <option value="Duties">Duties</option>
+				<option value="Equipment">Equipment</option>
+                <option value="Fleet">Fleet</option>
+                <option value="Member Leave">Member Leave</option>
+			</select>
+		</div>
+	</div>
 	<button type="submit" class="btn btn-primary">Create</button>
 	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
