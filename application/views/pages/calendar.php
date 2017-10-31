@@ -22,7 +22,7 @@
                         title:'<?php echo $event['event_title']; ?>',
                         start:'<?php echo $event['event_start']; ?>',
                         end:'<?php echo $event['event_end']; ?>',
-                        url:'<?php echo site_url('/event/'. $event['event_id']); ?>',
+                        url:'<?php echo site_url('/events/'. $event['event_id']); ?>',
                         allDay: '<?php echo $event['event_allday']; ?>'
                     }
                 <?php endforeach; ?>
