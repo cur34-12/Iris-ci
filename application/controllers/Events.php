@@ -71,24 +71,5 @@
                     $this->Vehicle_model->update_event();
                     redirect('events');
                 }
-
-                public function select_edit(){ 
-
-                    $data['events'] = $this->Vehicle_model->get_events();
-
-                    $this->load->view('templates/header/header', $data);
-                    $this->load->view('events/edit', $data);
-                    $this->load->view('templates/footer/footer-container');
-                    $this->load->view('templates/footer/footer');
-                }
-
-                public function select_delete(){ 
-
-                    $data['events'] = $this->Vehicle_model->get_events();
-
-                    $this->load->view('templates/header/header', $data);
-                    $this->load->view('events/delete', $data);
-                    $this->load->view('templates/footer/footer');
-                }
         }
 ?>
