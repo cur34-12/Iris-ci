@@ -15,3 +15,5 @@
 
 <a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/vehicles/create'); ?>">Create Vehicle</a>
 <a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['veh_id']); ?>">Edit Vehicle</a>
+
+
