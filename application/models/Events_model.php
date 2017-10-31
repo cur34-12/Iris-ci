@@ -39,7 +39,8 @@
                 'event_createddate' => $this->input->post('event_createddate'),
                 'event_modifiedby' => $this->input->post('event_modifiedby'),
                 'event_lastmodified' => $this->input->post('event_lastmodified'),
-                'event_category' => $this->input->post('event_category')
+                'event_category' => $this->input->post('event_category'),
+                'event_description' => $this->input->post('event_description')
             );
 
             $this->db->insert('events', $data);
@@ -68,12 +69,11 @@
                 'event_createddate' => $this->input->post('event_createddate'),
                 'event_modifiedby' => $this->input->post('event_modifiedby'),
                 'event_lastmodified' => $this->input->post('event_lastmodified'),
-                'event_category' => $this->input->post('event_category')
+                'event_category' => $this->input->post('event_category'),
+                'event_description' => $this->input->post('event_description')
             );
 
             $this->db->where('event_id', $this->input->post('event_id'));
             return $this->db->update('events', $data);
         }
-
-
     }

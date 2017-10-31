@@ -9,10 +9,10 @@
 		<tr><td style="font-weight: bold">Event Owner</td><td><?php echo $event['event_owner']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Description</td><td><?php echo $event['event_description']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Category</td><td><?php echo $event['event_category']; ?></td></tr>
-		<tr><td style="font-weight: bold">Created By</td><td><?php echo $event['event_created_by']; ?></td></tr>
-		<tr><td style="font-weight: bold">Created On</td><td><?php echo $event['event_created_on']; ?></td></tr>
-		<tr><td style="font-weight: bold">Last Edited By</td><td><?php echo $event['event_edited_by']; ?></td></tr>
-		<tr><td style="font-weight: bold">Last Edited On</td><td><?php echo $event['event_edited_on']; ?></td></tr>
+		<tr><td style="font-weight: bold">Created By</td><td><?php echo $event['event_createdby']; ?></td></tr>
+		<tr><td style="font-weight: bold">Created On</td><td><?php echo $event['event_createddate']; ?></td></tr>
+		<tr><td style="font-weight: bold">Last Edited By</td><td><?php echo $event['event_modifiedby']; ?></td></tr>
+		<tr><td style="font-weight: bold">Last Edited On</td><td><?php echo $event['event_lastmodified']; ?></td></tr>
 	</tbody>
 </table>
 <hr />
