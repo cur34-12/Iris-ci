@@ -114,7 +114,7 @@ $(function() {
 	    todayBtn: "linked",
 	    clearBtn: true,
 	    autoclose: true,
-	    todayHighlight: true
+	    todayHighlight: true,
 	    changeMonth: true,
       	changeYear: true
 	});
