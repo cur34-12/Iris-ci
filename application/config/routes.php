@@ -11,6 +11,13 @@ $route['expenses/update'] = 'expenses/update';
 $route['expenses/(:any)'] = 'expenses/view/$1';
 $route['expenses'] = 'expenses/index';
 
+/* Events Routes */
+$route['events/create'] = 'events/create';
+$route['events/create/(:any)'] = 'events/create/$1';
+$route['events/update'] = 'events/update';
+$route['events/(:any)'] = 'events/view/$1';
+$route['events'] = 'events/index';
+
 /* Issues Routes */
 $route['issues/delete'] = 'issues/select_delete';
 $route['issues/edit'] = 'issues/select_edit';
