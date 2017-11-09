@@ -36,14 +36,12 @@
 		</div>
 	</div>
 	<div class="form-group">
-    <!--Dan to add equipment instant search functionality here-->
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="event_related_asset" value="<?php echo $event['event_related_asset']; ?>">
 		</div>
 	</div>
     <div class="form-group">
-    <!--Dan to add people instant search functionality here-->
 		<label class="control-label col-sm-2">Event Owner</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="event_owner" value="<?php echo $event['event_event_owner']; ?>">
