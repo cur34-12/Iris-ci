@@ -68,7 +68,7 @@
 
                 public function update(){
 
-                    $this->Vehicle_model->update_event();
+                    $this->Events_model->update_event();
                     redirect('events');
                 }
         }
