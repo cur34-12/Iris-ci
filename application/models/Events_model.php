@@ -8,7 +8,7 @@
         }
 
         public function get_events($event_id = FALSE){
-			if($veh_id === FALSE){
+			if($event_id === FALSE){
 				$this->db->order_by('event_title', 'ASC');
 				$query = $this->db->get('events');
 				return $query->result_array();
