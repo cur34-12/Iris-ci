@@ -84,14 +84,6 @@
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
         </div>
-        <script type="text/javascript">
-	        $(function () {
-	            $('#eq_date_purchased').datetimepicker({
-	            	format: 'DD/MM/YYYY',
-                    pickerPosition: 'top-left'
-	            });
-	        });
-		</script>
     </div>
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
@@ -101,14 +93,6 @@
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
         </div>
-	    <script type="text/javascript">
-			$(function () {
-			    $('#eq_end_life').datetimepicker({
-                    format: 'DD/MM/YYYY',
-                    pickerPosition: 'top-left'
-			    });
-			});
-    	</script>
     </div>
 	<div class="form-group">
 		<label class="control-label col-sm-2 col-sm-10">Purchase Type</label>
