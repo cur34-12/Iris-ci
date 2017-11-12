@@ -1,9 +1,9 @@
 <?php
 //THESE DETAILS NEED UPDAED WITH THE PRODUCTION CREDENTIALS ON THE SERVER
 define('DB_SERVER', 'int.db1.strat.is');
-define('DB_USER', 'logi_dbuser');
-define('DB_PASSWORD', 'dblogi0911>');
-define('DB_NAME', 'logi');
+define('DB_USER', 'iris_staging');
+define('DB_PASSWORD', '4Rc8lDEm13xv');
+define('DB_NAME', 'iris_staging');
 
 
 if (isset($_GET['term'])){
