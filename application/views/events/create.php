@@ -79,7 +79,7 @@ $(function () {
         pickerPosition: "bottom-left"
     });
     $("#event_end").datetimepicker({
-		format: "yyyy-mm-dd hh:ii",
+		format: "dd/mm/yy hh:ii",
 		minView: 0,
         autoclose: true,
         todayBtn: true,
