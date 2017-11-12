@@ -80,18 +80,14 @@
 		<label class="control-label col-sm-2">Date Purchased</label>
         <div class='input-group date col-sm-10' id='eq_date_purchased'>
             <input type='text' class="form-control" name="eq_date_purchased"/>
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
         </div>
     </div>
     <div class="form-group">
 		<label class="control-label col-sm-2">End of Life date</label>
         <div class='input-group date col-sm-10' id='eq_end_life'>
             <input type='text' class="form-control" name="eq_end_life"/>
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
         </div>
     </div>
 	<div class="form-group">
@@ -157,3 +153,18 @@
 	<button type="submit" class="btn btn-primary">Create</button>
 	<a class="btn btn-warning" role="button" href="/equipment">Cancel</a>
 </form>
+
+<script type="text/javascript">
+    $("#eq_date_purchased").datetimepicker({
+        format: "dd/mm/yy",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+    $("#eq_end_life").datetimepicker({
+        format: "dd/mm/yy",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+</script>   
