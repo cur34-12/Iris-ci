@@ -2,7 +2,7 @@
 //THESE DETAILS NEED UPDAED WITH THE PRODUCTION CREDENTIALS ON THE SERVER
 define('DB_SERVER', 'int.db1.strat.is');
 define('DB_USER', 'iris_staging');
-define('DB_PASSWORD', '4Rc8lDEm13xv>');
+define('DB_PASSWORD', '4Rc8lDEm13xv');
 define('DB_NAME', 'iris_staging');
 
 
