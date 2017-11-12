@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-if ( ! function_exists('site_url2'))
+if ( ! function_exists('date2DB'))
 {
 	/**
 	 * Site URL
@@ -12,7 +12,7 @@ if ( ! function_exists('site_url2'))
 	 * @param	string	$protocol
 	 * @return	string
 	 */
-	function site_url2($uri = '', $protocol = NULL)
+	function date2DB($uri = '', $protocol = NULL)
 	{
 		return null;
 	}
