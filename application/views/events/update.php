@@ -12,8 +12,8 @@
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
 			<select id="event_allday" name="event_allday" class="form-control">
-				<option value="False">False</option>
-				<option value="True">True</option>
+				<option value="false">false</option>
+				<option value="true">true</option>
 			</select>
             <script>
 				$(function() {
