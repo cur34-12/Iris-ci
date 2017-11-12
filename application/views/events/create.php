@@ -21,12 +21,14 @@
 		<label class="control-label col-sm-2">Start Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="event_start" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" name="event_end" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
