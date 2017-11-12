@@ -120,7 +120,7 @@
             <?php foreach($events as $event) : ?>
                     <td style="vertical-align: middle;"><a href="/events/<?php echo $event['event_id']; ?>"><?php echo $event['event_title']; ?></a></td>
                     <td style="vertical-align: middle;"><?php echo $event['event_start']; ?> - <?php echo $event['event_end']; ?></td>
-                    <td style="vertical-align: middle;"><?php echo $issue['event_category']; ?></td>
+                    <td style="vertical-align: middle;"><?php echo $event['event_category']; ?></td>
                     <td style="text-align: right;vertical-align: middle;"><a class="btn btn-basic btn-sm" role="button" href="/events/edit/<?php echo $event['event_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
                 </tr>
             <?php endforeach; ?>
