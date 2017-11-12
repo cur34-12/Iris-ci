@@ -72,6 +72,6 @@
 	</div>
 
 
-	<button type="submit" name="submit" class="btn btn-outline-primary">Update</button>
-	<a class="btn btn-outline-warning" role="button" href="/vehicles">Cancel</a>
+	<button type="submit" name="submit" class="btn btn-primary">Update</button>
+	<a class="btn btn-warning" role="button" href="/vehicles">Cancel</a>
 </form>
