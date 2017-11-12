@@ -72,14 +72,14 @@
 <script type="text/javascript">
 $(function () {
     $("#event_start").datetimepicker({
-		format: "dd/mm/yy hh:ii",
+		format: "dd/mm/yyyy hh:ii",
 		minView: 0,
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
     });
     $("#event_end").datetimepicker({
-		format: "yyyy-mm-dd hh:ii",
+		format: "dd/mm/yyyy hh:ii",
 		minView: 0,
         autoclose: true,
         todayBtn: true,
