@@ -2,8 +2,7 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('events/update', $attributes); ?>
-	<input type="text" class="form-control" name="event_id" value="<?php echo $event['event_id']; ?>">
-	</div>	
+	<input type="text" class="form-control" name="event_id" value="<?php echo $event['event_id']; ?>">	
 	<div class="form-group">
         <label class="control-label col-sm-2">Event Title</label>
         <div class="col-sm-10">
