@@ -88,40 +88,20 @@
 	<div class="form-group">
 		<label class="control-label col-sm-1">Date Purchased</label>
         <div class='input-group date col-sm-7' id='eq_date_purchased'>
-            <input type='text' class="form-control" name="eq_date_purchased" value="<?php echo $equipment['eq_date_purchased']; ?>"/>
+            <input type='text' class="form-control" name="eq_date_purchased" value="<?php echo $equipment['eq_date_purchased']; ?>"  data-date-format="yyyy-mm-dd"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
         </div>
-	        <script type="text/javascript">
-	        $(function () {
-	            $('#eq_date_purchased').datetimepicker({
-	            	useCurrent: true,
-	            	showTodayButton: true,
-	            	sideBySide: true,
-	            	format: 'YYYY-MM-DD'
-	            });
-	        });
-		</script>
     </div>
     <div class="form-group">
 		<label class="control-label col-sm-1">End of Life date</label>
         <div class='input-group date col-sm-7' id='eq_end_life'>
-            <input type='text' class="form-control" name="eq_end_life" value="<?php echo $equipment['eq_end_life']; ?>"/>
+            <input type='text' class="form-control" name="eq_end_life" value="<?php echo $equipment['eq_end_life']; ?>"  data-date-format="yyyy-mm-dd"/>
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar"></span>
             </span>
         </div>
-	    <script type="text/javascript">
-			$(function () {
-			    $('#eq_end_life').datetimepicker({
-			    	useCurrent: true,
-			    	showTodayButton: true,
-			    	sideBySide: true,
-			    	format: 'YYYY-MM-DD'
-			    });
-			});
-    	</script>
     </div>
 	<div class="form-group">
 		<label class="control-label col-sm-1">Purchase Type</label>
@@ -178,3 +158,21 @@
 		<button type="submit" name="submit" class="btn btn-primary">Update</button>
 		<a class="btn btn-warning" role="button" href="/equipment">Cancel</a>
 	</form>
+	<script type="text/javascript">
+$(function () {
+    $("#eq_date_purchased").datetimepicker({
+		format: "dd/mm/yy",
+		minView: 2,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+    $("#eq_end_life").datetimepicker({
+		format: "dd/mm/yy",
+		minView: 2,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+	});
+});
+</script>   
