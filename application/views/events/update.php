@@ -77,5 +77,5 @@
 		</div>
 	</div>
 	<button type="submit" name="submit" class="btn btn-primary">Update</button>
-	<a class="btn btn-warning" role="button" href="/vehicles">Cancel</a>
+	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
