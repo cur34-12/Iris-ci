@@ -35,7 +35,12 @@
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_relatedassetname" name="event_relatedassetname" placeholder="Eg. 00003453 or Monitor">
-			<input type="hidden" class="form-control" id="event_relatedasset" name="event_relatedasset">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Related Asset</label>
+		<div class="col-sm-10">
+			<input disabled type="text" class="form-control" id="event_relatedasset" name="event_relatedasset">
 		</div>
 	</div>
     <div class="form-group">
