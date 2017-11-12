@@ -12,8 +12,8 @@
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
 			<select id="event_all_day" name="event_all_day" class="form-control">
-				<option value="No">No</option>
-				<option value="Yes">Yes</option>
+				<option value="False">No</option>
+				<option value="True">Yes</option>
 			</select>
 		</div>
 	</div>
