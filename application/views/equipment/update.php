@@ -22,6 +22,16 @@
 		</div>
 	</div>
 	<div class="form-group">
+		<label class="control-label col-sm-1">Consumable</label>
+		<div class="col-sm-1">
+			<select class="form-control" id="eq_consumable" name="eq_consumable">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+			<!--<input type="checkbox" class="form-control" style="height:20px; width: 20px;" name="eq_consumable" id="eq_consumable" <?php echo strtolower($equipment['eq_consumable']) === 'true'?'checked':'' ;?> />-->
+		</div>
+	</div>
+	<div class="form-group">
 		<label class="control-label col-sm-1">Size</label>
 		<div class="col-sm-7">
 			<input type="text" class="form-control" name="eq_size" id="eq_size" value="<?php echo $equipment['eq_size']; ?>">

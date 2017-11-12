@@ -16,7 +16,7 @@
 
 			$query = $this->db->get_where('events', array('event_id' => $event_id));
 			return $query->row_array();
-		}
+        }
 
         public function create_event(){
             $data = array(

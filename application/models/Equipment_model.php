@@ -33,6 +33,12 @@
 			return $query->row_array();
 		}
 		
+		public function get_events($eq_id = FALSE){
+			$query = $this->db->get_where('events', array('event_relatedasset' => $eq_id));
+			return $query->result_array();
+		}
+
+
 		public function create_equipment(){
 			$data = array(
 				'eq_id' => $this->input->post('eq_id'),

@@ -13,5 +13,5 @@
 </table>
 <hr />
 
-<a class="btn btn-primary" role="button" href="<?php echo site_url('/vehicles/create'); ?>">Create Vehicle</a>
+<a class="btn btn-primary" role="button" href="<?php echo site_url('/equipment/'. $vehicle['veh_eq_id']); ?>">Activities</a>
 <a class="btn btn-warning" role="button" href="<?php echo site_url('/vehicles/edit/'. $vehicle['veh_id']); ?>">Edit Vehicle</a>
