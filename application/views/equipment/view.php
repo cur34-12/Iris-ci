@@ -107,6 +107,7 @@
             <?php endforeach; ?>
             </tbody>
         </table>
+        <hr />
         <h3>Events</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
