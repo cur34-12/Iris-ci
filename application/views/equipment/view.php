@@ -89,7 +89,7 @@
         </table>
 </form>  
         <hr />
-        <h3>Issues</h3>
+        <h3>Related Issues</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
                 <th>Title</th>
@@ -108,7 +108,7 @@
             </tbody>
         </table>
         <hr />
-        <h3>Events</h3>
+        <h3>Related Events</h3>
         <table class="table table-striped table-hover table-sm">
             <thead class="thead-inverse">
                 <th>Title</th>
