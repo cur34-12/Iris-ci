@@ -16,7 +16,7 @@
 	</tbody>
 </table>
 <hr />
-<a class="btn btn-outline-info" role="button" href="<?php echo site_url('/events'); ?>">Calendar</a>
-<a class="btn btn-outline-primary" role="button" href="<?php echo site_url('/events/create'); ?>">Create Event</a>
-<a class="btn btn-outline-warning" role="button" href="<?php echo site_url('/events/edit/'. $event['event_id']); ?>">Edit Event</a>
-<a class="btn btn-outline-danger" role="button" href="<?php echo site_url('/events/delete/'. $event['event_id']); ?>">Delete Event</a>
+<a class="btn btn-info" role="button" href="<?php echo site_url('/events'); ?>">Calendar</a>
+<a class="btn btn-primary" role="button" href="<?php echo site_url('/events/create'); ?>">Create Event</a>
+<a class="btn btn-warning" role="button" href="<?php echo site_url('/events/edit/'. $event['event_id']); ?>">Edit Event</a>
+<a class="btn btn-danger" role="button" href="<?php echo site_url('/events/delete/'. $event['event_id']); ?>">Delete Event</a>
