@@ -49,7 +49,7 @@
             $this->db->insert('events', $data);
         }
 
-        public function update_events(){
+        public function update_event(){
             $data = array(
                 'event_id' => $this->input->post('event_id'),
                 'event_title' => $this->input->post('event_title'),
