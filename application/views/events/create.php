@@ -11,22 +11,24 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
-			<select id="event_all_day" name="event_all_day" class="form-control">
-				<option value="False">False</option>
-				<option value="True">True</option>
+			<select id="event_allday" name="event_allday" class="form-control">
+				<option value="false">False</option>
+				<option value="true">True</option>
 			</select>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Start Date</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_start" placeholder="">
+			<input type="text" class="form-control" id="event_start" name="event_start" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_end" placeholder="">
+			<input type="text" class="form-control" id="event_end" name="event_end" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
@@ -63,3 +65,21 @@
 	<button type="submit" class="btn btn-primary">Create</button>
 	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
+<script type="text/javascript">
+$(function () {
+    $("#event_start").datetimepicker({
+		format: "dd/mm/yy hh:ii",
+		minView: 0,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+    $("#event_end").datetimepicker({
+		format: "yyyy-mm-dd hh:ii",
+		minView: 0,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+	});
+});
+</script>   

@@ -2,8 +2,7 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('events/update', $attributes); ?>
-	<input type="text" class="form-control" name="event_id" value="<?php echo $event['event_id']; ?>">
-	</div>	
+	<input type="hidden" class="form-control" name="event_id" value="<?php echo $event['event_id']; ?>">	
 	<div class="form-group">
         <label class="control-label col-sm-2">Event Title</label>
         <div class="col-sm-10">
@@ -27,13 +26,15 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Start Date</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_start" value="<?php echo $event['event_start']; ?>">
+			<input type="text" class="form-control" id="event_start" name="event_start" data-date-format="yyyy-mm-ddThh:ii" value="<?php echo $event['event_start']; ?>">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_end" value="<?php echo $event['event_end']; ?>">
+			<input type="text" class="form-control" id="event_end" name="event_end" data-date-format="yyyy-mm-ddThh:ii" value="<?php echo $event['event_end']; ?>">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
@@ -74,3 +75,21 @@
 	<button type="submit" name="submit" class="btn btn-primary">Update</button>
 	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
+<script type="text/javascript">
+$(function () {
+    $("#event_start").datetimepicker({
+		format: "dd/mm/yy hh:ii",
+		minView: 0,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+    $("#event_end").datetimepicker({
+		format: "yyyy-mm-dd hh:ii",
+		minView: 0,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+	});
+});
+</script>   
