@@ -157,13 +157,15 @@
 <script type="text/javascript">
 $(function () {
     $("#eq_date_purchased").datetimepicker({
-        format: "dd/mm/yy",
+		format: "dd/mm/yy",
+		minView: 1,
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
     });
     $("#eq_end_life").datetimepicker({
-        format: "dd/mm/yy",
+		format: "dd/mm/yy",
+		minView: 1,
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
