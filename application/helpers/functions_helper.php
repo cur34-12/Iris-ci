@@ -14,8 +14,12 @@ if ( ! function_exists('date2DB'))
 	 */
 	function date2DB($inputDate = NULL)
 	{
-    return null;
+    
     $dateArray = explode(substr($inputDate,2,1),$inputDate);
+    if(count($dateArray)!=3) {
+      return null;
+    }
+    return null;
 	}
 }
 //pass in dd/mm/yy or dd-mm-yy and convert to yyyy-mm-dd
