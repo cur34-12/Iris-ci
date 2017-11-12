@@ -158,14 +158,14 @@
 $(function () {
     $("#eq_date_purchased").datetimepicker({
 		format: "dd/mm/yy",
-		minView: 1,
+		minView: 2,
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
     });
     $("#eq_end_life").datetimepicker({
 		format: "dd/mm/yy",
-		minView: 1,
+		minView: 2,
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
