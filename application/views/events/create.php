@@ -59,6 +59,12 @@
 			</select>
 		</div>
 	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Created DateTime</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" name="event_createddate" value="<?php echo date('Y-m-d H:i:s'); ?>">
+		</div>
+	</div>
 	<button type="submit" class="btn btn-primary">Create</button>
 	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
