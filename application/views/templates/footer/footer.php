@@ -13,9 +13,6 @@
 <!-- Bootstrap DateTime Picker-->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 
-<!-- Moment Time Parser-->
-<script type="text/javascript" src="<?php echo base_url(); ?>vendor/moment/moment/moment.js"></script>
-
 <!-- D3 -->
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/mbostock/d3/d3.js"></script>
 
@@ -26,10 +23,6 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/datatables/datatables/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>vendor/datatables/datatables/media/js/dataTables.material.js"></script>
 
-<!-- Init of Moment-->
-<script>
-    moment().format();
-</script>
 
 <!-- Init of DataTable-->
 <script>
