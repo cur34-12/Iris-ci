@@ -109,13 +109,13 @@ $(function() {
   } );
 </script>
 <script type="text/javascript">
-	$('#iss_reported_date').datepicker({
-	    format: "dd/mm/yyyy",
-	    todayBtn: "linked",
-	    clearBtn: true,
-	    autoclose: true,
-	    todayHighlight: true,
-	    changeMonth: true,
-      	changeYear: true
-	});
-</script>
+$(function () {
+    $("#iss_reported_date").datetimepicker({
+		format: "dd/mm/yy",
+		minView: 2,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+});
+</script>   
