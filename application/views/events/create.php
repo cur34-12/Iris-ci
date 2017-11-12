@@ -30,9 +30,7 @@
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_end" name="event_end" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
-			<span class="input-group-addon">
-	                <i class="glyphicon glyphicon-calendar"></i>
-	            </span>
+			<i class="glyphicon glyphicon-calendar"></i>
 		</div>
 	</div>
 	<div class="form-group">
