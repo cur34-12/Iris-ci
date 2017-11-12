@@ -35,7 +35,7 @@
 		
 		public function get_events($eq_id = FALSE){
 			$query = $this->db->get_where('events', array('event_relatedasset' => $eq_id));
-			return null;
+			return $query->result_array();
 		}
 
 
