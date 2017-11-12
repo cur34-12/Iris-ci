@@ -12,8 +12,8 @@
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
 			<select id="event_all_day" name="event_all_day" class="form-control">
-				<option value="No">No</option>
-				<option value="Yes">Yes</option>
+				<option value="False">False</option>
+				<option value="True">True</option>
 			</select>
 		</div>
 	</div>
@@ -59,6 +59,7 @@
 			</select>
 		</div>
 	</div>
+	<input type="hidden" class="form-control" name="event_createddate" value="<?php echo date('Y-m-d H:i:s'); ?>">
 	<button type="submit" class="btn btn-primary">Create</button>
 	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>

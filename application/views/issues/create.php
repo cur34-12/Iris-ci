@@ -61,7 +61,7 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
-        				<option value="<?php echo $username['id']; ?>"><?php echo $username['username']; ?></option>
+        				<option value="<?php echo $username['user_id']; ?>"><?php echo $username['username']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>

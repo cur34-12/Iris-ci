@@ -2,7 +2,9 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
 <?php echo form_open('events/update', $attributes); ?>
-    <div class="form-group">
+	<input type="text" class="form-control" name="event_id" value="<?php echo $event['event_id']; ?>">
+	</div>	
+	<div class="form-group">
         <label class="control-label col-sm-2">Event Title</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" name="event_title" value="<?php echo $event['event_title']; ?>">
@@ -11,17 +13,16 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
-			<select id="event_all_day" name="event_all_day" class="form-control">
-				<option value="No">No</option>
-				<option value="Yes">Yes</option>
+			<select id="event_allday" name="event_allday" class="form-control">
+				<option value="false">false</option>
+				<option value="true">true</option>
 			</select>
             <script>
 				$(function() {
-					$( '#event_all_day' ).val('<?php echo $event['event_all_day']; ?>'); 
+					$( '#event_allday' ).val('<?php echo $event['event_allday']; ?>'); 
 				});
 		    </script>
 		</div>
-        
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Start Date</label>
@@ -38,13 +39,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_related_asset" value="<?php echo $event['event_related_asset']; ?>">
+			<input type="text" class="form-control" name="event_relatedasset" value="<?php echo $event['event_relatedasset']; ?>">
 		</div>
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Event Owner</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_owner" value="<?php echo $event['event_event_owner']; ?>">
+			<input type="text" class="form-control" name="event_owner" value="<?php echo $event['event_owner']; ?>">
 		</div>
 	</div>
     <div class="form-group">
@@ -70,8 +71,6 @@
 		    </script>
 		</div>
 	</div>
-
-
-	<button type="submit" name="submit" class="btn btn-outline-primary">Update</button>
-	<a class="btn btn-outline-warning" role="button" href="/vehicles">Cancel</a>
+	<button type="submit" name="submit" class="btn btn-primary">Update</button>
+	<a class="btn btn-warning" role="button" href="/events">Cancel</a>
 </form>
