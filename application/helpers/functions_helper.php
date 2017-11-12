@@ -9,8 +9,8 @@ if(!function_exists('date2DB')) {
       return null;
     }
     $outputDate = $dateArray[3] . "-" . $dateArray[2] . "-" . $dateArray[1];
-    return htmlentities($outputDate);
-  }*/
+    return htmlentities($outputDate);*/
+  }
 }
 /*
 
