@@ -64,6 +64,8 @@
 				<option>Heavy GLR</option>
 				<option>Recon</option>
 				<option>Transport</option>
+				<option>Flood Boat</option>
+				<option>Trailer</option>
 			</select>
 			<script>
 				$(function() {
@@ -80,6 +82,7 @@
 				<option>C</option>
 				<option>LR</option>
 				<option>MR</option>
+				<option>Boat</option>
 			</select>
 			<script>
 				$(function() {

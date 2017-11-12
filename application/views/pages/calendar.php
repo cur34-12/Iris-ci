@@ -16,6 +16,7 @@
             navLinks: true, // can click day/week names to navigate views
             editable: false,
             eventLimit: false, // allow "more" link when too many events
+            height: "auto",
             events: [
                 <?php foreach($events as $event) : ?>
                     {
@@ -24,7 +25,7 @@
                         end:'<?php echo $event['event_end']; ?>',
                         url:'<?php echo site_url('/events/'. $event['event_id']); ?>',
                         allDay: '<?php echo $event['event_allday']; ?>'
-                    }
+                    },
                 <?php endforeach; ?>
             ]
         });
