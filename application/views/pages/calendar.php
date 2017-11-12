@@ -16,7 +16,7 @@
             navLinks: true, // can click day/week names to navigate views
             editable: false,
             eventLimit: false, // allow "more" link when too many events
-            height: auto,
+            height: "auto",
             events: [
                 <?php foreach($events as $event) : ?>
                     {
