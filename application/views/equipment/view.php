@@ -107,6 +107,24 @@
             <?php endforeach; ?>
             </tbody>
         </table>
+        <h3>Events</h3>
+        <table class="table table-striped table-hover table-sm">
+            <thead class="thead-inverse">
+                <th>Title</th>
+                <th>Dates</th>
+                <th>Category</th>
+                <th style="text-align: right;"><a class="btn btn-primary btn-sm" role="button" href="/events/create#event_relatedasset=<?php echo $equipment['eq_id']; ?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add</a></th>
+            </thead>
+            <tbody>
+            <?php foreach($events as $event) : ?>
+                    <td style="vertical-align: middle;"><a href="/events/<?php echo $event['event_id']; ?>"><?php echo $event['event_title']; ?></a></td>
+                    <td style="vertical-align: middle;"><?php echo $event['event_start']; ?> - <?php echo $event['event_end']; ?></td>
+                    <td style="vertical-align: middle;"><?php echo $issue['event_category']; ?></td>
+                    <td style="text-align: right;vertical-align: middle;"><a class="btn btn-basic btn-sm" role="button" href="/events/edit/<?php echo $event['event_id']; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
 </div>
 <hr />
