@@ -32,7 +32,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_related_asset" placeholder="Eg. 00003453">
+			<input type="text" class="form-control" name="event_relatedasset" placeholder="Eg. 00003453">
 		</div>
 	</div>
     <div class="form-group">
