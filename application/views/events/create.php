@@ -22,7 +22,7 @@
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_start" name="event_start" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
 			<span class="input-group-addon">
-	                <span class="glyphicon glyphicon-calendar"></span>
+	                <i class="glyphicon glyphicon-calendar"></i>
 	            </span>
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_end" name="event_end" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
 			<span class="input-group-addon">
-	                <span class="glyphicon glyphicon-calendar"></span>
+	                <i class="glyphicon glyphicon-calendar"></i>
 	            </span>
 		</div>
 	</div>
