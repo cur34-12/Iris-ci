@@ -1,4 +1,4 @@
-<h2><?php echo $event['event_title']; ?></h2>
+<h2>EVENT - <?php echo $event['event_title']; ?></h2>
 <table class="table table-striped table-hover ">
 	<tbody>
 		<tr><td style="font-weight: bold">Title</td><td><?php echo $event['event_title']; ?></td></tr>
