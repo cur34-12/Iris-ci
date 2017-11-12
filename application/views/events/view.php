@@ -5,7 +5,7 @@
 		<tr><td style="font-weight: bold">All Day Event</td><td><?php echo $event['event_allday']; ?></td></tr>
 		<tr><td style="font-weight: bold">Start Date</td><td><?php echo $event['event_start']; ?></td></tr>
 		<tr><td style="font-weight: bold">End Date</td><td><?php echo $event['event_end']; ?></td></tr>
-		<tr><td style="font-weight: bold">Related Asset</td><td><a href="/equipment/<?php echo $event['event_relatedasset']; ?>"</a></td></tr>
+		<tr><td style="font-weight: bold">Related Asset</td><td><?php echo $event['event_relatedasset']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Owner</td><td><?php echo $event['event_owner']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Description</td><td><?php echo $event['event_description']; ?></td></tr>
 		<tr><td style="font-weight: bold">Event Category</td><td><?php echo $event['event_category']; ?></td></tr>
