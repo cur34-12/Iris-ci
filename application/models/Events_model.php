@@ -7,15 +7,16 @@
             $this->load->database();
         }
 
-        public function get_events($event_category = FALSE){
-            if($event_category === FALSE or is_null($event_category)){
-                $this->db->order_by('event_id', 'ASC');
-                $query = $this->db->get('events');
-                return $query->result_array();
-            }
-            $query = $this->db->get_where('events', array('event_category' => $event_category));
-            return $query->row_array();
-        }
+        public function get_events($event_id = FALSE){
+			if($event_id === FALSE){
+				$this->db->order_by('event_title', 'ASC');
+				$query = $this->db->get('events');
+				return $query->result_array();
+			}
+
+			$query = $this->db->get_where('events', array('event_id' => $event_id));
+			return $query->row_array();
+		}
 
         public function create_event(){
             $data = array(
@@ -39,7 +40,10 @@
                 'event_createddate' => $this->input->post('event_createddate'),
                 'event_modifiedby' => $this->input->post('event_modifiedby'),
                 'event_lastmodified' => $this->input->post('event_lastmodified'),
-                'event_category' => $this->input->post('event_category')
+                'event_category' => $this->input->post('event_category'),
+                'event_description' => $this->input->post('event_description'),
+                'event_owner' => $this->input->post('event_owner'),
+                'event_relatedasset' => $this->input->post('event_relatedasset')
             );
 
             $this->db->insert('events', $data);
@@ -68,12 +72,11 @@
                 'event_createddate' => $this->input->post('event_createddate'),
                 'event_modifiedby' => $this->input->post('event_modifiedby'),
                 'event_lastmodified' => $this->input->post('event_lastmodified'),
-                'event_category' => $this->input->post('event_category')
+                'event_category' => $this->input->post('event_category'),
+                'event_description' => $this->input->post('event_description')
             );
 
             $this->db->where('event_id', $this->input->post('event_id'));
             return $this->db->update('events', $data);
         }
-
-
     }
