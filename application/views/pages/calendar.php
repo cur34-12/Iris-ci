@@ -1,4 +1,5 @@
 <h2 style="text-transform: uppercase;">Calendar</h2>
+<a class="btn btn-primary" role="button" href="/events/create">Create Event</a>
 <hr />
 <div id='calendar'></div>
 <script>
