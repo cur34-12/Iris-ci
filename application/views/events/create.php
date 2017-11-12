@@ -88,7 +88,7 @@ $(function () {
 $(function() {
 
    //autocomplete
-    $("#event_relatedasset").autocomplete({
+    $("#event_relatedassetname").autocomplete({
         source: "/search-equipment.php",
         minLength: 0,
         focus: function( event, ui ) {
