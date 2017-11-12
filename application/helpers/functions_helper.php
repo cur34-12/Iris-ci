@@ -12,7 +12,7 @@ if ( ! function_exists('date2DB'))
 	 * @param	string	$protocol
 	 * @return	string
 	 */
-	function date2DB($uri = '', $protocol = NULL)
+	function date2DB($inputDate = NULL)
 	{
 		return null;
 	}
