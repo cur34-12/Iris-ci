@@ -27,14 +27,12 @@
 		<label class="control-label col-sm-2">Start Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_start" name="event_start" data-date-format="yyyy-mm-ddThh:ii" value="<?php echo $event['event_start']; ?>">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_end" name="event_end" data-date-format="yyyy-mm-ddThh:ii" value="<?php echo $event['event_end']; ?>">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">

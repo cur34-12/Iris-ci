@@ -21,20 +21,24 @@
 		<label class="control-label col-sm-2">Start Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_start" name="event_start" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">End Date</label>
 		<div class="col-sm-10">
 			<input type="text" class="form-control" id="event_end" name="event_end" placeholder="" data-date-format="yyyy-mm-ddThh:ii">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_relatedasset" placeholder="Eg. 00003453">
+			<input type="text" class="form-control" id="event_relatedassetname" name="event_relatedassetname" placeholder="Eg. 00003453 or Monitor">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2">Related Asset ID</label>
+		<div class="col-sm-10">
+			<input disabled type="text" class="form-control" id="event_relatedasset" name="event_relatedasset">
 		</div>
 	</div>
     <div class="form-group">
@@ -82,4 +86,29 @@ $(function () {
         pickerPosition: "bottom-left"
 	});
 });
-</script>   
+</script>
+<script type="text/javascript">
+$(function() {
+
+   //autocomplete
+    $("#event_relatedassetname").autocomplete({
+        source: "/search-equipment.php",
+        minLength: 0,
+        focus: function( event, ui ) {
+            $( "#event_relatedassetname" ).val( ui.item.eq_name );
+            return false;
+          },
+          select: function( event, ui ) {
+            $( "#event_relatedassetname" ).val( ui.item.eq_name );
+            $( "#event_relatedasset" ).val( ui.item.eq_id );
+            return false;
+          }
+    })
+    .autocomplete( "instance" )._renderItem = function( ul, item ) {
+        
+     return $( "<li>" )
+        .append( "<div>" + item.eq_name + " (" + "ID#: "+ item.eq_id + ", Serial#: " + item.eq_serial + ", Asset#:" + item.eq_asset_number + ")" )
+        .appendTo( ul );
+    };
+  } );
+</script>
