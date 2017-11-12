@@ -61,7 +61,7 @@
 		<div class="col-sm-10">
 			<select id="iss_assigned_user" name="iss_assigned_user" class="form-control" >
 				<?php foreach($usernames as $username): ?>
-        				<option value="<?php echo $username['id']; ?>"><?php echo $username['username']; ?></option>
+        				<option value="<?php echo $username['user_id']; ?>"><?php echo $username['username']; ?></option>
         		<?php endforeach; ?>
 			</select>
 		</div>
@@ -109,13 +109,13 @@ $(function() {
   } );
 </script>
 <script type="text/javascript">
-	$('#iss_reported_date').datepicker({
-	    format: "dd/mm/yyyy",
-	    todayBtn: "linked",
-	    clearBtn: true,
-	    autoclose: true,
-	    todayHighlight: true,
-	    changeMonth: true,
-      	changeYear: true
-	});
-</script>
+$(function () {
+    $("#iss_reported_date").datetimepicker({
+		format: "dd/mm/yy",
+		minView: 2,
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+});
+</script>   
