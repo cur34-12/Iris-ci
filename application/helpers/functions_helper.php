@@ -11,8 +11,9 @@ if(!function_exists('date2DB'))
     $outputDate = $dateArray[3] . "-" . $dateArray[2] . "-" . $dateArray[1];
     return htmlentities($outputDate);
   }
-/*
 }
+/*
+
 if(!function_exists('datetime2DB'))
 {
   function datetime2DB($value)
