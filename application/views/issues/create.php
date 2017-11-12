@@ -50,7 +50,7 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">Reported Date</label>
 	        <div class='col-sm-10 input-group date'>
-	            <input type='text' class="form-control" id='iss_reported_date' name="iss_reported_date" data-date="2012-10-16" data-date-format="yyyy-mm-dd" />
+	            <input type='text' class="form-control" id='iss_reported_date' name="iss_reported_date"/>
 	            <span class="input-group-addon">
 	                <span class="glyphicon glyphicon-calendar"></span>
 	            </span>
