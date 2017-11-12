@@ -73,7 +73,9 @@
                 'event_modifiedby' => $this->input->post('event_modifiedby'),
                 'event_lastmodified' => $this->input->post('event_lastmodified'),
                 'event_category' => $this->input->post('event_category'),
-                'event_description' => $this->input->post('event_description')
+                'event_description' => $this->input->post('event_description'),
+                'event_owner' => $this->input->post('event_owner'),
+                'event_relatedasset' => $this->input->post('event_relatedasset')
             );
 
             $this->db->where('event_id', $this->input->post('event_id'));
