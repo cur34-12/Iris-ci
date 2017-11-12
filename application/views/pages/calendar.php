@@ -24,7 +24,7 @@
                         end:'<?php echo $event['event_end']; ?>',
                         url:'<?php echo site_url('/events/'. $event['event_id']); ?>',
                         allDay: '<?php echo $event['event_allday']; ?>'
-                    }
+                    },
                 <?php endforeach; ?>
             ]
         });
