@@ -19,6 +19,7 @@ if ( ! function_exists('date2DB'))
     if(count($dateArray)!=3) {
       return null;
     }
+    $outputDate = $dateArray[3] . "-" . $dateArray[2] . "-" . $dateArray[1];
     return null;
 	}
 }
