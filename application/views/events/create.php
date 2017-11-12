@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	<div class="form-group">
-		<label class="control-label col-sm-2">Related Asset</label>
+		<label class="control-label col-sm-2">Related Asset ID</label>
 		<div class="col-sm-10">
 			<input disabled type="text" class="form-control" id="event_relatedasset" name="event_relatedasset">
 		</div>
