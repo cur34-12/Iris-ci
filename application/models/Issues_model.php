@@ -24,7 +24,7 @@
 				'iss_eq_id' => $this->input->post('iss_eq_id'),
 				'iss_description' => $this->input->post('iss_description'),
 				'iss_reporter_id' => $this->input->post('iss_reporter_id'),
-				'iss_reported_date' => $this->input->post('iss_reported_date'),
+				'iss_reported_date' => date2DB($this->input->post('iss_reported_date')),
 				'iss_assigned_user' => $this->input->post('iss_assigned_user'),
 				'iss_creator_id' => $this->input->post('iss_creator_id'),
 				'iss_type' => $this->input->post('iss_type'),
