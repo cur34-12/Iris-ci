@@ -21,7 +21,7 @@
                         $data['locations'] = $this->Equipment_model->get_equipment_locations($eq_id);
                         $data['equipmentlocations'] = $this->Equipment_model->get_equipment_locations(FALSE);
                         $data['suppliers'] = $this->Suppliers_model->get_suppliers();
-                        $data['events'] = $this->Events_model->get_events();
+                        $data['events'] = $this->Events_model->get_events_by_equipment($eq_id);
 
                         if (empty($data['equipment'])) {
                             show_404();

@@ -16,6 +16,17 @@
 
 			$query = $this->db->get_where('events', array('event_id' => $event_id));
 			return $query->row_array();
+        }
+        
+        public function get_events_by_equipment($event_relatedasset = FALSE){
+			if($event_relatedasset === FALSE){
+				$this->db->order_by('event_title', 'ASC');
+				$query = $this->db->get('events');
+				return $query->result_array();
+			}
+
+			$query = $this->db->get_where('events', array('event_relatedasset' => $event_relatedasset));
+			return $query->row_array();
 		}
 
         public function create_event(){
