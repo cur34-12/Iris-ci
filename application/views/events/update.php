@@ -11,13 +11,13 @@
     <div class="form-group">
 		<label class="control-label col-sm-2">All Day Event</label>
 		<div class="col-sm-10">
-			<select id="event_all_day" name="event_all_day" class="form-control">
+			<select id="event_allday" name="event_allday" class="form-control">
 				<option value="No">No</option>
 				<option value="Yes">Yes</option>
 			</select>
             <script>
 				$(function() {
-					$( '#event_all_day' ).val('<?php echo $event['event_all_day']; ?>'); 
+					$( '#event_allday' ).val('<?php echo $event['event_allday']; ?>'); 
 				});
 		    </script>
 		</div>
@@ -38,13 +38,13 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2">Related Asset</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_related_asset" value="<?php echo $event['event_related_asset']; ?>">
+			<input type="text" class="form-control" name="event_related_asset" value="<?php echo $event['event_relatedasset']; ?>">
 		</div>
 	</div>
     <div class="form-group">
 		<label class="control-label col-sm-2">Event Owner</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" name="event_owner" value="<?php echo $event['event_event_owner']; ?>">
+			<input type="text" class="form-control" name="event_owner" value="<?php echo $event['event_owner']; ?>">
 		</div>
 	</div>
     <div class="form-group">
