@@ -155,6 +155,7 @@
 </form>
 
 <script type="text/javascript">
+$(function () {
     $("#eq_date_purchased").datetimepicker({
         format: "dd/mm/yy",
         autoclose: true,
@@ -166,5 +167,6 @@
         autoclose: true,
         todayBtn: true,
         pickerPosition: "bottom-left"
-    });
+	});
+});
 </script>   
