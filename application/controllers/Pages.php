@@ -3,9 +3,9 @@
         class Pages extends MY_Controller {
 
             //Pages
-            if( $this->require_min_level(1) )
+            public function calendar()
             {
-                public function calendar()
+                if( $this->require_min_level(6) )
                 {
                     $data['events'] = $this->Events_model->get_events();
 
