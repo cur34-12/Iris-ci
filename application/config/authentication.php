@@ -42,7 +42,7 @@ $config['levels_and_roles'] = [
 */
 
 $config['groups'] = [
-	'employees' => 'manager,admin'
+	'members' => 'readonly,user,admin'
 ];
 
 /*
