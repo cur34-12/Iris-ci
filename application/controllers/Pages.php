@@ -3,16 +3,18 @@
         class Pages extends MY_Controller {
 
             //Pages
-
-            public function calendar()
+            if( $this->require_min_level(1) )
             {
-                $data['events'] = $this->Events_model->get_events();
+                public function calendar()
+                {
+                    $data['events'] = $this->Events_model->get_events();
 
-                $data['title'] = 'Calendar';
+                    $data['title'] = 'Calendar';
 
-                $this->load->view('templates/header/header', $data);
-                $this->load->view('pages/calendar', $data);
-                $this->load->view('templates/footer/footer');
+                    $this->load->view('templates/header/header', $data);
+                    $this->load->view('pages/calendar', $data);
+                    $this->load->view('templates/footer/footer');
+                }
             }
 
             public function dodash()
