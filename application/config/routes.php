@@ -108,8 +108,8 @@ $route['admin/search'] = 'search/users';
 
 /* Catch All Routes */
 $route['search'] = 'search/index';
-$route['login'] = 'pages/login_page';
-$route[LOGIN_PAGE] = 'pages/login_page';
+$route['login'] = 'pages/login';
+$route[LOGIN_PAGE] = 'pages/login';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
