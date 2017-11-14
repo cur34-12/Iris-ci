@@ -31,9 +31,11 @@
             
                 $this->setup_login_form();
             
-                $this->load->view('templates/header/header', '', TRUE);
-                $this->load->view('examples/login_form', '', TRUE);
-                $this->load->view('templates/footer/footer', '', TRUE);
+                $html .= $this->load->view('templates/header/header', '', TRUE);
+                $html .= $this->load->view('examples/login_form', '', TRUE);
+                $html .= $this->load->view('templates/footer/footer', '', TRUE);
+            
+                echo $html;
             }
 
             //Logout
