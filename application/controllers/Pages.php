@@ -2,6 +2,19 @@
 
         class Pages extends MY_Controller {
 
+
+            public function __construct()
+            {
+                parent::__construct();
+        
+                // Force SSL
+                //$this->force_ssl();
+        
+                // Form and URL helpers always loaded (just for convenience)
+                $this->load->helper('url');
+                $this->load->helper('form');
+            }
+
             //Pages
             public function calendar()
             {
